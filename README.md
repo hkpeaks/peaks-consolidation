@@ -15,15 +15,11 @@ Peaks's Command{Parameters}
 ```
 > In-memory model
 ReadFile{10MillionRows.csv ~ Table}
-Distinct{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency}
-WriteFile{Table | * ~ Peaks-Distinct1000M.csv}
-
-ReadFile{10MillionRows.csv ~ Table}
 Distinct{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table2}
 WriteFile{Table2 | * ~ Peaks-Distinct10.csv}
 WriteFile{Table | Ledger, Account, PartNo,Project,Contact ~ Peaks-Transaction.csv}
 
-> Streaming model
+> Streaming model (streaming for reading file only)
 CurrentSetting{StreamMB(1000)Thread(100)}
 Distinct{1000MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
 WriteFile{Table | * ~ Peaks-Distinct1000M.csv}
@@ -76,7 +72,7 @@ a.write_csv(path, separator=",")
 
 ```
 
-## JoinTable Function
+## JoinTable Function (Streaming for reading and writing files)
 
 Peaks's Command{Parameters}
 ```
