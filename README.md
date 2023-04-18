@@ -57,5 +57,26 @@ a.write_csv(path, separator=",")
 
 ```
 
+## JoinTable Function
+
+Peaks's Command{Parameters}
+```
+CurrentSetting{StreamMB(500)Thread(100)}
+ReadFile{Master.csv ~ Master}
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue} 
+JoinKeyValue{1000MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue) ~ Peaks-JoinTable1000M.csv} 
+```
+
+Polar's Python Code
+
+```
+transaction = pl.read_csv("Input/1000MillionRows.CSV")            
+master = pl.read_csv("Input/Master.CSV") 
+joined_table = transaction.join(master, on=["Ledger","Account","Project"], how="inner")
+joined_table.write_csv("Output/Polars-JoinTable1000M.csv")
+
+```
+
+
 
 
