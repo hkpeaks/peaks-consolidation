@@ -52,7 +52,7 @@ FilePath2 = hk.WriteFile("Table | Ledger, Account, PartNo,Project,Contact ~ Peak
 
   where the Python Code (" ") is equvalent to the original syntax {}. 
             And "variable =" is equvalent to the original syntax "~ TableName"
-            When output table a file name instead of in-memory table, the variable will be a string which contain a full file path of the output file.
+            When output table is a file name instead of in-memory table, the variable will be a string which contain a full file path of the output file.
 ```
 
 Polar's Python Code
