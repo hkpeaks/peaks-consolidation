@@ -36,6 +36,7 @@ WriteFile{Table | * ~ Peaks-Distinct1000M.csv}
 Polar's Python Code
 
 ```
+> Streaming model
 import polars as pl
 import time
 import pathlib
@@ -65,6 +66,7 @@ WriteFile{Table | * ~ Peaks-GroupBy1000M.csv}
 Polar's Python Code
 
 ```
+> Streaming model
 q = (
      pl.scan_csv("Input/1000MillionRows.csv")      
      .groupby(by=["Ledger", "Account", "PartNo", "Contact","Project","Unit Code", "D/C","Currency"])
@@ -83,7 +85,7 @@ a.write_csv(path, separator=",")
 
 ### JoinTable Function 
 
-Peaks's Command{Parameters}
+Peaks's Command{Parameters} 
 ```
 > Streaming model (streaming for reading and writing only)
 CurrentSetting{StreamMB(500)Thread(100)}
@@ -95,6 +97,7 @@ JoinKeyValue{1000MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue) 
 Polar's Python Code
 
 ```
+> In-memory model (has requested Polars to support a real streaming model for JoinTable)
 transaction = pl.read_csv("Input/1000MillionRows.CSV")            
 master = pl.read_csv("Input/Master.CSV") 
 joined_table = transaction.join(master, on=["Ledger","Account","Project"], how="inner")
