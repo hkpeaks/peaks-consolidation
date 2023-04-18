@@ -1,5 +1,10 @@
 # Peaks Framework
-Peaks framework is an end-user driven command flow that enables working with Peaks and third-party libraries.
+Peaks framework and library are under development. Peak framework is an end-user driven command flow that enables working with Peaks and third-party libraries. Peak Library is a high performance calculation engine which can be configued in either streaming mode or in-memory mode easily. If using streaming mode with proper setting, you can process billion of rows on your desktop PC with 16GB or above memory.
+
+# Which one to be planning for open source
+Peaks framework is considering go open source in the intially stage if there are a demand for this framework. 
+
+I was amazed when I saw the processing speed of this benchmark in February 2023 (https://h2oai.github.io/db-benchmark/). I was interested in using Go to see if it could handle the billion row level processing of a large table. This test was being run on my desktop PC with 8 cores, 32GB RAM and 500GB NVMe SSD. According to the test of this demo video: https://youtu.be/a23u1rRc4pM, using Go streaming, it’s about 170 seconds, which can extract a 70 GB CSV file with 1 billion rows x 14 columns to output 8 columns of distinct value , i.e. 411 MB/s. After continuing effort to improve the algorithms, the processing time can be reduced to between 90s and 110s depending on the current temperature of my CPU and the number of uncontrollable background windows services running.
 
 ## Distinct Function
 
