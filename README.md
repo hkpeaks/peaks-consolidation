@@ -5,6 +5,12 @@ Peaks framework is an end-user driven command flow that enables working with Pea
 
 Peaks's Command{Parameters}
 ```
+### In-memory
+ReadFile{10MillionRows.csv ~ Table}
+Distinct{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency}
+WriteFile{Table | * ~ Peaks-Distinct1000M.csv}
+
+### Streaming
 CurrentSetting{StreamMB(1000)Thread(100)}
 Distinct{1000MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
 WriteFile{Table | * ~ Peaks-Distinct1000M.csv}
