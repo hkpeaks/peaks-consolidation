@@ -17,7 +17,7 @@ Commands to be re-implemented in the Peaks DataFrame will not be the same as Web
 ## Open Source or Proprietary (You Need Go or Rust)
 The Peaks framework may be open-sourced if there is a sufficient demand for it. The number of stars obtained by this repository is a good indication of your demand for this framework. If this project is proven successfully, I can consider to provide an alternative imeplementation of Peaks Framework using Rust programming language.
 
-As for the calculation engine - Peaks Library, it will require significant effort during post-development support and maintenance, so it will be looking for a proper organization for consideration. However, after completing this library by the end of this year, it may be published as a trialware. 
+As for the calculation engine - Peaks Library, it will require significant effort during post-development support and maintenance, so it will be looking for a proper organisation for consideration. However, after completing this library by the end of this year, it may be published as a trialware. 
 
 ## Benchmarking
 PeaksBenchmark.xlsx documents some benchmarking results. Currently, we are focusing on comparing Polars and Peaks. The next phase will cover DuckDB. For relevant scripts and data, please refer to https://github.com/financialclose/benchmarking.
