@@ -31,7 +31,8 @@ print("Polars GroupBy 1000M Time = {}".format(e-s))
 ## GroupBy Function
 ```
 CurrentSetting{StreamMB(1000)Thread(100)}
-GroupBy{1000MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count() Max(Quantity) Min(Quantity) Sum(Quantity) ~ Table}
+GroupBy{1000MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency 
+  =>  Count() Max(Quantity) Min(Quantity) Sum(Quantity) ~ Table}
 WriteFile{Table | * ~ Peaks-GroupBy1000M.csv}
 ```
 
