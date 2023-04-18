@@ -15,7 +15,7 @@ WebNameSQL is a C# in-memory databending software that supports accountants usin
 Commands to be re-implemented in the Peaks DataFrame will not be the same as those below. Considering there are too many commands for your learning and practice, further consolidation and improvement is necessary. The use cases are no longer restricted to accounting; for example, some use cases will cover bioinformatics.
 
 ## Open source
-Peaks framework is considering go open source if there are a demand for this framework.
+Peaks framework may be considered for open source if there is a demand for it. As for the calculation engine - Peaks Library, since it will require significant effort during post-development support and maintenance, it will be looking for a proper organisation for consideration. However, after completing this library by the end of this year, it may be published as a trialware.
 
 ## Benchmarking
 PeaksBenchmark.xlsx documents some benchmarking results. Currently, we are focusing on comparing Polars and Peaks. The next phase will cover DuckDB. For relevant scripts and data, please refer to https://github.com/financialclose/benchmarking.
