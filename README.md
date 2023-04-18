@@ -1,5 +1,5 @@
 # Peaks DataFrame
-Peaks dataframe is a personal academic project that supports SQL-like processing of billions of rows using Go streaming model. February 18th, 2023 marks the start of real coding. Alternative goal is to achieve real-time processing up to 10 million rows per second to solve the data explosion that came with data capture from IoT devices.
+Peaks dataframe is a personal academic project that supports alternative SQL processing of billions of rows using Go streaming model. February 18th, 2023 marks the start of real coding in Hong Kong SAR. Alternative goal is to achieve real-time processing up to 10 million rows per second to solve the data explosion that came with data capture from IoT devices.
 
 I was amazed by the processing speed of this benchmark on February 15th, 2023, which can be found at https://h2oai.github.io/db-benchmark/. This website was first introduced by a member named Benny Lam from a WhatsApp group called ‘BI 123’.” I was interested in using Go to see if it could handle the billion row level processing of a large table. This test was being run on my desktop PC with 8 cores, 32GB RAM and 500GB NVMe SSD. According to the test of this demo video: https://youtu.be/a23u1rRc4pM, using Go streaming, it’s about 170 seconds, which can extract a 70 GB CSV file with 1 billion rows x 14 columns to output 8 columns of distinct value , i.e. 411 MB/s. After continuing effort to improve the algorithms, the processing time can be reduced to between 90s and 110s depending on the current temperature of my CPU and the number of uncontrollable background windows services running.
  
@@ -19,6 +19,12 @@ Peaks framework is considering go open source if there are a demand for this fra
 
 ## Benchmarking
 PeaksBenchmark.xlsx documents some benchmarking results. Currently, we are focusing on comparing Polars and Peaks. The next phase will cover DuckDB. For relevant scripts and data, please refer to https://github.com/financialclose/benchmarking.
+
+## News
+Latest news about this project, please refer to https://www.linkedin.com/in/max01/recent-activity/all/
+
+
+##  Below Functions has been included in the benchmarking report "PeaksBenchmark.xlsx"
 
 ### Distinct Function
 
