@@ -14,6 +14,9 @@ Commands to be re-implemented in the Peaks DataFrame will not be the same as tho
 ## Open source
 Peaks framework is considering go open source in the intially stage if there are a demand for this framework. 
 
+## Benchmarking
+PeaksBenchmark.xlsx documents some benchmarking results. For relevant script and data, please refer to https://github.com/financialclose/benchmarking
+
 ### Distinct Function
 
 Peaks's Command{Parameters}
