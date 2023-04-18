@@ -55,6 +55,7 @@ print("Polars GroupBy 1000M Time = {}".format(e-s))
 
 Peaks's Command{Parameters}
 ```
+> Streaming model (streaming for reading only)
 CurrentSetting{StreamMB(1000)Thread(100)}
 GroupBy{1000MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency 
   =>  Count() Max(Quantity) Min(Quantity) Sum(Quantity) ~ Table}
@@ -80,10 +81,11 @@ a.write_csv(path, separator=",")
 
 ```
 
-### JoinTable Function (Streaming for reading and writing files)
+### JoinTable Function 
 
 Peaks's Command{Parameters}
 ```
+> Streaming model (streaming for reading and writing only)
 CurrentSetting{StreamMB(500)Thread(100)}
 ReadFile{Master.csv ~ Master}
 BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue} 
