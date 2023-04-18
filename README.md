@@ -1,16 +1,16 @@
 # Peaks Framework
 Peaks framework is an end-user driven command flow that enables working with Peaks and third-party libraries.
 
-Distinct
+## Distinct Function
 
-Peaks
+Peaks's Command{Parameters}
 ```
 CurrentSetting{StreamMB(1000)Thread(100)}
 Distinct{1000MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
 WriteFile{Table | * ~ Peaks-Distinct1000M.csv}
 ```
 
-Polar
+Polar's Python Code
 
 ```
 q = (
