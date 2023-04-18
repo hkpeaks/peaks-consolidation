@@ -26,7 +26,7 @@ PeaksBenchmark.xlsx documents some benchmarking results. Currently, we are focus
 
 ### Distinct Function
 
-Peaks's Command{Parameters}
+Peaks's Command{Parameters} for Web request, Windows/Linux command line
 ```
 > In-memory model
 ReadFile{10MillionRows.csv ~ Table}
@@ -46,6 +46,8 @@ Table = hk.ReadFile("10MillionRows.csv")
 Table2 = hk.Distinct("Table | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency")
 FilePath = hk.WriteFile("Table2 | * ~ Peaks-Distinct10.csv")
 FilePath2 = hk.WriteFile("Table | Ledger, Account, PartNo,Project,Contact ~ Peaks-Transaction.csv")
+
+  where the Python Code (" ") is equvalent to the original syntax {}. 
 ```
 
 Polar's Python Code
@@ -69,7 +71,7 @@ print("Polars GroupBy 1000M Time = {}".format(e-s))
 
 ### GroupBy Function
 
-Peaks's Command{Parameters}
+Peaks's Command{Parameters} for Web request, Windows/Linux command line
 ```
 > Streaming model (streaming for reading only)
 CurrentSetting{StreamMB(1000)Thread(100)}
@@ -100,7 +102,7 @@ a.write_csv(path, separator=",")
 
 ### JoinTable Function 
 
-Peaks's Command{Parameters} 
+Peaks's Command{Parameters} for Web request, Windows/Linux command line
 ```
 > Streaming model (streaming for reading and writing only)
 CurrentSetting{StreamMB(500)Thread(100)}
