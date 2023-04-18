@@ -15,7 +15,6 @@ Distinct{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table
 WriteFile{Table2 | Ledger,Account,Currency ~ Peaks-Distinct10.csv}
 WriteFile{Table | * ~ Peaks-Distinct10.csv}
 
-
 > Streaming model
 CurrentSetting{StreamMB(1000)Thread(100)}
 Distinct{1000MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
