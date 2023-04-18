@@ -43,7 +43,7 @@ WriteFile{Table | * ~ Peaks-Distinct1000M.csv}
 import peaks as hk
 
 Table = hk.ReadFile("10MillionRows.csv")
-Table2 = hk.Distinct("Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency")
+Table2 = hk.Distinct("Table | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency")
 FilePath = hk.WriteFile("Table2 | * ~ Peaks-Distinct10.csv")
 FilePath2 = hk.WriteFile("Table | Ledger, Account, PartNo,Project,Contact ~ Peaks-Transaction.csv")
 ```
