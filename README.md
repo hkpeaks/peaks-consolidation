@@ -29,6 +29,8 @@ e = time.time()
 print("Polars GroupBy 1000M Time = {}".format(e-s))
 
 ## GroupBy Function
+
+Peaks's Command{Parameters}
 ```
 CurrentSetting{StreamMB(1000)Thread(100)}
 GroupBy{1000MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency 
