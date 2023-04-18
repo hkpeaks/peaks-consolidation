@@ -3,18 +3,18 @@ Peaks dataframe is a personal academic project that supports SQL-like processing
 
 I was amazed when I saw the processing speed of this benchmark in February 2023 (https://h2oai.github.io/db-benchmark/). I was interested in using Go to see if it could handle the billion row level processing of a large table. This test was being run on my desktop PC with 8 cores, 32GB RAM and 500GB NVMe SSD. According to the test of this demo video: https://youtu.be/a23u1rRc4pM, using Go streaming, it’s about 170 seconds, which can extract a 70 GB CSV file with 1 billion rows x 14 columns to output 8 columns of distinct value , i.e. 411 MB/s. After continuing effort to improve the algorithms, the processing time can be reduced to between 90s and 110s depending on the current temperature of my CPU and the number of uncontrollable background windows services running.
  
-# Peaks Framework & Library
+## Peaks Framework & Library
 Peaks framework and library are under development. I am working on an end-user driven command flow that enables working with Peaks and third-party libraries. The Peak Library is a high-performance calculation engine that can be configured in either streaming mode or in-memory mode easily. If you use streaming mode with proper settings, you can process billions of rows on your desktop PC with 16GB or above memory. Both framework and library are written in Golang and are considering interface with Python, R and Node.js. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of my considerations.
 
-# From WebNameSQL to Peaks DataFrame
+## From WebNameSQL to Peaks DataFrame
 WebNameSQL is a C# in-memory databending software that supports accountants using a web browser to interactive with accounting rules and tables for databending. However, this project became obsolete and it is replaced by a new project “Peaks DataFrame” to solve issues arising from real-time processing and big data. During a continuing effort in academic research, it is implemented new algorithms by using Golang which resulted in a performance gain of around 5X ~ 10X. Please refer to https://github.com/hkpeaks/peaks-framework
 
 Commands to be re-implemented in the Peaks DataFrame will not be the same as those below. Considering there are too many commands for your learning and practice, further consolidation and improvement is necessary. The use cases are no longer restricted to accounting; for example, some use cases will cover bioinformatics.
 
-# Open source
+## Open source
 Peaks framework is considering go open source in the intially stage if there are a demand for this framework. 
 
-## Distinct Function
+### Distinct Function
 
 Peaks's Command{Parameters}
 ```
@@ -48,7 +48,7 @@ a.write_csv(path, separator=",")
 e = time.time()
 print("Polars GroupBy 1000M Time = {}".format(e-s))
 
-## GroupBy Function
+### GroupBy Function
 
 Peaks's Command{Parameters}
 ```
@@ -77,7 +77,7 @@ a.write_csv(path, separator=",")
 
 ```
 
-## JoinTable Function (Streaming for reading and writing files)
+### JoinTable Function (Streaming for reading and writing files)
 
 Peaks's Command{Parameters}
 ```
