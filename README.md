@@ -20,10 +20,6 @@ Peaks framework is considering go open source if there are a demand for this fra
 ## Benchmarking
 PeaksBenchmark.xlsx documents some benchmarking results. Currently, we are focusing on comparing Polars and Peaks. The next phase will cover DuckDB. For relevant scripts and data, please refer to https://github.com/financialclose/benchmarking.
 
-## News
-Latest news about this project, please refer to https://www.linkedin.com/in/max01/recent-activity/all/
-
-
 ##  Below Functions has been included in the benchmarking report "PeaksBenchmark.xlsx"
 
 ### Distinct Function
@@ -113,6 +109,9 @@ joined_table = transaction.join(master, on=["Ledger","Account","Project"], how="
 joined_table.write_csv("Output/Polars-JoinTable1000M.csv")
 
 ```
+
+## Latest News
+For latest news about this academic project, please refer to https://www.linkedin.com/in/max01/recent-activity/all/
 
 
 
