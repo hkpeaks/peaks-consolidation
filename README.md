@@ -12,7 +12,7 @@ Currently, Peaks DataFrame supports tables in CSV file format only. Other table 
 ## From WebNameSQL to Peaks DataFrame
 WebNameSQL is a C# in-memory databending software that supports accountants using a web browser to interactive with accounting rules and tables for databending. However, this project became obsolete and it is replaced by a new project “Peaks DataFrame” to solve issues arising from real-time processing and big data. During a continuing effort in academic research, it is implemented new algorithms by using Golang which resulted in a performance gain of around 5X ~ 10X.
 
-Commands to be re-implemented in the Peaks DataFrame will not be the same as those below. Considering there are too many commands for your learning and practice, further consolidation and improvement is necessary. The use cases are no longer restricted to accounting; for example, some use cases will cover bioinformatics.
+Commands to be re-implemented in the Peaks DataFrame will not be the same as WebNameSQL. Considering there are too many commands for your learning and practice, further consolidation and improvement is necessary. The use cases are no longer restricted to accounting; for example, some use cases will cover bioinformatics.
 
 ## Open source
 Peaks framework may be considered for open source if there is a demand for it. As for the calculation engine - Peaks Library, since it will require significant effort during post-development support and maintenance, it will be looking for a proper organisation for consideration. However, after completing this library by the end of this year, it may be published as a trialware.
