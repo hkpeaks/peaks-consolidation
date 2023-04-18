@@ -12,8 +12,8 @@ WriteFile{Table | * ~ Peaks-Distinct1000M.csv}
 
 ReadFile{10MillionRows.csv ~ Table}
 Distinct{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table2}
-WriteFile{Table2 | Ledger,Account,Currency ~ Peaks-Distinct10.csv}
-WriteFile{Table | * ~ Peaks-Distinct10.csv}
+WriteFile{Table2 | * ~ Peaks-Distinct10.csv}
+WriteFile{Table | Ledger, Account, PartNo,Project,Contact ~ Peaks-Transaction.csv}
 
 > Streaming model
 CurrentSetting{StreamMB(1000)Thread(100)}
