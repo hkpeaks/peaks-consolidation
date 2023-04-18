@@ -29,6 +29,7 @@ PeaksBenchmark.xlsx documents some benchmarking results. Currently, we are focus
 Peaks's Script
 ```
 << Command{Parameters} for Web request, Windows/Linux command line >>
+
 > In-memory model
 ReadFile{10MillionRows.csv ~ Table}
 Distinct{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table2}
@@ -41,6 +42,7 @@ Distinct{1000MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code
 WriteFile{Table | * ~ Peaks-Distinct1000M.csv}
 
 << Tentative Python Code >>
+
 import peaks as hk
 
 Table = hk.ReadFile("10MillionRows.csv")
@@ -75,6 +77,7 @@ print("Polars GroupBy 1000M Time = {}".format(e-s))
 Peaks's Script
 ```
 << Command{Parameters} for Web request, Windows/Linux command line >>
+
 > Streaming model (streaming for reading only)
 CurrentSetting{StreamMB(1000)Thread(100)}
 GroupBy{1000MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency 
@@ -106,7 +109,8 @@ a.write_csv(path, separator=",")
 
 Peaks's Script
 ```
-Command{Parameters} for Web request, Windows/Linux command line
+<< Command{Parameters} for Web request, Windows/Linux command line>>
+
 > Streaming model (streaming for reading and writing only)
 CurrentSetting{StreamMB(500)Thread(100)}
 ReadFile{Master.csv ~ Master}
@@ -127,7 +131,3 @@ joined_table.write_csv("Output/Polars-JoinTable1000M.csv")
 
 ## Latest News
 For latest news about this academic project, please refer to https://www.linkedin.com/in/max01/recent-activity/all/
-
-
-
-
