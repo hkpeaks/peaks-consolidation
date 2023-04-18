@@ -1,5 +1,8 @@
-# Peaks Framework
-Peaks framework and library are under development. Peak framework is an end-user driven command flow that enables working with Peaks and third-party libraries. Peak Library is a high performance calculation engine which can be configued in either streaming mode or in-memory mode easily. If using streaming mode with proper setting, you can process billion of rows on your desktop PC with 16GB or above memory. Both framework and library are written by Golang. And considering interface with Python, R and Node.js.
+# Peaks Dataframe
+Peaks dataframe is a personal academic project that supports SQL-like processing of billions of rows using Go streaming model. Alternative goal is to achieve real-time processing up to 10 million rows per second to solve the data explosion that came with data capture from IoT devices.
+ 
+# Peaks Framework & Library
+Peaks framework and library are under development. I am working on an end-user driven command flow that enables working with Peaks and third-party libraries. The Peak Library is a high-performance calculation engine that can be configured in either streaming mode or in-memory mode easily. If you use streaming mode with proper settings, you can process billions of rows on your desktop PC with 16GB or above memory. Both framework and library are written in Golang and are considering interface with Python, R and Node.js. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of my considerations.
 
 # Open source
 Peaks framework is considering go open source in the intially stage if there are a demand for this framework. 
