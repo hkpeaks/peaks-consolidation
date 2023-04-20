@@ -130,6 +130,6 @@ joined_table.write_csv("Output/Polars-JoinTable1000M.csv")
 ## Latest News
 For latest news about this academic project, please refer to https://www.linkedin.com/in/max01/recent-activity/all/
 
-[[https://youtu.be/](https://youtu.be/yfJnYQBJ5ZY)<VIDEO URL>](https://youtu.be/yfJnYQBJ5ZY)
+
 
 
