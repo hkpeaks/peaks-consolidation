@@ -125,6 +125,13 @@ joined_table.write_csv("Output/Polars-JoinTable1000M.csv")
 
 ```
 
+## Web Pivot Table
+
+https://www.youtube.com/watch?v=yfJnYQBJ5ZY
+https://youtu.be/<VIDEO URL>
+
+
+
 ## Latest News
 For latest news about this academic project, please refer to https://www.linkedin.com/in/max01/recent-activity/all/
 
