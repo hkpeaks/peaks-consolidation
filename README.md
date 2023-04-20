@@ -127,7 +127,7 @@ joined_table.write_csv("Output/Polars-JoinTable1000M.csv")
 
 ## Web Pivot Table
 
-https://www.youtube.com/watch?v=<a23u1rRc4pM>
+https://www.youtube.com/watch?v=a23u1rRc4pM
 
 
 
