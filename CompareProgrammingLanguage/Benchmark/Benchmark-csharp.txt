@@ -1,0 +1,26 @@
+D:\CompareProgrammingLanguage>webname-csharp 1MillionRows.csv
+CSV File to Webname Table = 1.836s
+
+total_column 14
+Webname Table to CSV file = 1.433s
+
+
+D:\CompareProgrammingLanguage>webname-csharp 1MillionRows.csv
+CSV File to Webname Table = 1.837s
+
+total_column 14
+Webname Table to CSV file = 1.443s
+
+
+D:\CompareProgrammingLanguage>webname-csharp 10MillionRows.csv
+CSV File to Webname Table = 22.492s
+
+total_column 14
+Webname Table to CSV file = 14.990s
+
+
+D:\CompareProgrammingLanguage>webname-csharp 10MillionRows.csv
+CSV File to Webname Table = 18.174s
+
+total_column 14
+Webname Table to CSV file = 14.948s

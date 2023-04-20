@@ -1,0 +1,11 @@
+D:\Benchmark>python readwritefile1MillionRows.py
+Polars Read/Write 1 Million Rows Time = 0.4062514305114746
+
+D:\Benchmark>python readwritefile1MillionRows.py
+Polars Read/Write 1 Million Rows Time = 0.3749394416809082
+
+D:\Benchmark>python readwritefile10MillionRows.py
+Polars Read/Write 10 Million Rows Time = 3.625403642654419
+
+D:\Benchmark>python readwritefile10MillionRows.py
+Polars Read/Write 10 Million Rows Time = 3.078098773956299

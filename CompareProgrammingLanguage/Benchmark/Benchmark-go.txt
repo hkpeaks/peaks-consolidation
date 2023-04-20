@@ -1,0 +1,19 @@
+D:\CompareProgrammingLanguage>webname-go 1MillionRows.csv
+CSV File to Webname Table:  1.6228904s
+total column=  14 total row=  1000001
+Webname Table to CSV File:  1.1204553s
+
+D:\CompareProgrammingLanguage>webname-go 1MillionRows.csv
+CSV File to Webname Table:  1.4905064s
+total column=  14 total row=  1000001
+Webname Table to CSV File:  1.0081191s
+
+D:\CompareProgrammingLanguage>webname-go 10MillionRows.csv
+CSV File to Webname Table:  16.2604642s
+total column=  14 total row=  10000001
+Webname Table to CSV File:  11.0911213s
+
+D:\CompareProgrammingLanguage>webname-go 10MillionRows.csv
+CSV File to Webname Table:  14.6982095s
+total column=  14 total row=  10000001
+Webname Table to CSV File:  10.3420677s
