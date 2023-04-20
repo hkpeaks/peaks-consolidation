@@ -128,6 +128,7 @@ joined_table.write_csv("Output/Polars-JoinTable1000M.csv")
 ## Compare Programming Language
 
 Before deciding to develop the Peaks DataFrame, I conducted a study to determine which programming language was most suitable for me. I compared CSharp, Golang, and Rust with Pandas, Peaks, and Polars using a benchmark located in the folder ‘CompareProgrammingLanguage’. You can find a readme.pdf file inside the folder that shows a comparison of these languages with Pandas, Peaks, and Polars. This benchmark was prepared on April 20th, 2023 as I redid testing to cover Pandas, Peaks, and Polars.
+https://www.linkedin.com/posts/max01_benchmarking-pandas-github-activity-7054824689273098241-P3VS?utm_source=share&utm_medium=member_desktop
 
 ## Web Pivot Table
 
