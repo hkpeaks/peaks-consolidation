@@ -127,7 +127,9 @@ joined_table.write_csv("Output/Polars-JoinTable1000M.csv")
 
 ## Web Pivot Table
 
-https://www.youtube.com/watch?v=a23u1rRc4pM
+This is my first .net project before I am using Golang. I will consider whether to re-implement this into Peak DataFrame or publish this .net project directly. If publish it directly.
+
+https://www.youtube.com/watch?v=yfJnYQBJ5ZY
 
 
 
