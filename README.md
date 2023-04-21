@@ -20,8 +20,10 @@ Commands to be re-implemented in the Peaks DataFrame will not be the same as Web
 ## Benchmarking
 
 Currently it is focusing on comparing Polars and Peaks as Polars is one of fastest dataframe which can install and run on desktop PC easily. 180 performance tests for both Polars and Peaks were completed using 8-Cores/32GB RAM, with data rows ranging from 10,000 to 1 billion. The time measures cover the starting read csv files to the completion of write csv file. PeaksBenchmark.xlsx uploaded in this repo documents detail benchmarking results. For relevant scripts and data, please refer to https://github.com/financialclose/benchmarking.
+
+Usually both very small and very large tables will be disadvantageous in this measure for many software. If the time measures are represented by nominal time, it is meaningless for comparison among different table size scenarios. Duration of billion rows will be very large, 10,000 rows will be very small.
  
- $  It means how many seconds required for each size of table to process from 1 million rows equivalent data size.
+ $  It means how many seconds required for each size of table to process from 1 million rows equivalent data size. Usually 
  
  @  Filter and Orderby functions are under development.
 
