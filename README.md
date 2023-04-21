@@ -140,11 +140,6 @@ https://youtu.be/yfJnYQBJ5ZY
 
 [![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/HighPerformanceWebPivotTable/WebPivotTable.png)](http://www.youtube.com/watch?v=yfJnYQBJ5ZY "Web Pivot Table")
 
-
-
-
-
-
 ## Latest News
 For latest news about this academic project, please refer to https://www.linkedin.com/in/max01/recent-activity/all/
 
