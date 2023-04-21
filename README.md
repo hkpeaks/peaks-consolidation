@@ -20,8 +20,8 @@ Commands to be re-implemented in the Peaks DataFrame will not be the same as Web
 ## Benchmarking
 PeaksBenchmark.xlsx documents some benchmarking results. Currently, we are focusing on comparing Polars and Peaks. The next phase will cover Pandas. For relevant scripts and data, please refer to https://github.com/financialclose/benchmarking.
  
-|          | Million | Polars   |    Peaks |  Faster% |
-|          |  Rows   |Second / Million Rows| -Slower% |
+|          | Million | Polars   |    Peaks |   Faster |
+|          |  Rows   |Second / Million Rows|  -Slower |
 |----------|-------- |-------------------- | -------- |
 |Distinct  |    0.01 |    4.020 |    1.580 |    60.7% |
 |          |     0.1 |    0.938 |    0.712 |    24.1% |
