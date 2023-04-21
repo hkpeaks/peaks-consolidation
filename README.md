@@ -25,13 +25,13 @@ Currently it is focusing on comparing Polars and Peaks as Polars is one of faste
 
 Usually both very small and very large tables will be disadvantageous in this measure for many software. If the time measures are represented by nominal time, it is meaningless for comparison among different table size scenarios. Duration of billion rows will be very large, 10,000 rows will be very small.
  
- $  It means how many seconds required for each size of table to process from 1 million rows equivalent data size. Usually 
+ !  It means how many seconds required for each size of table to process from 1 million rows equivalent data size. Usually 
  
  @  Filter and Orderby functions are under development.
 
 |          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
 |----------|------------- |----------|--------- | ----------------- |
-|          |              |     $    |    $     |                   |
+|          |              |     !    |    !     |                   |
 |Distinct  |         0.01 |    4.020 |    1.580 |             60.7% |
 |          |          0.1 |    0.938 |    0.712 |             24.1% |
 |          |            1 |    0.213 |    0.187 |             11.9% |
