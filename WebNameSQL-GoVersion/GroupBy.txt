@@ -1,0 +1,4 @@
+CSV2Web{10000.csv ~ Table} 
+GroupBy{Account, Project, Contact, D/C => Count() Sum(Quantity) Sum(Original Amount) Sum(Base Amount) Max(Quantity) Max(Exchange Rate) Min(Exchange Rate) ~ GroupBy}
+Web2CSV{GroupBy | * ~ Result-GroupBy.csv}
+

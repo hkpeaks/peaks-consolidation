@@ -1,0 +1,30 @@
+ReplaceRule{1MillionRows.csv = 10000.csv}
+CSV2Web{1MillionRows.csv ~ Table}
+Process{Block_A}
+Process{Block_B}
+
+# Block_A
+CopyTable{Table | ~ Table2}
+Web2CSV{Table2 | Date,Ledger,Account, Exchange Rate,Original Amount,Base Amount ~ Result-CopyTable.csv}
+
+# Block_B
+SelectColumn{Table2 | Exchange Rate,Original Amount,Base Amount, Date, PartNo,Project,Contact,Unit Code,Quantity,Unit Price,D/C,Currency ~ Table3}
+Web2CSV{Table3 | * ~ Result-SelectColumn.csv}
+Process{Block_C}
+Process{Block_D}
+
+# Block_C
+RemoveColumn{Table | Date,PartNo,Quantity, D/C ~ Table4}
+Web2CSV{Table4 | * ~ Result-RemoveColumn.csv}
+
+
+# Block_D
+AmendColumnName{Table | Date = Voucher Date, Account = Account Code, Base Amount = Amount ~ Table5}
+Web2JSON{Table5 | * ~ Result-AmendColumnName.json}
+
+
+
+
+
+
+
