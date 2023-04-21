@@ -1,17 +1,17 @@
 # Peaks DataFrame
 Peaks DataFrame is a personal academic project that aims to provide an alternative to SQL statements for processing billions of rows using Go streaming model. The project started coding on February 18th, 2023 in Hong Kong SAR with the goal of achieving real-time processing up to 10 million rows per second. 
 
-Currently, I have been innovating and testing a set of algorithms and data structures to support profound acceleration of the dataframe with limited memory. One of the project’s expected outcomes is to solve the data explosion that came with data capture from IoT devices and data lake. By using my script settings, it can support streaming and in-memory models.
+Currently, Peaks DataFrame have been innovating and testing a set of algorithms and data structures to support profound acceleration of the dataframe with limited memory. One of the project’s expected outcomes is to solve the data explosion that came with data capture from IoT devices and data lake. By using my script settings, it can support streaming and in-memory models.
  
 ## Peaks Framework and Library
-Peaks DataFrame comprises of Peaks framework and library that are currently under development. I am working on an end-user driven command flow that enables working with Peaks and third-party libraries. The Peak Library is a high-performance calculation engine that can be configured in either streaming mode or in-memory mode easily. If you use streaming mode with proper settings, you can process billions of rows on your desktop PC with 16GB or above memory. Both framework and library are written in Golang and are considering interface with Python, R and Node.js. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of my considerations.
+Peaks DataFrame comprises of Peaks framework and library that are currently under development. It is working on an end-user driven command flow that enables working with Peaks and third-party libraries. The Peak Library is a high-performance calculation engine that can be configured in either streaming mode or in-memory mode easily. If you use streaming mode with proper settings, you can process billions of rows on your desktop PC with 16GB or above memory. Both framework and library are written in Golang and are considering interface with Python, R and Node.js. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of my considerations.
 
 ## File Format
 Currently, Peaks DataFrame supports tables in CSV file format only. Other table formats such as GZIP(CSV), JSON, HTML, XLSX, Parquet, Lance, HDF5, ORC, Feather and etc are under consideration.
 
 ## From WebNameSQL to Peaks DataFrame
 
-Peaks Framework is derived by a .net project WebNameSQL. You can see the full spec of "WebNameSQL.pdf" from the repo. Peaks Framework will have an improvement version based on WebNameSQL. Any software can implement this framework to standardise ETL expression similar to #HTML5, which benefits for end-users. I have over 10 years of experience in designing ETL expression covers 4 different designs. WebNameSQL is my best design, so Peaks Framework will adopt this design with some of improvement, particularly to adapt #Python code.
+Peaks Framework is derived by a .net project WebNameSQL. You can see the full spec of "WebNameSQL.pdf" from the repo. Peaks Framework will have an improvement version based on WebNameSQL. Any software can implement this framework to standardise ETL expression similar to #HTML5, which benefits for end-users. The author have over 10 years of experience in designing ETL expression covers 4 different designs. WebNameSQL is my best design, so Peaks Framework will adopt this design with some of improvement, particularly to adapt #Python code.
 
 WebNameSQL is a C# in-memory databending software that supports accountants using a web browser to interactive with accounting rules and tables for databending. However, this project became obsolete and it is replaced by a new project “Peaks DataFrame” to solve issues arising from real-time processing and big data. During a continuing effort in academic research, it is implemented new algorithms by using Golang which resulted in a performance gain of around 5X ~ 10X.
 
@@ -134,11 +134,11 @@ joined_table.write_csv("Output/Polars-JoinTable1000M.csv")
 
 Folder: https://github.com/hkpeaks/peaks-framework/tree/main/CompareProgrammingLanguage
 
-Before deciding to develop the Peaks DataFrame, I conducted a study to determine which programming language was most suitable for me. I compared CSharp, Golang, and Rust with Pandas, Peaks, and Polars using a benchmark located in the folder ‘CompareProgrammingLanguage’. You can find a readme.pdf file inside the folder that shows a comparison of these languages with Pandas, Peaks, and Polars. This benchmark was prepared on April 20th, 2023 as I redid testing to cover Pandas, Peaks, and Polars.
+Before deciding to develop the Peaks DataFrame, it is conducted a study to determine which programming language was most suitable for this project. The author had compared CSharp, Golang, and Rust with Pandas, Peaks, and Polars using a benchmark located in the folder ‘CompareProgrammingLanguage’. You can find a readme.pdf file inside the folder that shows a comparison of these languages with Pandas, Peaks, and Polars. This benchmark was prepared on April 20th, 2023 as I redid testing to cover Pandas, Peaks, and Polars.
 
 Testing Machine: Intel i9 8-Cores CPU, 32G RAM, 500GB NVMe SSD
 
-I wrote the data structure of my basic programming in a way that is similar to Parquet file format. I extensively used key-value pairs, for example, I used 1, 2, and 3 to represent unique values for each column. However, this extensive use of CPU and memory resources made me avoid using it again when I developed Peaks DataFrame.
+The data structure implemented for the basic programming in a way that is similar to Parquet file format. It is extensively used key-value pairs, for example, use 1, 2, and 3 to represent unique values for each column. However, this extensive use of CPU and memory resources made Peaks DataFrame avoid using it again.
 
 When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM.
 
@@ -148,7 +148,7 @@ Further Information: https://www.linkedin.com/posts/max01_benchmarking-pandas-gi
 
 Folder: https://github.com/hkpeaks/peaks-framework/tree/main/HighPerformanceWebPivotTable
 
-This is my first .net project before I am using Golang. I will consider whether to re-implement this into Peak DataFrame or publish this .net project directly.
+This is a first .net project before the author using Golang. The author will consider whether to re-implement this into Peak DataFrame or publish this .net project directly.
 https://youtu.be/yfJnYQBJ5ZY
 
 [![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/HighPerformanceWebPivotTable/WebPivotTable.png)](http://www.youtube.com/watch?v=yfJnYQBJ5ZY "Web Pivot Table")
