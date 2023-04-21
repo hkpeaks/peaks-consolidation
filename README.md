@@ -8,6 +8,9 @@ Peaks DataFrame comprises of Peaks framework and library that are currently unde
 Currently, Peaks DataFrame supports tables in CSV file format only. Other table formats such as GZIP(CSV), JSON, HTML, XLSX, Parquet, Lance, HDF5, ORC, Feather and etc are under consideration.
 
 ## From WebNameSQL to Peaks DataFrame
+
+Peaks Framework is derived by a .net project WebNameSQL. You can see the full spec of "WebNameSQL.pdf" from the repo. Peaks Framework will have an improvement version based on WebNameSQL. Any software can implement this framework to standardise ETL expression similar to #HTML5, which benefits for end-users. I have over 10 years of experience in designing ETL expression covers 4 different designs. WebNameSQL is my best design, so Peaks Framework will adopt this design with some of improvement, particularly to adapt #Python code.
+
 WebNameSQL is a C# in-memory databending software that supports accountants using a web browser to interactive with accounting rules and tables for databending. However, this project became obsolete and it is replaced by a new project “Peaks DataFrame” to solve issues arising from real-time processing and big data. During a continuing effort in academic research, it is implemented new algorithms by using Golang which resulted in a performance gain of around 5X ~ 10X.
 
 Commands to be re-implemented in the Peaks DataFrame will not be the same as WebNameSQL. Considering there are too many commands for your learning and practice, further consolidation and improvement is necessary. The use cases are no longer restricted to accounting; for example, some use cases will cover bioinformatics.
@@ -132,6 +135,10 @@ Folder: https://github.com/hkpeaks/peaks-framework/tree/main/CompareProgrammingL
 Before deciding to develop the Peaks DataFrame, I conducted a study to determine which programming language was most suitable for me. I compared CSharp, Golang, and Rust with Pandas, Peaks, and Polars using a benchmark located in the folder ‘CompareProgrammingLanguage’. You can find a readme.pdf file inside the folder that shows a comparison of these languages with Pandas, Peaks, and Polars. This benchmark was prepared on April 20th, 2023 as I redid testing to cover Pandas, Peaks, and Polars.
 
 Testing Machine: Intel i9 8-Cores CPU, 32G RAM, 500GB NVMe SSD
+
+I wrote the data structure of my basic programming in a way that is similar to #parquet. I extensively used key-value pairs, for example, I used 1, 2, and 3 to represent unique values for each column. However, this extensive use of CPU and memory resources made me avoid using it again when I developed Peaks DataFrame.
+
+When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM.
 
 Further Information: https://www.linkedin.com/posts/max01_benchmarking-pandas-github-activity-7054824689273098241-P3VS?utm_source=share&utm_medium=member_desktop
 
