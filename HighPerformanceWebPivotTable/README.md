@@ -2,6 +2,9 @@
 
 This is my first .net project before I am using Golang. I will consider whether to re-implement this into Peak DataFrame or publish this .net project directly. https://youtu.be/yfJnYQBJ5ZY
 
+[![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/HighPerformanceWebPivotTable/WebPivotTable.png)](http://www.youtube.com/watch?v=yfJnYQBJ5ZY "Web Pivot Table")
+
+
 # Features
 
 ➾  using C#, Vanilla JavaScript and W3.css for an integrated frontend to backend Web development, it does not implement any javascript framework or library
@@ -29,6 +32,3 @@ This is my first .net project before I am using Golang. I will consider whether 
 ➾  the app can run on a share drive and USB memory stick
 
 ➾  this project is maintained up to 100% C# source code (i.e. no call for external dll except the open source "Fleck websocket")
-
-[![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/HighPerformanceWebPivotTable/WebPivotTable.png)](http://www.youtube.com/watch?v=yfJnYQBJ5ZY "Web Pivot Table")
-
