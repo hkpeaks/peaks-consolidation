@@ -136,7 +136,7 @@ Before deciding to develop the Peaks DataFrame, I conducted a study to determine
 
 Testing Machine: Intel i9 8-Cores CPU, 32G RAM, 500GB NVMe SSD
 
-I wrote the data structure of my basic programming in a way that is similar to #parquet. I extensively used key-value pairs, for example, I used 1, 2, and 3 to represent unique values for each column. However, this extensive use of CPU and memory resources made me avoid using it again when I developed Peaks DataFrame.
+I wrote the data structure of my basic programming in a way that is similar to Parquet file format. I extensively used key-value pairs, for example, I used 1, 2, and 3 to represent unique values for each column. However, this extensive use of CPU and memory resources made me avoid using it again when I developed Peaks DataFrame.
 
 When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM.
 
