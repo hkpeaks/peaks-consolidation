@@ -148,7 +148,7 @@ Further Information: https://www.linkedin.com/posts/max01_benchmarking-pandas-gi
 
 Folder: https://github.com/hkpeaks/peaks-framework/tree/main/HighPerformanceWebPivotTable
 
-This is a first .net project before the author using Golang. The author will consider whether to re-implement this into Peak DataFrame or publish this .net project directly.
+This is a first .net project before the author using Golang. The author will consider whether to re-implement this into Peaks DataFrame or publish this .net project directly.
 https://youtu.be/yfJnYQBJ5ZY
 
 [![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/HighPerformanceWebPivotTable/WebPivotTable.png)](http://www.youtube.com/watch?v=yfJnYQBJ5ZY "Web Pivot Table")
