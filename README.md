@@ -138,10 +138,18 @@ Before deciding to develop the Peaks DataFrame, it is conducted a study to deter
 
 Testing Machine: Intel i9 8-Cores CPU, 32G RAM, 500GB NVMe SSD
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+Processing Time (In Second) of Read and Write CSV File
+
+|               | 1 Million Rows |10 Million Rows |
+| ------------- | -------------- |--------------- |
+| Basic Programming                               |
+| C Sharp       |          3.269 |         37.482 |
+| Golang        |          2.743 |         27.351 |
+| Rust          |          3.154 |         32.132 |
+| Advanced Programming                            |
+| Pandas        |          4.798 |         52.799 |
+| Peaks         |          0.177 |          0.917 |
+| Polars        |          0.406 |          3.625 |
 
 The data structure implemented for the basic programming in a way that is similar to Parquet file format. It is extensively used key-value pairs, for example, use 1, 2, and 3 to represent unique values for each column. However, this extensive use of CPU and memory resources made Peaks DataFrame avoid using it again.
 
