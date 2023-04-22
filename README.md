@@ -71,7 +71,7 @@ Usually both very small and very large tables will be disadvantageous in this me
 
 
 
-##  Below Functions has been included in the benchmarking report "PeaksBenchmark.xlsx"
+##  Examples of Script for Peaks and Polars
 
 ### Distinct Function
 
