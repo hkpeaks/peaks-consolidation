@@ -3,6 +3,7 @@ Peaks DataFrame is a personal academic project that aims to provide an alternati
 
 Currently, Peaks DataFrame have been innovating and testing a set of algorithms and data structures to support profound acceleration of the dataframe with limited memory. One of the project’s expected outcomes is to solve the data explosion that came with data capture from IoT devices, ERP, internet and data lake. By using a proper script settings, it can support streaming and in-memory models.
 
+## Author's Experience in Dataframe Development
 The author had developed dataframe software five times, which has given him a lot of experience in designing better data structures and algorithms that require less CPU and memory resources. His first three times were when he was employed by FlexSystem. The author’s sixth development in dataframe software is Peaks DataFrame, which has achieved a breakthrough point in software design and is expected to be the final one.
  
 ## Peaks Framework and Library
