@@ -1,0 +1,20 @@
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Benchmark>python jointable1000M.py
+memory allocation of memory allocation of memory allocation of memory allocation of 624658120memory allocation of memory allocation of memory allocation of memory allocation of 624658120 bytes failed
+memory allocation of memory allocation of memory allocation of memory allocation of memory allocation of  bytes failed
+
+D:\Benchmark>python jointable1000M.py
+memory allocation of 624658120 bytes failed
+memory allocation of
+D:\Benchmark>python jointable1000M.py
+memory allocation of memory allocation of 624658120memory allocation of 624658120624658120 bytes failed
+ bytes failed
+
+D:\Benchmark>python jointable1000M.py
+memory allocation of 624658120 bytes failed
+memory allocation of
+D:\Benchmark>python jointable1000M.py
+memory allocation of memory allocation of memory allocation of 624658120624658120624658120 bytes failed
+memory allocation of  bytes failed

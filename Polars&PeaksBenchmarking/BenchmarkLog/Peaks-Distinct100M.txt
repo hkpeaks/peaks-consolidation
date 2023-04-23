@@ -1,0 +1,67 @@
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Benchmark>peaks distinct100M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+Distinct{100MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
+Byte: 7216384229 | Stream: 7 | Thread: 100
+1 2 3 4 5 6 7   Table(8 x 99696)
+
+WriteFile{Table | * ~ Peaks-Distinct100M.csv}
+  Peaks-Distinct100M.csv(8 x 99696)
+
+Duration (In Second): 10.1680036
+
+D:\Benchmark>peaks distinct100M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+Distinct{100MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
+Byte: 7216384229 | Stream: 7 | Thread: 100
+1 2 3 4 5 6 7   Table(8 x 99696)
+
+WriteFile{Table | * ~ Peaks-Distinct100M.csv}
+  Peaks-Distinct100M.csv(8 x 99696)
+
+Duration (In Second): 9.2003148
+
+D:\Benchmark>peaks distinct100M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+Distinct{100MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
+Byte: 7216384229 | Stream: 7 | Thread: 100
+1 2 3 4 5 6 7   Table(8 x 99696)
+
+WriteFile{Table | * ~ Peaks-Distinct100M.csv}
+  Peaks-Distinct100M.csv(8 x 99696)
+
+Duration (In Second): 9.1193999
+
+D:\Benchmark>peaks distinct100M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+Distinct{100MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
+Byte: 7216384229 | Stream: 7 | Thread: 100
+1 2 3 4 5 6 7   Table(8 x 99696)
+
+WriteFile{Table | * ~ Peaks-Distinct100M.csv}
+  Peaks-Distinct100M.csv(8 x 99696)
+
+Duration (In Second): 8.9894259
+
+D:\Benchmark>peaks distinct100M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+Distinct{100MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
+Byte: 7216384229 | Stream: 7 | Thread: 100
+1 2 3 4 5 6 7   Table(8 x 99696)
+
+WriteFile{Table | * ~ Peaks-Distinct100M.csv}
+  Peaks-Distinct100M.csv(8 x 99696)
+
+Duration (In Second): 9.0898361

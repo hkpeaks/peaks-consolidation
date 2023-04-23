@@ -1,0 +1,17 @@
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Benchmark>python jointable0.1M.py
+Polars JoinTable 0.1M Time = 0.09375
+
+D:\Benchmark>python jointable0.1M.py
+Polars JoinTable 0.1M Time = 0.05525684356689453
+
+D:\Benchmark>python jointable0.1M.py
+Polars JoinTable 0.1M Time = 0.04733395576477051
+
+D:\Benchmark>python jointable0.1M.py
+Polars JoinTable 0.1M Time = 0.062467098236083984
+
+D:\Benchmark>python jointable0.1M.py
+Polars JoinTable 0.1M Time = 0.04846644401550293

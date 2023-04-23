@@ -1,0 +1,77 @@
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Benchmark>peaks jointable0.01M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{0.01MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable0.01M.csv}
+  Peaks-JoinTable0.01M.csv(16 x 10153)
+
+Duration (In Second): 0.0707512
+
+D:\Benchmark>peaks jointable0.01M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{0.01MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable0.01M.csv}
+  Peaks-JoinTable0.01M.csv(16 x 10153)
+
+Duration (In Second): 0.0597831
+
+D:\Benchmark>peaks jointable0.01M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{0.01MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable0.01M.csv}
+  Peaks-JoinTable0.01M.csv(16 x 10153)
+
+Duration (In Second): 0.0661791
+
+D:\Benchmark>peaks jointable0.01M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{0.01MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable0.01M.csv}
+  Peaks-JoinTable0.01M.csv(16 x 10153)
+
+Duration (In Second): 0.0541312
+
+D:\Benchmark>peaks jointable0.01M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{0.01MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable0.01M.csv}
+  Peaks-JoinTable0.01M.csv(16 x 10153)
+
+Duration (In Second): 0.0555724

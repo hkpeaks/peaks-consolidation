@@ -1,0 +1,67 @@
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Benchmark>peaks groupby100M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{100MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+Byte: 7216384229 | Stream: 7 | Thread: 100
+1 2 3 4 5 6 7   Table(12 x 99696)
+
+WriteFile{Table | * ~ Peaks-GroupBy100M.csv}
+  Peaks-GroupBy100M.csv(12 x 99696)
+
+Duration (In Second): 21.92769
+
+D:\Benchmark>peaks groupby100M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{100MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+Byte: 7216384229 | Stream: 7 | Thread: 100
+1 2 3 4 5 6 7   Table(12 x 99696)
+
+WriteFile{Table | * ~ Peaks-GroupBy100M.csv}
+  Peaks-GroupBy100M.csv(12 x 99696)
+
+Duration (In Second): 21.1129201
+
+D:\Benchmark>peaks groupby100M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{100MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+Byte: 7216384229 | Stream: 7 | Thread: 100
+1 2 3 4 5 6 7   Table(12 x 99696)
+
+WriteFile{Table | * ~ Peaks-GroupBy100M.csv}
+  Peaks-GroupBy100M.csv(12 x 99696)
+
+Duration (In Second): 25.9185486
+
+D:\Benchmark>peaks groupby100M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{100MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+Byte: 7216384229 | Stream: 7 | Thread: 100
+1 2 3 4 5 6 7   Table(12 x 99696)
+
+WriteFile{Table | * ~ Peaks-GroupBy100M.csv}
+  Peaks-GroupBy100M.csv(12 x 99696)
+
+Duration (In Second): 22.6023077
+
+D:\Benchmark>peaks groupby100M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{100MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+Byte: 7216384229 | Stream: 7 | Thread: 100
+1 2 3 4 5 6 7   Table(12 x 99696)
+
+WriteFile{Table | * ~ Peaks-GroupBy100M.csv}
+  Peaks-GroupBy100M.csv(12 x 99696)
+
+Duration (In Second): 22.5903368

@@ -1,0 +1,82 @@
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Benchmark>peaks jointable100M
+CurrentSetting{StreamMB(500)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{100MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable100M.csv}
+Byte: 7216384229 | Stream: 14 | Thread: 100
+1 2 3 4 5 6 7 8 9 10 11 12 13 14   Peaks-JoinTable100M.csv(16 x 100000000)
+
+Duration (In Second): 16.663383
+
+D:\Benchmark>peaks jointable100M
+CurrentSetting{StreamMB(500)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{100MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable100M.csv}
+Byte: 7216384229 | Stream: 14 | Thread: 100
+1 2 3 4 5 6 7 8 9 10 11 12 13 14   Peaks-JoinTable100M.csv(16 x 100000000)
+
+Duration (In Second): 15.7816944
+
+D:\Benchmark>peaks jointable100M
+CurrentSetting{StreamMB(500)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{100MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable100M.csv}
+Byte: 7216384229 | Stream: 14 | Thread: 100
+1 2 3 4 5 6 7 8 9 10 11 12 13 14   Peaks-JoinTable100M.csv(16 x 100000000)
+
+Duration (In Second): 20.3014316
+
+D:\Benchmark>peaks jointable100M
+CurrentSetting{StreamMB(500)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{100MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable100M.csv}
+Byte: 7216384229 | Stream: 14 | Thread: 100
+1 2 3 4 5 6 7 8 9 10 11 12 13 14   Peaks-JoinTable100M.csv(16 x 100000000)
+
+Duration (In Second): 16.471863
+
+D:\Benchmark>peaks jointable100M
+CurrentSetting{StreamMB(500)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{100MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable100M.csv}
+Byte: 7216384229 | Stream: 14 | Thread: 100
+1 2 3 4 5 6 7 8 9 10 11 12 13 14   Peaks-JoinTable100M.csv(16 x 100000000)
+
+Duration (In Second): 19.8145567
