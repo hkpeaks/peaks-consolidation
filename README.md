@@ -30,7 +30,7 @@ Commands to be re-implemented in the Peaks DataFrame will not be the same as Web
 
 While Polars is one of the fastest dataframes that can be easily installed and run on desktop PCs, Peaks is not intended to be another Polars or Pandas. Instead, it will become a databending software that supports management accounting as well as some special topics of machine learning and bioinformatics.
 
-90 performance tests for both Polars and Peaks were completed using 8-Cores/32GB RAM, with data rows ranging from 10,000 to 1 billion. The time measures cover the starting read csv files to the completion of write csv file. PeaksBenchmark.xlsx uploaded in this repository has documented detail benchmarking results. For relevant scripts and data, please refer to https://github.com/financialclose/benchmarking.
+90 performance tests for both Polars and Peaks were completed using 8-Cores/32GB RAM, with data rows ranging from 10,000 to 1 billion. The time measures cover the starting read csv files to the completion of write csv file. PeaksBenchmark.xlsx uploaded in this repository has documented detail benchmarking results. 
 
 ####  Performance Test for Tables with 14 Columns and Varying Numbers of Rows (10,000 ~ 1 Billion)
 
