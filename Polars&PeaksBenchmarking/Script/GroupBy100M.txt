@@ -1,0 +1,5 @@
+CurrentSetting{StreamMB(1000)Thread(100)}
+GroupBy{100MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count() Max(Quantity) Min(Quantity) Sum(Quantity) ~ Table}
+WriteFile{Table | * ~ Peaks-GroupBy100M.csv}
+
+

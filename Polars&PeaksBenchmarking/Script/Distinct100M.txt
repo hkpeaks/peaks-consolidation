@@ -1,0 +1,7 @@
+CurrentSetting{StreamMB(1000)Thread(100)}
+Distinct{100MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
+WriteFile{Table | * ~ Peaks-Distinct100M.csv}
+
+
+
+
