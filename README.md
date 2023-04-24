@@ -6,7 +6,7 @@ Currently, Peaks DataFrame have been innovating and testing a set of algorithms 
 ## Author's Experience in Dataframe Development
 The author had developed dataframe software five times during past 13 years, gaining experience in designing better data structures and algorithms that require fewer CPU and memory resources. He developed the software three times while employed by FlexSystem, the fourth time for YouFast Desktop - a high-performance Web Pivot Table, and the fifth time for WebNameSQL.
 
-The author’s sixth development in dataframe software is Peaks DataFrame, which has achieved a breakthrough point in software design and is expected to be the final one.
+The author has been developing this new software called Peaks DataFrame which is expected to be the final development in dataframe software. It is designed to be a next-generation accounting software that specializes in management accounting and consolidation. Peaks DataFrame will also cover some special topics in machine learning and bioinformatics. It is not meant to replace Polars, Pandas and Pytorch but rather complement them.
  
 ## Peaks Framework and Library
 Peaks DataFrame comprises of Peaks framework and library that are currently under development. It is working on an end-user driven command flow that enables working with Peaks and third-party libraries. The Peaks library is a high-performance calculation engine that can be configured in either streaming mode or in-memory mode easily. If you use streaming mode with proper settings, you can process billions of rows on your desktop PC with 16GB or above memory. 
