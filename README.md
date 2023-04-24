@@ -56,6 +56,8 @@ Processing time covers read and write csv file.
 
 ![Distinct]([https://github.com/hkpeaks/peaks-framework/tree/main/Polars%26PeaksBenchmarking/Chart/Distinct.png](https://github.com/hkpeaks/peaks-framework/blob/main/Polars&PeaksBenchmarking/Chart/Distinct.png?raw=true))
 
+![Distinct](/hkpeaks/peaks-framework/tree/main/Polars%26PeaksBenchmarking/Chart/Distinct.png?raw=true "Distinct")
+
 
 
 |          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
