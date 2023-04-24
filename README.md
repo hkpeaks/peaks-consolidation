@@ -20,7 +20,7 @@ Peaks DataFrame comprises of Peaks framework and library that are currently unde
 Both framework and library are written in Golang and will provide Python bindings. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of my considerations.
 
 ## File Format
-Currently, Peaks DataFrame supports tables in CSV file format only and will support other popular table formats such as Xlsx, JSON and Parquet. 
+Currently, Peaks DataFrame supports tables in CSV file format only and will support other popular table formats such as Xlsx, JSON, Parquet and Fasta.
 
 Xlsx is a popular file format for accounting. It’s likely that Peaks will support this format by considering the Excelize library for Golang. 
 
