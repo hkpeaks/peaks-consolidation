@@ -54,9 +54,8 @@ Processing time covers read and write csv file.
 |          |          100 |    0.114 |    0.093 |             18.4% |
 |          |         1000 |    0.172 |    0.104 |             39.6% |
 
-[![Web Pivot Table]([https://github.com/hkpeaks/peaks-framework/blob/main/HighPerformanceWebPivotTable/WebPivotTable.png](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/Distinct.png))](http://www.youtube.com/watch?v=yfJnYQBJ5ZY "Web Pivot Table")
 
-
+![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/Distinct.png)
 
 
 |          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
@@ -70,7 +69,7 @@ Processing time covers read and write csv file.
 |          |         1000 |    0.191 |    0.239 |            -20.1% |
 
 
-
+![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/GroupBy.png)
 
 |          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
 |----------|------------- |----------|--------- | ----------------- |
@@ -82,12 +81,23 @@ Processing time covers read and write csv file.
 |          |          100 |    0.886 |    0.178 |             79.9% |
 |          |         1000 |     Fail |    0.302 |               N/A |
 
+![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/JoinTable.png)
+
+|          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
+|----------|------------- |----------|--------- | ----------------- |
+|          |              |     !    |    !     |                   |
+|Select @  |         0.01 |          |          |                   |
+|          |          0.1 |          |          |                   |
+|          |            1 |          |          |                   |
+|          |           10 |          |          |                   |
+|          |          100 |          |          |                   |
+|          |         1000 |          |          |                   |
 
 
 |          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
 |----------|------------- |----------|--------- | ----------------- |
 |          |              |     !    |    !     |                   |
-|Filter @  |         0.01 |          |          |                   |
+|OrderBy @ |         0.01 |          |          |                   |
 |          |          0.1 |          |          |                   |
 |          |            1 |          |          |                   |
 |          |           10 |          |          |                   |
