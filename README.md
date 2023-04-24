@@ -24,7 +24,7 @@ Currently, Peaks DataFrame supports tables in CSV file format only and will supp
 
 Parquet is a format built to handle flat columnar storage data formats. It is designed for efficient data storage and retrieval. 
 
-For bioinformatics, it will support FASTA format. FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. 
+For bioinformatics, it will support FASTA format. FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter for five nucleobases— adenine (A), cytosine (C), guanine (G), thymine (T), and uracil (U).
 
 ## Software Releases
 The timetable for the first release version for Windows/Linux will be managed to happen within this year. You can download it from the “Releases” section on this page. 
