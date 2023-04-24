@@ -36,9 +36,7 @@ While Polars is one of the fastest dataframes that can be easily installed and r
 
 Usually both very small and very large tables will be disadvantageous in this measure for many software. If the time measures are represented by nominal time, it is meaningless for comparison among different table size scenarios. Duration of billion rows will be very large, 10,000 rows will be very small.
 
-Testing Machine: Intel i9 8-Cores CPU, 32G RAM, 500GB NVMe SSD
- 
- !  It means how many seconds required for each size of table to process from 1 million rows equivalent data size. 
+Testing Machine: Intel i9 8-Cores CPU, 32G RAM, 500GB NVMe SSD 
 
 ### Distinct
 
@@ -47,6 +45,8 @@ ReadFile{FileName.csv ~ Table}
 Distinct{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency}
 WriteFile{Table | * ~ OutputFileName.csv}
 ```
+
+!  It means how many seconds required for each size of table to process from 1 million rows equivalent data size. 
 
 |          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
 |----------|------------- |----------|--------- | ----------------- |
