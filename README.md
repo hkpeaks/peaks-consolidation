@@ -38,7 +38,9 @@ Usually both very small and very large tables will be disadvantageous in this me
 
 Testing Machine: Intel i9 8-Cores CPU, 32G RAM, 500GB NVMe SSD
 
-Processing time covers read and write csv file.
+ReadFile{FileName.csv ~ Table}
+Distinct{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency}
+WriteFile{Table | Ledger, Account, PartNo,Project,Contact ~ Peaks-Transaction.csv}
  
  !  It means how many seconds required for each size of table to process from 1 million rows equivalent data size. 
  
@@ -58,6 +60,12 @@ Processing time covers read and write csv file.
 ![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/Distinct.png)
 
 
+CurrentSetting{StreamMB(1000)Thread(100)}
+ReadFile{FileName.csv ~ Table}
+GroupBy{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency 
+  =>  Count() Max(Quantity) Min(Quantity) Sum(Quantity)}
+WriteFile{Table | * ~ OutputFileName.csv}
+
 |          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
 |----------|------------- |----------|--------- | ----------------- |
 |          |              |     !    |    !     |                   |
@@ -70,6 +78,11 @@ Processing time covers read and write csv file.
 
 
 ![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/GroupBy.png)
+
+ReadFile{Master.csv ~ Master}
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue} 
+ReadFile{Transaction.csv ~ Transaction}
+JoinKeyValue{Ledger,Account,Project => AllMatch(KeyValue) ~ OutputFileName.csv} 
 
 |          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
 |----------|------------- |----------|--------- | ----------------- |
