@@ -1,0 +1,62 @@
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Benchmark>peaks distinct10M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+Distinct{10MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
+  Table(8 x 99696)
+
+WriteFile{Table | * ~ Peaks-Distinct10M.csv}
+  Peaks-Distinct10M.csv(8 x 99696)
+
+Duration (In Second): 1.4261058
+
+D:\Benchmark>peaks distinct10M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+Distinct{10MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
+  Table(8 x 99696)
+
+WriteFile{Table | * ~ Peaks-Distinct10M.csv}
+  Peaks-Distinct10M.csv(8 x 99696)
+
+Duration (In Second): 1.0695684
+
+D:\Benchmark>peaks distinct10M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+Distinct{10MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
+  Table(8 x 99696)
+
+WriteFile{Table | * ~ Peaks-Distinct10M.csv}
+  Peaks-Distinct10M.csv(8 x 99696)
+
+Duration (In Second): 1.1292383
+
+D:\Benchmark>peaks distinct10M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+Distinct{10MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
+  Table(8 x 99696)
+
+WriteFile{Table | * ~ Peaks-Distinct10M.csv}
+  Peaks-Distinct10M.csv(8 x 99696)
+
+Duration (In Second): 1.0625949
+
+D:\Benchmark>peaks distinct10M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+Distinct{10MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
+  Table(8 x 99696)
+
+WriteFile{Table | * ~ Peaks-Distinct10M.csv}
+  Peaks-Distinct10M.csv(8 x 99696)
+
+Duration (In Second): 1.0535402

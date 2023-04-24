@@ -1,0 +1,17 @@
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Benchmark>python groupby10M.py
+Polars GroupBy 10M Time = 2.1407294273376465
+
+D:\Benchmark>python groupby10M.py
+Polars GroupBy 10M Time = 1.3593673706054688
+
+D:\Benchmark>python groupby10M.py
+Polars GroupBy 10M Time = 1.3854832649230957
+
+D:\Benchmark>python groupby10M.py
+Polars GroupBy 10M Time = 1.3597674369812012
+
+D:\Benchmark>python groupby10M.py
+Polars GroupBy 10M Time = 1.4531052112579346

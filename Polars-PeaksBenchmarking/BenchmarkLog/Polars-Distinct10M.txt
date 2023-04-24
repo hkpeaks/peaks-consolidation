@@ -1,0 +1,15 @@
+
+D:\Benchmark>python distinct10M.py
+Polars Distinct 10M Time = 2.173027515411377
+
+D:\Benchmark>python distinct10M.py
+Polars Distinct 10M Time = 1.1249988079071045
+
+D:\Benchmark>python distinct10M.py
+Polars Distinct 10M Time = 0.9359076023101807
+
+D:\Benchmark>python distinct10M.py
+Polars Distinct 10M Time = 0.9220609664916992
+
+D:\Benchmark>python distinct10M.py
+Polars Distinct 10M Time = 1.015625

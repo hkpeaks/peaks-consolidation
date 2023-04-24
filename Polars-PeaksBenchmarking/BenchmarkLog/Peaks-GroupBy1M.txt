@@ -1,0 +1,62 @@
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Benchmark>peaks groupby1M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{1MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+  Table(12 x 99696)
+
+WriteFile{Table | * ~ Peaks-GroupBy1M.csv}
+  Peaks-GroupBy1M.csv(12 x 99696)
+
+Duration (In Second): 0.3909924
+
+D:\Benchmark>peaks groupby1M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{1MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+  Table(12 x 99696)
+
+WriteFile{Table | * ~ Peaks-GroupBy1M.csv}
+  Peaks-GroupBy1M.csv(12 x 99696)
+
+Duration (In Second): 0.3460032
+
+D:\Benchmark>peaks groupby1M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{1MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+  Table(12 x 99696)
+
+WriteFile{Table | * ~ Peaks-GroupBy1M.csv}
+  Peaks-GroupBy1M.csv(12 x 99696)
+
+Duration (In Second): 0.3321474
+
+D:\Benchmark>peaks groupby1M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{1MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+  Table(12 x 99696)
+
+WriteFile{Table | * ~ Peaks-GroupBy1M.csv}
+  Peaks-GroupBy1M.csv(12 x 99696)
+
+Duration (In Second): 0.3340389
+
+D:\Benchmark>peaks groupby1M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{1MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+  Table(12 x 99696)
+
+WriteFile{Table | * ~ Peaks-GroupBy1M.csv}
+  Peaks-GroupBy1M.csv(12 x 99696)
+
+Duration (In Second): 0.3350886

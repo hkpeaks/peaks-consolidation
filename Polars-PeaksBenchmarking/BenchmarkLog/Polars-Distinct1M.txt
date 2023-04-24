@@ -1,0 +1,17 @@
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Benchmark>python distinct1M.py
+Polars Distinct 1M Time = 0.39237451553344727
+
+D:\Benchmark>python distinct1M.py
+Polars Distinct 1M Time = 0.1719045639038086
+
+D:\Benchmark>python distinct1M.py
+Polars Distinct 1M Time = 0.1720597743988037
+
+D:\Benchmark>python distinct1M.py
+Polars Distinct 1M Time = 0.17235183715820312
+
+D:\Benchmark>python distinct1M.py
+Polars Distinct 1M Time = 0.1562516689300537

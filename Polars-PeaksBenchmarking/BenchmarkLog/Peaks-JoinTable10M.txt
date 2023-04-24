@@ -1,0 +1,77 @@
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Benchmark>peaks jointable10M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{10MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable10M.csv}
+  Peaks-JoinTable10M.csv(16 x 10000000)
+
+Duration (In Second): 1.8907985
+
+D:\Benchmark>peaks jointable10M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{10MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable10M.csv}
+  Peaks-JoinTable10M.csv(16 x 10000000)
+
+Duration (In Second): 1.5047375
+
+D:\Benchmark>peaks jointable10M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{10MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable10M.csv}
+  Peaks-JoinTable10M.csv(16 x 10000000)
+
+Duration (In Second): 1.5255972
+
+D:\Benchmark>peaks jointable10M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{10MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable10M.csv}
+  Peaks-JoinTable10M.csv(16 x 10000000)
+
+Duration (In Second): 1.5340182
+
+D:\Benchmark>peaks jointable10M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+ReadFile{Master.csv ~ Master}
+  Master(5 x 99213)
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+  KeyValue(3 x 99213)
+
+JoinKeyValue{10MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue)~ Peaks-JoinTable10M.csv}
+  Peaks-JoinTable10M.csv(16 x 10000000)
+
+Duration (In Second): 1.4822953

@@ -1,0 +1,65 @@
+Microsoft Windows [Version 10.0.22621.1413]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\Benchmark>peaks groupby0.01M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{0.01MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+  Table(12 x 1016)
+
+WriteFile{Table | * ~ Peaks-GroupBy0.01M.csv}
+  Peaks-GroupBy0.01M.csv(12 x 1016)
+
+Duration (In Second): 0.0230645
+
+D:\Benchmark>peaks groupby0.01M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{0.01MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+  Table(12 x 1016)
+
+WriteFile{Table | * ~ Peaks-GroupBy0.01M.csv}
+  Peaks-GroupBy0.01M.csv(12 x 1016)
+
+Duration (In Second): 0.0148629
+
+D:\Benchmark>peaks groupby0.01M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{0.01MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+  Table(12 x 1016)
+
+WriteFile{Table | * ~ Peaks-GroupBy0.01M.csv}
+  Peaks-GroupBy0.01M.csv(12 x 1016)
+
+Duration (In Second): 0.0166856
+
+D:\Benchmark>peaks groupby0.01M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{0.01MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+  Table(12 x 1016)
+
+WriteFile{Table | * ~ Peaks-GroupBy0.01M.csv}
+  Peaks-GroupBy0.01M.csv(12 x 1016)
+
+Duration (In Second): 0.0137869
+
+D:\Benchmark>peaks groupby0.01M
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+
+GroupBy{0.01MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count()Max(Quantity)Min(Quantity)Sum(Quantity)~ Table}
+  Table(12 x 1016)
+
+WriteFile{Table | * ~ Peaks-GroupBy0.01M.csv}
+  Peaks-GroupBy0.01M.csv(12 x 1016)
+
+Duration (In Second): 0.0158955
+
+D:\Benchmark>peaks groupby0.01M
+CurrentSetting{StreamMB(1000)Thread(100)}
