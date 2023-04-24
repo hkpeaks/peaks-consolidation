@@ -37,14 +37,16 @@ While Polars is one of the fastest dataframes that can be easily installed and r
 Usually both very small and very large tables will be disadvantageous in this measure for many software. If the time measures are represented by nominal time, it is meaningless for comparison among different table size scenarios. Duration of billion rows will be very large, 10,000 rows will be very small.
 
 Testing Machine: Intel i9 8-Cores CPU, 32G RAM, 500GB NVMe SSD
-
-ReadFile{FileName.csv ~ Table}
-Distinct{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency}
-WriteFile{Table | Ledger, Account, PartNo,Project,Contact ~ Peaks-Transaction.csv}
  
  !  It means how many seconds required for each size of table to process from 1 million rows equivalent data size. 
- 
- @  Filter and Orderby functions are under development.
+
+### Distinct
+
+```
+ReadFile{FileName.csv ~ Table}
+Distinct{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency}
+WriteFile{Table | * ~ OutputFileName.csv}
+```
 
 |          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
 |----------|------------- |----------|--------- | ----------------- |
@@ -59,8 +61,8 @@ WriteFile{Table | Ledger, Account, PartNo,Project,Contact ~ Peaks-Transaction.cs
 
 ![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/Distinct.png)
 
+### GroupBy
 
-CurrentSetting{StreamMB(1000)Thread(100)}
 ReadFile{FileName.csv ~ Table}
 GroupBy{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency 
   =>  Count() Max(Quantity) Min(Quantity) Sum(Quantity)}
@@ -82,7 +84,8 @@ WriteFile{Table | * ~ OutputFileName.csv}
 ReadFile{Master.csv ~ Master}
 BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue} 
 ReadFile{Transaction.csv ~ Transaction}
-JoinKeyValue{Ledger,Account,Project => AllMatch(KeyValue) ~ OutputFileName.csv} 
+JoinKeyValue{Ledger,Account,Project => AllMatch(KeyValue)} 
+WriteFile{Transaction | * ~ OutputFileName.csv}
 
 |          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
 |----------|------------- |----------|--------- | ----------------- |
@@ -116,6 +119,8 @@ JoinKeyValue{Ledger,Account,Project => AllMatch(KeyValue) ~ OutputFileName.csv}
 |          |           10 |          |          |                   |
 |          |          100 |          |          |                   |
 |          |         1000 |          |          |                   |
+
+@  Filter and Orderby functions are under development.
 
 ##  Examples of Script for Peaks and Polars
 
