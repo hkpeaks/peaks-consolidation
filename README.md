@@ -101,6 +101,9 @@ WriteFile{Transaction | * ~ OutputFileName.csv}
 |          |          100 |    0.886 |    0.178 |             79.9% |
 |          |         1000 |     Fail |    0.302 |               N/A |
 
+The author has requested the Polars team to provide a real streaming model for JoinTable.
+See https://github.com/pola-rs/polars/issues/8231
+
 ![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/JoinTable.png)
 
 |          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
