@@ -16,7 +16,7 @@ Both framework and library are written in Golang and will interface with Python.
 ## File Format
 Currently, Peaks DataFrame supports tables in CSV file format only and will support other popular table formats such as JSON and Parquet. 
 
-Parquet is an open source file format built to handle flat columnar storage data formats. It is designed for efficient data storage and retrieval. 
+Parquet is a format built to handle flat columnar storage data formats. It is designed for efficient data storage and retrieval. 
 
 For bioinformatics, it will support FASTA format. FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. 
 
