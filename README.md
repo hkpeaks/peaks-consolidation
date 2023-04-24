@@ -11,10 +11,10 @@ Peaks DataFrame which is expected to be the final research and development in da
 ## Peaks Framework and Library
 Peaks DataFrame comprises of Peaks framework and library that are currently under development. It is working on an end-user driven command flow that enables working with Peaks and third-party libraries. The Peaks library is a high-performance calculation engine that can be configured in either streaming mode or in-memory mode easily. If you use streaming mode with proper settings, you can process billions of rows on your desktop PC with 16GB or above memory. 
 
-Both framework and library are written in Golang and are considering interface with Python, R and Node.js. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of my considerations.
+Both framework and library are written in Golang and will interface with Python. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of my considerations.
 
 ## File Format
-Currently, Peaks DataFrame supports tables in CSV file format only. Other table formats such as GZIP(CSV), JSON, HTML, XLSX, Parquet, Lance, HDF5, ORC, Feather and etc are under consideration.
+Currently, Peaks DataFrame supports tables in CSV file format only and will support other popular table formats such as JSON and Parquet. Parquet is an open source file format built to handle flat columnar storage data formats. It is designed for efficient data storage and retrieval. For bioinformatics, it will support FASTA format. FASTA format is a text-based format for representing either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino acids are represented using single-letter codes. 
 
 ## Software Releases
 The timetable for the first release version for Windows/Linux will be managed to happen within this year. You can download it from the “Releases” section on this page. 
