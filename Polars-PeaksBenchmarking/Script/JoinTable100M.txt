@@ -1,0 +1,10 @@
+CurrentSetting{StreamMB(500)Thread(100)}
+ReadFile{Master.csv ~ Master}
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue} 
+JoinKeyValue{100MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue) ~ Peaks-JoinTable100M.csv} 
+
+
+
+
+
+
