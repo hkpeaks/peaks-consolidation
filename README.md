@@ -54,7 +54,7 @@ Processing time covers read and write csv file.
 |          |          100 |    0.114 |    0.093 |             18.4% |
 |          |         1000 |    0.172 |    0.104 |             39.6% |
 
-![alt text](https://github.com/hkpeaks/peaks-framework/tree/main/Polars%26PeaksBenchmarking/Chart.Distinct.png)
+![alt text](https://github.com/hkpeaks/peaks-framework/tree/main/Polars%26PeaksBenchmarking/Chart/Distinct.png)
 
 
 
