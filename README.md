@@ -11,7 +11,7 @@ Peaks DataFrame which is expected to be the final research and development in da
 ## Peaks Framework and Library
 Peaks DataFrame comprises of Peaks framework and library that are currently under development. It is working on an end-user driven command flow that enables working with Peaks and third-party libraries. The Peaks library is a high-performance calculation engine that can be configured in either streaming mode or in-memory mode easily. If you use streaming mode with proper settings, you can process billions of rows on your desktop PC with 16GB or above memory. 
 
-Both framework and library are written in Golang and will interface with Python. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of my considerations.
+Both framework and library are written in Golang and will provide Python bindings. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of my considerations.
 
 ## File Format
 Currently, Peaks DataFrame supports tables in CSV file format only and will support other popular table formats such as JSON and Parquet. 
