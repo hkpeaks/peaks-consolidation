@@ -63,10 +63,12 @@ WriteFile{Table | * ~ OutputFileName.csv}
 
 ### GroupBy
 
+```
 ReadFile{FileName.csv ~ Table}
 GroupBy{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency 
   =>  Count() Max(Quantity) Min(Quantity) Sum(Quantity)}
 WriteFile{Table | * ~ OutputFileName.csv}
+```
 
 |          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
 |----------|------------- |----------|--------- | ----------------- |
@@ -81,11 +83,13 @@ WriteFile{Table | * ~ OutputFileName.csv}
 
 ![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/GroupBy.png)
 
+```
 ReadFile{Master.csv ~ Master}
 BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue} 
 ReadFile{Transaction.csv ~ Transaction}
 JoinKeyValue{Ledger,Account,Project => AllMatch(KeyValue)} 
 WriteFile{Transaction | * ~ OutputFileName.csv}
+```
 
 |          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
 |----------|------------- |----------|--------- | ----------------- |
