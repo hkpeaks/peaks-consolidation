@@ -22,11 +22,11 @@ According to a performance chart, Peaks demonstrate high efficiency in resource 
 ## Peaks Framework and Library
 Peaks DataFrame comprises of Peaks framework and library that are currently under active development. 
 
-Framework: It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with Peaks and third-party libraries.
+FRAMEWORK: It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with Peaks and third-party libraries.
 
-Library: It will be provided a free version of Go library which allows to be operated by the framework. It is a high-performance calculation engine that can be configured by the framework in either streaming mode or in-memory mode easily. 
+LIBRARY: It will be provided a free version of Go library which allows to be operated by the framework. It is a high-performance calculation engine that can be configured by the framework in either streaming mode or in-memory mode easily. 
 
-Releases: It will be provided an all-in-one executable runtime for both Windows and Linux. The Python version will be available in the next stage.
+RELEASES: It will be provided an all-in-one executable runtime for both Windows and Linux. The Python version will be available in the next stage.
 
 Both framework and library are written in Golang and will provide Python bindings. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of my considerations.
 
