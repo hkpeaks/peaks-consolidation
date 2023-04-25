@@ -20,7 +20,11 @@ According to a performance chart, Peaks demonstrate high efficiency in resource 
 ![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/JoinTableResourceUtilization.jpg)
 
 ## Peaks Framework and Library
-Peaks DataFrame comprises of Peaks framework and library that are currently under active development. It is working on an end-user driven command flow that enables working with Peaks and third-party libraries. The Peaks library is a high-performance calculation engine that can be configured in either streaming mode or in-memory mode easily. If you use streaming mode with proper settings, you can process billions of rows on your desktop PC with 16GB or above memory. 
+Peaks DataFrame comprises of Peaks framework and library that are currently under active development. 
+
+Library: It is a high-performance calculation engine that can be configured by the framework in either streaming mode or in-memory mode easily. 
+
+Framework: It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with Peaks and third-party libraries.
 
 Both framework and library are written in Golang and will provide Python bindings. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of my considerations.
 
