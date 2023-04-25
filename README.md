@@ -10,6 +10,7 @@ Peaks DataFrame which is expected to be the final research and development in da
 
 When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM. The author had conducted some research in bioinformatics and had learned that RNA polymerase is responsible for transcribing DNA into RNA while ribosomes are responsible for translating RNA into proteins. The author was impressed by the high efficiency of protein production from transcription to translation, so the data model of Peaks is somewhat similar to these biological operations.
 
+## Resource Utilization
 JoinTable is an ETL function that is frequently used. However, it has been reported that JoinTable can be problematic when processing tables with billions of rows. According to a performance chart, Peaks demonstrate high efficiency in resource utilization during the processing of billions of rows for JoinTable. Every peak of CPU utilization is due to data being loaded into memory for the current partition of a file. You can continue to enjoy YouTube during this intensive processing for less than 5 minutes long.
 
 ![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/JoinTableResourceUtilization.jpg)
