@@ -99,6 +99,8 @@ WriteFile{Table | * ~ OutputFileName.csv}
 
 ![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/GroupBy.png)
 
+### JoinTable
+
 ```
 ReadFile{Master.csv ~ Master}
 BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue} 
