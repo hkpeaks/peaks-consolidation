@@ -13,11 +13,13 @@ When it comes to data structures, bytearray is one of the most useful and memory
 ## Resource Utilization Does Matter
 JoinTable is an ETL function that is frequently used. However, it has been reported that JoinTable can be problematic when processing tables with billions of rows. 
 
-Golang is a simple and beautiful programming language that allows JoinTable to implement ultra-performance streaming. For instance, it can process a 70GB CSV file and output 91GB. 
+Golang is a simple and beautiful programming language that allows JoinTable to implement ultra-performance streaming. For instance, it can process a 67.2GB CSV file and output 91GB. 
 
 According to a performance chart, Peaks demonstrate high efficiency in resource utilization during the processing of billions of rows for JoinTable. Every peak of CPU utilization is due to data being loaded into memory for the current partition of a file. You can continue to enjoy YouTube during this intensive processing for less than 5 minutes long.
 
 ![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/JoinTableResourceUtilization.jpg)
+
+This is a demo video using Select{1000MillionRows.csv | Ledger(L10…L15,L50…L55,L82…L88) Account(12222…12888,15555…16888) Project(>B28,<B22) ~ Peaks-Filter1000M.csv} to select 15,110,000 rows from the 1 billion rows file https://youtu.be/9nxIDi2t1Bg
 
 ## Peaks Framework and Library
 Peaks DataFrame comprises of Peaks framework and library that are currently under active development. 
