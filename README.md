@@ -170,21 +170,6 @@ CurrentSetting{StreamMB(1000)Thread(100)}
 Distinct{1000MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
 WriteFile{Table | * ~ Peaks-Distinct1000M.csv}
 
-<< Tentative Python Code >>
-
-import peaks as hk
-
-Table = hk.ReadFile("10MillionRows.csv")
-Table2 = hk.Distinct("Table | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency")
-FilePath = hk.WriteFile("Table2 | * ~ Peaks-Distinct10.csv")
-FilePath2 = hk.WriteFile("Table | Ledger, Account, PartNo,Project,Contact ~ Peaks-Transaction.csv")
-
-  where the Python Code (" ") is equvalent to the original syntax {}. 
-  And "variable =" is equvalent to the original syntax "~ TableName"
-  When output table is a file name instead of in-memory table, the variable  
-     will be a string which contain a full file path of the output file.
-```
-
 Polar's Python Code
 
 ```
