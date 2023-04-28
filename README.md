@@ -44,6 +44,7 @@ PARQUET is a format that is built to handle flat columnar storage data formats. 
 FASTA format is a text-based format that supports bioinformatics. It is used for representing either nucleotide sequences or amino acid (protein) sequences. In this format, nucleotides or amino acids are represented using single-letter codes for five nucleobases— adenine (A), cytosine (C), guanine (G), thymine (T), and uracil (U). Unknown bases are represented by the letter N. The human genome is a diploid genome that contains 3.2 billion nucleotides. These nucleotides are packed into 23 pairs of chromosomes.
 
 ## Peaks DataFrame Release Version Is Coming Soon By Jun 2023
+![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/PeaksFramework/InitialRelease.png)
 The first release version will support Windows/Linux. You can download it from the “Releases” section on this page. The initial version will cover the following command groups and commands:-
 
 1a. CurrentSetting - adjust the size of the partition of your large file and the number of threads to match your data and machine
