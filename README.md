@@ -185,6 +185,44 @@ Peaks's Script
 ```
 << Command{Parameters} for Web request, Windows/Linux command line >>
 
+> In-memory model
+ReadFile{10MillionRows.csv ~ Table}
+Distinct{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table2}
+WriteFile{Table2 | * ~ Peaks-Distinct10.csv}
+WriteFile{Table | Ledger, Account, PartNo,Project,Contact ~ Peaks-Transaction.csv}
+
+> Streaming model (streaming for reading file only)
+CurrentSetting{StreamMB(1000)Thread(100)}
+Distinct{1000MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
+WriteFile{Table | * ~ Peaks-Distinct1000M.csv}
+
+```
+
+Polar's Python Code
+
+```
+> Streaming model
+import polars as pl
+import time
+import pathlib
+q = (
+     pl.scan_csv("Input/1000MillionRows.csv")      
+    .select(["Ledger", "Account", "PartNo", "Contact","Project","Unit Code", "D/C","Currency"]).unique()
+    )    
+
+a = q.collect(streaming=True)
+path: pathlib.Path = "Output/Polars-Distinct1000M.csv"
+a.write_csv(path, separator=",")
+e = time.time()
+print("Polars GroupBy 1000M Time = {}".format(e-s))
+```
+
+### GroupBy Function
+
+Peaks's Script
+```
+<< Command{Parameters} for Web request, Windows/Linux command line >>
+
 > Streaming model (streaming for reading only)
 CurrentSetting{StreamMB(1000)Thread(100)}
 GroupBy{1000MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency 
