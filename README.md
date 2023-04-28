@@ -51,15 +51,15 @@ FASTA format is a text-based format that supports bioinformatics. It is used for
 
 The first release version will support Windows/Linux. You can download it from the “Releases” section on this page. The initial version will cover the following command groups and commands:-
 
-| Command Group  | Command                        | Remark                                                             |                  
-|----------------|------------------------------- |------------------------------------------------------------------- |
-| CurrentSetting | CurrentSetting                 | adjust the size of the partition of your large file and the number |
-|                |                                | threads to match your data and machine                             |
-| IO             | ReadFile, WriteFile, SplitFile |                                                                    | 
-| Unique         | Distinct, GroupBy              |                                                                    |
-| JoinTable      | BuildKeyValue, JoinKeyValue    | two commands must be configured together to get jointable results  |
-| Filter         | Select, SelectUnmatch          |                                                                    |
-| Append         | Append                         | for row/column with adding value/formula                           |
+| Command Group  | Command                        | Remark                                                 |                  
+|----------------|------------------------------- |------------------------------------------------------- |
+| CurrentSetting | CurrentSetting                 | adjust the size of the partition of your large file    |
+|                |                                | and the number threads to match your data and machine  |
+| IO             | ReadFile, WriteFile, SplitFile |                                                        | 
+| Unique         | Distinct, GroupBy              |                                                        |
+| JoinTable      | BuildKeyValue, JoinKeyValue    | two commands must be configured together               |
+| Filter         | Select, SelectUnmatch          |                                                        |
+| Append         | Append                         | for row/column with adding value/formula               |
 
 The first release version will not include sorting because it requires more research works to solve the root problem of sorting billions of rows by many sorting columns (A/D).
 
