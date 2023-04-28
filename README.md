@@ -274,6 +274,30 @@ joined_table.write_csv("Output/Polars-JoinTable1000M.csv")
 
 ```
 
+### Filter Function 
+
+Peaks's Script
+```
+<< Command{Parameters} for Web request, Windows/Linux command line>>
+
+> Streaming model (streaming for reading and writing only)
+CurrentSetting{StreamMB(1000)Thread(100)}
+Select{1000MillionRows.csv | Ledger(L10..L15,L50..L55,L82..L88) Account(12222..12888,15555..16888) Project(>B28,<B22) ~ Peaks-Filter1000M.csv}
+```
+
+Polar's Python Code
+
+```
+> Streaming model 
+df = pl.scan_csv('Input/1000MillionRows.csv')
+filter = df.filter((((pl.col('Ledger') >= "L10") & (pl.col('Ledger') <= "L15")) | ((pl.col('Ledger') >= "L50") & (pl.col('Ledger') <= "L55")) | ((pl.col('Ledger') >= "L82") & (pl.col('Ledger') <= "L88"))) & (((pl.col('Account') >= 12222) & (pl.col('Account') <= 12888)) | ((pl.col('Account') >= 15555) & (pl.col('Account') <= 16888))) & ((pl.col('Project') > "B28") | (pl.col('Project') < "B22")))
+a = filter.collect(streaming=True)
+print("Number of selected rows: {}", filter.select(pl.count()).collect());
+path: pathlib.Path = "Output/Polars-Filter1000M.csv"
+a.write_csv(path)
+
+```
+
 ## Compare Programming Language
 
 Folder: https://github.com/hkpeaks/peaks-framework/tree/main/CompareProgrammingLanguage
