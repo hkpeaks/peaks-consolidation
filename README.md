@@ -51,24 +51,15 @@ FASTA format is a text-based format that supports bioinformatics. It is used for
 
 The first release version will support Windows/Linux. You can download it from the “Releases” section on this page. The initial version will cover the following command groups and commands:-
 
-1a. CurrentSetting - adjust the size of the partition of your large file and the number of threads to match your data and machine
-
-2. IO (a. ReadFile And b. WriteFile)
-
-3. Unique (a. Distinct Or b. GroupBy)
-
-4. JoinTable (a.BuildKeyValue And b.JoinKeyValue)
-
-5. Filter (a. Select Or b. SelectUnmatch)
-
-6a. SplitFile
-
-7a. Append - for Row/Column with adding Value/Formula
-
-Note:
-1,2,3.. represent command group
-a,b,c.. represent executable command
-If command group has over one commands, the command group e.g. "Filter" cannot be executed directly.
+|  Command Group | Command                        | Remark                                                   |                  
+|----------------|------------------------------- |--------------------------------------------------------- |
+| CurrentSetting | CurrentSetting                 | adjust the size of the partition of your large file      |
+|                |                                | and the number of threads to match your data and machine |
+| IO             | ReadFile, WriteFile, SplitFile |                                                          |
+| Unique         | Distinct, GroupBy              |                                                          |
+| JoinTable      | BuildKeyValue, JoinKeyValue    |                                                          |
+| Filter         | Select, SelectUnmatch          |                                                          |
+| Append         | Append                         |  for Row/Column with adding Value/Formula                |
 
 The first release version will not include sorting because it requires more research works to solve the root problem of sorting billions of rows by many sorting columns (A/D).
 
