@@ -128,29 +128,6 @@ See https://github.com/pola-rs/polars/issues/8231
 
 ![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/JoinTable.png)
 
-|          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
-|----------|------------- |----------|--------- | ----------------- |
-|          |              |     !    |    !     |                   |
-|Select @  |         0.01 |          |          |                   |
-|          |          0.1 |          |          |                   |
-|          |            1 |          |          |                   |
-|          |           10 |          |          |                   |
-|          |          100 |          |          |                   |
-|          |         1000 |          |          |                   |
-
-
-|          | Million Rows |  Polars  |  Peaks   | Faster / -Slower  |
-|----------|------------- |----------|--------- | ----------------- |
-|          |              |     !    |    !     |                   |
-|OrderBy @ |         0.01 |          |          |                   |
-|          |          0.1 |          |          |                   |
-|          |            1 |          |          |                   |
-|          |           10 |          |          |                   |
-|          |          100 |          |          |                   |
-|          |         1000 |          |          |                   |
-
-@  Filter and Orderby functions are under development.
-
 ##  Examples of Script for Peaks and Polars
 
 ### Distinct Function
