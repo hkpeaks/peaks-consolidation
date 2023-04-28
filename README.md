@@ -45,6 +45,7 @@ FASTA format is a text-based format that supports bioinformatics. It is used for
 
 ## Peaks DataFrame Release Version Is Coming Soon By Jun 2023
 ![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/InitialRelease.png =250x500)
+<img src="https://github.com/hkpeaks/peaks-framework/blob/main/InitialRelease.png" width=50% height=50%>
 The first release version will support Windows/Linux. You can download it from the “Releases” section on this page. The initial version will cover the following command groups and commands:-
 
 1a. CurrentSetting - adjust the size of the partition of your large file and the number of threads to match your data and machine
