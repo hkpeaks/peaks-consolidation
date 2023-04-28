@@ -30,9 +30,9 @@ FRAMEWORK: It is an open-source project that aims to promote an alternative stan
 
 LIBRARY: It will be provided a free version of Go library which allows to be operated by the framework. It is a high-performance calculation engine that can be configured by the framework in either streaming mode or in-memory mode easily. 
 
-RELEASES: It will be provided an all-in-one executable runtime for both Windows and Linux. The Python version will be available in the next stage.
+RELEASES: It will be provided an all-in-one executable runtime for both Windows and Linux. The gRPC version of Peaks Framework which supports Python/Node.js/Java/Rust/.Net will be available in the next stage.
 
-Both framework and library are written in Golang and will provide Python bindings. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of my considerations.
+Both framework and library are written in Golang. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of my considerations.
 
 ## File Format
 Currently, Peaks DataFrame supports tables in CSV file format only and will support other popular table formats such as XLSX, JSON, PARQUET and FASTA.
