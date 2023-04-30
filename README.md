@@ -308,14 +308,14 @@ Further Information: https://www.linkedin.com/posts/max01_benchmarking-pandas-gi
 
 Folder: https://github.com/hkpeaks/peaks-framework/tree/main/HighPerformanceWebPivotTable
 
-This is a first .net project before the author using Golang. The author will consider whether to re-implement this into Peaks DataFrame. Below is the source code of the original project with last bug fix in August 3rd, 2020.
+The author created a .NET project called “WebPivotTable” before using Golang. They are considering whether to re-implement this project into Peaks DataFrame. The original project’s source code can be found below. The last bug fix was made on August 3rd, 2020. On April 30th, 2023, the author published this project again. After downloading and building the runtime using Visual Studio 2022 Community Version, a folder called “youFast” was generated. Clicking the file will open the browser with default data. The websocket runs on local host “ws://127.0.0.1:5000/”. The websocket is open source and can be downloaded from https://github.com/statianzo/Fleck if necessary.
 
 https://youtu.be/yfJnYQBJ5ZY
 
 [![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/WebPivotTable/WebPivotTable.png)](http://www.youtube.com/watch?v=yfJnYQBJ5ZY "Web Pivot Table")
 
 ## Author's Experience in Dataframe Development
-The author had developed dataframe software five times during past 13 years, gaining experience in designing better data structures and algorithms that require fewer CPU and memory resources. He developed the software three times while employed by FlexSystem, the fourth time for YouFast Desktop - a high-performance Web Pivot Table, and the fifth time for WebNameSQL.
+The author had developed dataframe software five times during past 13 years, gaining experience in designing better data structures and algorithms that require fewer CPU and memory resources. He developed the software three times while employed by FlexSystem, the fourth time for YouFast Desktop - a high-performance Web Pivot Table, and the fifth time for WebNameSQL. 
 
 Peaks DataFrame which is expected to be the final research and development in dataframe software as its algorithms and data structures have been proven successful. It will be designing as a next-generation accounting software that specializes in management accounting and consolidation. Peaks DataFrame will also cover some special topics in machine learning and bioinformatics. So, it is obviously not to replace Polars, Pandas and Pytorch but rather complement them.
 
