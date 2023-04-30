@@ -28,6 +28,26 @@ The data structure implemented for the basic programming in a way that is simila
 
 When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 16GB RAM.
 
+## Release Version Is Coming Soon By Jun 2023
+
+<p align="center">
+<img src="https://github.com/hkpeaks/peaks-framework/blob/main/InitialRelease.png" width=50% height=50%>
+</p>
+
+The first release version will support Windows/Linux. You can download it from the “Releases” section on this page. The initial version will cover the following command groups and commands:-
+
+| Command Group  | Command                        | Remark                                                 |                  
+|----------------|------------------------------- |------------------------------------------------------- |
+| CurrentSetting | CurrentSetting                 | adjust the size of the partition of your large file    |
+|                |                                | and the number threads to match your data and machine  |
+| IO             | ReadFile, WriteFile, SplitFile |                                                        | 
+| Unique         | Distinct, GroupBy              |                                                        |
+| JoinTable      | BuildKeyValue, JoinKeyValue    | two commands must be configured together               |
+| Filter         | Select, SelectUnmatch          |                                                        |
+| Append         | Append                         | for row/column with adding value/formula               |
+
+The first release version will not include sorting because it requires more research works to solve the root problem of sorting billions of rows by many sorting columns (A/D).
+
 
 ## Resource Utilization Does Matter
 JoinTable is an ETL function that is frequently used. However, it has been reported that JoinTable can be problematic when processing tables with billions of rows. 
@@ -61,26 +81,6 @@ XLSX is a popular file format for accounting. It’s likely that Peaks will supp
 PARQUET is a format that is built to handle flat columnar storage data formats. It is designed for efficient data storage and retrieval. The format stores data in “row group” blocks that are divided into “column chunks” and then further divided into “data pages” .
 
 FASTA format is a text-based format that supports bioinformatics. It is used for representing either nucleotide sequences or amino acid (protein) sequences. In this format, nucleotides or amino acids are represented using single-letter codes for five nucleobases— adenine (A), cytosine (C), guanine (G), thymine (T), and uracil (U). Unknown bases are represented by the letter N. The human genome is a diploid genome that contains 3.2 billion nucleotides. These nucleotides are packed into 23 pairs of chromosomes.
-
-## Release Version Is Coming Soon By Jun 2023
-
-<p align="center">
-<img src="https://github.com/hkpeaks/peaks-framework/blob/main/InitialRelease.png" width=50% height=50%>
-</p>
-
-The first release version will support Windows/Linux. You can download it from the “Releases” section on this page. The initial version will cover the following command groups and commands:-
-
-| Command Group  | Command                        | Remark                                                 |                  
-|----------------|------------------------------- |------------------------------------------------------- |
-| CurrentSetting | CurrentSetting                 | adjust the size of the partition of your large file    |
-|                |                                | and the number threads to match your data and machine  |
-| IO             | ReadFile, WriteFile, SplitFile |                                                        | 
-| Unique         | Distinct, GroupBy              |                                                        |
-| JoinTable      | BuildKeyValue, JoinKeyValue    | two commands must be configured together               |
-| Filter         | Select, SelectUnmatch          |                                                        |
-| Append         | Append                         | for row/column with adding value/formula               |
-
-The first release version will not include sorting because it requires more research works to solve the root problem of sorting billions of rows by many sorting columns (A/D).
 
 ## Polars and Peaks Benchmarking
 
