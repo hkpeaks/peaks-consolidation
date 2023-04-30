@@ -308,10 +308,11 @@ Further Information: https://www.linkedin.com/posts/max01_benchmarking-pandas-gi
 
 Folder: https://github.com/hkpeaks/peaks-framework/tree/main/HighPerformanceWebPivotTable
 
-This is a first .net project before the author using Golang. The author will consider whether to re-implement this into Peaks DataFrame or publish this .net project directly.
+This is a first .net project before the author using Golang. The author will consider whether to re-implement this into Peaks DataFrame. Below is the source code of the original project with last bug fix in August 3rd, 2020.
+
 https://youtu.be/yfJnYQBJ5ZY
 
-[![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/HighPerformanceWebPivotTable/WebPivotTable.png)](http://www.youtube.com/watch?v=yfJnYQBJ5ZY "Web Pivot Table")
+[![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/WebPivotTable/WebPivotTable.png)](http://www.youtube.com/watch?v=yfJnYQBJ5ZY "Web Pivot Table")
 
 ## Author's Experience in Dataframe Development
 The author had developed dataframe software five times during past 13 years, gaining experience in designing better data structures and algorithms that require fewer CPU and memory resources. He developed the software three times while employed by FlexSystem, the fourth time for YouFast Desktop - a high-performance Web Pivot Table, and the fifth time for WebNameSQL.
