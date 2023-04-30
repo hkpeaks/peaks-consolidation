@@ -306,7 +306,7 @@ Further Information: https://www.linkedin.com/posts/max01_benchmarking-pandas-gi
 
 ## High Performance Web Pivot Table
 
-Folder: https://github.com/hkpeaks/peaks-framework/tree/main/HighPerformanceWebPivotTable
+Folder: https://github.com/hkpeaks/peaks-framework/tree/main/WebPivotTable
 
 The author created a .NET project called “WebPivotTable” before using Golang. He is considering whether to re-implement this visual into Peaks DataFrame. The original project’s source code can be found below. The last bug fix was made on August 3rd, 2020. On April 30th, 2023, the author published this project again. After downloading and building the runtime using Visual Studio 2022 Community Version, a folder called “youFast” was generated. Clicking a youFast which will start a websocket server and open your browser with default data. The app supports csv file only. The websocket runs on local host “ws://127.0.0.1:5000/”. The websocket is an open source and can be downloaded from https://github.com/statianzo/Fleck.
 
