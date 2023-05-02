@@ -325,9 +325,11 @@ When it comes to data structures, bytearray is one of the most useful and memory
 
 Next year, Peaks may offer a comprehensive consolidation software called ‘Peaks Consolidation’ that supports statutory compliance and management ad-hoc reporting for financial consolidation with thousands of business units and legal entities. It can solve massive data of account reconciliation, foreign currency translation, elimination of inter-company transactions, re-alignment of different year-end dates with different consolidation methods (i.e., proportional accounting, equity accounting, and full consolidation with calculation of minority interest). In addition, it standardizes your dataset and is empowered by a conditional mapping engine with effective date of change calculation rules. 
 
-The Peaks DataFrame can help you with basic accounting tasks such as amortization, voucher generation, and calculation of segmental multi-currencies account periodical balance.
+Peaks is planning to release a new software called ‘Peaks Consolidation’ next year. This software will help with statutory compliance and management ad-hoc reporting for financial consolidation with thousands of business units and legal entities. It can help you solve massive data of account reconciliation, foreign currency translation, elimination of inter-company transactions, re-alignment of different year-end dates with different consolidation methods (i.e., proportional accounting, equity accounting, and full consolidation with calculation of minority interest). It standardizes your dataset and is empowered by a conditional mapping engine with effective date of change calculation rules. This engine can be used to solve your ever-changing incentive plans for different stakeholder management. 
 
-Peaks Consolidation will support your advanced accounting. The mission of Peaks Accounting development roadmap is to empower you to achieve advanced accounting automation anywhere, progressing towards real-time accounting automation.
+Peaks DataFrame can help you with basic accounting tasks such as amortization, voucher generation, and calculation of segmental multi-currencies account periodical balance.
+
+Peaks Consolidation will extend to support your advanced accounting. The mission of Peaks Accounting development roadmap is to empower you to achieve advanced accounting automation anywhere, progressing towards real-time accounting automation.
 
 ## Latest News
 For latest news about this academic project, please refer to https://www.linkedin.com/in/max01/recent-activity/all/
