@@ -6,7 +6,7 @@
 4. [Resource Utilization Does Matter](#resource-utilization-does-matter)
 5. [Polars and Peaks Benchmarking](#polars-and-peaks-benchmarking)
 6. [From WebNameSQL to Peaks DataFrame](#from-webNamesql-to-peaks-dataFrame)
-7. [Peaks's Roadmap](#peaks's-roadmap)
+7. [Peaks Roadmap](#peaks-roadmap)
 8. [latest news](#latest-news)
 
 ## Introduction
@@ -343,7 +343,7 @@ Peaks DataFrame which is expected to be the final research and development in da
 
 When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM. The author had conducted some research in bioinformatics and had learned that RNA polymerase is responsible for transcribing DNA into RNA while ribosomes are responsible for translating RNA into proteins. The author was impressed by the high efficiency of protein production from transcription to translation, so the data model of Peaks is somewhat similar to these biological operations.
 
-## Peaks's Roadmap 
+## Peaks Roadmap 
 
 Based on user responses after releasing the first beta version, the next possible scenario is to release a new software called ‘Peaks Consolidation’ next year. This constitutes a redevelopment of the DotNet WebNameSQL accounting module into the Golang Peaks. This software will help with statutory compliance and management ad-hoc reporting for financial consolidation with thousands of business units and legal entities. 
 
