@@ -2,7 +2,7 @@
 
 1. [Introduction](#introduction)
 2. [Compare Programming Language](#compare-programming-language)
-3. [Trial Version Is Coming Soon By Jun 2023](#trial-version-is-coming-soon-by-jun-2023)
+3. [Trial Version Is Coming Soon](#trial-version-is-coming-soon)
 4. [Resource Utilization Does Matter](#resource-utilization-does-matter)
 5. [Polars and Peaks Benchmarking](#polars-and-peaks-benchmarking)
 6. [From WebNameSQL to Peaks DataFrame](#from-webNamesql-to-peaks-dataFrame)
@@ -39,13 +39,13 @@ The data structure implemented for the basic programming in a way that is simila
 
 When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 16GB RAM.
 
-## Trial Version Is Coming Soon By Jun 2023
+## Trial Version Is Coming Soon
 
 <p align="center">
 <img src="https://github.com/hkpeaks/peaks-framework/blob/main/InitialRelease.png" width=50% height=50%>
 </p>
 
-https://github.com/do-account is a place to publish free and trial version of Peaks DataFrame with use cases.
+https://github.com/do-account  is a platform where you can publish free and trial versions of Peaks DataFrame with use cases. The tentative date for publishing is by the end of June 2023.
 
 If you’re running a script with initial release of the Peaks DataFrame, you’ll have a 100-second timeout which should be more than enough for the 100-day trial period. If you’re not working with large datasets, a second should allow you to perform many steps of databending.
 
