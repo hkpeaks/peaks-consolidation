@@ -34,7 +34,7 @@ When it comes to data structures, bytearray is one of the most useful and memory
 <img src="https://github.com/hkpeaks/peaks-framework/blob/main/InitialRelease.png" width=50% height=50%>
 </p>
 
-The first release version will support Windows/Linux. You can download it from the “Releases” section on this page. The initial version will cover the following command groups and commands:-
+The initial version will cover the following command groups and commands:-
 
 | Command Group  | Command                        | Remark                                                 |                  
 |----------------|------------------------------- |------------------------------------------------------- |
