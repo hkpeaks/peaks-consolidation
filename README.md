@@ -34,6 +34,14 @@ When it comes to data structures, bytearray is one of the most useful and memory
 <img src="https://github.com/hkpeaks/peaks-framework/blob/main/InitialRelease.png" width=50% height=50%>
 </p>
 
+https://github.com/do-account is a place to publish free and trial version of Peaks DataFrame with use cases.
+
+If you’re running a script with initial release of the Peaks DataFrame, you’ll have a 100-second timeout which should be more than enough for the 100-day trial period. If you’re not working with large datasets, a second should allow you to perform many steps of databending.
+
+After the trial period ends, you can still use the app but there will be a 100MB file read/write limit. This is to encourage you to download the latest version again and again.
+
+The special arrangement of after trial period also removes your concern that the latest version will not be available in the future. It’s worth noting that rows of a 100MB file is more than what an Excel worksheet can handle.
+
 The initial version will cover the following command groups and commands:-
 
 | Command Group  | Command                        | Remark                                                 |                  
@@ -47,6 +55,8 @@ The initial version will cover the following command groups and commands:-
 | Append         | Append                         | for row/column with adding value/formula               |
 
 The first release version will not include sorting because it requires more research works to solve the root problem of sorting billions of rows by many sorting columns (A/D).
+
+
 
 
 ## Resource Utilization Does Matter
