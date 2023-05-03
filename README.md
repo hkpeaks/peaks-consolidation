@@ -6,8 +6,10 @@
 4. [Resource Utilization Does Matter](#resource-utilization-does-matter)
 5. [Polars and Peaks Benchmarking](#polars-and-peaks-benchmarking)
 6. [From WebNameSQL to Peaks DataFrame](#from-webNamesql-to-peaks-dataFrame)
-7. [Peaks Roadmap](#peaks-roadmap)
-8. [latest news](#latest-news)
+7. [High Performance Web Pivot Table](#high-performance-web-pivot-table)
+8. [Author Experience in Dataframe Development](#author-experience-in-dataframe-development)
+9. [Peaks Roadmap](#peaks-roadmap)
+10. [latest news](#latest-news)
 
 ## Introduction
 Peaks DataFrame is a personal academic project that aims to provide an alternative to SQL statements for processing billions of rows using streaming or in-memory model to accelerate dataframe. The project began on February 18th, 2023 in Hong Kong SAR and aims to achieve real-time processing of up to 10 million rows per second on a single computing device and also saving your investment in cloud computing.
