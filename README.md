@@ -49,7 +49,7 @@ When it comes to data structures, bytearray is one of the most useful and memory
 <img src="https://github.com/hkpeaks/peaks-framework/blob/main/InitialRelease.png" width=50% height=50%>
 </p>
 
-At https://github.com/do-account, you can download a free and trial versions of Peaks DataFrame with use cases. We are planning to publish it by the end of June 2023. If you encounter any bugs or how-to issues, please report them to the “issues” section of the repository “do-account”. The source code of Peaks Framework will be published in this repository. Therefore, if you have any bugs or how-to issues about the source code, please report them in the “peaks-framework” repository.
+At https://github.com/do-account, you can download a free and trial versions of Peaks DataFrame and Peaks DataFrame Viewer with use cases. For Peaks DataFrame Viewer, it is published on May 3rd, 2023. For Peaks DataFrame, we are planning to publish it by the end of June 2023. If you encounter any bugs or how-to issues, please report them to the “issues” section of the repository “do-account”. The source code of Peaks Framework will be published in this repository. Therefore, if you have any bugs or how-to issues about the source code, please report them in the “peaks-framework” repository.
 
 If you’re running a script with initial release of the Peaks DataFrame, you’ll have a 100-second timeout which should be more than enough for the 100-day trial period. If you’re not working with large datasets, a second should allow you to perform many steps of databending.
 
