@@ -7,11 +7,11 @@
 5. [Peaks Framework and Library](#peaks-framework-and-library)
 6. [File Format](#file-format)
 7. [Polars and Peaks Benchmarking](#polars-and-peaks-benchmarking)
-8. [From WebNameSQL to Peaks DataFrame](#from-webNamesql-to-peaks-dataFrame)
-9. [High Performance Web Pivot Table](#high-performance-web-pivot-table)
-10. [Author Experience in Dataframe Development](#author-experience-in-dataframe-development)
-11. [Peaks Roadmap](#peaks-roadmap)
-12. [Latest news](#latest-news)
+8. [Examples of Script for Peaks and Polars](#examples-of-script-for-peaks-and-polars)
+9. [From WebNameSQL to Peaks DataFrame](#from-webNamesql-to-peaks-dataFrame)
+10. [High Performance Web Pivot Table](#high-performance-web-pivot-table)
+11. [Author Experience in Dataframe Development](#author-experience-in-dataframe-development)
+12. [Peaks Roadmap](#peaks-roadmap)
 
 ## Introduction
 Peaks DataFrame is a personal academic project that aims to provide an alternative to SQL statements for processing billions of rows using streaming or in-memory model to accelerate dataframe. The project began on February 18th, 2023 in Hong Kong SAR and aims to achieve real-time processing of up to 10 million rows per second on a single computing device and also saving your investment in cloud computing.
