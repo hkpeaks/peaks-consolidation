@@ -3,7 +3,11 @@
 1. [Introduction](#introduction)
 2. [Compare Programming Language](#compare-programming-language)
 3. [Release Version Is Coming Soon By Jun 2023](#release-version-is-coming-soon-by-jun-2023)
-
+4. [Resource Utilization Does Matter](#resource-utilization-does-matter)
+5. [Polars and Peaks Benchmarking](#polars-and-peaks-benchmarking)
+6. [From WebNameSQL to Peaks DataFrame](#from-webNamesql-to-peaks-dataFrame)
+7. [Peaks's Roadmap](#peaks's-roadmap)
+8. [latest news](#latest-news)
 
 ## Introduction
 Peaks DataFrame is a personal academic project that aims to provide an alternative to SQL statements for processing billions of rows using streaming or in-memory model to accelerate dataframe. The project began on February 18th, 2023 in Hong Kong SAR and aims to achieve real-time processing of up to 10 million rows per second on a single computing device and also saving your investment in cloud computing.
@@ -65,8 +69,6 @@ The initial version will cover the following command groups and commands:-
 | Append         | Append                         | for row/column with adding value/formula               |
 
 The first release version will not include sorting because it requires more research works to solve the root problem of sorting billions of rows by many sorting columns (A/D).
-
-
 
 
 ## Resource Utilization Does Matter
