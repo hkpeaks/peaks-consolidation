@@ -42,6 +42,9 @@ After the trial period ends, you can still use the app but there will be a 100MB
 
 The special arrangement of after trial period also removes your concern that the latest version may not be available in the future. It’s worth noting that rows of a 100MB file is more than what an Excel worksheet can handle.
 
+About monthly or bi-monthly, new commands, enhancements and bug fixs will be added to subsequent trial versions. However, it will not include commands which involve complex
+implementation. Ready-to-use command scripts with sample data will be included in the distribution. For any reported critical bugs, it will be fixed and published as soon as practical.
+
 The initial version will cover the following command groups and commands:-
 
 | Command Group  | Command                        | Remark                                                 |                  
