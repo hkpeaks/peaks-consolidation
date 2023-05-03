@@ -2,7 +2,7 @@
 
 1. [Introduction](#introduction)
 2. [Compare Programming Language](#compare-programming-language)
-3. [Release Version Is Coming Soon By Jun 2023](#release-version-is-coming-soon-by-jun-2023)
+3. [Trial Version Is Coming Soon By Jun 2023](#trial-version-is-coming-soon-by-jun-2023)
 4. [Resource Utilization Does Matter](#resource-utilization-does-matter)
 5. [Polars and Peaks Benchmarking](#polars-and-peaks-benchmarking)
 6. [From WebNameSQL to Peaks DataFrame](#from-webNamesql-to-peaks-dataFrame)
@@ -39,7 +39,7 @@ The data structure implemented for the basic programming in a way that is simila
 
 When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 16GB RAM.
 
-## Release Version Is Coming Soon By Jun 2023
+## Trial Version Is Coming Soon By Jun 2023
 
 <p align="center">
 <img src="https://github.com/hkpeaks/peaks-framework/blob/main/InitialRelease.png" width=50% height=50%>
