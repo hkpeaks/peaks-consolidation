@@ -9,7 +9,7 @@
 7. [Polars and Peaks Benchmarking](#polars-and-peaks-benchmarking)
 8. [Examples of Script for Peaks and Polars](#examples-of-script-for-peaks-and-polars)
 9. [From WebNameSQL to Peaks DataFrame](#from-webNamesql-to-peaks-dataFrame)
-10. [High Performance Web Pivot Table](#high-performance-web-pivot-table)
+10. [Peaks DataFrame Viewer](#Peaks-DataFrame-Viewer)
 11. [Author Experience in Dataframe Development](#author-experience-in-dataframe-development)
 12. [Peaks Roadmap](#peaks-roadmap)
 
@@ -330,13 +330,13 @@ Commands to be re-implemented in the Peaks DataFrame will not be the same as Web
 
 Further Information: https://www.linkedin.com/posts/max01_benchmarking-pandas-github-activity-7054824689273098241-P3VS?utm_source=share&utm_medium=member_desktop
 
-## High Performance Web Pivot Table
+## Peaks DataFrame Viewer
 
 Source Code: https://github.com/hkpeaks/peaks-framework/tree/main/WebPivotTable
 
 Releases: https://github.com/do-account/PeaksDataFrameWeb
 
-The author created a .NET project called “WebPivotTable” before using Golang. He is considering whether to re-implement this visual into Peaks DataFrame. The original project’s source code can be found above. The last bug fix was made on August 3rd, 2020. On April 30th, 2023, the author published this project again. After downloading and building the runtime using Visual Studio 2022 Community Version, a folder called “youFast” was generated. Clicking a youFast which will start a websocket server and open your browser with default data. The app supports csv file only. The websocket runs on local host “ws://127.0.0.1:5000/”. The websocket is an open source and can be downloaded from https://github.com/statianzo/Fleck.
+The author created a .NET project called “youFast Desktop” before using Golang. He is considering whether to re-implement this visual into Peaks DataFrame. The original project’s source code can be found above. The last bug fix was made on August 3rd, 2020. On April 30th, 2023, the author published this project again. After downloading and building the runtime using Visual Studio 2022 Community Version, a folder called “youFast” was generated. Clicking a youFast which will start a websocket server and open your browser with default data. The app supports csv file only. The websocket runs on local host “ws://127.0.0.1:5000/”. The websocket is an open source and can be downloaded from https://github.com/statianzo/Fleck.
 
 https://youtu.be/yfJnYQBJ5ZY
 
