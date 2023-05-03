@@ -40,7 +40,7 @@ If you’re running a script with initial release of the Peaks DataFrame, you’
 
 After the trial period ends, you can still use the app but there will be a 100MB file read/write limit. This is to encourage you to download the latest version again and again.
 
-The special arrangement of after trial period also removes your concern that the latest version will not be available in the future. It’s worth noting that rows of a 100MB file is more than what an Excel worksheet can handle.
+The special arrangement of after trial period also removes your concern that the latest version may not be available in the future. It’s worth noting that rows of a 100MB file is more than what an Excel worksheet can handle.
 
 The initial version will cover the following command groups and commands:-
 
