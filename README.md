@@ -328,6 +328,8 @@ WebNameSQL-Go Version is a prototype that uses Golang to rewrite some of the fun
 
 Commands to be re-implemented in the Peaks DataFrame will not be the same as WebNameSQL. Considering there are too many commands for your learning and practice, further consolidation and improvement is necessary. The use cases are no longer restricted to accounting; for example, some use cases will cover bioinformatics. Very high performance is essential for this project, so algorithms and data structure of Peaks will be a significant different from WebNameSQL.
 
+YouTube Demo Video: https://youtu.be/6hwbQmTXzMc
+
 [![WebNameSQL](https://github.com/hkpeaks/peaks-framework/blob/main/WebNameSQL-GoVersion/WebNameSQLScreen.png)](https://youtu.be/6hwbQmTXzMc "WebNameSQL")
 
 Further Information: https://www.linkedin.com/posts/max01_benchmarking-pandas-github-activity-7054824689273098241-P3VS?utm_source=share&utm_medium=member_desktop
@@ -340,7 +342,7 @@ Releases: https://github.com/do-account/PeaksDataFrameWeb
 
 The author created a .NET project called “youFast Desktop” before using Golang. He is considering whether to re-implement this visual into Peaks DataFrame. The original project’s source code can be found above. The last bug fix was made on August 3rd, 2020. On April 30th, 2023, the author published this project again. After downloading and building the runtime using Visual Studio 2022 Community Version, a folder called “youFast” was generated. Clicking a youFast which will start a websocket server and open your browser with default data. The app supports csv file only. The websocket runs on local host “ws://127.0.0.1:5000/”. The websocket is an open source and can be downloaded from https://github.com/statianzo/Fleck.
 
-https://youtu.be/yfJnYQBJ5ZY
+YouTube Demo Video: https://youtu.be/yfJnYQBJ5ZY
 
 [![Peaks DataFrame Viwer](https://github.com/hkpeaks/peaks-framework/blob/main/PeaksDataFrameViewer/WebPivotTable.png)](http://www.youtube.com/watch?v=yfJnYQBJ5ZY "Peaks DataFrame Viwer")
 
