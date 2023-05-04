@@ -1,6 +1,6 @@
 # Table of Contents
 
-## Current
+### Current
 1. [Introduction](#introduction)
 2. [Compare Programming Language](#compare-programming-language)
 3. [Trial Version Is Coming Soon](#trial-version-is-coming-soon)
@@ -10,12 +10,12 @@
 7. [Polars and Peaks Benchmarking](#polars-and-peaks-benchmarking)
 8. [Examples of Script for Peaks and Polars](#examples-of-script-for-peaks-and-polars)
 
-## Past
+### Past
 9. [From WebNameSQL to Peaks DataFrame](#from-webNamesql-to-peaks-dataFrame)
 10. [Peaks DataFrame Viewer](#Peaks-DataFrame-Viewer)
 11. [Author Experience in Dataframe Development](#author-experience-in-dataframe-development)
 
-## Future
+### Future
 12. [Peaks Roadmap](#peaks-roadmap)
 13. [Listening to Your Need](#Listening-to-Your-Need)
 14. [Latest News](#Latest-News)
