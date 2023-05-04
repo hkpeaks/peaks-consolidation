@@ -12,6 +12,8 @@
 10. [Peaks DataFrame Viewer](#Peaks-DataFrame-Viewer)
 11. [Author Experience in Dataframe Development](#author-experience-in-dataframe-development)
 12. [Peaks Roadmap](#peaks-roadmap)
+13. [Listening to Your Need](#Listening-to-Your-Need)
+14. [Latest News](#Latest-News)
 
 ## Introduction
 Peaks DataFrame is a personal academic project that aims to provide an alternative to SQL statements for processing billions of rows using streaming or in-memory model to accelerate dataframe. The project began on February 18th, 2023 in Hong Kong SAR and aims to achieve real-time processing of up to 10 million rows per second on a single computing device and also saving your investment in cloud computing.
@@ -359,7 +361,7 @@ Peaks Consolidation can help you solve massive data of account reconciliation, f
 
 Peaks DataFrame can help you with basic accounting tasks such as amortization, voucher generation, and calculation of segmental multi-currencies account periodical balance. Peaks Consolidation will extend to support your advanced accounting. The mission of Peaks Accounting development roadmap is to empower you to achieve advanced accounting automation anywhere, progressing towards real-time accounting automation.
 
-## Listen to Your Need
+## Listening to Your Need
 
 In the past, the author has developed two datavisualization tools for DotNet using HTML5 standards with a focus on front-end development. Currently, he am working on back-end development with a focus on dataframe acceleration that supports billions of rows. He is exploring whether it is justified to do research on frontend (data visualization) and backend (data engineering) at the same time. He think it all depends on whether the data engineering and web community demands an integrated back-end and front-end stub.
 
@@ -369,11 +371,11 @@ In 2020 and 2021, the author has worked on two visual projects for DotNet which 
 youFast Desktop: https://lnkd.in/gGB34cH
 WebNameSQL: https://lnkd.in/gkfREsvK respectively.
 
-In 2022, After doing a WebNameSQL-Go prototype, he took a long rest from coding stubs to learn bioinformatics and machinelearning (TensorFlow and Pytorch).
+In 2022, after doing a WebNameSQL-Go prototype, he took a long rest from coding stubs to learn bioinformatics and machinelearning (TensorFlow and Pytorch).
 
-In 2023, He is working on the Peaks DataFrame Project with Cross Platform which is empowered by #gRPC and supports different programming languages such as #Rust, #Golang, #Node.js, #DotNet and #Python.
+In 2023, He is working on the Peaks DataFrame Project with Cross Platform which is empowered by #gRPC and supports different programming languages such as Rust, Golang, Node.js, DotNet and Python.
  
-After delivery of initial trial version of Peaks DataFrame, he will make decision whether he shall work on front-end and back-end research concurrently. It depends a collective views from you.
+After the delivery of the initial trial version of Peaks DataFrame, the author will make a decision on whether he should work on front-end and back-end research concurrently. It depends on collective views from you.
 
 ## Latest News
 For latest news about this academic project, please refer to https://www.linkedin.com/in/max01/recent-activity/all/
