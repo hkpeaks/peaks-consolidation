@@ -363,7 +363,7 @@ Peaks DataFrame can help you with basic accounting tasks such as amortization, v
 
 ## Listening to Your Need
 
-In the past, the author has developed two datavisualization tools for DotNet using HTML5 standards with a focus on front-end development. Currently, he am working on back-end development with a focus on dataframe acceleration that supports billions of rows. He is exploring whether it is justified to do research on frontend (data visualization) and backend (data engineering) at the same time. He think it all depends on whether the data engineering and web community demands an integrated back-end and front-end stub.
+In the past, the author has developed two data visualization tools for DotNet using HTML5 standards with a focus on front-end development. Currently, he am working on back-end development with a focus on dataframe acceleration that supports billions of rows. He is exploring whether it is justified to do research on frontend (data visualization) and backend (data engineering) at the same time. He think it all depends on whether the data engineering and web community demands an integrated back-end and front-end stub.
 
 The data visual stub pf Peaks DataFrame Viwewe (Previously known as youFast Desktop) is built by DotNet+CSS+Javascript+Websocket without using ASP Web framework. If I work on front-end stub again, he will consider this combination Golang+Python+Javascript(with or without React.js)+gRPC, so it can support Polars, Peaks, and Pandas user groups at the same time.
 
