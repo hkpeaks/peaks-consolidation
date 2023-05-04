@@ -357,7 +357,7 @@ YouTube Demo Video: https://youtu.be/yfJnYQBJ5ZY
 
 The author is a seasoned accountant and IT professional with over three decades of experience. He qualified as an accountant in 1998 and has worked with some of Hong Kong listed companies, in various capacities.
 
-He was an Assistant Chief Accountant at PYI/Paul Y. Group from 2006 to 2008, where he oversaw the daily finance operations and led the successful implementation of FlexAccount V10 for two listed companies and their subsidiaries.
+He was an Assistant Chief Accountant at PYI/Paul Y. Group from 2006 to 2008, where he managed the daily accounting operations of PYI Group and oversaw the implementation of FlexAccount V10 for two listed companies and their subsidiaries.
 
 He was an Assistant Finance Manager at Giordano from 2008 to 2010, where he conducted user requirement analysis and solution sourcing for automating the consolidated financial statements of the listed company. He recommended FlexSystem to customize its draft ledger and query technology for the financial consolidation needs.
 
