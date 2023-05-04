@@ -354,9 +354,13 @@ YouTube Demo Video: https://youtu.be/yfJnYQBJ5ZY
 [![Peaks DataFrame Viwer](https://github.com/hkpeaks/peaks-framework/blob/main/PeaksDataFrameViewer/WebPivotTable.png)](http://www.youtube.com/watch?v=yfJnYQBJ5ZY "Peaks DataFrame Viwer")
 
 ## Author Experience in Dataframe Development
-The author had developed dataframe software five times during past 13 years, gaining experience in designing better data structures and algorithms that require fewer CPU and memory resources. He developed the software three times while employed by FlexSystem, the fourth time for YouFast Desktop - a high-performance Web Pivot Table, and the fifth time for WebNameSQL. 
+The author has over 30 years of Accounting and IT experience. Below mention experiences most related to one company - FlexSystem.
 
-Peaks DataFrame which is expected to be the final research and development in dataframe software as its algorithms and data structures have been proven successful. It will be designing as a next-generation accounting software that specializes in management accounting and consolidation. Peaks DataFrame will also cover some special topics in machine learning and bioinformatics. So, it is obviously not to replace Polars, Pandas and Pytorch but rather complement them. 
+From 2006 to 2008, he worked as an Assistant Chief Accountant at PYI/Paul Y. Group. In addition to managing day-to-day finance operations, he led the implementation of FlexAccount for two listed companies and their subsidiaries.
+
+From 2008 to 2020, he worked as an Assistant Finance Manager at Giordano. He was responsible for user requirement study and solution sourcing to implement automation for preparation of consolidated financial statements of the listed company. The final results is that the management chose FlexSystem to customize its draft ledger technology and EIQX suitable for the requirements of Financial Consolidation.
+
+From 2010 to 2020, he worked as a consultant at FlexSystem. He gained experience with three data frame software programs: FESA Consolidation, LedgerBase and FlexCalc.
 
 In 2020 and 2021, the author has worked on two visual projects for DotNet which you can find here:
 youFast Desktop: https://lnkd.in/gGB34cH
@@ -365,6 +369,8 @@ WebNameSQL: https://lnkd.in/gkfREsvK respectively.
 In 2022, after doing a WebNameSQL-Go prototype, he took a long rest from coding stubs to learn bioinformatics and machine learning (TensorFlow and Pytorch).
 
 In 2023, He is working on the cross platform Peaks DataFrame Project which is empowered by gRPC to supports different programming languages such as Rust, Golang, Node.js, DotNet and Python.
+
+Peaks DataFrame which is expected to be the final research and development in dataframe software as its algorithms and data structures have been proven successful. It will be designing as a next-generation accounting software that specializes in management accounting and consolidation. Peaks DataFrame will also cover some special topics in machine learning and bioinformatics. So, it is obviously not to replace Polars, Pandas and Pytorch but rather complement them. 
 
 ## Peaks Roadmap 
 
