@@ -365,7 +365,7 @@ He was a consultant at FlexSystem from 2010 to 2020, where he acquired extensive
 
 He retired in 2020 due to the COVID-19 pandemic, but continued to work on two visual projects using DotNet and HTML5: youFast Desktop (https://lnkd.in/gGB34cH) and WebNameSQL (https://lnkd.in/gkfREsvK).
 
-He took a break from coding stubs in 2022 and learned bioinformatics and machine learning (TensorFlow and Pytorch).
+He finished a prototype that migrated the WebNameSQL project from DotNet to Golang in the first four months of 2022. Then he took a break from coding stubs and explored bioinformatics and machine learning using TensorFlow and Pytorch.
 
 He is currently working on the cross platform Peaks DataFrame project, which uses gRPC to support different programming languages such as Rust, Golang, Node.js, DotNet and Python.
 
