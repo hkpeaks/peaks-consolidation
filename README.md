@@ -367,7 +367,7 @@ He retired in 2020 due to the COVID-19 pandemic, but continued to work on two vi
 
 He finished a prototype that migrated the WebNameSQL project from DotNet to Golang in the first four months of 2022. Then he took a break from coding stubs and explored bioinformatics and machine learning using TensorFlow and Pytorch.
 
-He is currently working on the cross platform Peaks DataFrame project, which uses gRPC to support different programming languages such as Rust, Golang, Node.js, DotNet and Python.
+He is currently working on the cross platform Peaks DataFrame project, which uses gRPC to support different programming languages such as Rust, Golang, Node.js, DotNet and Python. He is 55 years old and remain young in mindset. 
 
 Peaks DataFrame which is expected to be the final research and development in dataframe software as its algorithms and data structures have been proven successful. It will be designing as a next-generation accounting software that specializes in management accounting and consolidation. Peaks DataFrame will also cover some special topics in machine learning and bioinformatics. So, it is obviously not to replace Polars, Pandas and Pytorch but rather complement them. 
 
