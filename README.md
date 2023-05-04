@@ -363,9 +363,9 @@ Peaks DataFrame can help you with basic accounting tasks such as amortization, v
 
 ## Listening to Your Need
 
-In the past, the author has developed two data visualization tools for DotNet using HTML5 standards with a focus on front-end development. Currently, he am working on back-end development with a focus on dataframe acceleration that supports billions of rows. He is exploring whether it is justified to do research on frontend (data visualization) and backend (data engineering) at the same time. He think it all depends on whether the data engineering and web community demands an integrated back-end and front-end stub.
+In the past, the author has developed two data visualization tools using DotNet and HTML5 with a focus on front-end development. Currently, he is working on back-end development with a focus on dataframe acceleration that supports billions of rows. He is exploring whether it is justified to do research on frontend (data visualization) and backend (data engineering) at the same time. He think it all depends on whether the data visualization and the data engineering community demands an integrated front-end and back-end stub.
 
-The data visual stub pf Peaks DataFrame Viwewe (Previously known as youFast Desktop) is built by DotNet+CSS+Javascript+Websocket without using ASP Web framework. If I work on front-end stub again, he will consider this combination Golang+Python+Javascript(with or without React.js)+gRPC, so it can support Polars, Peaks, and Pandas user groups at the same time.
+The data visual stub of Peaks DataFrame Viwewe (Previously known as youFast Desktop) is built by DotNet+CSS+Javascript+Websocket without using ASP Web framework. If he works on front-end stub again, he will consider this combination Golang+Python+Javascript(with or without React.js)+gRPC, so it can support Polars, Peaks, and Pandas user groups at the same time.
 
 In 2020 and 2021, the author has worked on two visual projects for DotNet which you can find here:
 youFast Desktop: https://lnkd.in/gGB34cH
@@ -373,7 +373,7 @@ WebNameSQL: https://lnkd.in/gkfREsvK respectively.
 
 In 2022, after doing a WebNameSQL-Go prototype, he took a long rest from coding stubs to learn bioinformatics and machinelearning (TensorFlow and Pytorch).
 
-In 2023, He is working on the Peaks DataFrame Project with Cross Platform which is empowered by #gRPC and supports different programming languages such as Rust, Golang, Node.js, DotNet and Python.
+In 2023, He is working on the Peaks DataFrame Project with cross platform which is empowered by gRPC to supports different programming languages such as Rust, Golang, Node.js, DotNet and Python.
  
 After the delivery of the initial trial version of Peaks DataFrame, the author will make a decision on whether he should work on front-end and back-end research concurrently. It depends on collective views from you.
 
