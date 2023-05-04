@@ -358,7 +358,7 @@ The author has over 30 years of Accounting and IT experience. Below mention expe
 
 From 2006 to 2008, he worked as an Assistant Chief Accountant at PYI/Paul Y. Group. In addition to managing day-to-day finance operations, he led the implementation of FlexAccount for two listed companies and their subsidiaries.
 
-From 2008 to 2020, he worked as an Assistant Finance Manager at Giordano. He was responsible for user requirement study and solution sourcing to implement automation for preparation of consolidated financial statements of the listed company. The final results is that the management chose FlexSystem to customize its draft ledger technology and EIQX suitable for the requirements of Financial Consolidation.
+From 2008 to 2010, he worked as an Assistant Finance Manager at Giordano. He was responsible for user requirement study and solution sourcing to implement automation for preparation of consolidated financial statements of the listed company. The final results is that the management chose FlexSystem to customize its draft ledger technology and EIQX suitable for the requirements of Financial Consolidation.
 
 From 2010 to 2020, he worked as a consultant at FlexSystem. He gained experience with three data frame software programs: FESA Consolidation, LedgerBase and FlexCalc.
 
