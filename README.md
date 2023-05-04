@@ -371,9 +371,9 @@ In 2020 and 2021, the author has worked on two visual projects for DotNet which 
 youFast Desktop: https://lnkd.in/gGB34cH
 WebNameSQL: https://lnkd.in/gkfREsvK respectively.
 
-In 2022, after doing a WebNameSQL-Go prototype, he took a long rest from coding stubs to learn bioinformatics and machinelearning (TensorFlow and Pytorch).
+In 2022, after doing a WebNameSQL-Go prototype, he took a long rest from coding stubs to learn bioinformatics and machine learning (TensorFlow and Pytorch).
 
-In 2023, He is working on the Peaks DataFrame Project with cross platform which is empowered by gRPC to supports different programming languages such as Rust, Golang, Node.js, DotNet and Python.
+In 2023, He is working on the cross platform Peaks DataFrame Project which is empowered by gRPC to supports different programming languages such as Rust, Golang, Node.js, DotNet and Python.
  
 After the delivery of the initial trial version of Peaks DataFrame, the author will make a decision on whether he should work on front-end and back-end research concurrently. It depends on collective views from you.
 
