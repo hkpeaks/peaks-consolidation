@@ -25,6 +25,8 @@ Peaks DataFrame is a personal academic project that aims to provide an alternati
 
 Currently, Peaks DataFrame have been innovating and testing a set of algorithms and data structures to support profound acceleration of the dataframe with limited memory. One of the project’s expected outcomes is to solve the data explosion that came with data capture from IoT devices, ERP, internet and data lake. By using a proper script settings, it can support streaming and in-memory models.
 
+When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM. The author had conducted some research in bioinformatics and had learned that RNA polymerase is responsible for transcribing DNA into RNA while ribosomes are responsible for translating RNA into proteins. The author was impressed by the high efficiency of protein production from transcription to translation, so the data model of Peaks is somewhat similar to these biological operations.
+
 ## Compare Programming Language
 
 Folder: https://github.com/hkpeaks/peaks-framework/tree/main/CompareProgrammingLanguage
@@ -356,7 +358,13 @@ The author had developed dataframe software five times during past 13 years, gai
 
 Peaks DataFrame which is expected to be the final research and development in dataframe software as its algorithms and data structures have been proven successful. It will be designing as a next-generation accounting software that specializes in management accounting and consolidation. Peaks DataFrame will also cover some special topics in machine learning and bioinformatics. So, it is obviously not to replace Polars, Pandas and Pytorch but rather complement them. 
 
-When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM. The author had conducted some research in bioinformatics and had learned that RNA polymerase is responsible for transcribing DNA into RNA while ribosomes are responsible for translating RNA into proteins. The author was impressed by the high efficiency of protein production from transcription to translation, so the data model of Peaks is somewhat similar to these biological operations.
+In 2020 and 2021, the author has worked on two visual projects for DotNet which you can find here:
+youFast Desktop: https://lnkd.in/gGB34cH
+WebNameSQL: https://lnkd.in/gkfREsvK respectively.
+
+In 2022, after doing a WebNameSQL-Go prototype, he took a long rest from coding stubs to learn bioinformatics and machine learning (TensorFlow and Pytorch).
+
+In 2023, He is working on the cross platform Peaks DataFrame Project which is empowered by gRPC to supports different programming languages such as Rust, Golang, Node.js, DotNet and Python.
 
 ## Peaks Roadmap 
 
@@ -371,14 +379,6 @@ Peaks DataFrame can help you with basic accounting tasks such as amortization, v
 In the past, the author has developed two data visualization tools using DotNet and HTML5 with a focus on front-end development. Currently, he is working on back-end development with a focus on dataframe acceleration that supports billions of rows. He is exploring whether it is justified to do research on frontend (data visualization) and backend (data engineering) at the same time. He think it all depends on whether the data visualization and the data engineering community demands an integrated front-end and back-end stub.
 
 The data visual stub of Peaks DataFrame Viwewe (Previously known as youFast Desktop) is built by DotNet+CSS+Javascript+Websocket without using ASP Web framework. If he works on front-end stub again, he will consider this combination Golang+Python+Javascript(with or without React.js)+gRPC, so it can support Polars, Peaks, and Pandas user groups at the same time.
-
-In 2020 and 2021, the author has worked on two visual projects for DotNet which you can find here:
-youFast Desktop: https://lnkd.in/gGB34cH
-WebNameSQL: https://lnkd.in/gkfREsvK respectively.
-
-In 2022, after doing a WebNameSQL-Go prototype, he took a long rest from coding stubs to learn bioinformatics and machine learning (TensorFlow and Pytorch).
-
-In 2023, He is working on the cross platform Peaks DataFrame Project which is empowered by gRPC to supports different programming languages such as Rust, Golang, Node.js, DotNet and Python.
  
 After the delivery of the initial trial version of Peaks DataFrame, the author will make a decision on whether he should work on front-end and back-end research concurrently. It depends on collective views from you.
 
