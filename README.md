@@ -355,19 +355,19 @@ YouTube Demo Video: https://youtu.be/yfJnYQBJ5ZY
 
 ## Author Experience in Dataframe Development
 
-The author has over 30 years of experience in Accounting and Information Technology, becoming a qualified accountant in 1998 after passing ACCA examination in 1997. Much of this experience is related to a company called FlexSystem.
+The author is a seasoned accountant and IT professional with over three decades of experience. He qualified as an accountant in 1998 and has worked with FlexSystem, a leading software company, in various capacities.
 
-From 2006 to 2008, he worked as an Assistant Chief Accountant at PYI/Paul Y. Group. In addition to managing day-to-day finance operations, he led the implementation of FlexAccount V10 for two listed companies and over hundred of their subsidiaries.
+He was an Assistant Chief Accountant at PYI/Paul Y. Group from 2006 to 2008, where he oversaw the daily finance operations and led the successful implementation of FlexAccount V10 for two listed companies and their subsidiaries.
 
-From 2008 to 2010, he worked as an Assistant Finance Manager at Giordano. He was responsible for user requirement study and solution sourcing to implement automation for preparation of consolidated financial statements of the listed company. The final results is that the management chose FlexSystem to customize its draft ledger and query technology that suitable for the requirements of Financial Consolidation.
+He was an Assistant Finance Manager at Giordano from 2008 to 2010, where he conducted user requirement analysis and solution sourcing for automating the consolidated financial statements of the listed company. He recommended FlexSystem to customize its draft ledger and query technology for the financial consolidation needs.
 
-From 2010 to 2020, he worked as a consultant at FlexSystem. He gained extensive experience with three dataframe software development: FESA Consolidation, LedgerBase and FlexCalc.
+He was a consultant at FlexSystem from 2010 to 2020, where he acquired extensive experience with three dataframe software development: FESA Consolidation, LedgerBase and FlexCalc.
 
-In 2020 and 2021, the author is retired as result from the COVID-19, has continued to work on two visual projects using DotNet and HTML5 which you can find here: youFast Desktop: https://lnkd.in/gGB34cH WebNameSQL: https://lnkd.in/gkfREsvK respectively.
+He retired in 2020 due to the COVID-19 pandemic, but continued to work on two visual projects using DotNet and HTML5: youFast Desktop (https://lnkd.in/gGB34cH) and WebNameSQL (https://lnkd.in/gkfREsvK).
 
-In 2022, after doing a WebNameSQL-Go prototype, he took a long rest from coding stubs to learn bioinformatics and machine learning (TensorFlow and Pytorch).
+He took a break from coding stubs in 2022 and learned bioinformatics and machine learning (TensorFlow and Pytorch).
 
-In 2023, He is working on the cross platform Peaks DataFrame project which is empowered by gRPC to supports different programming languages such as Rust, Golang, Node.js, DotNet and Python.
+He is currently working on the cross platform Peaks DataFrame project, which uses gRPC to support different programming languages such as Rust, Golang, Node.js, DotNet and Python.
 
 Peaks DataFrame which is expected to be the final research and development in dataframe software as its algorithms and data structures have been proven successful. It will be designing as a next-generation accounting software that specializes in management accounting and consolidation. Peaks DataFrame will also cover some special topics in machine learning and bioinformatics. So, it is obviously not to replace Polars, Pandas and Pytorch but rather complement them. 
 
