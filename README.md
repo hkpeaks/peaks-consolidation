@@ -332,8 +332,6 @@ YouTube Demo Video: https://youtu.be/6hwbQmTXzMc
 
 [![WebNameSQL](https://github.com/hkpeaks/peaks-framework/blob/main/WebNameSQL-GoVersion/WebNameSQLScreen.png)](https://youtu.be/6hwbQmTXzMc "WebNameSQL")
 
-Further Information: https://www.linkedin.com/posts/max01_benchmarking-pandas-github-activity-7054824689273098241-P3VS?utm_source=share&utm_medium=member_desktop
-
 ## Peaks DataFrame Viewer
 
 Source Code: https://github.com/hkpeaks/peaks-framework/tree/main/WebPivotTable
@@ -361,8 +359,21 @@ Peaks Consolidation can help you solve massive data of account reconciliation, f
 
 Peaks DataFrame can help you with basic accounting tasks such as amortization, voucher generation, and calculation of segmental multi-currencies account periodical balance. Peaks Consolidation will extend to support your advanced accounting. The mission of Peaks Accounting development roadmap is to empower you to achieve advanced accounting automation anywhere, progressing towards real-time accounting automation.
 
+## Listen to Your Need
+
+In the past, the author has developed two datavisualization tools for DotNet using HTML5 standards with a focus on front-end development. Currently, he am working on back-end development with a focus on dataframe acceleration that supports billions of rows. He is exploring whether it is justified to do research on frontend (data visualization) and backend (data engineering) at the same time. He think it all depends on whether the data engineering and web community demands an integrated back-end and front-end stub.
+
+The data visual stub pf Peaks DataFrame Viwewe (Previously known as youFast Desktop) is built by DotNet+CSS+Javascript+Websocket without using ASP Web framework. If I work on front-end stub again, he will consider this combination Golang+Python+Javascript(with or without React.js)+gRPC, so it can support Polars, Peaks, and Pandas user groups at the same time.
+
+In 2020 and 2021, the author has worked on two visual projects for DotNet which you can find here:
+youFast Desktop: https://lnkd.in/gGB34cH
+WebNameSQL: https://lnkd.in/gkfREsvK respectively.
+
+In 2022, After doing a WebNameSQL-Go prototype, he took a long rest from coding stubs to learn bioinformatics and machinelearning (TensorFlow and Pytorch).
+
+In 2023, He is working on the Peaks DataFrame Project with Cross Platform which is empowered by #gRPC and supports different programming languages such as #Rust, #Golang, #Node.js, #DotNet and #Python.
+ 
+After delivery of initial trial version of Peaks DataFrame, he will make decision whether he shall work on front-end and back-end research concurrently. It depends a collective views from you.
+
 ## Latest News
 For latest news about this academic project, please refer to https://www.linkedin.com/in/max01/recent-activity/all/
-
-
-
