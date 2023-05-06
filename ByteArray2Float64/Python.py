@@ -1,5 +1,3 @@
-Sure! Here's the Python version of the code you provided:
-```python
 def ByteArray2Float64(current_cell):
     float_number = 0
     multiply10Pow = 0
