@@ -1,8 +1,9 @@
 ## Convert Byte Array to 64-Bit Floating Point Directly
 
+### Performance Issue
 This function is derived from the development of GroupBy function in Peaks DataFrame. The author believes that this function is critical to support calculating periodical analysis account balance with different base and functional currencies for advanced accounting automation. It shall be the strongest function of Peaks DataFrame. However, from the very beginning, Polars has a very strong GroupBy in relatively small datasets e.g. <= 10 million rows and numerical calculation. Peaks is very strong in most of commands for very large datasets e.g >= 1 billion rows but weak in numerical calculation.
 
-### Empowering customisation
+### Empowering Customisation
 On May 4th 2023, the author made a big discovery on how to solve the root issues of numerical calculation. Now Peaks can convert your byte extracted from file to in-memory float64 number to support calculation directly. Previously it must be converted from bytearray to string and then to float64. Extra benefits include being able to recognize (123.45) as -123.45 and recognize 23apple223.77 as 0 rather than crash or blank results. It can support further customization to suit user requirements e.g. to recognize (123,456.789) as -123456.789 directly.
 
 ### Data Cleansing
