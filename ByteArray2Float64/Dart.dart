@@ -1,80 +1,108 @@
-func ByteArray2Float64(current_cell []byte) float64 {
+double byteArray2Float64(List<int> currentCell) {
+  double floatNumber = 0.0;
+  int multiply10Pow = 0;
+  int divide10Pow = 0;
+  int position = 0;
+  int offset = 0;
+  int currentByte = 0;
+  int leftByte = 0;
+  bool isDotExist = false;
+  bool isIntegerComplete = false;
+  bool isNegative = false;
+  bool isInvalidNumber = false;
 
-	var float_number float64	
-	var multiply10Pow, divide10Pow, position, offset, current_byte, left_byte int	
-	var is_dot_exist, is_integer_complete, is_negative, is_invalid_number  = false, false, false, false
-	
-	var total_byte = len(current_cell)
+  int totalByte = currentCell.length;
 
-	for current_byte < total_byte {
-		switch current_cell[current_byte] {
-		case '.':
-			is_dot_exist = true
-		case '-':
-			current_cell[current_byte] = '0'
-			is_negative = true
-		case '(':
-			fallthrough
-		case ')':
-			fallthrough
-		
-		default:
-			if current_cell[current_byte] < 48 || current_cell[current_byte] > 57 {
-				is_invalid_number = true
-			}
-		}		
+  while (currentByte < totalByte) {
+    switch (String.fromCharCode(currentCell[currentByte])) {
+      case ".":
+        isDotExist = true;
+        break;
+      case "-":
+        currentCell[currentByte] = "0".codeUnitAt(0);
+        isNegative = true;
+        break;
+      case "(":
+      case ")":
+        break;
+      default:
+        if (currentCell[currentByte] < "0".codeUnitAt(0) ||
+            currentCell[currentByte] > "9".codeUnitAt(0)) {
+          isInvalidNumber = true;
+        }
+    }
 
-		if !is_integer_complete {
-			if is_dot_exist || (!is_dot_exist && current_byte == total_byte-1) {
-				if !is_dot_exist && current_byte == total_byte-1 {
-					multiply10Pow++
-				}
-				offset = 0
-				for left_byte < multiply10Pow {
-					current_digit := float64(current_cell[left_byte] - 48)
-					position = 0
-					for position+offset < multiply10Pow-1 {
-						current_digit *= 10
-						position++
-					}
-					offset++
-					left_byte++
-					float_number += current_digit
-				}
+    if (!isIntegerComplete) {
+      if (isDotExist || (!isDotExist && currentByte == totalByte - 1)) {
+        if (!isDotExist && currentByte == totalByte - 1) {
+          multiply10Pow += 1;
+        }
 
-				is_integer_complete = true
-				divide10Pow++
-				
-			}
-			multiply10Pow++
+        offset = 0;
 
-		} else if is_dot_exist {
-			if current_byte == total_byte-1 {
-				offset = 0
+        while (leftByte < multiply10Pow) {
+          double currentDigit =
+              (currentCell[leftByte] - "0".codeUnitAt(0)).toDouble();
 
-				for right_byte := total_byte - 1; right_byte >= total_byte-divide10Pow; right_byte-- {
-					current_digit := float64(current_cell[right_byte] - 48) * 0.1
-					position = 0
-					for position+offset < divide10Pow-1 {
-						current_digit *= 0.1
-						position++
-					}
-					offset++
-					float_number += current_digit
-				}
-			}
-			divide10Pow++
-		}		
+          position = 0;
 
-		current_byte++
-	}
+          while (position + offset < multiply10Pow - 1) {
+            currentDigit *= 10.0;
 
-	if is_negative == true {
-		float_number *= -1
-	}
+            position += 1;
+          }
 
-	if is_invalid_number == true {
-		float_number = 0
-	}
-	return float_number
+          offset += 1;
+
+          leftByte += 1;
+
+          floatNumber += currentDigit;
+        }
+
+        isIntegerComplete = true;
+
+        divide10Pow += 1;
+      }
+
+      multiply10Pow += 1;
+    } else if (isDotExist) {
+      if (currentByte == totalByte - 1) {
+        offset = 0;
+
+        for (int rightByte = totalByte - 1;
+            rightByte >= totalByte - divide10Pow;
+            rightByte--) {
+          double currentDigit =
+              (currentCell[rightByte] - "0".codeUnitAt(0)).toDouble() * 0.1;
+
+          position = 0;
+
+          while (position + offset < divide10Pow - 1) {
+            currentDigit *= 0.1;
+
+            position += 1;
+          }
+
+          offset += 1;
+
+          floatNumber += currentDigit;
+        }
+      }
+
+      divide10Pow += 1;
+    }
+
+    currentByte += 1;
+  }
+
+  if (isNegative == true) {
+    floatNumber *= -1.0;
+  }
+
+  if (isInvalidNumber == true) {
+    floatNumber = 0.0;
+  }
+
+  
+return floatNumber;  
 }
