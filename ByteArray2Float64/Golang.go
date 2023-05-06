@@ -1,8 +1,21 @@
-// Traditional indirect method: Convert to string and then convert to float64
-// float_number, err = strconv.ParseFloat(string(bytestream[start_byte:end_byte]), 64)
+/*
+Traditional indirect method: Convert to string and then convert to float64
+float_number, err = strconv.ParseFloat(string(bytestream[start_byte:end_byte]), 64)
 
-// This code directly converts a bytearray to float64.
-// float_number = ByteArray2Float64(bytestream[start_byte:end_byte])
+This code directly converts a bytearray to float64.
+float_number = ByteArray2Float64(bytestream[start_byte:end_byte])
+
+------------------------------------------------------------------------------------
+
+This is a Go code that converts a byte array to a float64 number. The function takes in a byte array as an argument and returns a float64 number.
+
+The function first initializes some variables and then iterates through the byte array. It checks if the byte array contains a dot, if it is negative or if it is an invalid number. It then checks if the integer part of the number is complete and if the decimal part of the number exists.
+
+If the integer part of the number is complete, it moves on to the decimal part of the number. If it exists, it calculates the decimal part of the number and adds it to the integer part of the number.
+
+Finally, it checks if the number is negative or invalid and returns 0 if it is invalid or returns the float64 number.
+
+*/
 
 func ByteArray2Float64(current_cell []byte) float64 {
 
