@@ -1,80 +1,118 @@
-func ByteArray2Float64(current_cell []byte) float64 {
+def byte_array_to_float64(current_cell)
+  float_number = 0.0
+  multiply10Pow = 0
+  divide10Pow = 0
+  position = 0
+  offset = 0
+  current_byte = 0
+  left_byte = 0
+  is_dot_exist = false
+  is_integer_complete = false
+  is_negative = false
+  is_invalid_number = false
 
-	var float_number float64	
-	var multiply10Pow, divide10Pow, position, offset, current_byte, left_byte int	
-	var is_dot_exist, is_integer_complete, is_negative, is_invalid_number  = false, false, false, false
-	
-	var total_byte = len(current_cell)
+  total_byte = current_cell.length
 
-	for current_byte < total_byte {
-		switch current_cell[current_byte] {
-		case '.':
-			is_dot_exist = true
-		case '-':
-			current_cell[current_byte] = '0'
-			is_negative = true
-		case '(':
-			fallthrough
-		case ')':
-			fallthrough
-		
-		default:
-			if current_cell[current_byte] < 48 || current_cell[current_byte] > 57 {
-				is_invalid_number = true
-			}
-		}		
+  while current_byte < total_byte do
+    case current_cell[current_byte]
+    when "."
+      is_dot_exist = true
+    when "-"
+      current_cell[current_byte] = "0"
+      is_negative = true
+    when "(", ")"
+      # do nothing
+    else
+      if current_cell[current_byte] < "0" || current_cell[current_byte] > "9"
+        is_invalid_number = true
+      end
+    end
 
-		if !is_integer_complete {
-			if is_dot_exist || (!is_dot_exist && current_byte == total_byte-1) {
-				if !is_dot_exist && current_byte == total_byte-1 {
-					multiply10Pow++
-				}
-				offset = 0
-				for left_byte < multiply10Pow {
-					current_digit := float64(current_cell[left_byte] - 48)
-					position = 0
-					for position+offset < multiply10Pow-1 {
-						current_digit *= 10
-						position++
-					}
-					offset++
-					left_byte++
-					float_number += current_digit
-				}
+    if !is_integer_complete then
+      if is_dot_exist || (!is_dot_exist && current_byte == total_byte-1) then
+        if !is_dot_exist && current_byte == total_byte-1 then
+          multiply10Pow += 1
+        end
 
-				is_integer_complete = true
-				divide10Pow++
-				
-			}
-			multiply10Pow++
+        offset = 0
 
-		} else if is_dot_exist {
-			if current_byte == total_byte-1 {
-				offset = 0
+        while left_byte < multiply10Pow do
+          current_digit = (current_cell[left_byte].ord - "0".ord).to_f
 
-				for right_byte := total_byte - 1; right_byte >= total_byte-divide10Pow; right_byte-- {
-					current_digit := float64(current_cell[right_byte] - 48) * 0.1
-					position = 0
-					for position+offset < divide10Pow-1 {
-						current_digit *= 0.1
-						position++
-					}
-					offset++
-					float_number += current_digit
-				}
-			}
-			divide10Pow++
-		}		
+          position = 0
 
-		current_byte++
-	}
+          while position + offset < multiply10Pow-1 do
+            current_digit *= 10.0
 
-	if is_negative == true {
-		float_number *= -1
-	}
+            position += 1
+          end
 
-	if is_invalid_number == true {
-		float_number = 0
-	}
-	return float_number
-}
+          offset += 1
+
+          left_byte += 1
+
+          float_number += current_digit
+        end
+
+        is_integer_complete = true
+
+        divide10Pow += 1
+        
+      end
+      
+      multiply10Pow += 1
+      
+    elsif is_dot_exist then
+      
+      if current_byte == total_byte-1 then
+        
+        offset = 0
+        
+        (total_byte-1).downto(total_byte-divide10Pow) do |right_byte|
+          
+          current_digit = (current_cell[right_byte].ord - "0".ord).to_f * 0.1
+
+          position = 0
+
+          while position + offset < divide10Pow-1 do
+            
+            current_digit *= 0.1
+            
+            position += 1
+            
+          end
+
+          offset += 1
+
+          float_number += current_digit
+        
+        end
+      
+      end
+      
+      divide10Pow += 1
+      
+    end
+    
+    current_byte += 1
+    
+  end
+  
+  
+  if is_negative == true then
+    
+    float_number *= -1
+    
+  end
+  
+  
+  if is_invalid_number == true then
+    
+    float_number = 0
+    
+  end
+  
+  
+  return float_number
+  
+end
