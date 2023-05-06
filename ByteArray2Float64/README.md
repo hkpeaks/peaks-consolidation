@@ -13,8 +13,11 @@ Other software developers may prefer cleaning data before processing it. The dis
 On May 6th 2023, the author has completed testing of the "bytearray to float64" for the Go version. When Peaks will move to cross-platform by gRPC in a cluster computing environment, he try using Bing Chat to convert the Golang code to other programming languages and see how it change in coding using the same code design and logic in order to get experience dealing with many programming languages.
 
 <p align="center">
-<img src="(https://github.com/hkpeaks/peaks-framework/blob/main/ByteArray2Float64/20-Languages.png)" width=50% height=50%>
+<img src="https://github.com/hkpeaks/peaks-framework/blob/main/ByteArray2Float64/20-Languages.png" width=50% height=50%>
 </p>
+
+
+
 
 
 
