@@ -327,6 +327,37 @@ a.write_csv(path)
 
 ```
 
+### An Example of Databending Exercise
+```
+A. Filter Data From File
+
+Select{10MillionRows.csv | Ledger(L10..L15,L50..L55,L82..L88) ~ Table}
+
+Select{Table | Project(>B28,<B22)}
+
+Select{Contact(=C39,C32..C34)D/C(=D)}
+
+Select{Quantity(Float500..600) ~ Table}
+
+B. Join "Table" from "Master" to Append New Column "Company" & "Cost Centre"
+
+ReadFile{Master.csv ~ Master}
+
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
+
+JoinKeyValue{Table | Ledger,Account,Project => AllMatch(KeyValue) ~ JoinedTable}
+
+C. Output Summary Reports
+
+GroupBy{JoinedTable | Cost Centre => Count() Max(Quantity) Min(Quantity) Min(Unit Price) Max(Unit Price) Sum(Base Amount) ~ Cost Centre}
+
+GroupBy{JoinedTable | Company => Count() Max(Exchange Rate) Min(Exchange Rate) Min(Unit Price) Max(Unit Price) Sum(Base Amount) ~ Company}
+
+WriteFile{Cost Centre | * ~ Result-GroupByCostCentre.csv}
+
+WriteFile{Company | * ~ Result-GroupByCompany.csv}
+```
+
 ## From WebNameSQL to Peaks DataFrame
 
 Peaks framework is derived by a .net project WebNameSQL. You can see the full specification of "WebNameSQL.pdf" from the repository. Peaks framework will have an improvement version based on WebNameSQL. Any software can implement this framework to standardise ETL expression similar to HTML5, which benefits for end-users. The author have over 10 years of experience in designing ETL expression covers 4 different designs. WebNameSQL is the best design, so Peaks framework will adopt this design with some of improvement, particularly to adapt Python code.
