@@ -328,6 +328,7 @@ a.write_csv(path)
 ```
 
 ### An Example of Databending Exercise
+YouTube Demo Video: https://youtu.be/2MG1e41gloQ
 ```
 A. Filter Data From File
 
