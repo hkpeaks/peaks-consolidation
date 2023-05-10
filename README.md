@@ -331,8 +331,7 @@ a.write_csv(path)
 YouTube Demo Video: https://youtu.be/2MG1e41gloQ
 ```
 ## 67.2GB, 1 Billion Rows x 14 Columns 
-## Filter Data From One Billion Rows CSV File
-## Revise Setting to Run In Streaming Model 
+## Filter Data from One Billion Rows CSV File
 ## Each Batch of Stream Read 1GB File
 ## Each Batch Is Subdivided by 100 Partitions and They Are Processed in Parallel
 
