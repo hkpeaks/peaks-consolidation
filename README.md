@@ -330,33 +330,34 @@ a.write_csv(path)
 ### An Example of Databending Exercise
 YouTube Demo Video: https://youtu.be/2MG1e41gloQ
 ```
-A. Filter Data From File
+### 67.2GB, 1 Billion Rows x 14 Columns 
+### Filter Data From One Billion Rows CSV File
+### Revise Setting to Run In Streaming Model 
+### Each Batch of Stream Read 1GB File
+### Each Batch Is Subdivided by 100 Partitions and They Are Processed in Parallel
 
-Select{10MillionRows.csv | Ledger(L10..L15,L50..L55,L82..L88) ~ Table}
+CurrentSetting{StreamMB(1000)Thread(100)}
+Select{1000MillionRows.csv | Project(>B28,<B22)Ledger(L10..L12,L53..L55,L82..L85)D/C(=D) ~ FilteredTable}
+Select{Contact(=C39,C32..C34)}
+### All Columns Are Deem as Text, Config It as Float to Compare Real Number
+Select{Quantity(Float500..600)Base Amount(Float>30000) ~ FilteredTable}
 
-Select{Table | Project(>B28,<B22)}
+### Join "FilteredTable" from "MasterTable" to Append New Columns "Company" & "Cost Centre"
 
-Select{Contact(=C39,C32..C34)D/C(=D)}
+ReadFile{Master.csv ~ MasterTable}
+BuildKeyValue{MasterTable | Ledger,Account,Project ~ KeyValue}
+JoinKeyValue{FilteredTable | Ledger,Account,Project => AllMatch(KeyValue) ~ JoinedTable} 
 
-Select{Quantity(Float500..600) ~ Table}
+### Summarized Data Based on New Columns "Company" & "Cost Centre"
 
-B. Join "Table" from "Master" to Append New Column "Company" & "Cost Centre"
+GroupBy{JoinedTable | Cost Centre =>  Count() Max(Quantity) Min(Quantity) Min(Unit Price) Max(Unit Price) Sum(Base Amount) ~ Cost Centre}
+GroupBy{JoinedTable | Company =>  Count() Max(Exchange Rate) Min(Exchange Rate) Max(Unit Price) Min(Unit Price) Sum(Base Amount) ~ Company}
 
-ReadFile{Master.csv ~ Master}
+### Output In-memory Table Data to CSV File
 
-BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue}
-
-JoinKeyValue{Table | Ledger,Account,Project => AllMatch(KeyValue) ~ JoinedTable}
-
-C. Output Summary Reports
-
-GroupBy{JoinedTable | Cost Centre => Count() Max(Quantity) Min(Quantity) Min(Unit Price) Max(Unit Price) Sum(Base Amount) ~ Cost Centre}
-
-GroupBy{JoinedTable | Company => Count() Max(Exchange Rate) Min(Exchange Rate) Min(Unit Price) Max(Unit Price) Sum(Base Amount) ~ Company}
-
-WriteFile{Cost Centre | * ~ Result-GroupByCostCentre.csv}
-
-WriteFile{Company | * ~ Result-GroupByCompany.csv}
+WriteFile{FilteredTable | * ~ Result1000M-FilteredData.csv}
+WriteFile{Cost Centre | * ~ Result1000M-GroupByCostCentre.csv}
+WriteFile{Company | * ~ Result1000M-GroupByCompany.csv}
 ```
 
 ## From WebNameSQL to Peaks DataFrame
