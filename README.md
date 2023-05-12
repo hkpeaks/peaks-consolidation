@@ -426,7 +426,7 @@ Docker is a containerization platform and runtime that allows developers to buil
 Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications.
 
 ### gRPC
-gRPC is a modern open-source high-performance Remote Procedure Call (RPC) framework that can run in any environment. It has an official Go implementation. called grpc-go.
+gRPC is a modern open-source high-performance Remote Procedure Call (RPC) framework that can run in any environment. It has an official Go implementation called grpc-go.
 
 ## Listening to Your Need
 
