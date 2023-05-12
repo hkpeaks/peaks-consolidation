@@ -411,6 +411,14 @@ Peaks Consolidation can help you solve massive data of account reconciliation, f
 
 Peaks DataFrame can help you with basic accounting tasks such as amortization, voucher generation, and calculation of segmental multi-currencies account periodical balance. Peaks Consolidation will extend to support your advanced accounting. The mission of Peaks Accounting development roadmap is to empower you to achieve advanced accounting automation anywhere, progressing towards real-time accounting automation.
 
+The author loves using Golang because it is a high-performance programming language with a beautiful syntax design. It is exceptionally easy to learn and has strong support from the community. As a result, the author is considering integrating Peaks with other software written in Golang. Below are some of the reasons why the author finds it attractive: -
+
+1. TiDB - TiDB is a distributed SQL database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads
+2. CloudQuery - CloudQuery is a serverless SQL query engine that can be used to query data from various cloud storage services
+3. Docker - Docker is a containerization platform and runtime that allows developers to build, package, and deploy applications as containers
+4. K8s - Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications
+5. gRPC - gRPC is a modern open-source high-performance Remote Procedure Call (RPC) framework that can run in any environment. It has an official Go implementation called grpc-go.
+
 ## Listening to Your Need
 
 In the past, the author has developed two data visualization tools using DotNet and HTML5 with a focus on front-end development. Currently, he is working on back-end development with a focus on dataframe acceleration that supports billions of rows. He is exploring whether it is justified to do research on frontend (data visualization) and backend (data engineering) at the same time. He think it all depends on whether the data visualization and the data engineering community demands an integrated front-end and back-end stub.
