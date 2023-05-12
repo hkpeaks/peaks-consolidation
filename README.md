@@ -413,11 +413,20 @@ Peaks DataFrame can help you with basic accounting tasks such as amortization, v
 
 The author loves using Golang because it is a high-performance programming language with a beautiful syntax design. It is exceptionally easy to learn and has strong support from the community. As a result, the author is considering integrating Peaks with other software written in Golang. Below are some of the reasons why the author finds it attractive: -
 
-1. TiDB - TiDB is a distributed SQL database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads
-2. CloudQuery - CloudQuery is a serverless SQL query engine that can be used to query data from various cloud storage services
-3. Docker - Docker is a containerization platform and runtime that allows developers to build, package, and deploy applications as containers
-4. K8s - Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications
-5. gRPC - gRPC is a modern open-source high-performance Remote Procedure Call (RPC) framework that can run in any environment. It has an official Go implementation called grpc-go.
+###TiDB
+TiDB is a distributed SQL database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads
+
+###CloudQuery
+CloudQuery is a serverless SQL query engine that can be used to query data from various cloud storage services
+
+###Docker
+Docker is a containerization platform and runtime that allows developers to build, package, and deploy applications as containers
+
+###Kubernetes 
+Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications
+
+###gRPC
+gRPC is a modern open-source high-performance Remote Procedure Call (RPC) framework that can run in any environment. It has an official Go implementation called grpc-go.
 
 ## Listening to Your Need
 
