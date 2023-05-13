@@ -52,7 +52,7 @@ The data structure implemented for the basic programming in a way that is simila
 
 When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 16GB RAM.
 
-@ If read only, Pandas read 10 million rows is 8s,if use engine="pyarrow", it is 2.6s
+@ If read only, Pandas read 10 million rows is 8s, if use engine="pyarrow", it is 2.6s
 
 ## Trial Version Is Coming Soon
 
