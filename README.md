@@ -411,7 +411,7 @@ Peaks Consolidation can help you solve massive data of account reconciliation, f
 
 Peaks DataFrame can help you with basic accounting tasks such as amortization, voucher generation, and calculation of segmental multi-currencies account periodical balance. Peaks Consolidation will extend to support your advanced accounting. The mission of Peaks Accounting development roadmap is to empower you to achieve advanced accounting automation anywhere, progressing towards real-time accounting automation.
 
-The author loves using Golang because it is a high-performance programming language with a beautiful syntax design. It is exceptionally easy to learn and has strong support from the community. As a result, the author is considering integrating Peaks with other software written in Golang. Below are some of the reasons why the author finds it attractive: -
+The author loves using Golang because it is a high-performance programming language with a beautiful syntax design. It is exceptionally easy to learn and has strong support from the community. As a result, the author is considering integrating Peaks with other software written in Golang. Below are some of projects why the author finds Golang is very attractive: -
 
 ### TiDB
 TiDB is a distributed SQL database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads.
