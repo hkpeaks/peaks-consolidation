@@ -428,6 +428,8 @@ Kubernetes is an open-source container orchestration platform that automates the
 ### gRPC
 gRPC is a modern open-source high-performance Remote Procedure Call (RPC) framework that can run in any environment. It has an official Go implementation called grpc-go.
 
+Since Golang doesn’t have a hyper-performance dataframe library similar to Polars for Rust, the author was motivated to create a better one for the Golang community.
+
 ## Listening to Your Need
 
 In the past, the author has developed two data visualization tools using DotNet and HTML5 with a focus on front-end development. Currently, he is working on back-end development with a focus on dataframe acceleration that supports billions of rows. He is exploring whether it is justified to do research on frontend (data visualization) and backend (data engineering) at the same time. He think it all depends on whether the data visualization and the data engineering community demands an integrated front-end and back-end stub.
