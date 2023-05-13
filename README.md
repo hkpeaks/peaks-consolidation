@@ -44,13 +44,15 @@ Processing Time (In Second) of Read and Write CSV File
 | Golang        |          2.743 |         27.351 |
 | Rust          |          3.154 |         32.132 |
 | Advanced Programming                            |
-| Pandas        |          4.798 |         52.799 |
+| Pandas        |          4.798 |        52.799 @| 
 | Peaks         |          0.177 |          0.917 |
 | Polars        |          0.406 |          3.625 |
 
 The data structure implemented for the basic programming in a way that is similar to Parquet file format. It is extensively used key-value pairs, for example, use 1, 2, and 3 to represent unique values for each column. However, this extensive use of CPU and memory resources made Peaks DataFrame avoid using it again.
 
 When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 16GB RAM.
+
+@ If read only, Pandas read 10 million rows is 8s,if use engine="pyarrow", it is 2.6s
 
 ## Trial Version Is Coming Soon
 
