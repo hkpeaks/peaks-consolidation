@@ -7,7 +7,7 @@ When it comes to data structures, bytearray is one of the most useful and memory
 
 ## Ultra Speed for Query Billion Rows File & Database
 
-Compared to other expensive ETL/Consolidation solutions, the rule setting of Peaks Dataframe is exceptionally simple for any user. Additionally, CurrentSetting{} allows you to leverage your computing device to deal with billions of rows of queries at your fingertips, whether it’s a single file or a folder containing many files.
+Compared to other expensive consolidation solutions e.g, Oracle HFM, SAP BPC, IBM Cognos Controller and TM1, the rule setting of Peaks Dataframe is exceptionally simple for any user. Additionally, CurrentSetting{} allows you to leverage your computing device to deal with billions of rows of queries at your fingertips, whether it’s a single file or a folder containing many files.
 
 ```
 CurrentSetting{StreamMB(1000)Thread(100)}
@@ -33,7 +33,7 @@ If your file is small e.g. less than 10 million rows, normally it is no need to 
 
 ## Trial Version Is Coming Soon
 
-You can download a free and trial versions of Peaks DataFrame with use cases. If you have any problem during your testing of the software, please report us in the issues section.
+You can download a free and trial versions of runtime for Windows/Linux with use cases. If you have any problem during your testing of the software, please report us in the issues section.
 
 About monthly or bi-monthly, new commands, enhancements and bug fixs will be added to subsequent trial versions. However, it will not include commands which involve complex implementation. Ready-to-use command scripts with sample data will be included in the distribution. For any reported critical bugs, it will be fixed and published as soon as practical.
 
@@ -49,8 +49,8 @@ The initial version will cover the following command groups and commands:-
 | Filter         | Select, SelectUnmatch          |                                                        |
 | Append         | Append                         | for row/column with adding value/formula               |
 
-## Peaks Framework and Library
-Peaks DataFrame comprises of Peaks framework and library that are currently under active development. 
+## Peaks Framework and DataFrame
+Peaks Consolidation comprises of Peaks framework and library that are currently under active development. 
 
 FRAMEWORK: It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with Peaks and third-party libraries.
 
