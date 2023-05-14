@@ -16,13 +16,19 @@ Select{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
 
 Select{Project(>B25,<B23)}
 
-GroupBy{Ledger, Account, PartNo,Project,D/C,Currency 
+GroupBy{Ledger, Account, Project, D/C, Currency 
         => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
 
 WriteFile{Table | * ~ FilterResults.csv}
 ```
 
 The entire process running on a desktop PC with 8 cores and 32GB of memory takes only 85 seconds. We are continuously working to improve the algorithm, resulting in better performance
+
+StreamMB(1000) allows you to adjust the partition size of data streaming to fit your hardware configuration. The author found that 1000 (e.g., 1GB) is suitable for their computer with 32GB of memory. 
+
+Thread(100) allows you to maximize the usage of multi-core CPU. The author found that 100 threads is suitable for their computer with 8 cores.
+
+If your file is small e.g. less than 10 million rows, normally it is no need to configure these 2 items.
 
 
 ## Trial Version Is Coming Soon
