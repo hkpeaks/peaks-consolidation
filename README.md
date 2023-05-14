@@ -5,9 +5,22 @@ Currently, Peaks DataFrame have been innovating and testing a set of algorithms 
 
 When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM. The author had conducted some research in bioinformatics and had learned that RNA polymerase is responsible for transcribing DNA into RNA while ribosomes are responsible for translating RNA into proteins. The author was impressed by the high efficiency of protein production from transcription to translation, so the data model of Peaks is somewhat similar to these biological operations.
 
-Select{1000MillionRows.csv | Ledger(L10..L30)Account(11000..15000) ~ Table}
+## High Performance Query for Billion Rows Dataset
+
+Compared to other expensive ETL solutions, the rule setting of Peaks Framework is exceptionally simple for any user. Additionally, CurrentSetting{} allows you to leverage your computing device to deal with billions of rows of queries at your fingertips, whether it’s a single file or a folder containing many files.
+
+CurrentSetting{StreamMB(1000)Thread(100)}
+
+Select{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
+
 Select{Project(>B25,<B23)}
+
+GroupBy{Ledger, Account, PartNo,Project,D/C,Currency => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
+
 WriteFile{Table | * ~ FilterResults.csv}
+
+The entire process running on a desktop PC with 8 cores and 32GB of memory takes only 85 seconds. We are continuously working to improve the algorithm, resulting in better performance
+
 
 ## Trial Version Is Coming Soon
 
@@ -15,16 +28,9 @@ WriteFile{Table | * ~ FilterResults.csv}
 <img src="https://github.com/hkpeaks/peaks-framework/blob/main/InitialRelease.png" width=50% height=50%>
 </p>
 
-At https://github.com/do-account, you can download a free and trial versions of Peaks DataFrame and Peaks DataFrame Viewer with use cases. For Peaks DataFrame Viewer, it is published on May 3rd, 2023. For Peaks DataFrame, we are planning to publish it by the end of June 2023. If you encounter any bugs or how-to issues, please report them to the “issues” section of the repository “do-account”. The source code of Peaks Framework will be published in this repository. Therefore, if you have any bugs or how-to issues about the source code, please report them in the “peaks-framework” repository.
+You can download a free and trial versions of Peaks DataFrame with use cases. If you have any problem during your testing of the software, please report us in the issues section.
 
-If you’re running a script with initial release of the Peaks DataFrame, you’ll have a 100-second timeout which should be more than enough for the 100-day trial period. If you’re not working with large datasets, a second should allow you to perform many steps of databending.
-
-After the trial period ends, you can still use the app but there will be a 100MB file read/write limit. This is to encourage you to download the latest version again and again.
-
-The special arrangement of after trial period also removes your concern that the latest version may not be available in the future. It’s worth noting that rows of a 100MB file is more than what an Excel worksheet can handle.
-
-About monthly or bi-monthly, new commands, enhancements and bug fixs will be added to subsequent trial versions. However, it will not include commands which involve complex
-implementation. Ready-to-use command scripts with sample data will be included in the distribution. For any reported critical bugs, it will be fixed and published as soon as practical.
+About monthly or bi-monthly, new commands, enhancements and bug fixs will be added to subsequent trial versions. However, it will not include commands which involve complex implementation. Ready-to-use command scripts with sample data will be included in the distribution. For any reported critical bugs, it will be fixed and published as soon as practical.
 
 The initial version will cover the following command groups and commands:-
 
