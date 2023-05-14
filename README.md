@@ -1,5 +1,5 @@
 ## Introduction
-Peaks Consolidation is a personal academic project that aims to provide an innovative framework of ETL expression to simply processing billions of rows using streaming or in-memory model to accelerate dataframe. The project began on February 18th, 2023 in Hong Kong SAR and aims to achieve real-time processing of up to 10 million rows per second on a single computing device and also saving your investment in cloud computing.
+Peaks Consolidation is a personal academic project that aims to provide an innovative framework of ETL expression to simplify processing billions of rows using streaming or in-memory model to accelerate dataframe. The project began on February 18th, 2023 in Hong Kong SAR and aims to achieve real-time processing of up to 10 million rows per second on a single computing device and also saving your investment in cloud computing.
 
 Currently, Peaks Consolidation have been innovating and testing a set of algorithms and data structures to support profound acceleration of the dataframe with limited memory. One of the project’s expected outcomes is to solve the data explosion that came with data capture from IoT devices, ERP, internet and data lake. By using a proper script settings, it can support streaming and in-memory models.
 
@@ -7,7 +7,7 @@ When it comes to data structures, bytearray is one of the most useful and memory
 
 ## Ultra Speed for Query Billion Rows File & Database
 
-Compared to other expensive consolidation solutions e.g, Oracle HFM, SAP BPC, IBM Cognos Controller and TM1, the rule setting of Peaks Dataframe is exceptionally simple for any user. Additionally, CurrentSetting{} allows you to leverage your computing device to deal with billions of rows of queries at your fingertips, whether it’s a single file or a folder containing many files.
+Compared to other expensive consolidation solutions e.g, Oracle HFM, SAP BPC, IBM Cognos Controller and TM1, the rule setting of Peaks Consolidation is exceptionally simple for any user. Additionally, CurrentSetting{} allows you to leverage your computing device to deal with billions of rows of queries at your fingertips, whether it’s a single file or a folder containing many files. Below is an example of rule setting:-
 
 ```
 CurrentSetting{StreamMB(1000)Thread(100)}
@@ -74,17 +74,30 @@ JoinTable is an ETL function that is frequently used. However, it has been repor
 
 Golang is a simple and beautiful programming language that allows JoinTable to implement ultra-performance streaming. For instance, it can process a 67.2GB CSV file and output 91GB. 
 
-According to a performance chart, Peaks demonstrate high efficiency in resource utilization during the processing of billions of rows for JoinTable. Every peak of CPU utilization is due to data being loaded into memory for the current partition of a file. You can continue to enjoy YouTube during this intensive processing for less than 5 minutes long.
+According to a performance chart, Peaks demonstrate high efficiency in resource utilization during the processing of billions of rows for JoinTable. You can continue to enjoy YouTube during this intensive processing for less than 5 minutes long.
 
 Apart from JoinTable, this url https://youtu.be/9nxIDi2t1Bg is a demo video which apply a query statement "Select{1000MillionRows.csv | Ledger(L10…L15,L50…L55,L82…L88) Account(12222…12888,15555…16888) Project(>B28,<B22) ~ Peaks-Filter1000M.csv}" to select 15,110,000 rows from the 1 billion rows file. The whole processing time is 124 seconds running on a 3-year-old desktop PC with only 32GB RAM. Utilization of memory resources throughout the process is near half. Less resource demanding if comparing a JoinTable test.
 
 ## Peaks Roadmap 
 
-Based on user responses after releasing the first beta version, the next possible scenario is to release a new software called ‘Peaks Consolidation’ next year. This constitutes a redevelopment of the DotNet WebNameSQL accounting module into the Golang Peaks. This software will help with statutory compliance and management ad-hoc reporting for financial consolidation with thousands of business units and legal entities. 
+Peaks Consolidation will help with statutory compliance and management ad-hoc reporting for financial consolidation with thousands of business units and legal entities by the following features:-
 
-Peaks Consolidation will help you solve massive data of account reconciliation, foreign currency translation, elimination of inter-company transactions, re-alignment of different year-end dates with different consolidation methods (i.e., proportional accounting, equity accounting, and full consolidation with calculation of minority interest). It standardizes your dataset and is empowered by a conditional mapping engine with effective date of change calculation rules. This engine can be used to solve your ever-changing incentive plans for different stakeholder management, account allocation and sharing holdings in investment in subsidiaries, joint ventures and associates.
+1. voucher generation e.g. amortization, daily sales
+2. segmental multi-currencies account periodical balance
+3. account reconciliation
+4.  foriegn currency
+   a. revaluation at entity level - 
+   b. translation at consolidation level
+5. elimination of inter-company transactions
+6. re-alignment of different year-end dates with different consolidation methods
+   a. proportional accounting
+   b. equity accounting, 
+   c. full consolidation with calculation of minority interest
+7. standardizes your dataset
 
-Peaks Consolidaton also will help you with basic accounting tasks such as amortization, voucher generation, and calculation of segmental multi-currencies account periodical balance. Peaks Consolidation will extend to support your advanced accounting. The mission of Peaks Accounting development roadmap is to empower you to achieve advanced accounting automation anywhere, progressing towards real-time accounting automation.
+Standardizes your dataset and is empowered by a conditional mapping engine with effective date of change calculation rules. This engine can be used to solve your ever-changing incentive plans for different stakeholder management, account allocation and sharing holdings in investment in subsidiaries, joint ventures and associates.
+
+The mission of Peaks Accounting development roadmap is to empower you to achieve advanced accounting automation anywhere, progressing towards real-time accounting automation.
 
 The author loves using Golang because it is a high-performance programming language with a beautiful syntax design. It is exceptionally easy to learn and has strong support from the community. As a result, the author is considering integrating Peaks with other software written in Golang. Below are some of projects why the author finds Golang is very attractive: -
 
