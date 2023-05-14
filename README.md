@@ -85,7 +85,7 @@ Peaks Consolidation will help with statutory compliance and management ad-hoc re
 1. Voucher generation e.g. reversal, amortization, acquisition, displosal, fair value adjustment
 2. Segmental multi-currency account periodical balance e.g. Yearly, Weekly, Daily
 3. Account allocation
-4. account reconciliation
+4. Account reconciliation
 5. Foriegn currency
 
    a. Revaluation at entity level   
