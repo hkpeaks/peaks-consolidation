@@ -7,7 +7,7 @@ When it comes to data structures, bytearray is one of the most useful and memory
 
 ## Ultra Speed for Query Billion Rows File & Database
 
-Compared to other expensive ETL solutions, the rule setting of Peaks Framework is exceptionally simple for any user. Additionally, CurrentSetting{} allows you to leverage your computing device to deal with billions of rows of queries at your fingertips, whether it’s a single file or a folder containing many files.
+Compared to other expensive ETL/Consolidation solutions, the rule setting of Peaks Dataframe is exceptionally simple for any user. Additionally, CurrentSetting{} allows you to leverage your computing device to deal with billions of rows of queries at your fingertips, whether it’s a single file or a folder containing many files.
 
 ```
 CurrentSetting{StreamMB(1000)Thread(100)}
