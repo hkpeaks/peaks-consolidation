@@ -52,7 +52,7 @@ The initial version will cover the following command groups and commands:-
 ## Peaks Framework and DataFrame
 Peaks Consolidation comprises of Peaks framework and dataframe that are currently under active development. 
 
-FRAMEWORK: It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with Peaks DataFramw and third-party softwares.
+FRAMEWORK: It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with Peaks DataFrame and third-party softwares.
 
 DATAFRAME: It is a high-performance calculation engine that can be configured by the framework in either streaming mode or in-memory mode easily. 
 
@@ -80,13 +80,13 @@ Apart from JoinTable, this url https://youtu.be/9nxIDi2t1Bg is a demo video whic
 
 ## Consolidation Rules for Financial Close and Budgeting
 
-Peaks Consolidation will help with statutory compliance and management ad-hoc reporting for financial consolidation with thousands of business units and legal entities by the following conolidation rules:-
+Peaks Consolidation will help with statutory compliance and management ad-hoc reporting for financial consolidation with thousands of business units and legal entities by the following consolidation rules:-
 
 1. Voucher generation e.g. reversal, amortization, acquisition, displosal, fair value adjustment
 2. Segmental multi-currency account periodical balance e.g. Yearly, Weekly, Daily
 3. Account allocation
 4. Account reconciliation
-5. Foriegn currency
+5. Foreign currency
 
    a. Revaluation at entity level   
   
