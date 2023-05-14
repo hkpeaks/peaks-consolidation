@@ -82,27 +82,28 @@ Apart from JoinTable, this url https://youtu.be/9nxIDi2t1Bg is a demo video whic
 
 Peaks Consolidation will help with statutory compliance and management ad-hoc reporting for financial consolidation with thousands of business units and legal entities by the following conolidation rules:-
 
-1. voucher generation e.g. amortization and fair value adjustment
-2. segmental multi-currencies account periodical balance
-3. account reconciliation
-4. foriegn currency
+1. Voucher generation e.g. reversal, amortization, fair value adjustment
+2. Segmental multi-currency account periodical balance e.g. Yearly, Weekly, Daily
+3. Account allocation
+4. account reconciliation
+5. Foriegn currency
 
-   a. revaluation at entity level   
+   a. Revaluation at entity level   
   
-   b. translation at consolidation level  
+   b. Translation at consolidation level  
    
-5. elimination of inter-company transactions
-6. re-alignment of different year-end dates with different consolidation methods
+5. Elimination of inter-company transactions
+6. Re-alignment of different year-end dates with different consolidation methods
 
-   a. proportional accounting
+   a. Proportional accounting
   
-   b. equity accounting
+   b. Equity accounting
    
-   c. full consolidation with calculation of minority interest
+   c. Full consolidation with calculation of minority interest
    
-7. standardization of dataset
+7. Standardization of dataset
 
-Standardization of your dataset and is empowered by a conditional mapping engine with effective date of change calculation rules. This engine can be used to solve your ever-changing incentive plans for different stakeholder management, account allocation and sharing holdings in investment in subsidiaries, joint ventures and associates.
+Your dataset can be standardized using a conditional mapping engine that is equipped with effective date of change calculation rules. This engine can help you address your ever-changing incentive plans for different stakeholder management, account allocation, and sharing holdings in investment in subsidiaries, joint ventures, and associates.
 
 The mission of Peaks Consolidation development roadmap is to empower you to achieve advanced accounting automation anywhere, progressing towards real-time accounting automation.
 
