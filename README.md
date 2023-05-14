@@ -44,8 +44,6 @@ The initial version will cover the following command groups and commands:-
 | Filter         | Select, SelectUnmatch          |                                                        |
 | Append         | Append                         | for row/column with adding value/formula               |
 
-The first release version will not include sorting because it requires more research works to solve the root problem of sorting billions of rows by many sorting columns (A/D).
-
 ## Peaks Framework and Library
 Peaks DataFrame comprises of Peaks framework and library that are currently under active development. 
 
@@ -65,12 +63,6 @@ XLSX is a popular file format for accounting. It’s likely that Peaks will supp
 PARQUET is a format that is built to handle flat columnar storage data formats. It is designed for efficient data storage and retrieval. The format stores data in “row group” blocks that are divided into “column chunks” and then further divided into “data pages” .
 
 FASTA format is a text-based format that supports bioinformatics. It is used for representing either nucleotide sequences or amino acid (protein) sequences. In this format, nucleotides or amino acids are represented using single-letter codes for five nucleobases— adenine (A), cytosine (C), guanine (G), thymine (T), and uracil (U). Unknown bases are represented by the letter N. The human genome is a diploid genome that contains 3.2 billion nucleotides. These nucleotides are packed into 23 pairs of chromosomes.
-
-## Polars and Peaks Benchmarking
-
-While Polars is one of the fastest dataframes that can be easily installed and run on desktop PCs, Peaks is not intended to be another Polars or Pandas.
-
-90 performance tests for both Polars and Peaks were completed for ETL functions such as "Distinct", "GroupBy" and JoinTable" using 8-Cores/32GB RAM, with data rows ranging from 10,000 to 1 billion. The time measures cover the starting read csv files to the completion of write csv file. PeaksBenchmark.xlsx uploaded in this repository has documented detail benchmarking results. This benchmark was prepared on April 14th, 2023.
 
 ## Resource Utilization Does Matter
 JoinTable is an ETL function that is frequently used. However, it has been reported that JoinTable can be problematic when processing tables with billions of rows. 
