@@ -104,11 +104,3 @@ Kubernetes is an open-source container orchestration platform that automates the
 gRPC is a modern open-source high-performance Remote Procedure Call (RPC) framework that can run in any environment. It has an official Go implementation called grpc-go.
 
 Since Golang doesn’t have a hyper-performance dataframe library similar to Polars for Rust, the author was motivated to create a better one for the Golang community.
-
-
-The data visual stub of Peaks DataFrame Viwewe (Previously known as youFast Desktop) is built by DotNet+CSS+Javascript+Websocket without using ASP Web framework. If he works on front-end stub again, he will consider this combination Golang+Python+Javascript(with or without React.js)+gRPC, so it can support Polars, Peaks, and Pandas user groups at the same time.
- 
-After the delivery of the initial trial version of Peaks DataFrame, the author will make a decision on whether he should work on front-end and back-end research concurrently. It depends on collective views from you.
-
-## Latest News
-For latest news about this academic project, please refer to https://www.linkedin.com/in/max01/recent-activity/all/
