@@ -22,7 +22,7 @@ GroupBy{Ledger, Account, Project, D/C, Currency
 WriteFile{Table | * ~ FilterResults.csv}
 ```
 
-The entire process running on a desktop PC with 8 cores and 32GB of memory takes only 85 seconds. We are continuously working to improve the algorithm, resulting in better performance with less resource utilization.
+The entire process running on a desktop PC with 8 cores and 32GB of memory takes only 85 seconds using a file with file size of 67.2GB. We are continuously working to improve the algorithm, resulting in better performance with less resource utilization.
 
 StreamMB(1000) allows you to adjust the partition size of data streaming to fit your hardware configuration. The author found that 1000 (e.g., 1GB) is suitable for their computer with 32GB of memory. 
 
@@ -85,38 +85,6 @@ According to a performance chart, Peaks demonstrate high efficiency in resource 
 Apart from JoinTable, this url https://youtu.be/9nxIDi2t1Bg is a demo video which apply a query statement "Select{1000MillionRows.csv | Ledger(L10…L15,L50…L55,L82…L88) Account(12222…12888,15555…16888) Project(>B28,<B22) ~ Peaks-Filter1000M.csv}" to select 15,110,000 rows from the 1 billion rows file. The whole processing time is 124 seconds running on a 3-year-old desktop PC with only 32GB RAM. Utilization of memory resources throughout the process is near half. Less resource demanding if comparing a JoinTable test.
 
 [![Web Pivot Table](https://github.com/hkpeaks/peaks-framework/blob/main/Polars-PeaksBenchmarking/Chart/FilterDemo.png)](http://www.youtube.com/watch?v=9nxIDi2t1Bg "Filter 15,110,000 Rows from 1 Billion Rows")
-
-## From WebNameSQL to Peaks DataFrame
-
-Peaks framework is derived by a .net project WebNameSQL. You can see the full specification of "WebNameSQL.pdf" from the repository. Peaks framework will have an improvement version based on WebNameSQL. Any software can implement this framework to standardise ETL expression similar to HTML5, which benefits for end-users. The author have over 10 years of experience in designing ETL expression covers 4 different designs. WebNameSQL is the best design, so Peaks framework will adopt this design with some of improvement, particularly to adapt Python code.
-
-WebNameSQL is a C# in-memory databending software that supports accountants using a web browser to interactive with accounting rules and tables for databending. However, this project became obsolete and it is replaced by a new project “Peaks DataFrame” to solve issues arising from real-time processing and big data. During a continuing effort in academic research, it is implemented new algorithms by using Golang which resulted in a performance gain of around 5X ~ 10X.
-
-WebNameSQL-Go Version is a prototype that uses Golang to rewrite some of the functions using similar algorithms and data structures as WebNameSQL-Csharp Version. The author aims to prove that Golang is more suitable for the next programming language.
-
-Commands to be re-implemented in the Peaks DataFrame will not be the same as WebNameSQL. Considering there are too many commands for your learning and practice, further consolidation and improvement is necessary. The use cases are no longer restricted to accounting; for example, some use cases will cover bioinformatics. Very high performance is essential for this project, so algorithms and data structure of Peaks will be a significant different from WebNameSQL.
-
-YouTube Demo Video: https://youtu.be/6hwbQmTXzMc
-
-[![WebNameSQL](https://github.com/hkpeaks/peaks-framework/blob/main/WebNameSQL-GoVersion/WebNameSQLScreen.png)](https://youtu.be/6hwbQmTXzMc "WebNameSQL")
-
-## Author Experience in Dataframe Development
-
-The author is a seasoned accountant and IT professional with over three decades of experience. He qualified as an accountant in 1998 and has worked with some of Hong Kong listed companies, in various capacities.
-
-He was an Assistant Chief Accountant at PYI/Paul Y. Group from 2006 to 2008, where he managed the daily accounting operations of PYI Group and oversaw the implementation of FlexAccount V10 for two listed companies and their subsidiaries.
-
-He was an Assistant Finance Manager at Giordano from 2008 to 2010, where he conducted user requirement analysis and solution sourcing for automating the consolidated financial statements of the listed company. He recommended FlexSystem to customize its draft ledger and query technology for the financial consolidation needs.
-
-He was a consultant at FlexSystem from 2010 to 2020, where he acquired extensive experience with three dataframe software development: FESA Consolidation, LedgerBase and FlexCalc.
-
-He retired in 2020 due to the COVID-19 pandemic, but continued to work on two visual projects using DotNet and HTML5: youFast Desktop (https://lnkd.in/gGB34cH) and WebNameSQL (https://lnkd.in/gkfREsvK).
-
-He evaluated Rust, Golang and C++ and finished a prototype that migrated the WebNameSQL project from DotNet to Golang in the first four months of 2022. Then he took a break from software development and learnt bioinformatics using Bioconductor and machine learning using TensorFlow and Pytorch.
-
-He is currently working on the cross platform Peaks DataFrame project, which uses gRPC to support different programming languages such as Rust, Golang, Node.js, DotNet and Python. He is 55 years old and remain young in mindset. 
-
-Peaks DataFrame which is expected to be the final research and development in dataframe software as its algorithms and data structures have been proven successful. It will be designing as a next-generation accounting software that specializes in management accounting and consolidation. Peaks DataFrame will also cover some special topics in machine learning and bioinformatics. So, it is obviously not to replace Polars, Pandas and Pytorch but rather complement them. 
 
 ## Peaks Roadmap 
 
