@@ -127,3 +127,21 @@ Kubernetes is an open-source container orchestration platform that automates the
 gRPC is a modern open-source high-performance Remote Procedure Call (RPC) framework that can run in any environment. It has an official Go implementation called grpc-go.
 
 Since Golang doesn’t have a hyper-performance dataframe library similar to Polars for Rust, the author was motivated to create a better one for the Golang community.
+
+## About the Author
+
+The author is an experienced accountant and IT professional with over three decades of experience. He qualified as an accountant in 1998 and has worked with some of Hong Kong’s listed companies in various capacities.
+
+From 2006 to 2008, he was an Assistant Chief Accountant at PYI/Paul Y. Group where he managed the daily accounting operations of PYI Group and oversaw the implementation of FlexAccount V10 for two listed companies and their subsidiaries.
+
+From 2008 to 2010, he was an Assistant Finance Manager at Giordano where he conducted user requirement analysis and solution sourcing for automating the consolidated financial statements of the listed company. He recommended FlexSystem to customize its draft ledger and query technology for the financial consolidation needs.
+
+From 2010 to 2020, he worked as a consultant at FlexSystem where he acquired extensive experience with three consolidation software development: FESA Consolidation, LedgerBase and FlexCalc.
+
+He retired at the age of 52 due to the COVID-19 pandemic. He continued to work on two personal visual projects using DotNet and HTML5: youFast Desktop (https://lnkd.in/gGB34cH) and WebNameSQL (https://lnkd.in/gkfREsvK).
+
+In early 2022, he evaluated Rust, Golang and C++ and finished a prototype that migrated the WebNameSQL project from DotNet to Golang in four months. Then he took a break from software development and learnt bioinformatics using Bioconductor and machine learning using TensorFlow and Pytorch.
+
+He is currently working on the cross-platform Peaks Consolidation project which uses gRPC to support different programming languages such as Rust, Golang, Node.js, DotNet and Python. He is 55 years old but remains young in mindset.
+
+Peaks Consolidation is expected to be the final research and development in consolidation software as its algorithms and data structures have been proven successful. It will be designed as a next-generation accounting software that specializes in management accounting and consolidation. Peaks DataFrame will also cover some special topics in machine learning and bioinformatics.
