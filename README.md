@@ -22,7 +22,7 @@ GroupBy{Ledger, Account, Project, D/C, Currency
 WriteFile{Table | * ~ FilterResults.csv}
 ```
 
-The entire process running on a desktop PC with 8 cores and 32GB of memory takes only 85 seconds. We are continuously working to improve the algorithm, resulting in better performance
+The entire process running on a desktop PC with 8 cores and 32GB of memory takes only 85 seconds. We are continuously working to improve the algorithm, resulting in better performance with less resource utilization.
 
 StreamMB(1000) allows you to adjust the partition size of data streaming to fit your hardware configuration. The author found that 1000 (e.g., 1GB) is suitable for their computer with 32GB of memory. 
 
