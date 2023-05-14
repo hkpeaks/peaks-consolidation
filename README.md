@@ -61,9 +61,9 @@ RELEASES: It will be provided an all-in-one executable runtime for both Windows 
 Both framework and dataframe are written in Golang. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of considerations.
 
 ## File Format
-Currently, Peaks DataFrame supports tables in CSV file format only and will support other popular table formats such as XLSX, JSON, PARQUET and FASTA.
+Currently, Peaks Consolidation supports tables in CSV file format only and will support other popular table formats such as XLSX, JSON, PARQUET and FASTA.
 
-XLSX is a popular file format for accounting. It’s likely that Peaks will support this format by considering the Excelize library for Golang. 
+XLSX is a popular file format for accounting. It’s likely that Peaks Consolidation will support this format by considering the Excelize library for Golang. 
 
 PARQUET is a format that is built to handle flat columnar storage data formats. It is designed for efficient data storage and retrieval. The format stores data in “row group” blocks that are divided into “column chunks” and then further divided into “data pages” .
 
