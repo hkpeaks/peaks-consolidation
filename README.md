@@ -5,7 +5,7 @@ Currently, Peaks Consolidation have been innovating and testing a set of algorit
 
 When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM. The author had conducted some research in bioinformatics and had learned that RNA polymerase is responsible for transcribing DNA into RNA while ribosomes are responsible for translating RNA into proteins. The author was impressed by the high efficiency of protein production from transcription to translation, so the data model of Peaks is somewhat similar to these biological operations.
 
-## Ultra Speed for Query Billion Rows File & Database
+## Ultra Speed for Query Data from a Billion-Row File & Database
 
 Compared to other expensive consolidation solutions e.g, Oracle HFM, SAP BPC, IBM Cognos Controller and TM1, the rule setting of Peaks Consolidation is exceptionally simple for any user. Additionally, CurrentSetting{} allows you to leverage your computing device to deal with billions of rows of queries at your fingertips, whether it’s a single file or a folder containing many files. Below is an example of rule setting:-
 
