@@ -121,7 +121,7 @@ He retired at the age of 52 due to the COVID-19 pandemic. He continued to work o
 
 In early 2022, he evaluated Rust, Golang and C++ and finished a prototype that migrated the WebNameSQL project from DotNet to Golang in four months. Then he took a break from software development and learnt bioinformatics using Bioconductor and machine learning using TensorFlow and Pytorch.
 
-He is currently working on the cross-platform consolidation project which uses gRPC to support different programming languages such as Rust, Golang, Node.js, DotNet and Python. He is 55 years old but remains young in mindset.
+He is currently working on the cross-platform consolidation project which will uses gRPC to support different programming languages such as Rust, Golang, Node.js, DotNet and Python. He is 55 years old but remains young in mindset.
 
 Peaks Consolidation is expected to be his final research and development in consolidation software as its algorithms and data structures have been proven very outstanding. 
 
