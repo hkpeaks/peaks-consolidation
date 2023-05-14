@@ -16,7 +16,8 @@ Select{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
 
 Select{Project(>B25,<B23)}
 
-GroupBy{Ledger, Account, PartNo,Project,D/C,Currency => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
+GroupBy{Ledger, Account, PartNo,Project,D/C,Currency 
+        => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
 
 WriteFile{Table | * ~ FilterResults.csv}
 ```
