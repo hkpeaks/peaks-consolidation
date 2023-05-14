@@ -86,8 +86,11 @@ Peaks Consolidation will help with statutory compliance and management ad-hoc re
 2. segmental multi-currencies account periodical balance
 3. account reconciliation
 4.  foriegn currency
-   a. revaluation at entity level - 
+
+   a. revaluation at entity level
+   
    b. translation at consolidation level
+   
 5. elimination of inter-company transactions
 6. re-alignment of different year-end dates with different consolidation methods
 
@@ -97,11 +100,11 @@ Peaks Consolidation will help with statutory compliance and management ad-hoc re
    
    c. full consolidation with calculation of minority interest
    
-7. standardation of dataset
+7. standardization of dataset
 
-Standardizes your dataset and is empowered by a conditional mapping engine with effective date of change calculation rules. This engine can be used to solve your ever-changing incentive plans for different stakeholder management, account allocation and sharing holdings in investment in subsidiaries, joint ventures and associates.
+Standardization of your dataset and is empowered by a conditional mapping engine with effective date of change calculation rules. This engine can be used to solve your ever-changing incentive plans for different stakeholder management, account allocation and sharing holdings in investment in subsidiaries, joint ventures and associates.
 
-The mission of Peaks Accounting development roadmap is to empower you to achieve advanced accounting automation anywhere, progressing towards real-time accounting automation.
+The mission of Peaks Consolidation development roadmap is to empower you to achieve advanced accounting automation anywhere, progressing towards real-time accounting automation.
 
 ## Integration
 
