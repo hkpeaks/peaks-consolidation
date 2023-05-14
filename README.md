@@ -33,10 +33,6 @@ If your file is small e.g. less than 10 million rows, normally it is no need to 
 
 ## Trial Version Is Coming Soon
 
-<p align="center">
-<img src="https://github.com/hkpeaks/peaks-framework/blob/main/InitialRelease.png" width=50% height=50%>
-</p>
-
 You can download a free and trial versions of Peaks DataFrame with use cases. If you have any problem during your testing of the software, please report us in the issues section.
 
 About monthly or bi-monthly, new commands, enhancements and bug fixs will be added to subsequent trial versions. However, it will not include commands which involve complex implementation. Ready-to-use command scripts with sample data will be included in the distribution. For any reported critical bugs, it will be fixed and published as soon as practical.
