@@ -7,7 +7,7 @@ When it comes to data structures, bytearray is one of the most useful and memory
 
 ## Ultra Speed for Query Data from a Billion-Row File & Database
 
-Compared to other expensive consolidation solutions e.g, Oracle HFM, SAP BPC, IBM Cognos Controller and TM1, the rule setting of Peaks Consolidation is exceptionally simple for any user. Additionally, CurrentSetting{} allows you to leverage your computing device to deal with billions of rows of queries at your fingertips, whether it’s a single file or a folder containing many files. Below is an example of rule setting:-
+Compared to other expensive consolidation solutions e.g, Oracle HFM, SAP BPC, IBM Cognos Controller and TM1, the rule setting of Peaks Consolidation is exceptionally simple for any user. Additionally, CurrentSetting{} allows you to leverage your computing device to deal with billions of rows of queries at your fingertips, whether it’s a single file or a folder containing many files. It can also provide an interface to support your database. Below is an example of rule setting:-
 
 ```
 CurrentSetting{StreamMB(1000)Thread(100)}
