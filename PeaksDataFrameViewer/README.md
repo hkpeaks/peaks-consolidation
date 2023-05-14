@@ -2,9 +2,9 @@
 
 The author created a .NET Web Pivot Table (Previously known as youFast Desktop) before using Golang. He is considering whether to re-implement this visual into Peaks DataFrame. The last bug fix was made on August 3rd, 2020. On April 30th, 2023, the author published this project again. 
 
-If you want to use a ready to use version of the app, please download it from the "Releases" section of this page. How to use, please visit https://www.youtube.com/@accountingetl5158/videos
+If you want to use a ready to use version of the app, please download it from the "Releases" section of https://github.com/do-account/PeaksDataFrameViewer/releases. How to use, please visit https://www.youtube.com/@accountingetl5158/videos
 
-If you want to built the app from source code, please download the above source code, in the directory ..\Downloads\PeaksDataFrameViewer-main>  type dotnet build, you will see a directory "\Downloads\youFast" is created and youFast.exe inside the directory.
+If you want to built the app from source code, please download the above source code from https://github.com/do-account/PeaksDataFrameViewer, in the directory ..\Downloads\PeaksDataFrameViewer-main>  type dotnet build, you will see a directory "\Downloads\youFast" is created and youFast.exe inside the directory.
 
 Clicking the youFast.exe which will start a websocket server and open your browser with default data. The app supports csv file only with maximum of 50 Million Rows given that your device has installed 32GB RAM. The websocket runs on local host “ws://127.0.0.1:5000/”. The websocket is an open source and can be downloaded from https://github.com/statianzo/Fleck.
 
