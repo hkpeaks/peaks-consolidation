@@ -90,10 +90,14 @@ Peaks Consolidation will help with statutory compliance and management ad-hoc re
    b. translation at consolidation level
 5. elimination of inter-company transactions
 6. re-alignment of different year-end dates with different consolidation methods
+
    a. proportional accounting
-   b. equity accounting, 
+  
+   b. equity accounting
+   
    c. full consolidation with calculation of minority interest
-7. standardizes your dataset
+   
+7. standardation of dataset
 
 Standardizes your dataset and is empowered by a conditional mapping engine with effective date of change calculation rules. This engine can be used to solve your ever-changing incentive plans for different stakeholder management, account allocation and sharing holdings in investment in subsidiaries, joint ventures and associates.
 
