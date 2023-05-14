@@ -78,11 +78,11 @@ According to a performance chart, Peaks demonstrate high efficiency in resource 
 
 Apart from JoinTable, this url https://youtu.be/9nxIDi2t1Bg is a demo video which apply a query statement "Select{1000MillionRows.csv | Ledger(L10…L15,L50…L55,L82…L88) Account(12222…12888,15555…16888) Project(>B28,<B22) ~ Peaks-Filter1000M.csv}" to select 15,110,000 rows from the 1 billion rows file. The whole processing time is 124 seconds running on a 3-year-old desktop PC with only 32GB RAM. Utilization of memory resources throughout the process is near half. Less resource demanding if comparing a JoinTable test.
 
-## Consolidation Rules
+## Consolidation Rules for Financial Close and Budgeting
 
 Peaks Consolidation will help with statutory compliance and management ad-hoc reporting for financial consolidation with thousands of business units and legal entities by the following conolidation rules:-
 
-1. Voucher generation e.g. reversal, amortization, fair value adjustment
+1. Voucher generation e.g. reversal, amortization, acquisition, displosal, fair value adjustment
 2. Segmental multi-currency account periodical balance e.g. Yearly, Weekly, Daily
 3. Account allocation
 4. account reconciliation
@@ -107,7 +107,7 @@ Your dataset can be standardized using a conditional mapping engine that is equi
 
 The mission of Peaks Consolidation development roadmap is to empower you to achieve advanced accounting automation anywhere, progressing towards real-time accounting automation.
 
-## Integration
+## Software Integration
 
 The author loves using Golang because it is a high-performance programming language with a beautiful syntax design. It is exceptionally easy to learn and has strong support from the community. As a result, the author is considering integrating Peaks Consolidation with other software written in Golang. Below are some of projects why the author finds Golang is very attractive: -
 
