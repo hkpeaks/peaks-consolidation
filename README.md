@@ -52,7 +52,7 @@ The initial version will cover the following command groups and commands:-
 ## Peaks Framework and DataFrame
 Peaks Consolidation comprises of Peaks framework and dataframe that are currently under active development. 
 
-FRAMEWORK: It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with Peaks and third-party libraries.
+FRAMEWORK: It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with Peaks DataFramw and third-party softwares.
 
 DATAFRAME: It is a high-performance calculation engine that can be configured by the framework in either streaming mode or in-memory mode easily. 
 
