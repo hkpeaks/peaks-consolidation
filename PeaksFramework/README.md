@@ -9,13 +9,13 @@ Peaks's Script
 > In-memory model
 ReadFile{10MillionRows.csv ~ Table}
 Distinct{Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table2}
-WriteFile{Table2 | * ~ Peaks-Distinct10.csv}
-WriteFile{Table | Ledger, Account, PartNo,Project,Contact ~ Peaks-Transaction.csv}
+WriteFile{Table2 ~ Peaks-Distinct10.csv}
+WriteFile{Table ~ Peaks-Transaction.csv}
 
 > Streaming model (streaming for reading file only)
 CurrentSetting{StreamMB(1000)Thread(100)}
 Distinct{1000MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency ~ Table}
-WriteFile{Table | * ~ Peaks-Distinct1000M.csv}
+WriteFile{Table ~ Peaks-Distinct1000M.csv}
 
 ```
 
@@ -48,7 +48,7 @@ Peaks's Script
 CurrentSetting{StreamMB(1000)Thread(100)}
 GroupBy{1000MillionRows.CSV | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency 
   =>  Count() Max(Quantity) Min(Quantity) Sum(Quantity) ~ Table}
-WriteFile{Table | * ~ Peaks-GroupBy1000M.csv}
+WriteFile{Table ~ Peaks-GroupBy1000M.csv}
 ```
 
 Polar's Python Code
@@ -153,7 +153,7 @@ GroupBy{JoinedTable | Company =>  Count() Max(Exchange Rate) Min(Exchange Rate) 
 
 ## Output In-memory Table Data to CSV File
 
-WriteFile{FilteredTable | * ~ Result1000M-FilteredData.csv}
-WriteFile{Cost Centre | * ~ Result1000M-GroupByCostCentre.csv}
-WriteFile{Company | * ~ Result1000M-GroupByCompany.csv}
+WriteFile{FilteredTable  ~ Result1000M-FilteredData.csv}
+WriteFile{Cost Centre ~ Result1000M-GroupByCostCentre.csv}
+WriteFile{Company ~ Result1000M-GroupByCompany.csv}
 ```
