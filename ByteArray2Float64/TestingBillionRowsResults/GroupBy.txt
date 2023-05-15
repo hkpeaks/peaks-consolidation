@@ -1,6 +1,0 @@
-ReplaceRule{size=10}
-CurrentSetting{StreamMB(1000)Thread(100)}
-GroupBy{sizeMillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency =>  Count() Max(Quantity) Min(Quantity) Sum(Quantity) Sum(Base Amount) ~ Table}
-WriteFile{Table | * ~ Result-GroupBy.csv}
-
-
