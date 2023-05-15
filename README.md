@@ -19,7 +19,7 @@ Select{Project(>B25,<B23)}
 GroupBy{Ledger, Account, Project, D/C, Currency 
         => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
 
-WriteFile{Table | * ~ FilterResults.csv}
+WriteFile{Table ~ FilterResults.csv}
 ```
 
 The entire process running on a desktop PC with 8 cores and 32GB of memory takes only 85 seconds using a file with file size of 67.2GB. We are continuously working to improve the algorithm, resulting in better performance with less resource utilization.
