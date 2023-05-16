@@ -80,7 +80,7 @@ Apart from JoinTable, this url https://youtu.be/9nxIDi2t1Bg is a demo video whic
 
 ## Consolidation Rules for Financial Close and Budgeting
 
-Peaks Consolidation will help with statutory compliance and management ad-hoc reporting for financial consolidation with thousands of business units and legal entities by the following consolidation rules:-
+The use of Peask Consoldation supports both consolidation of financial data and non-financial data. However, Peaks Consolidation will help with statutory compliance and management ad-hoc reporting for financial consolidation with thousands of business units and legal entities by the following consolidation rules:-
 
 1. Voucher generation e.g. reversal, amortization, acquisition, displosal, fair value adjustment
 2. Segmental multi-currency account periodical balance e.g. Yearly, Weekly, Daily
