@@ -37,17 +37,17 @@ You can download a free and trial versions of runtime for Windows/Linux with use
 
 About monthly or bi-monthly, new commands, enhancements and bug fixs will be added to subsequent trial versions. However, it will not include commands which involve complex implementation. Ready-to-use command scripts with sample data will be included in the distribution. For any reported critical bugs, it will be fixed and published as soon as practical.
 
-The first and second version will cover the following command groups and commands:-
+The first (by the end of May) and second (by the end of Jun@) version will cover the following command groups and commands:-
 
-| Command Group  | Command                        | Remark                                                 |                  
-|----------------|------------------------------- |------------------------------------------------------- |
-| CurrentSetting | CurrentSetting                 | adjust the size of the partition of your large file    |
-|                |                                | and the number threads to match your data and machine  |
-| IO             | ReadFile, WriteFile, SplitFile |                                                        | 
-| Unique         | Distinct, GroupBy              |                                                        |
-| JoinTable      | BuildKeyValue, JoinKeyValue    | two commands must be configured together               |
-| Filter         | Select, SelectUnmatch          |                                                        |
-| Append         | Append                         | for row/column with adding value/formula               |
+| Command Group  | Command                          | Remark                                                 |                  
+|----------------|--------------------------------- |------------------------------------------------------- |
+| CurrentSetting | CurrentSetting                   | adjust the size of the partition of your large file    |
+|                |                                  | and the number threads to match your data and machine  |
+| IO             | ReadFile, WriteFile, SplitFile @ |                                                        | 
+| Unique         | Distinct, GroupBy                |                                                        |
+| JoinTable      | BuildKeyValue, JoinKeyValue      | two commands must be configured together               |
+| Filter         | Select, SelectUnmatch            |                                                        |
+| Append         | Append @                         | for row/column with adding value/formula               |
 
 ## Peaks Framework and DataFrame
 Peaks Consolidation comprises of Peaks framework and dataframe that are currently under active development. 
