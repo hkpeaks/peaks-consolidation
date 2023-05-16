@@ -37,7 +37,7 @@ You can download a free and trial versions of runtime for Windows/Linux with use
 
 About monthly or bi-monthly, new commands, enhancements and bug fixs will be added to subsequent trial versions. However, it will not include commands which involve complex implementation. Ready-to-use command scripts with sample data will be included in the distribution. For any reported critical bugs, it will be fixed and published as soon as practical.
 
-The initial version will cover the following command groups and commands:-
+The first and second version will cover the following command groups and commands:-
 
 | Command Group  | Command                        | Remark                                                 |                  
 |----------------|------------------------------- |------------------------------------------------------- |
