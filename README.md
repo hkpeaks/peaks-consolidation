@@ -9,6 +9,20 @@ When it comes to data structures, bytearray is one of the most useful and memory
 
 Compared to other expensive consolidation solutions e.g, Oracle HFM, SAP BPC, IBM Cognos Controller and TM1, the rule setting of Peaks Consolidation is exceptionally simple for any user. Additionally, CurrentSetting{} allows you to leverage your computing device to deal with billions of rows of queries at your fingertips, whether it’s a single file or a folder containing many files. It can also provide an interface to support your database. Below is an example of rule setting:-
 
+1. Select{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
+2. Select{Project(>B25,<B23)}
+3. GroupBy{Ledger, Account, Project, D/C, Currency 
+        => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
+4. WriteFile{Table ~ FilterResults.csv}
+
+The entire process running on a desktop PC with 8 cores and 32GB of memory takes only 85 seconds using a file with file size of 67.2GB. We are continuously working to improve the algorithm, resulting in better performance with less resource utilization.
+
+StreamMB(1000) allows you to adjust the partition size of data streaming to fit your hardware configuration. The author found that 1000 (e.g., 1GB) is suitable for their computer with 32GB of memory. 
+
+Thread(100) allows you to maximize the usage of multi-core CPU. The author found that 100 threads is suitable for their computer with 8 cores.
+
+If your file is small e.g. less than 10 million rows, normally it is no need to configure these 2 items.
+
 ```
 CurrentSetting{StreamMB(1000)Thread(100)} This line is optional setting
 
@@ -32,13 +46,7 @@ CurrentSetting{StreamMB(1000)Thread(100)} This line is optional setting
 
 ```
 
-The entire process running on a desktop PC with 8 cores and 32GB of memory takes only 85 seconds using a file with file size of 67.2GB. We are continuously working to improve the algorithm, resulting in better performance with less resource utilization.
 
-StreamMB(1000) allows you to adjust the partition size of data streaming to fit your hardware configuration. The author found that 1000 (e.g., 1GB) is suitable for their computer with 32GB of memory. 
-
-Thread(100) allows you to maximize the usage of multi-core CPU. The author found that 100 threads is suitable for their computer with 8 cores.
-
-If your file is small e.g. less than 10 million rows, normally it is no need to configure these 2 items.
 
 
 ## Trial Version Is Coming Soon
