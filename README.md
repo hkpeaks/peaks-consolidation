@@ -34,13 +34,6 @@ CurrentSetting{StreamMB(1000)Thread(100)}
 ## 1b1. ReadFile{1000MillionRows.csv ~ Table}
 ## 1b2. Select{Ledger(L10..L20)Account(15000..16000) ~ Table}
 
-2. Select{Project(>B25,<B23)}
-
-3. GroupBy{Ledger, Account, Project, D/C, Currency 
-        => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
-
-4. WriteFile{Table ~ FilterResults.csv}
-
 ## Scenario C: if user want to output a large proportion of data from source files
 
 1c. Select{1000MillionRows.csv | Ledger(L10..L98) ~ LargeFile.csv}
