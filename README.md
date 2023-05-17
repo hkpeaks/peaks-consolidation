@@ -13,7 +13,9 @@ Compared to other expensive consolidation solutions e.g, Oracle HFM, SAP BPC, IB
 CurrentSetting{StreamMB(1000)Thread(100)}
 
 ## if configure file name as data source, Peaks will auto-detect to use streaming/in-memory model automatically
+
 Select{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
+
 ## if user must use in-memory model when their machine has sufficient memory
 ## ReadFile{1000MillionRows.csv ~ Table}
 ## Select{Ledger(L10..L20)Account(15000..16000) ~ Table}
