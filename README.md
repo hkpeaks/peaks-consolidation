@@ -29,7 +29,7 @@ WriteFile{Table ~ FilterResults.csv}
 
 ## Scenario 3: if user want to output a large proportion of data from source files
 Select{1000MillionRows.csv | Ledger(L10..L98) ~ LargeFile.csv}
-## Streaming will be implemented throughout the read file, filter and write file.
+## Streaming will be implemented throughout the read file, filter and write file in parallel.
 
 ```
 
