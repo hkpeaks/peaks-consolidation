@@ -26,9 +26,11 @@ CurrentSetting{StreamMB(1000)Thread(100)} This line is optional setting
 ## Thread(100) allows you to maximize the usage of multi-core CPU. The author found that 100 threads is suitable for their computer with 8 cores.
 
 ## Scenario A: if configure file name as data source, Peaks will auto-detect to use streaming/in-memory model automatically
+
 1. Select{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
 
 ## Scenario B: if user want to ensure the use in-memory model when their machine has sufficient memory
+
 ## 1b1. ReadFile{1000MillionRows.csv ~ Table}
 ## 1b2. Select{Ledger(L10..L20)Account(15000..16000) ~ Table}
 
@@ -40,7 +42,9 @@ CurrentSetting{StreamMB(1000)Thread(100)} This line is optional setting
 4. WriteFile{Table ~ FilterResults.csv}
 
 ## Scenario C: if user want to output a large proportion of data from source files
+
 1c. Select{1000MillionRows.csv | Ledger(L10..L98) ~ LargeFile.csv}
+
 ## Streaming will be implemented throughout the read file, filter and write file in parallel.
 
 ```
