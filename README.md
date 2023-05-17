@@ -19,13 +19,11 @@ The entire process running on a desktop PC with 8 cores and 32GB of memory takes
 
 ```
 ## If your file is small e.g. less than 10 million rows, normally it is no need to configure below CurrentSetting.
+
 CurrentSetting{StreamMB(1000)Thread(100)} This line is optional setting
+
 ## StreamMB(1000) allows you to adjust the partition size of data streaming to fit your hardware configuration. The author found that 1000 (e.g., 1GB) is suitable for their computer with 32GB of memory.
 ## Thread(100) allows you to maximize the usage of multi-core CPU. The author found that 100 threads is suitable for their computer with 8 cores.
-
-Thread(100) allows you to maximize the usage of multi-core CPU. The author found that 100 threads is suitable for their computer with 8 cores.
-
-If your file is small e.g. less than 10 million rows, normally it is no need to configure these 2 items.
 
 ## Scenario A: if configure file name as data source, Peaks will auto-detect to use streaming/in-memory model automatically
 1. Select{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
