@@ -12,23 +12,23 @@ Compared to other expensive consolidation solutions e.g, Oracle HFM, SAP BPC, IB
 ```
 CurrentSetting{StreamMB(1000)Thread(100)}
 
-## Scenario 1: if configure file name as data source, Peaks will auto-detect to use streaming/in-memory model automatically
+## Scenario A: if configure file name as data source, Peaks will auto-detect to use streaming/in-memory model automatically
 
-Select{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
+1. Select{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
 
-## Scenario 2: if user must use in-memory model when their machine has sufficient memory
-## ReadFile{1000MillionRows.csv ~ Table}
-## Select{Ledger(L10..L20)Account(15000..16000) ~ Table}
+## Scenario B: if user want to ensure the use in-memory model when their machine has sufficient memory
+## 1b1. ReadFile{1000MillionRows.csv ~ Table}
+## 1b2. Select{Ledger(L10..L20)Account(15000..16000) ~ Table}
 
-Select{Project(>B25,<B23)}
+2. Select{Project(>B25,<B23)}
 
-GroupBy{Ledger, Account, Project, D/C, Currency 
+3. GroupBy{Ledger, Account, Project, D/C, Currency 
         => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
 
-WriteFile{Table ~ FilterResults.csv}
+4. WriteFile{Table ~ FilterResults.csv}
 
-## Scenario 3: if user want to output a large proportion of data from source files
-Select{1000MillionRows.csv | Ledger(L10..L98) ~ LargeFile.csv}
+## Scenario C: if user want to output a large proportion of data from source files
+1c. Select{1000MillionRows.csv | Ledger(L10..L98) ~ LargeFile.csv}
 ## Streaming will be implemented throughout the read file, filter and write file in parallel.
 
 ```
