@@ -45,9 +45,9 @@ CurrentSetting{StreamMB(1000)Thread(100)}
 
 
 
-## Trial Version Is Coming Soon
+## Download Pre-release of Peaks v23.05.18
 
-You can download a free and trial versions of runtime for Windows/Linux with use cases. If you have any problem during your testing of the software, please report us in the issues section.
+You can download a free and trial versions of runtime for Windows/Linux with use cases from https://github.com/hkpeaks/peaks-consolidation/releases. If you have any problem during your testing of the software, please report us in the issues section.
 
 About monthly or bi-monthly, new commands, enhancements and bug fixs will be added to subsequent trial versions. However, it will not include commands which involve complex implementation. Ready-to-use command scripts with sample data will be included in the distribution. For any reported critical bugs, it will be fixed and published as soon as practical.
 
