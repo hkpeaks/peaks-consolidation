@@ -3,8 +3,6 @@ Peaks Consolidation is a personal academic project that aims to provide an innov
 
 Currently, Peaks Consolidation have been innovating and testing a set of algorithms and data structures to support profound acceleration of the dataframe with limited memory. One of the project’s expected outcomes is to solve the data explosion that came with data capture from IoT devices, ERP, internet and data lake. By using a proper script settings, it can support streaming and in-memory models.
 
-When it comes to data structures, bytearray is one of the most useful and memory-efficient. As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM. The author had conducted some research in bioinformatics and had learned that RNA polymerase is responsible for transcribing DNA into RNA while ribosomes are responsible for translating RNA into proteins. The author was impressed by the high efficiency of protein production from transcription to translation, so the data model of Peaks is somewhat similar to these biological operations.
-
 ## Ultra Speed for Query Billion Rows
 
 Compared to other expensive consolidation solutions e.g, Oracle HFM, SAP BPC, IBM Cognos Controller and TM1, the rule setting of Peaks Consolidation is exceptionally simple for any user. Additionally, CurrentSetting{} allows you to leverage your computing device to deal with billions of rows of queries at your fingertips, whether it’s a single file or a folder containing many files. It can also provide an interface to support your database. Below is an example of rule setting:-
@@ -66,11 +64,15 @@ The first version publised on May 19, 2023 and second (by the end of Jun@) versi
 ## Peaks Framework and DataFrame
 Peaks Consolidation comprises of Peaks framework and dataframe that are currently under active development. 
 
-FRAMEWORK: It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with Peaks DataFrame and third-party softwares.
+FRAMEWORK: It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with Peaks DataFrame and third-party softwares. When it comes to data structures, bytearray is one of the most useful and memory-efficient. 
+https://github.com/hkpeaks/peaks-consolidation/blob/main/PeaksFramework/data_structure.go
 
 DATAFRAME: It is a workflow management system that helps you manage your databending exercises. The databending process is empowered by a high-performance calculation engine that can be worked in either streaming mode or in-memory mode.
 
-RELEASES: It will be provided an all-in-one executable runtime for both Windows and Linux. The gRPC version of Peaks Framework which supports Python/Node.js/Java/Rust/.Net will be available in the next stage.
+As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM. The author had conducted some research in bioinformatics and had learned that RNA polymerase is responsible for transcribing DNA into RNA while ribosomes are responsible for translating RNA into proteins. The author was impressed by the high efficiency of protein production from transcription to translation, so the data model of Peaks is somewhat similar to these biological operations.
+
+RELEASES: It provided an all-in-one executable runtime for both Windows and Linux. https://github.com/hkpeaks/peaks-consolidation/releases
+The gRPC version of Peaks Framework which supports Python/Node.js/Java/Rust/.Net will be available in the next stage.
 
 Both framework and dataframe are written in Golang. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of considerations.
 
