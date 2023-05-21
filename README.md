@@ -77,10 +77,10 @@ As for algorithms, parallel streaming for reading/writing files and querying is 
 It provided an all-in-one executable runtime for both Windows and Linux. https://github.com/hkpeaks/peaks-consolidation/releases
 The gRPC version of Peaks Framework which supports Python/Node.js/Java/Rust/.Net will be available in the next stage.
 
+Both framework and dataframe are written in Golang. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of considerations.
+
 ### Peaks Use Cases
 From time to time use cases will be published in the Github and its YouTube channel.
-
-Both framework and dataframe are written in Golang. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of considerations.
 
 ## File Format
 Currently, Peaks Consolidation supports tables in CSV file format only and will support other popular table formats such as XLSX, JSON, PARQUET and FASTA.
