@@ -68,7 +68,7 @@ Peaks Consolidation comprises of Peaks framework and dataframe that are currentl
 
 FRAMEWORK: It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with Peaks DataFrame and third-party softwares.
 
-DATAFRAME: It is a high-performance calculation engine that can be configured by the framework in either streaming mode or in-memory mode easily. 
+DATAFRAME: It is a workflow management system that helps you manage your databending exercises. The databending process is empowered by a high-performance calculation engine that can be worked in either streaming mode or in-memory mode2.
 
 RELEASES: It will be provided an all-in-one executable runtime for both Windows and Linux. The gRPC version of Peaks Framework which supports Python/Node.js/Java/Rust/.Net will be available in the next stage.
 
