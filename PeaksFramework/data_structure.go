@@ -25,33 +25,6 @@ type Rule struct {
 	block                      map[string]map[string]map[string]string
 }
 
-type InternalRule struct {
-	source_table_name                     string
-	original_source_table_name            string
-	return_table_name                     string
-	column                                string
-	filter_column                         string
-	column_name                           []string
-	column_id                             map[int]int
-	column_id_seq                         []int
-	filter_column_id_seq                  []int
-	group_by_function                     []string
-	join_table_function                   string
-	calc_column_name                      []string
-	x_column                              string
-	y_column                              string
-	keyvalue_table_name                   string
-	table                                 Cache
-	upper_column_name2operator            map[string][]string
-	upper_column_name2data_type           map[string][]string
-	upper_column_name2compare_value       map[string][]string
-	upper_column_name2compare_alt_value   map[string][]string
-	upper_column_name2compare_float64     map[string][]float64
-	upper_column_name2compare_alt_float64 map[string][]float64
-	full_streaming_command                map[string]int
-	validate_all_column_name              []string
-}
-
 type Cache struct {
 	total_column         int
 	total_row            int32
