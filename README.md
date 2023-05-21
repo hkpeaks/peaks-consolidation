@@ -69,7 +69,7 @@ https://github.com/hkpeaks/peaks-consolidation/blob/main/PeaksFramework/data_str
 
 DATAFRAME: It is a workflow management system that helps you manage your databending exercises. The databending process is empowered by a high-performance calculation engine that can be worked in either streaming mode or in-memory mode.
 
-As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM. The author had conducted some research in bioinformatics and had learned that RNA polymerase is responsible for transcribing DNA into RNA while ribosomes are responsible for translating RNA into proteins. The author was impressed by the high efficiency of protein production from transcription to translation, so the data model of Peaks is somewhat similar to these biological operations.
+As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM. The author had conducted some research in bioinformatics and had learned that RNA polymerase is responsible for transcribing DNA into RNA while ribosomes are responsible for translating RNA into proteins. The author was impressed by the high efficiency of protein production from transcription to translation, so the data processing of Peaks is somewhat similar to these biological operations.
 
 RELEASES: It provided an all-in-one executable runtime for both Windows and Linux. https://github.com/hkpeaks/peaks-consolidation/releases
 The gRPC version of Peaks Framework which supports Python/Node.js/Java/Rust/.Net will be available in the next stage.
