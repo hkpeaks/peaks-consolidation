@@ -71,7 +71,7 @@ https://github.com/hkpeaks/peaks-consolidation/blob/main/PeaksFramework/data_str
 ### Peaks DataFrame
 It is a workflow management system that helps you manage your databending exercises. The databending process is empowered by a high-performance calculation engine that can be worked in either streaming mode or in-memory mode.
 
-As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM. The author had conducted some research in bioinformatics and had learned that RNA polymerase is responsible for transcribing DNA into RNA while ribosomes are responsible for translating RNA into proteins. The author was impressed by the high efficiency of protein production from transcription to translation, so the data processing of Peaks is somewhat similar to these biological operations.
+Parallel streaming is a powerful technique for reading/writing files and querying algorithms. It can handle billions of rows on a desktop PC with only 8 cores and 32GB RAM. Instead of using arrow as an intermediate of in-memory dataset, parallel streaming performs byte-to-byte conversion of input bytearray directly throughout ETL processes to output bytearray. This implementation model has been tested on many billion-row experiments for Distinct, GroupBy, JoinTable and Filter, and has shown remarkable processing speed.
 
 ### Peaks Releases
 It provided an all-in-one executable runtime for both Windows and Linux. https://github.com/hkpeaks/peaks-consolidation/releases
