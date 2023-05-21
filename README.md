@@ -61,14 +61,14 @@ The first version publised on May 19, 2023 and second (by the end of Jun@) versi
 | Filter         | Select, SelectUnmatch            |                                                        |
 | Append         | Append @                         | for row/column with adding value/formula               |
 
-## Peaks Framework and DataFrame
-Peaks Consolidation comprises of Peaks framework and dataframe that are currently under active development. 
+## Peaks Consolidation
+It comprises the following elements:-
 
 ### Peaks Framework
 It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with Peaks DataFrame and third-party softwares. When it comes to data structures, bytearray is one of the most useful and memory-efficient. 
 https://github.com/hkpeaks/peaks-consolidation/blob/main/PeaksFramework/data_structure.go
 
-### Peaks DataFramwork
+### Peaks DataFrame
 It is a workflow management system that helps you manage your databending exercises. The databending process is empowered by a high-performance calculation engine that can be worked in either streaming mode or in-memory mode.
 
 As for algorithms, parallel streaming for reading/writing files and querying is very powerful and can handle billions of rows even on a desktop PC with only 8 cores and 32GB RAM. The author had conducted some research in bioinformatics and had learned that RNA polymerase is responsible for transcribing DNA into RNA while ribosomes are responsible for translating RNA into proteins. The author was impressed by the high efficiency of protein production from transcription to translation, so the data processing of Peaks is somewhat similar to these biological operations.
@@ -76,6 +76,9 @@ As for algorithms, parallel streaming for reading/writing files and querying is 
 ### Peaks Releases
 It provided an all-in-one executable runtime for both Windows and Linux. https://github.com/hkpeaks/peaks-consolidation/releases
 The gRPC version of Peaks Framework which supports Python/Node.js/Java/Rust/.Net will be available in the next stage.
+
+### Peaks Use Cases
+From time to time use cases will be published in the Github and its YouTube channel.
 
 Both framework and dataframe are written in Golang. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of considerations.
 
