@@ -13,7 +13,7 @@ In comparison to other consolidation solutions, such as Oracle HFM, SAP BPC, IBM
         => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
 4. WriteFile{Table ~ FilterResults.csv}
 
-The entire process running on a desktop PC with 8 cores and 32GB of memory takes only 85 seconds using a file with file size of 67.2GB. We are continuously working to improve the algorithm, resulting in better performance with less resource utilization.
+The complete processing time takes only 85 seconds on a desktop PC with 8 cores and 32GB of memory with a file size of 67.2GB. We are constantly working to enhance the algorithm, which results in higher performance while using fewer resources.
 
 ```
 ## If your file is small e.g. less than 10 million rows, normally it is no need to configure below CurrentSetting.
