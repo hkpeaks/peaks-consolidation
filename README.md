@@ -5,7 +5,7 @@ Peaks Consolidation is currently developing and testing a set of algorithms and 
 
 ## Ultra Speed for Query Billion Rows
 
-Compared to other expensive consolidation solutions e.g, Oracle HFM, SAP BPC, IBM Cognos Controller and TM1, the rule setting of Peaks Consolidation is exceptionally simple for any user. Additionally, CurrentSetting{} allows you to leverage your computing device to deal with billions of rows of queries at your fingertips, whether it’s a single file or a folder containing many files. It can also provide an interface to support your database. Below is an example of rule setting:-
+In comparison to other consolidation solutions, such as Oracle HFM, SAP BPC, IBM Cognos Controller, and TM1, Peaks Consolidation's rule creation is extraordinarily straightforward for any user. Furthermore, CurrentSetting enables you to use your computing device to deal with billions of rows of queries, whether it's a single file or a folder comprising numerous files. It can also serve as an interface to your database. Here's an example of rule creation:-
 
 1. Select{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
 2. Select{Project(>B25,<B23)}
