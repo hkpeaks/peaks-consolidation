@@ -49,29 +49,30 @@ You can download a free and trial versions of runtime for Windows/Linux with use
 
 About monthly or bi-monthly, new commands, enhancements and bug fixs will be added to subsequent trial versions. However, it will not include commands which involve complex implementation. Ready-to-use command scripts with sample data will be included in the distribution. For any reported critical bugs, it will be fixed and published as soon as practical.
 
-The first version publised on May 19, 2023 and second (by the end of Jun@) version will cover the following command groups and commands:-
+The first version publised on May 19, 2023 which cover the following command groups and commands:-
 
 | Command Group  | Command                          | Remark                                                 |                  
 |----------------|--------------------------------- |------------------------------------------------------- |
 | CurrentSetting | CurrentSetting                   | adjust the size of the partition of your large file    |
 |                |                                  | and the number threads to match your data and machine  |
-| IO             | ReadFile, WriteFile, SplitFile @ |                                                        | 
+| IO             | ReadFile, WriteFile              |                                                        | 
 | Unique         | Distinct, GroupBy                |                                                        |
 | JoinTable      | BuildKeyValue, JoinKeyValue      | two commands must be configured together               |
 | Filter         | Select, SelectUnmatch            |                                                        |
-| Append         | Append @                         | for row/column with adding value/formula               |
 
 ## Peaks Consolidation
 It comprises the following elements:-
 
 ### Peaks Framework
-It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with Peaks DataFrame and third-party softwares. When it comes to data structures, bytearray is one of the most useful and memory-efficient. 
+It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with dataFrame and third-party softwares. When it comes to data structures, bytearray is one of the most useful and memory-efficient. 
 https://github.com/hkpeaks/peaks-consolidation/blob/main/PeaksFramework/data_structure.go
 
-### Peaks DataFrame
-It is a workflow management system that helps you manage your databending exercises. The databending process is empowered by a high-performance calculation engine that can be worked in either streaming mode or in-memory mode.
+Included in the framework, it cover a workflow management system that helps you manage your databending exercises. The databending process is empowered by a high-performance calculation engine that can be worked in either streaming mode or in-memory mode.
 
-Parallel streaming is a powerful technique for reading/writing files and querying algorithms. It can handle billions of rows on a desktop PC with only 8 cores and 32GB RAM. Instead of using arrow as an intermediate of in-memory dataset, parallel streaming performs byte-to-byte conversion of input bytearray directly throughout ETL processes to output bytearray. This implementation model has been tested on many billion-row experiments for Distinct, GroupBy, JoinTable and Filter, and has shown remarkable processing speed.
+Parallel streaming is a powerful technique for reading/writing files and querying algorithms. It can handle billions of rows on a desktop PC with only 8 cores and 32GB RAM. Instead of using arrow as an intermediate of in-memory dataset, parallel streaming performs byte-to-byte conversion of input bytearray directly throughout ETL processes to output bytearray. 
+
+### Peaks Databending
+Databending is a proprietary software which is repsonsible to provide different ETL commands such as Distinct, GroupBy, BuildKeyValue, JoinKeyValue, Select, SelectUnmatch and more are coming. Working with the Peaks Framework, the unique implementation model has been tested on many billion-row experiments for these ETL  commands and has shown remarkable processing speed.
 
 ### Peaks Releases
 It provided an all-in-one executable runtime for both Windows and Linux. https://github.com/hkpeaks/peaks-consolidation/releases
