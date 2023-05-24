@@ -11,7 +11,7 @@ import (
 
 // Peaks Consolidation = Peaks Framework (Open Source) + Peaks Databending (Proprietary)
 // Since using "Go Build" fail to build databending.go as a library, so this open source project cannot be built an executable runtime.
-// You can use the publised pre-release https://github.com/hkpeaks/peaks-consolidation/releases to test the software.
+// You can consider to use the publish pre-release https://github.com/hkpeaks/peaks-consolidation/releases to test the software.
 
 
 func main() {
