@@ -1,3 +1,5 @@
+// Parallel streaming throughout your ETL processes for billions of rows using 32GB memory
+
 package peaks
 
 import (
