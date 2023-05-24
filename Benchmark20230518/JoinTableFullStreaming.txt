@@ -1,0 +1,13 @@
+ReadFile{Master.csv ~ Master}
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue} 
+
+## If the exported data is larger than the memory capacity, you can implement full streaming mode to write the file by each stream.
+
+JoinKeyValue{1MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue) ~ PeaksJoinTableFullStreaming.csv}
+ 
+
+
+
+
+
+

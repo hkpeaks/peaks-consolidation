@@ -1,0 +1,5 @@
+GroupBy{1MillionRows.csv | Account => Sum(Base Amount) ~ Table}
+WriteFile{Table ~ PeaksGroupByOneColumns.csv}
+
+
+

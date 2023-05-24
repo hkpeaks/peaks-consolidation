@@ -1,0 +1,11 @@
+ReadFile{1MillionRows.csv ~ Table}
+
+## If the output table is not declared, the system will use the current table based on the last output table.
+
+Select{Table | Ledger, Account, Base Amount}
+WriteFile{Table ~ PeaksSelectColumn.csv}
+
+
+
+
+
