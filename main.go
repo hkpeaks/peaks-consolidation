@@ -30,6 +30,18 @@ The following functions in data_bending.go are empty and are reserved for Peaks 
 
 Original number of line is 1882  which covers about proprietary sections
 For open source purpose, it is reducted to 707 line of code
+
+In the same directly of this main.go, please type "go build", the do.exe will be generated. For linux, do will be generated.
+Please unzip 1MillionRows.zip in the Input folder before you run script.
+
+Run script:
+
+do script_file_name or ./do script_file_name 
+do "script file name" or ./do "script file name" 
+
+No need to type file extension. For any new script file you create, the script file extension must be ".txt". 
+After confirm to run the script, you can see the results in your screen and the output folder.
+
 */
 
 func main() {
