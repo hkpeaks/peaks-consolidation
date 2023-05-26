@@ -1,0 +1,38 @@
+## 68.8MB, 1 Million Rows x 14 Columns 
+
+## You can configure path of input and output file
+ReadFile{1MillionRows.csv ~ Table}
+
+## Filter Data From One Million Rows CSV File
+
+Select{Project(>B28,<B22)Ledger(L10..L12,L53..L55,L82..L85)D/C(=D)}
+Select{Contact(=C39,C32..C34)}
+
+## By default, all columns are deemed as text type. For filtering purposes, please specify float type for real numbers.
+## This filter by float must be defined in a separate line. 
+
+Select{Quantity(Float500..600)Base Amount(Float>30000) ~ FilteredTable}
+
+## Join "FilteredTable" from "MasterTable" to Append New Columns "Company" & "Cost Centre"
+
+ReadFile{Master.csv ~ MasterTable}
+BuildKeyValue{MasterTable | Ledger,Account,Project ~ KeyValue}
+JoinKeyValue{FilteredTable | Ledger,Account,Project => AllMatch(KeyValue) ~ JoinedTable} 
+
+## Summarized Data Based on New Columns "Company" & "Cost Centre"
+
+GroupBy{JoinedTable | Cost Centre =>  Count() Max(Quantity) Min(Quantity) Min(Unit Price) Max(Unit Price) Sum(Base Amount) ~ Cost Centre}
+GroupBy{JoinedTable | Company =>  Count() Max(Exchange Rate) Min(Exchange Rate) Max(Unit Price) Min(Unit Price) Sum(Base Amount) ~ Company}
+
+## Output In-memory Table Data to CSV File
+
+WriteFile{FilteredTable ~ PeaksManyCommandsFilterData.csv}
+WriteFile{Cost Centre ~ PeaksManyCommandsGroupByCostCentre.csv}
+WriteFile{Company ~ PeaksManyCommandsGroupByCompany.csv}
+
+
+
+
+
+
+

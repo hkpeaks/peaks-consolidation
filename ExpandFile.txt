@@ -1,0 +1,5 @@
+ReadFile{1MillionRows.csv ~ Table}   
+WriteFile{Table ~ %ExpandBy10Time.csv}
+
+
+
