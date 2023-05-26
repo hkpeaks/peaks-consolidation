@@ -1,3 +1,0 @@
-ReadFile{10MillionRows.csv ~ Table}   
-WriteFile{Table ~ PeaksResult-10MillionRows.csv}
-
