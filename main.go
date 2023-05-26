@@ -31,7 +31,7 @@ The following functions in data_bending.go are empty and are reserved for Peaks 
 Original number of line is 1882  which covers about proprietary sections
 For open source purpose, it is reducted to 707 line of code
 
-In the same directly of this main.go, please type "go build", the do.exe will be generated. For linux, do will be generated.
+In the same file directory of this main.go, please type "go build", the binary file "do.exe" will be generated. For linux, "do" will be generated instead.
 Please unzip 1MillionRows.zip in the Input folder before you run script.
 
 Run script:
