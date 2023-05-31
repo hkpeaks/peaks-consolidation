@@ -1,5 +1,5 @@
 ## This script is not supported by the open source Peaks Framework.
-## You can download the pre-release version Peaks Consolidation. 
+## You can download the pre-release version of Peaks Consolidation. 
 
 ## Select Table From Column Where Column(Condition)
 ## Select{TableName/FileName | ColumnName1, ColumnName2, ColumnName3 => Column1(Condition1 Or Condition2)& Column2(Condition1 Or Condition2) ~ ReturnTable/FileName.csv}

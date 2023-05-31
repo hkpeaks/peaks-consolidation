@@ -1,5 +1,5 @@
 ## This script is not supported by the open source Peaks Framework.
-## You can download the pre-release version Peaks Consolidation. 
+## You can download the pre-release version of Peaks Consolidation. 
 
 ReadFile{Master.csv ~ Master}
 BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue} 

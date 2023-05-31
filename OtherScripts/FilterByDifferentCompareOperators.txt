@@ -1,5 +1,5 @@
 ## This script is not supported by the open source Peaks Framework.
-## You can download the pre-release version Peaks Consolidation. 
+## You can download the pre-release version of Peaks Consolidation. 
 
 CurrentSetting{Thread(4)}
 Select{1MillionRows.csv | Ledger(L=99,<L20)Project(>B25,<B23) ~ Table}

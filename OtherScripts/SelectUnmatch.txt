@@ -1,5 +1,5 @@
 ## This script is not supported by the open source Peaks Framework.
-## You can download the pre-release version Peaks Consolidation. 
+## You can download the pre-release version of Peaks Consolidation. 
 
 ## Row count for Select and Selectunmatch = row count of source csv file (excluded column header)
 

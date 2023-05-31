@@ -1,5 +1,5 @@
 ## This script is not supported by the open source Peaks Framework.
-## You can download the pre-release version Peaks Consolidation. 
+## You can download the pre-release version of Peaks Consolidation. 
 
 Select{1MillionRows.csv | Ledger(L10..L15,L50..L55,L82..L88)Account(12222..12888,15555..16888) ~ Table}
 

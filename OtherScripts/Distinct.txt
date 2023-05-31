@@ -1,5 +1,5 @@
 ## This script is not supported by the open source Peaks Framework.
-## You can download the pre-release version Peaks Consolidation. 
+## You can download the pre-release version of Peaks Consolidation. 
 
 Distinct{1MillionRows.csv | Ledger, Account, PartNo, Project, Contact, Unit Code, D/C, Currency ~ Table}
 Distinct{Table | Ledger ~ DistinctLedger}
