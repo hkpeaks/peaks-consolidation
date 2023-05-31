@@ -20,6 +20,8 @@ Fully function script of the Peaks Framework (Open Source):
 - SplitFile.txt
 - ExpandFile.txt
 - Please unzip 1MillionRows.zip you can find in the Input folder before you run the above scripts
+- 29-May 2023: New function of ReadFile which supports to read many csv files (same data schema) within same folder 
+     ReadFile{Drive:\FolerName\*.csv ~ Table}
 
 The following functions in data_bending.go are empty and are reserved for Peaks Databending (Proprietary).
 - JoinKeyValue() => Support JoinTable
