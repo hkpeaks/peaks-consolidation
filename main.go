@@ -1,7 +1,7 @@
 package main
 
 import (
-	"do/peaks"
+	"do/src"
 	"fmt"
 	"log"
 	"math"
