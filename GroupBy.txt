@@ -1,7 +1,0 @@
-## You can configure path of input and output file
-
-GroupBy{1MillionRows.csv | Ledger, Account, PartNo,Project,Contact,Unit Code, D/C,Currency => Sum(Quantity) Max(Quantity) Min(Quantity) Sum(Original Amount) Sum(Base Amount) ~ Table}
-WriteFile{Table ~ PeaksGroupByAllTextColumns.csv}
-
-
-
