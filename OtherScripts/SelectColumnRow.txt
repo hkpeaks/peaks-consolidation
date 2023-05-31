@@ -1,0 +1,23 @@
+## This script is not supported by the open source Peaks Framework.
+## You can download the pre-release version Peaks Consolidation. 
+
+## Select Table From Column Where Column(Condition)
+## Select{TableName/FileName | ColumnName1, ColumnName2, ColumnName3 => Column1(Condition1 Or Condition2)& Column2(Condition1 Or Condition2) ~ ReturnTable/FileName.csv}
+
+## If not declare column name, will output all columns from selected rows
+## e.g. Select{1MillionRows.csv | Ledger(L10..L15,L50..L55,L82..L88)Account(12222..12888,15555..16888) ~ Table}
+
+## Streaming: If not declare Column(Condition), will output all rows from selected all rows
+## e.g. Select{1MillionRows.csv | ColumnName1, ColumnName2, ColumnName3 ~ Table}
+
+## Full Streaming: If output data greater than memory size 
+## e.g. Select{1MillionRows.csv | Ledger(L10..L15,L50..L55,L82..L88)Account(12222..12888,15555..16888) ~ BigTable.csv}
+## e.g. Select{D:\Peaks230518\Output\BigTable.csv | Ledger, Account, PartNo, Project, Contact, Unit Code, D/C, Currency ~ DistinctBigTable.csv}
+
+Select{1MillionRows.csv | Account, Quantity, Base Amount => Ledger(L10..L15,L50..L55,L82..L88)Account(12222..12888,15555..16888) ~ Table}
+WriteFile{Table ~ SelectRow.csv}
+
+
+
+
+

@@ -1,0 +1,33 @@
+## This script is not supported by the open source Peaks Framework.
+## You can download the pre-release version Peaks Consolidation. 
+
+## Row count for Select and Selectunmatch = row count of source csv file (excluded column header)
+
+## Run in in-memory mode
+
+ReadFile{1MillionRows.csv ~ Table}
+SelectUnmatch{Table | Ledger(L10..L15,L50..L55,L82..L88) Account(12222..12888,15555..16888) Project(<B22,>B28) ~ SelectUnmatch}
+Select{Table | Ledger(L10..L15,L50..L55,L82..L88) Account(12222..12888,15555..16888) Project(<B22,>B28) ~ Select}
+WriteFile{SelectUnmatch ~ PeaksSelectUnmatch.csv}
+WriteFile{Select ~ PeaksSelect.csv}
+
+## Run in streaming mode for read file and filter only
+
+SelectUnmatch{1MillionRows.csv | Ledger(L10..L15,L50..L55,L82..L88) Account(12222..12888,15555..16888) Project(<B22,>B28) ~ SelectUnmatch}
+Select{1MillionRows.csv | Ledger(L10..L15,L50..L55,L82..L88) Account(12222..12888,15555..16888) Project(<B22,>B28) ~ Select}
+WriteFile{SelectUnmatch ~ PeaksStreamingSelectUnmatch.csv}
+WriteFile{Select ~ PeaksStreamingSelect.csv}
+
+## If the exported data is larger than the memory capacity, you can implement full streaming mode to write the file by each stream.
+
+SelectUnmatch{1MillionRows.csv | Ledger(L10..L15,L50..L55,L82..L88) Account(12222..12888,15555..16888) Project(<B22,>B28) ~ PeaksFullStreamingSelectUnmatch.csv}
+Select{1MillionRows.csv | Ledger(L10..L15,L50..L55,L82..L88) Account(12222..12888,15555..16888) Project(<B22,>B28) ~ PeaksFullStreamingSelect.csv}
+
+
+
+
+
+
+
+
+
