@@ -1,6 +1,4 @@
 ## Introduction
-Peaks Consolidation is a personal academic project that attempts to offer a cutting-edge framework of ETL expression to make it simpler to process billions of rows utilizing streaming or in-memory model to speed up dataframe. The initiative, which started on February 18th, 2023 in Hong Kong SAR, intends to save your investment in cloud computing while achieving real-time processing of up to 10 million rows per second on a single computer system.
-
 Peaks Consolidation is currently developing and testing a set of algorithms and data structures to provide significant memory-constrained dataframe acceleration. Solving the data explosion that resulted from data gathering from IoT devices, ERP, the internet, and data lakes is one of the project's intended goals. It supports auto switching between streaming and in-memory models.
 
 ### Before you build runtime for the above open source project, please read the file main.go and this video https://youtu.be/b86yIrCR328
