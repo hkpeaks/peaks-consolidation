@@ -1,2 +1,4 @@
+## It must be specify full folder path. Please amend it to your target folder which contains many small csv files
+
 ReadFile{C:\peaks-framework-main\Input\1000SmallFiles\*.csv ~ Table}
 WriteFile{Table ~ PeaksCombineFile.csv}
