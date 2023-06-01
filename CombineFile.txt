@@ -1,2 +1,2 @@
-ReadFile{D:\peaks-framework-main\Input\1000SmallFiles\*.csv ~ Table}
+ReadFile{C:\peaks-framework-main\Input\1000SmallFiles\*.csv ~ Table}
 WriteFile{Table ~ PeaksCombineFile.csv}
