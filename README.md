@@ -1,7 +1,7 @@
 ## Introduction
 Peaks Consolidation is currently developing and testing a set of algorithms and data structures to provide significant memory-constrained dataframe acceleration. Solving the data explosion that resulted from data gathering from IoT devices, ERP, the internet, and data lakes is one of the project's intended goals. It supports auto switching between streaming and in-memory models.
 
-### Before you build runtime for the above open source project, please read the file main.go and this video https://youtu.be/b86yIrCR328
+### Before you build runtime for the above open source project, please read the file main.go.
 
 ## Ultra Speed for Query Billion Rows
 
