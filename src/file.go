@@ -59,7 +59,7 @@ func ReadFile(task Task, rule Rule) *CachePartition {
 		}
 
 		var current_batch int
-		var batch_size = 10
+		var batch_size = 100
 		var total_file int
 		var current_batch_max_file int
 
