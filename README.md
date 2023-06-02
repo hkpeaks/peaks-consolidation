@@ -68,7 +68,7 @@ It is an open-source project that aims to promote an alternative standard of ETL
 
 Included in the framework, it cover a workflow management system that helps you manage your table partitions. Parallel streaming is a powerful technique for reading/writing files and querying algorithms. It can handle billions of rows on a desktop PC with only 8 cores and 32GB RAM. Instead of using arrow as an intermediate of in-memory dataset, parallel streaming performs byte-to-byte conversion of input bytearray directly throughout ETL processes to output bytearray. 
 
-Currently, the frameowork offers the following open source ETL commands:-
+Currently, the framework offers the following open source ETL commands:-
 
 - ReadFile
 - WriteFile
