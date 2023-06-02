@@ -55,7 +55,7 @@ The first version publised on May 19, 2023 which cover the following command gro
 |----------------|--------------------------------- |------------------------------------------------------- |
 | CurrentSetting | CurrentSetting                   | adjust the size of the partition of your large file    |
 |                |                                  | and the number threads to match your data and machine  |
-| IO             | ReadFile, WriteFile              |                                                        | 
+| IO             | ReadFile, WriteFile, Splite File |                                                        | 
 | Unique         | Distinct, GroupBy                |                                                        |
 | JoinTable      | BuildKeyValue, JoinKeyValue      | two commands must be configured together               |
 | Filter         | Select, SelectUnmatch            |                                                        |
@@ -67,6 +67,14 @@ It comprises the following elements:-
 It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with dataFrame and third-party softwares. When it comes to data structures, bytearray is one of the most useful and memory-efficient. 
 
 Included in the framework, it cover a workflow management system that helps you manage your table partitions. Parallel streaming is a powerful technique for reading/writing files and querying algorithms. It can handle billions of rows on a desktop PC with only 8 cores and 32GB RAM. Instead of using arrow as an intermediate of in-memory dataset, parallel streaming performs byte-to-byte conversion of input bytearray directly throughout ETL processes to output bytearray. 
+
+Currently, the frameowork offers the following open source ETL commands:-
+
+- ReadFile
+- WriteFile
+- SplitFile
+- ExpandFile
+- CombineFile
 
 ### Peaks Databending
 Databending is an addon module which is repsonsible to provide different ETL commands such as Distinct, GroupBy, BuildKeyValue, JoinKeyValue, Select, SelectUnmatch and more are coming. Working with the Peaks Framework, the unique implementation model has been tested on many billion-row experiments for these ETL  commands and has shown remarkable processing speed.
