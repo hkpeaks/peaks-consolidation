@@ -40,9 +40,6 @@ CurrentSetting{StreamMB(1000)Thread(100)}
 
 ```
 
-
-
-
 ## Download Pre-release of Peaks v23.05.18
 
 You can download a free and trial versions of runtime for Windows/Linux with use cases from https://github.com/hkpeaks/peaks-consolidation/releases. If you have any problem during your testing of the software, please report us in the issues section.
@@ -55,7 +52,7 @@ The first version publised on May 19, 2023 which cover the following command gro
 |----------------|--------------------------------- |------------------------------------------------------- |
 | CurrentSetting | CurrentSetting                   | adjust the size of the partition of your large file    |
 |                |                                  | and the number threads to match your data and machine  |
-| IO             | ReadFile, WriteFile, Splite File |                                                        | 
+| IO             | ReadFile, WriteFile, SplitFile   |                                                        | 
 | Unique         | Distinct, GroupBy                |                                                        |
 | JoinTable      | BuildKeyValue, JoinKeyValue      | two commands must be configured together               |
 | Filter         | Select, SelectUnmatch            |                                                        |
@@ -70,14 +67,22 @@ Included in the framework, it cover a workflow management system that helps you 
 
 Currently, the framework offers the following open source ETL commands:-
 
+- CurrentSetting
 - ReadFile
 - WriteFile
 - SplitFile
 - ExpandFile
-- CombineFile
+- CombineFile (This command is developed after the publishing the pre-release version 23.05.18)
 
 ### Peaks Databending
-Databending is an addon module which is repsonsible to provide different ETL commands such as Distinct, GroupBy, BuildKeyValue, JoinKeyValue, Select, SelectUnmatch and more are coming. Working with the Peaks Framework, the unique implementation model has been tested on many billion-row experiments for these ETL  commands and has shown remarkable processing speed.
+Databending is an add-on module that supports the manipulation of your data using different calculation rules. Currently, this module offers the following commands:- 
+
+- Distinct
+- GroupBy
+- BuildKeyValue
+- JoinKeyValue
+- Select
+- SelectUnmatch
 
 ### Peaks Releases
 It provided an all-in-one executable runtime for both Windows and Linux. https://github.com/hkpeaks/peaks-consolidation/releases
