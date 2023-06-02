@@ -79,5 +79,5 @@ The gRPC version of Peaks Framework which supports Python/Node.js/Java/Rust/.Net
 Both framework and dataframe are written in Golang. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of considerations.
 
 ### Peaks Use Cases
-From time to time use cases will be published in the Github source code section, Rre-release and its YouTube channel https://www.youtube.com/@hkpeaks/videos
+From time to time use cases will be published in the Github source code section, Pre-release and its YouTube channel https://www.youtube.com/@hkpeaks/videos
 
