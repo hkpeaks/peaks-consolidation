@@ -98,24 +98,3 @@ Golang is a simple and beautiful programming language that allows JoinTable to i
 According to the Windows Task Manager for many testing results, Peaks Consolidation demonstrates high efficiency in resource utilization during the processing of billions of rows for JoinTable. You can continue to enjoy YouTube during the intensive data processing.
 
 Apart from JoinTable, this url https://youtu.be/9nxIDi2t1Bg is a demo video which apply a query statement "Select{1000MillionRows.csv | Ledger(L10…L15,L50…L55,L82…L88) Account(12222…12888,15555…16888) Project(>B28,<B22) ~ Peaks-Filter1000M.csv}" to select 15,110,000 rows from the 1 billion rows file. The whole processing time is 124 seconds running on a 3-year-old desktop PC with only 32GB RAM. Utilization of memory resources throughout the process is near half. Less resource demanding if comparing a JoinTable test.
-
-## Possible Integration
-
-The author loves using Golang because it is a high-performance programming language with a beautiful syntax design. It is exceptionally easy to learn and has strong support from the community. As a result, the author is considering integrating Peaks Consolidation with other software written in Golang. Below are some of projects why the author finds Golang is very attractive: -
-
-### TiDB
-TiDB is a distributed SQL database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads.
-
-### CloudQuery
-CloudQuery is a serverless SQL query engine that can be used to query data from various cloud storage services.
-
-### Docker
-Docker is a containerization platform and runtime that allows developers to build, package, and deploy applications as containers.
-
-### Kubernetes 
-Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications.
-
-### gRPC
-gRPC is a modern open-source high-performance Remote Procedure Call (RPC) framework that can run in any environment. It has an official Go implementation called grpc-go.
-
-Since Golang doesn’t have a hyper-performance dataframe library similar to Polars for Rust, the author was motivated to create a better one for the Golang community.
