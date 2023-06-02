@@ -79,13 +79,5 @@ The gRPC version of Peaks Framework which supports Python/Node.js/Java/Rust/.Net
 Both framework and dataframe are written in Golang. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of considerations.
 
 ### Peaks Use Cases
-From time to time use cases will be published in the Github and its YouTube channel.
+From time to time use cases will be published in the Github and its YouTube channel https://www.youtube.com/@hkpeaks
 
-## File Format
-Currently, Peaks Consolidation supports tables in CSV file format only and will support other popular table formats such as XLSX, JSON, PARQUET and FASTA.
-
-XLSX is a popular file format for accounting. It’s likely that Peaks Consolidation will support this format by considering the Excelize library for Golang. 
-
-PARQUET is a format that is built to handle flat columnar storage data formats. It is designed for efficient data storage and retrieval. The format stores data in “row group” blocks that are divided into “column chunks” and then further divided into “data pages” .
-
-FASTA format is a text-based format that supports bioinformatics. It is used for representing either nucleotide sequences or amino acid (protein) sequences. In this format, nucleotides or amino acids are represented using single-letter codes for five nucleobases— adenine (A), cytosine (C), guanine (G), thymine (T), and uracil (U). Unknown bases are represented by the letter N. The human genome is a diploid genome that contains 3.2 billion nucleotides. These nucleotides are packed into 23 pairs of chromosomes.
