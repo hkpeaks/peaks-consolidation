@@ -1,9 +1,0 @@
-CurrentSetting{StreamMB(1000)Thread(100)}
-Select{300-MillionRows.csv | Ledger(L30..L70) ~ Table}
-GroupBy{Ledger, Account, DC, Currency => SUM(Base_Amount)}
-WriteFile{Table ~ PeaksFilterGroupBy.csv}
-
-
-
-
-
