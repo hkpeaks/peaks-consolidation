@@ -1,0 +1,1864 @@
+Topic,Dimension,Group,Value1,Value2
+Mushroom,Type,Null,Poisonous,Null
+Mushroom,Type,Null,Edible,Null
+Mushroom,Cap Shape,Null,Convex,Null
+Mushroom,Cap Shape,Null,Bell,Null
+Mushroom,Cap Shape,Null,Sunken,Null
+Mushroom,Cap Shape,Null,Flat,Null
+Mushroom,Cap Shape,Null,Knobbed,Null
+Mushroom,Cap Shape,Null,Conical,Null
+Mushroom,Cap Surface,Null,Smooth,Null
+Mushroom,Cap Surface,Null,Scaly,Null
+Mushroom,Cap Surface,Null,Fibrous,Null
+Mushroom,Cap Surface,Null,Grooves,Null
+Mushroom,Cap Color,Null,Brown,Null
+Mushroom,Cap Color,Null,Yellow,Null
+Mushroom,Cap Color,Null,White,Null
+Mushroom,Cap Color,Null,Gray,Null
+Mushroom,Cap Color,Null,Red,Null
+Mushroom,Cap Color,Null,Pink,Null
+Mushroom,Cap Color,Null,Buff,Null
+Mushroom,Cap Color,Null,Purple,Null
+Mushroom,Cap Color,Null,Cinnamon,Null
+Mushroom,Cap Color,Null,Green,Null
+Mushroom,Bruises,Null,Yes,Null
+Mushroom,Bruises,Null,No,Null
+Mushroom,Odor,Null,Pungent,Null
+Mushroom,Odor,Null,Almond,Null
+Mushroom,Odor,Null,Anise,Null
+Mushroom,Odor,Null,None,Null
+Mushroom,Odor,Null,Foul,Null
+Mushroom,Odor,Null,Creosote,Null
+Mushroom,Odor,Null,Fishy,Null
+Mushroom,Odor,Null,Spicy,Null
+Mushroom,Odor,Null,Musty,Null
+Mushroom,Gill Attachment,Null,Free,Null
+Mushroom,Gill Attachment,Null,Attached,Null
+Mushroom,Gill Spacing,Null,Close,Null
+Mushroom,Gill Spacing,Null,Crowded,Null
+Mushroom,Gill Size,Null,Narrow,Null
+Mushroom,Gill Size,Null,Broad,Null
+Mushroom,Gill Color,Null,Black,Null
+Mushroom,Gill Color,Null,Brown,Null
+Mushroom,Gill Color,Null,Gray,Null
+Mushroom,Gill Color,Null,Pink,Null
+Mushroom,Gill Color,Null,White,Null
+Mushroom,Gill Color,Null,Chocolate,Null
+Mushroom,Gill Color,Null,Purple,Null
+Mushroom,Gill Color,Null,Red,Null
+Mushroom,Gill Color,Null,Buff,Null
+Mushroom,Gill Color,Null,Green,Null
+Mushroom,Gill Color,Null,Yellow,Null
+Mushroom,Gill Color,Null,Orange,Null
+Mushroom,Stalk Shape,Null,Enlarging,Null
+Mushroom,Stalk Shape,Null,Tapering,Null
+Mushroom,Stalk Root,Null,Equal,Null
+Mushroom,Stalk Root,Null,Club,Null
+Mushroom,Stalk Root,Null,Bulbous,Null
+Mushroom,Stalk Root,Null,Rooted,Null
+Mushroom,Stalk Root,Null,Missing,Null
+Mushroom,Stalk Surface Above Ring,Null,Smooth,Null
+Mushroom,Stalk Surface Above Ring,Null,Fibrous,Null
+Mushroom,Stalk Surface Above Ring,Null,Silky,Null
+Mushroom,Stalk Surface Above Ring,Null,Scaly,Null
+Mushroom,Stalk Surface Below Ring,Null,Smooth,Null
+Mushroom,Stalk Surface Below Ring,Null,Fibrous,Null
+Mushroom,Stalk Surface Below Ring,Null,Scaly,Null
+Mushroom,Stalk Surface Below Ring,Null,Silky,Null
+Mushroom,Stalk Color Above Ring,Null,White,Null
+Mushroom,Stalk Color Above Ring,Null,Gray,Null
+Mushroom,Stalk Color Above Ring,Null,Pink,Null
+Mushroom,Stalk Color Above Ring,Null,Brown,Null
+Mushroom,Stalk Color Above Ring,Null,Buff,Null
+Mushroom,Stalk Color Above Ring,Null,Red,Null
+Mushroom,Stalk Color Above Ring,Null,Orange,Null
+Mushroom,Stalk Color Above Ring,Null,Cinnamon,Null
+Mushroom,Stalk Color Above Ring,Null,Yellow,Null
+Mushroom,Stalk Color Below Ring,Null,White,Null
+Mushroom,Stalk Color Below Ring,Null,Pink,Null
+Mushroom,Stalk Color Below Ring,Null,Gray,Null
+Mushroom,Stalk Color Below Ring,Null,Buff,Null
+Mushroom,Stalk Color Below Ring,Null,Brown,Null
+Mushroom,Stalk Color Below Ring,Null,Red,Null
+Mushroom,Stalk Color Below Ring,Null,Yellow,Null
+Mushroom,Stalk Color Below Ring,Null,Orange,Null
+Mushroom,Stalk Color Below Ring,Null,Cinnamon,Null
+Mushroom,Veil Type,Null,Partial,Null
+Mushroom,Veil Color,Null,White,Null
+Mushroom,Veil Color,Null,Brown,Null
+Mushroom,Veil Color,Null,Orange,Null
+Mushroom,Veil Color,Null,Yellow,Null
+Mushroom,Ring Number,Null,One,Null
+Mushroom,Ring Number,Null,Two,Null
+Mushroom,Ring Number,Null,None,Null
+Mushroom,Ring Type,Null,Pendant,Null
+Mushroom,Ring Type,Null,Evanescent,Null
+Mushroom,Ring Type,Null,Large,Null
+Mushroom,Ring Type,Null,Flaring,Null
+Mushroom,Ring Type,Null,None,Null
+Mushroom,Spore Print Color,Null,Black,Null
+Mushroom,Spore Print Color,Null,Brown,Null
+Mushroom,Spore Print Color,Null,Purple,Null
+Mushroom,Spore Print Color,Null,Chocolate,Null
+Mushroom,Spore Print Color,Null,White,Null
+Mushroom,Spore Print Color,Null,Green,Null
+Mushroom,Spore Print Color,Null,Orange,Null
+Mushroom,Spore Print Color,Null,Yellow,Null
+Mushroom,Spore Print Color,Null,Buff,Null
+Mushroom,Population,Null,Scattered,Null
+Mushroom,Population,Null,Numerous,Null
+Mushroom,Population,Null,Abundant,Null
+Mushroom,Population,Null,Several,Null
+Mushroom,Population,Null,Solitary,Null
+Mushroom,Population,Null,Clustered,Null
+Mushroom,Habitat,Null,Urban,Null
+Mushroom,Habitat,Null,Grasses,Null
+Mushroom,Habitat,Null,Meadows,Null
+Mushroom,Habitat,Null,Woods,Null
+Mushroom,Habitat,Null,Paths,Null
+Mushroom,Habitat,Null,Waste,Null
+Mushroom,Habitat,Null,Leaves,Null
+Diamond,Cut,Null,Ideal,Null
+Diamond,Cut,Null,Premium,Null
+Diamond,Cut,Null,Good,Null
+Diamond,Cut,Null,Very Good,Null
+Diamond,Cut,Null,Fair,Null
+Diamond,Color,Null,E,Null
+Diamond,Color,Null,I,Null
+Diamond,Color,Null,J,Null
+Diamond,Color,Null,H,Null
+Diamond,Color,Null,F,Null
+Diamond,Color,Null,G,Null
+Diamond,Color,Null,D,Null
+Diamond,Clarity,Null,SI2,Null
+Diamond,Clarity,Null,SI1,Null
+Diamond,Clarity,Null,VS1,Null
+Diamond,Clarity,Null,VS2,Null
+Diamond,Clarity,Null,VVS2,Null
+Diamond,Clarity,Null,VVS1,Null
+Diamond,Clarity,Null,I1,Null
+Diamond,Clarity,Null,IF,Null
+Diamond,Depth,Null,55~70,Null
+Diamond,Table,Null,50~80,Null
+Diamond,Carat,Null,0.2~1,Null
+People,First Name,Sex=Male,James,Null
+People,First Name,Sex=Male,John,Null
+People,First Name,Sex=Male,Robert,Null
+People,First Name,Sex=Male,Michael,Null
+People,First Name,Sex=Male,William,Null
+People,First Name,Sex=Male,David,Null
+People,First Name,Sex=Male,Richard,Null
+People,First Name,Sex=Male,Charles,Null
+People,First Name,Sex=Male,Joseph,Null
+People,First Name,Sex=Male,Thomas,Null
+People,First Name,Sex=Male,Christopher,Null
+People,First Name,Sex=Male,Daniel,Null
+People,First Name,Sex=Male,Paul,Null
+People,First Name,Sex=Male,Mark,Null
+People,First Name,Sex=Male,Donald,Null
+People,First Name,Sex=Male,George,Null
+People,First Name,Sex=Male,Kenneth,Null
+People,First Name,Sex=Male,Steven,Null
+People,First Name,Sex=Male,Edward,Null
+People,First Name,Sex=Male,Brian,Null
+People,First Name,Sex=Female,Mary,Null
+People,First Name,Sex=Female,Patricia,Null
+People,First Name,Sex=Female,Linda,Null
+People,First Name,Sex=Female,Barbara,Null
+People,First Name,Sex=Female,Elizabeth,Null
+People,First Name,Sex=Female,Jennifer,Null
+People,First Name,Sex=Female,Maria,Null
+People,First Name,Sex=Female,Susan,Null
+People,First Name,Sex=Female,Margaret,Null
+People,First Name,Sex=Female,Dorothy,Null
+People,First Name,Sex=Female,Lisa,Null
+People,First Name,Sex=Female,Nancy,Null
+People,First Name,Sex=Female,Karen,Null
+People,First Name,Sex=Female,Betty,Null
+People,First Name,Sex=Female,Helen,Null
+People,First Name,Sex=Female,Sandra,Null
+People,First Name,Sex=Female,Donna,Null
+People,First Name,Sex=Female,Carol,Null
+People,First Name,Sex=Female,Ruth,Null
+People,First Name,Sex=Female,Sharon,Null
+People,First Name,Sex=Female,Michelle,Null
+People,Surname,Null,Smith,Null
+People,Surname,Null,Johnson,Null
+People,Surname,Null,Williams,Null
+People,Surname,Null,Jones,Null
+People,Surname,Null,Brown,Null
+People,Surname,Null,Davis,Null
+People,Surname,Null,Miller,Null
+People,Surname,Null,Wilson,Null
+People,Surname,Null,Moore,Null
+People,Surname,Null,Taylor,Null
+People,Surname,Null,Anderson,Null
+People,Surname,Null,Thomas,Null
+People,Surname,Null,Jackson,Null
+People,Surname,Null,White,Null
+People,Surname,Null,Harris,Null
+People,Surname,Null,Martin,Null
+People,Surname,Null,Thompson,Null
+People,Surname,Null,Garcia,Null
+People,Surname,Null,Martinez,Null
+People,Surname,Null,Robinson,Null
+People,Surname,Null,Clark,Null
+Chemistry,Element,State=Gas,Hydrogen,1
+Chemistry,Element,State=Gas,Helium,2
+Chemistry,Element,State=Solid,Lithium,3
+Chemistry,Element,State=Solid,Beryllium,4
+Chemistry,Element,State=Solid,Boron,5
+Chemistry,Element,State=Solid,Carbon,6
+Chemistry,Element,State=Gas,Nitrogen,7
+Chemistry,Element,State=Gas,Oxygen,8
+Chemistry,Element,State=Gas,Fluorine,9
+Chemistry,Element,State=Gas,Neon,10
+Chemistry,Element,State=Solid,Sodium,11
+Chemistry,Element,State=Solid,Magnesium,12
+Chemistry,Element,State=Solid,Aluminum,13
+Chemistry,Element,State=Solid,Silicon,14
+Chemistry,Element,State=Solid,Phosphorus,15
+Chemistry,Element,State=Solid,Sulfur,16
+Chemistry,Element,State=Gas,Chlorine,17
+Chemistry,Element,State=Gas,Argon,18
+Chemistry,Element,State=Solid,Potassium,19
+Chemistry,Element,State=Solid,Calcium,20
+Chemistry,Element,State=Solid,Scandium,21
+Chemistry,Element,State=Solid,Titanium,22
+Chemistry,Element,State=Solid,Vanadium,23
+Chemistry,Element,State=Solid,Chromium,24
+Chemistry,Element,State=Solid,Manganese,25
+Chemistry,Element,State=Solid,Iron,26
+Chemistry,Element,State=Solid,Cobalt,27
+Chemistry,Element,State=Solid,Nickel,28
+Chemistry,Element,State=Solid,Copper,29
+Chemistry,Element,State=Solid,Zinc,30
+Chemistry,Element,State=Solid,Gallium,31
+Chemistry,Element,State=Solid,Germanium,32
+Chemistry,Element,State=Solid,Arsenic,33
+Chemistry,Element,State=Solid,Selenium,34
+Chemistry,Element,State=Liq,Bromine,35
+Chemistry,Element,State=Gas,Krypton,36
+Chemistry,Element,State=Solid,Rubidium,37
+Chemistry,Element,State=Solid,Strontium,38
+Chemistry,Element,State=Solid,Yttrium,39
+Chemistry,Element,State=Solid,Zirconium,40
+Chemistry,Element,State=Solid,Niobium,41
+Chemistry,Element,State=Solid,Molybdenum,42
+Chemistry,Element,State=Artificial,Technetium,43
+Chemistry,Element,State=Solid,Ruthenium,44
+Chemistry,Element,State=Solid,Rhodium,45
+Chemistry,Element,State=Solid,Palladium,46
+Chemistry,Element,State=Solid,Silver,47
+Chemistry,Element,State=Solid,Cadmium,48
+Chemistry,Element,State=Solid,Indium,49
+Chemistry,Element,State=Solid,Tin,50
+Chemistry,Element,State=Solid,Antimony,51
+Chemistry,Element,State=Solid,Tellurium,52
+Chemistry,Element,State=Solid,Iodine,53
+Chemistry,Element,State=Gas,Xenon,54
+Chemistry,Element,State=Solid,Cesium,55
+Chemistry,Element,State=Solid,Barium,56
+Chemistry,Element,State=Solid,Lanthanum,57
+Chemistry,Element,State=Solid,Cerium,58
+Chemistry,Element,State=Solid,Praseodymium,59
+Chemistry,Element,State=Solid,Neodymium,60
+Chemistry,Element,State=Artificial,Promethium,61
+Chemistry,Element,State=Solid,Samarium,62
+Chemistry,Element,State=Solid,Europium,63
+Chemistry,Element,State=Solid,Gadolinium,64
+Chemistry,Element,State=Solid,Terbium,65
+Chemistry,Element,State=Solid,Dysprosium,66
+Chemistry,Element,State=Solid,Holmium,67
+Chemistry,Element,State=Solid,Erbium,68
+Chemistry,Element,State=Solid,Thulium,69
+Chemistry,Element,State=Solid,Ytterbium,70
+Chemistry,Element,State=Solid,Lutetium,71
+Chemistry,Element,State=Solid,Hafnium,72
+Chemistry,Element,State=Solid,Tantalum,73
+Chemistry,Element,State=Solid,Wolfram,74
+Chemistry,Element,State=Solid,Rhenium,75
+Chemistry,Element,State=Solid,Osmium,76
+Chemistry,Element,State=Solid,Iridium,77
+Chemistry,Element,State=Solid,Platinum,78
+Chemistry,Element,State=Solid,Gold,79
+Chemistry,Element,State=Liq,Mercury,80
+Chemistry,Element,State=Solid,Thallium,81
+Chemistry,Element,State=Solid,Lead,82
+Chemistry,Element,State=Solid,Bismuth,83
+Chemistry,Element,State=Solid,Polonium,84
+Chemistry,Element,State=Solid,Astatine,85
+Chemistry,Element,State=Gas,Radon,86
+Chemistry,Element,State=Solid,Francium,87
+Chemistry,Element,State=Solid,Radium,88
+Chemistry,Element,State=Solid,Actinium,89
+Chemistry,Element,State=Solid,Thorium,90
+Chemistry,Element,State=Solid,Protactinium,91
+Chemistry,Element,State=Solid,Uranium,92
+Chemistry,Element,State=Artificial,Neptunium,93
+Chemistry,Element,State=Artificial,Plutonium,94
+Chemistry,Element,State=Artificial,Americium,95
+Chemistry,Element,State=Artificial,Curium,96
+Chemistry,Element,State=Artificial,Berkelium,97
+Chemistry,Element,State=Artificial,Californium,98
+Chemistry,Element,State=Artificial,Einsteinium,99
+Chemistry,Element,State=Artificial,Fermium,100
+Chemistry,Element,State=Artificial,Mendelevium,101
+Chemistry,Element,State=Artificial,Nobelium,102
+Chemistry,Element,State=Artificial,Lawrencium,103
+Chemistry,Element,State=Artificial,Rutherfordium,104
+Chemistry,Element,State=Artificial,Dubnium,105
+Chemistry,Element,State=Artificial,Seaborgium,106
+Chemistry,Element,State=Artificial,Bohrium,107
+Chemistry,Element,State=Artificial,Hassium,108
+Chemistry,Element,State=Artificial,Meitnerium,109
+Chemistry,Element,State=Artificial,Darmstadtium,110
+Chemistry,Element,State=Artificial,Roentgenium,111
+Chemistry,Element,State=Artificial,Copernicium,112
+Chemistry,Element,State=Artificial,Nihonium,113
+Chemistry,Element,State=Artificial,Flerovium,114
+Chemistry,Element,State=Artificial,Moscovium,115
+Chemistry,Element,State=Artificial,Livermorium,116
+Chemistry,Element,State=Artificial,Tennessine,117
+Chemistry,Element,State=Artificial,Oganesson,118
+Food,Fruit,Null,Apricot,Null
+Food,Fruit,Null,Avocado,Null
+Food,Fruit,Null,Banana,Null
+Food,Fruit,Null,Bilberry,Null
+Food,Fruit,Null,Blackberry,Null
+Food,Fruit,Null,Blackcurrant,Null
+Food,Fruit,Null,Blueberry,Null
+Food,Fruit,Null,Currant,Null
+Food,Fruit,Null,Cherry,Null
+Food,Fruit,Null,Cherimoya,Null
+Food,Fruit,Null,Clementine,Null
+Food,Fruit,Null,Date,Null
+Food,Fruit,Null,Damson,Null
+Food,Fruit,Null,Durian,Null
+Food,Fruit,Null,Eggplant,Null
+Food,Fruit,Null,Elderberry,Null
+Food,Fruit,Null,Feijoa,Null
+Food,Fruit,Null,Gooseberry,Null
+Food,Fruit,Null,Grape,Null
+Food,Fruit,Null,Grapefruit,Null
+Food,Fruit,Null,Guava,Null
+Food,Fruit,Null,Huckleberry,Null
+Food,Fruit,Null,Jackfruit,Null
+Food,Fruit,Null,Jambul,Null
+Food,Fruit,Null,Kiwi fruit,Null
+Food,Fruit,Null,Kumquat,Null
+Food,Fruit,Null,Legume,Null
+Food,Fruit,Null,Lemon,Null
+Food,Fruit,Null,Lime,Null
+Food,Fruit,Null,Lychee,Null
+Food,Fruit,Null,Mango,Null
+Food,Fruit,Null,Mangostine,Null
+Food,Fruit,Null,Melon,Null
+Food,Fruit,Null,Cantaloupe,Null
+Food,Fruit,Null,Honeydew melon,Null
+Food,Fruit,Null,Watermelon,Null
+Food,Fruit,Null,Rock melon,Null
+Food,Fruit,Null,Nectarine,Null
+Food,Fruit,Null,Orange,Null
+Food,Fruit,Null,Peach,Null
+Food,Fruit,Null,Pear,Null
+Food,Fruit,Null,Williams pear or Bartlett pear,Null
+Food,Fruit,Null,Pitaya,Null
+Food,Fruit,Null,Physalis,Null
+Food,Fruit,Null,Plum/prune (dried plum),Null
+Food,Fruit,Null,Pineapple,Null
+Food,Fruit,Null,Pomegranate,Null
+Food,Fruit,Null,Raisin,Null
+Food,Fruit,Null,Raspberry,Null
+Food,Fruit,Null,Western raspberry (blackcap),Null
+Food,Fruit,Null,Rambutan,Null
+Food,Fruit,Null,Redcurrant,Null
+Food,Fruit,Null,Salal berry,Null
+Food,Fruit,Null,Satsuma,Null
+Food,Fruit,Null,Star fruit,Null
+Food,Fruit,Null,Strawberry,Null
+Food,Fruit,Null,Tangerine,Null
+Food,Fruit,Null,Tomato,Null
+Food,Fruit,Null,Ugli fruit,Null
+Food,Fruit,Null,Watermelon,Null
+Food,Fruit,Null,Ziziphus mauritiana,Null
+Country,Currency,New Zealand Dollars,New Zealand,NZD
+Country,Currency,New Zealand Dollars,Cook Islands,NZD
+Country,Currency,New Zealand Dollars,Niue,NZD
+Country,Currency,New Zealand Dollars,Pitcairn,NZD
+Country,Currency,New Zealand Dollars,Tokelau,NZD
+Country,Currency,Australian Dollars,Australian,AUD
+Country,Currency,Australian Dollars,Christmas Island,AUD
+Country,Currency,Australian Dollars,Cocos (Keeling) Islands,AUD
+Country,Currency,Australian Dollars,Heard and Mc Donald Islands,AUD
+Country,Currency,Australian Dollars,Kiribati,AUD
+Country,Currency,Australian Dollars,Nauru,AUD
+Country,Currency,Australian Dollars,Norfolk Island,AUD
+Country,Currency,Australian Dollars,Tuvalu,AUD
+Country,Currency,Euros,American Samoa,EUR
+Country,Currency,Euros,Andorra,EUR
+Country,Currency,Euros,Austria,EUR
+Country,Currency,Euros,Belgium,EUR
+Country,Currency,Euros,Finland,EUR
+Country,Currency,Euros,France,EUR
+Country,Currency,Euros,French Guiana,EUR
+Country,Currency,Euros,French Southern Territories,EUR
+Country,Currency,Euros,Germany,EUR
+Country,Currency,Euros,Greece,EUR
+Country,Currency,Euros,Guadeloupe,EUR
+Country,Currency,Euros,Ireland,EUR
+Country,Currency,Euros,Italy,EUR
+Country,Currency,Euros,Luxembourg,EUR
+Country,Currency,Euros,Martinique,EUR
+Country,Currency,Euros,Mayotte,EUR
+Country,Currency,Euros,Monaco,EUR
+Country,Currency,Euros,Netherlands,EUR
+Country,Currency,Euros,Portugal,EUR
+Country,Currency,Euros,Reunion,EUR
+Country,Currency,Euros,Samoa,EUR
+Country,Currency,Euros,San Marino,EUR
+Country,Currency,Euros,Slovenia,EUR
+Country,Currency,Euros,Spain,EUR
+Country,Currency,Euros,Vatican City State (Holy See),EUR
+Country,Currency,Sterling,South Georgia and the South Sandwich Islands,GBP
+Country,Currency,Sterling,United Kingdom,GBP
+Country,Currency,Sterling,Jersey,GBP
+Country,Currency,USD,British Indian Ocean Territory,USD
+Country,Currency,USD,Guam,USD
+Country,Currency,USD,Marshall Islands,USD
+Country,Currency,USD,Micronesia Federated States of,USD
+Country,Currency,USD,Northern Mariana Islands,USD
+Country,Currency,USD,Palau,USD
+Country,Currency,USD,Puerto Rico,USD
+Country,Currency,USD,Turks and Caicos Islands,USD
+Country,Currency,USD,United States,USD
+Country,Currency,USD,United States Minor Outlying Islands,USD
+Country,Currency,USD,Virgin Islands (British),USD
+Country,Currency,USD,Virgin Islands (US),USD
+Country,Currency,HKD,Hong Kong,HKD
+Country,Currency,Canadian Dollar,Canada,CAD
+Country,Currency,Japanese Yen,Japan,JPY
+Country,Currency,Afghani,Afghanistan,AFN
+Country,Currency,Lek,Albania,ALL
+Country,Currency,Algerian Dinar,Algeria,DZD
+Country,Currency,East Caribbean Dollar,Anguilla,XCD
+Country,Currency,East Caribbean Dollar,Antigua and Barbuda,XCD
+Country,Currency,East Caribbean Dollar,Dominica,XCD
+Country,Currency,East Caribbean Dollar,Grenada,XCD
+Country,Currency,East Caribbean Dollar,Montserrat,XCD
+Country,Currency,East Caribbean Dollar,Saint Kitts,XCD
+Country,Currency,East Caribbean Dollar,Saint Lucia,XCD
+Country,Currency,East Caribbean Dollar,Saint Vincent Grenadines,XCD
+Country,Currency,Peso,Argentina,ARS
+Country,Currency,Dram,Armenia,AMD
+Country,Currency,Netherlands Antilles Guilder,Aruba,ANG
+Country,Currency,Netherlands Antilles Guilder,Netherlands Antilles,ANG
+Country,Currency,Manat,Azerbaijan,AZN
+Country,Currency,Bahamian Dollar,Bahamas,BSD
+Country,Currency,Bahraini Dinar,Bahrain,BHD
+Country,Currency,Taka,Bangladesh,BDT
+Country,Currency,Barbadian Dollar,Barbados,BBD
+Country,Currency,Belarus Ruble,Belarus,BYR
+Country,Currency,Belizean Dollar,Belize,BZD
+Country,Currency,CFA Franc BCEAO,Benin,XOF
+Country,Currency,CFA Franc BCEAO,Burkina Faso,XOF
+Country,Currency,CFA Franc BCEAO,Guinea-Bissau,XOF
+Country,Currency,CFA Franc BCEAO,Ivory Coast,XOF
+Country,Currency,CFA Franc BCEAO,Mali,XOF
+Country,Currency,CFA Franc BCEAO,Niger,XOF
+Country,Currency,CFA Franc BCEAO,Senegal,XOF
+Country,Currency,CFA Franc BCEAO,Togo,XOF
+Country,Currency,Bermudian Dollar,Bermuda,BMD
+Country,Currency,Indian Rupee,Bhutan,INR
+Country,Currency,Indian Rupee,India,INR
+Country,Currency,Boliviano,Bolivia,BOB
+Country,Currency,Pula,Botswana,BWP
+Country,Currency,Norwegian Krone,Bouvet Island,NOK
+Country,Currency,Norwegian Krone,Norway,NOK
+Country,Currency,Norwegian Krone,Svalbard and Jan Mayen Islands,NOK
+Country,Currency,Brazil,Brazil,BRL
+Country,Currency,Bruneian Dollar,Brunei Darussalam,BND
+Country,Currency,Lev,Bulgaria,BGN
+Country,Currency,Burundi Franc,Burundi,BIF
+Country,Currency,Riel,Cambodia,KHR
+Country,Currency,CFA Franc BEAC,Cameroon,XAF
+Country,Currency,CFA Franc BEAC,Central African Republic,XAF
+Country,Currency,CFA Franc BEAC,Chad,XAF
+Country,Currency,CFA Franc BEAC,Congo Republic of the Democratic,XAF
+Country,Currency,CFA Franc BEAC,Equatorial Guinea,XAF
+Country,Currency,CFA Franc BEAC,Gabon,XAF
+Country,Currency,Escudo,Cape Verde,CVE
+Country,Currency,Caymanian Dollar,Cayman Islands,KYD
+Country,Currency,Chilean Peso,Chile,CLP
+Country,Currency,Yuan Renminbi,China,CNY
+Country,Currency,Peso,Colombia,COP
+Country,Currency,Comoran Franc,Comoros,KMF
+Country,Currency,Congolese Frank,Congo-Brazzaville,CDF
+Country,Currency,Costa Rican Colon,Costa Rica,CRC
+Country,Currency,Croatian Dinar,Croatia (Hrvatska),HRK
+Country,Currency,Cuban Peso,Cuba,CUP
+Country,Currency,Cypriot Pound,Cyprus,CYP
+Country,Currency,Koruna,Czech Republic,CZK
+Country,Currency,Danish Krone,Denmark,DKK
+Country,Currency,Danish Krone,Faroe Islands,DKK
+Country,Currency,Danish Krone,Greenland,DKK
+Country,Currency,Djiboutian Franc,Djibouti,DJF
+Country,Currency,Dominican Peso,Dominican Republic,DOP
+Country,Currency,Indonesian Rupiah,East Timor,IDR
+Country,Currency,Indonesian Rupiah,Indonesia,IDR
+Country,Currency,Sucre,Ecuador,ECS
+Country,Currency,Egyptian Pound,Egypt,EGP
+Country,Currency,Salvadoran Colon,El Salvador,SVC
+Country,Currency,Ethiopian Birr,Eritrea,ETB
+Country,Currency,Ethiopian Birr,Ethiopia,ETB
+Country,Currency,Estonian Kroon,Estonia,EEK
+Country,Currency,Falkland Pound,Falkland Islands (Malvinas),FKP
+Country,Currency,Fijian Dollar,Fiji,FJD
+Country,Currency,CFP Franc,French Polynesia,XPF
+Country,Currency,CFP Franc,New Caledonia,XPF
+Country,Currency,CFP Franc,Wallis and Futuna Islands,XPF
+Country,Currency,Dalasi,Gambia,GMD
+Country,Currency,Lari,Georgia,GEL
+Country,Currency,Gibraltar Pound,Gibraltar,GIP
+Country,Currency,Quetzal,Guatemala,GTQ
+Country,Currency,Guinean Franc,Guinea,GNF
+Country,Currency,Guyanaese Dollar,Guyana,GYD
+Country,Currency,Gourde,Haiti,HTG
+Country,Currency,Lempira,Honduras,HNL
+Country,Currency,Forint,Hungary,HUF
+Country,Currency,Icelandic Krona,Iceland,ISK
+Country,Currency,Iranian Rial,Iran (Islamic Republic of),IRR
+Country,Currency,Iraqi Dinar,Iraq,IQD
+Country,Currency,Shekel,Israel,ILS
+Country,Currency,Jamaican Dollar,Jamaica,JMD
+Country,Currency,Jordanian Dinar,Jordan,JOD
+Country,Currency,Tenge,Kazakhstan,KZT
+Country,Currency,Kenyan Shilling,Kenya,KES
+Country,Currency,Won,Korea North,KPW
+Country,Currency,Won,Korea South,KRW
+Country,Currency,Kuwaiti Dinar,Kuwait,KWD
+Country,Currency,Som,Kyrgyzstan,KGS
+Country,Currency,Kip,Lao People?s Democratic Republic,LAK
+Country,Currency,Lat,Latvia,LVL
+Country,Currency,Lebanese Pound,Lebanon,LBP
+Country,Currency,Loti,Lesotho,LSL
+Country,Currency,Liberian Dollar,Liberia,LRD
+Country,Currency,Libyan Dinar,Libyan Arab Jamahiriya,LYD
+Country,Currency,Swiss Franc,Liechtenstein,CHF
+Country,Currency,Swiss Franc,Switzerland,CHF
+Country,Currency,Lita,Lithuania,LTL
+Country,Currency,Pataca,Macau,MOP
+Country,Currency,Denar,Macedonia,MKD
+Country,Currency,Malagasy Franc,Madagascar,MGA
+Country,Currency,Malawian Kwacha,Malawi,MWK
+Country,Currency,Ringgit,Malaysia,MYR
+Country,Currency,Rufiyaa,Maldives,MVR
+Country,Currency,Maltese Lira,Malta,MTL
+Country,Currency,Ouguiya,Mauritania,MRO
+Country,Currency,Mauritian Rupee,Mauritius,MUR
+Country,Currency,Peso,Mexico,MXN
+Country,Currency,Leu,Moldova Republic of,MDL
+Country,Currency,Tugrik,Mongolia,MNT
+Country,Currency,Dirham,Morocco,MAD
+Country,Currency,Dirham,Western Sahara,MAD
+Country,Currency,Metical,Mozambique,MZN
+Country,Currency,Kyat,Myanmar,MMK
+Country,Currency,Dollar,Namibia,NAD
+Country,Currency,Nepalese Rupee,Nepal,NPR
+Country,Currency,Cordoba Oro,Nicaragua,NIO
+Country,Currency,Naira,Nigeria,NGN
+Country,Currency,Sul Rial,Oman,OMR
+Country,Currency,Rupee,Pakistan,PKR
+Country,Currency,Balboa,Panama,PAB
+Country,Currency,Kina,Papua New Guinea,PGK
+Country,Currency,Guarani,Paraguay,PYG
+Country,Currency,Nuevo Sol,Peru,PEN
+Country,Currency,Peso,Philippines,PHP
+Country,Currency,Zloty,Poland,PLN
+Country,Currency,Rial,Qatar,QAR
+Country,Currency,Leu,Romania,RON
+Country,Currency,Ruble,Russian Federation,RUB
+Country,Currency,Rwanda Franc,Rwanda,RWF
+Country,Currency,Dobra,Sao Tome and Principe,STD
+Country,Currency,Riyal,Saudi Arabia,SAR
+Country,Currency,Rupee,Seychelles,SCR
+Country,Currency,Leone,Sierra Leone,SLL
+Country,Currency,Dollar,Singapore,SGD
+Country,Currency,Koruna,Slovakia (Slovak Republic),SKK
+Country,Currency,Solomon Islands Dollar,Solomon Islands,SBD
+Country,Currency,Shilling,Somalia,SOS
+Country,Currency,Rand,South Africa,ZAR
+Country,Currency,Rupee,Sri Lanka,LKR
+Country,Currency,Dinar,Sudan,SDG
+Country,Currency,Surinamese Guilder,Suriname,SRD
+Country,Currency,Lilangeni,Swaziland,SZL
+Country,Currency,Krona,Sweden,SEK
+Country,Currency,Syrian Pound,Syrian Arab Republic,SYP
+Country,Currency,Dollar,Taiwan,TWD
+Country,Currency,Tajikistan Ruble,Tajikistan,TJS
+Country,Currency,Shilling,Tanzania,TZS
+Country,Currency,Baht,Thailand,THB
+Country,Currency,Pa?anga,Tonga,TOP
+Country,Currency,Trinidad and Tobago Dollar,Trinidad and Tobago,TTD
+Country,Currency,Tunisian Dinar,Tunisia,TND
+Country,Currency,Lira,Turkey,TRY
+Country,Currency,Manat,Turkmenistan,TMT
+Country,Currency,Shilling,Uganda,UGX
+Country,Currency,Hryvnia,Ukraine,UAH
+Country,Currency,Dirham,United Arab Emirates,AED
+Country,Currency,Peso,Uruguay,UYU
+Country,Currency,Som,Uzbekistan,UZS
+Country,Currency,Vatu,Vanuatu,VUV
+Country,Currency,Bolivar,Venezuela,VEF
+Country,Currency,Dong,Vietnam,VND
+Country,Currency,Rial,Yemen,YER
+Country,Currency,Kwacha,Zambia,ZMK
+Country,Currency,Zimbabwe Dollar,Zimbabwe,ZWD
+Country,Currency,Euro,Aland Islands,EUR
+Country,Currency,Angolan kwanza,Angola,AOA
+Country,Currency,Antarctican dollar,Antarctica,AQD
+Country,Currency,Bosnia and Herzegovina convertible mark,Bosnia and Herzegovina,BAM
+Country,Currency,Congolese Frank,Congo (Kinshasa),CDF
+Country,Currency,Ghana cedi,Ghana,GHS
+Country,Currency,Guernsey pound,Guernsey,GGP
+Country,Currency,Manx pound,Isle of Man,GBP
+Country,Currency,Lao kip,Laos,LAK
+Country,Currency,Macanese pataca,Macao S.A.R.,MOP
+Country,Currency,Euro,Montenegro,EUR
+Country,Currency,Jordanian dinar,Palestinian Territory,JOD
+Country,Currency,Euro,Saint Barthelemy,EUR
+Country,Currency,Saint Helena pound,Saint Helena,GBP
+Country,Currency,Netherlands Antillean guilder,Saint Martin (French part),ANG
+Country,Currency,Euro,Saint Pierre and Miquelon,EUR
+Country,Currency,Serbian dinar,Serbia,RSD
+Country,Currency,US Dollar,US Armed Forces,USD
+Investment,Type,Bonds,Null,Null
+Investment,Type,Mutual Funds,Null,Null
+Investment,Type,Exchange-Trade Funds,Null,Null
+Investment,Type,Certificates of Deposit,Null,Null
+Investment,Type,Retirement Plans,Null,Null
+Investment,Type,Options,Null,Null
+Investment,Type,Annuities,Null,Null
+Investment,Type,Commodities,Null,Null
+Investment,Type,Cryptocurrencies,Null,Null
+SaleContract,Form ID,Null,55555~99999,Null
+SaleContract,Contract No,Null,2222~3333,Null
+SaleContract,Contract Date,Null,43146~45000,Null
+SaleContract,Product,!Unit_Price=8900,Clothes Dryer,Null
+SaleContract,Product,!Unit_Price=15000,Smart TV,Null
+SaleContract,Product,!Unit_Price=52500,Crystal,Null
+SaleContract,Product,!Unit_Price=9600,Packing Machine,Null
+SaleContract,Product,!Unit_Price=2800,Cap Lamp,Null
+SaleContract,Product,!Unit_Price=2560,Guitar,Null
+SaleContract,Product,!Unit_Price=10000,Watch,Null
+SaleContract,Product,!Unit_Price=95000,3D Printer,Null
+SaleContract,Product,!Unit_Price=389000,Motor Vehicles,Null
+SaleContract,Product,!Unit_Price=7200,Cleanser,Null
+SaleContract,Quantity,Null,550~7099,Null
+SaleContract,Currency,!Exchange_Rate=1.1,CNY,Null
+SaleContract,Currency,!Exchange_Rate=9,GBP,Null
+SaleContract,Currency,!Exchange_Rate=7.8,USD,Null
+SaleContract,Currency,!Exchange_Rate=10,EUR,Null
+SaleContract,Currency,!Exchange_Rate=2,RUB,Null
+SaleContract,Unit Price,Null,calc(Unit_Price / Exchange_Rate),Null
+SaleContract,Exchange Rate,Null,calc(Exchange_Rate),Null
+SaleContract,HKD Amount,Null,calc(Quantity * Unit Price * Exchange Rate),Null
+SaleContract,Customer,Null,Olivier Kumar,Null
+SaleContract,Customer,Null,Barry Gibson,Null
+SaleContract,Customer,Null,Hill Sharma,Null
+SaleContract,Customer,Null,Jennifer Cheung,Null
+SaleContract,Customer,Null,Mary Lam,Null
+SaleContract,Customer,Null,Boris Lau,Null
+SaleContract,Customer,Null,Peter Chan,Null
+SaleContract,Customer,Null,Eva Poon,Null
+SaleContract,Customer,Null,Amy Wong,Null
+SaleContract,Customer,Null,Gustav King,Null
+SaleContract,Supplier,Null,Linking Talent,Null
+SaleContract,Supplier,Null,Strategic Decisions,Null
+SaleContract,Supplier,Null,Mine Spans,Null
+SaleContract,Supplier,Null,Modeling Strategy,Null
+SaleContract,Supplier,Null,Labor of Love,Null
+SaleContract,Supplier,Null,Worldwide Network,Null
+SaleContract,Supplier,Null,Design Thinking,Null
+SaleContract,Supplier,Null,Smart Technology,Null
+SaleContract,Supplier,Null,Global Investment,Null
+SaleContract,Supplier,Null,Roadmap,Null
+SaleContract,Brand,Null,Adorable,Null
+SaleContract,Brand,Null,Gorgeous,Null
+SaleContract,Brand,Null,Sweet,Null
+SaleContract,Class,Null,I,Null
+SaleContract,Class,Null,II,Null
+SaleContract,Class,Null,III,Null
+SaleContract,Country of Original,Null,Germany,Null
+SaleContract,Country of Original,Null,USA,Null
+SaleContract,Country of Original,Null,Japan,Null
+SaleContract,Country of Original,Null,China,Null
+SaleContract,Country of Original,Null,Korea,Null
+SaleContract,Salesman,Null,Richard Chan,Null
+SaleContract,Salesman,Null,Susan Chan,Null
+SaleContract,Salesman,Null,Joseph Chan,Null
+SaleContract,Salesman,Null,Margaret chan,Null
+SaleContract,Salesman,Null,Charles Lee,Null
+SaleContract,Salesman,Null,Jessica Lee,Null
+SaleContract,Salesman,Null,Thomas Lee,Null
+SaleContract,Salesman,Null,Dorothy Lee,Null
+SaleContract,Salesman,Null,Sarah Cheung,Null
+SaleContract,Salesman,Null,Daniel Cheung,Null
+SaleContract,Salesman,Null,Matthew Cheung,Null
+SaleContract,Salesman,Null,Nancy Cheung,Null
+SaleContract,Salesman,Null,Donald Wong,Null
+SaleContract,Salesman,Null,Betty Wong,Null
+SaleContract,Salesman,Null,Anthony Wong,Null
+SaleContract,Salesman,Null,Lisa Wong,Null
+SaleContract,Salesman,Null,Sandra Ho,Null
+SaleContract,Salesman,Null,Mark Ho,Null
+SaleContract,Salesman,Null,Helen Ho,Null
+SaleContract,Salesman,Null,George Ho,Null
+SaleContract,Country,Null,China,Null
+SaleContract,Country,Null,UK,Null
+SaleContract,Country,Null,USA,Null
+SaleContract,Country,Null,France,Null
+SaleContract,Country,Null,Russia,Null
+SaleContract,Branch,Null,East China,Null
+SaleContract,Branch,Null,South China,Null
+SaleContract,Branch,Null,West China,Null
+SaleContract,Branch,Null,North China,Null
+SaleContract,Branch,Null,East UK,Null
+SaleContract,Branch,Null,South UK,Null
+SaleContract,Branch,Null,West UK,Null
+SaleContract,Branch,Null,North UK,Null
+SaleContract,Branch,Null,East USA,Null
+SaleContract,Branch,Null,South USA,Null
+SaleContract,Branch,Null,West USA,Null
+SaleContract,Branch,Null,North USA,Null
+SaleContract,Branch,Null,East France,Null
+SaleContract,Branch,Null,South France,Null
+SaleContract,Branch,Null,West France,Null
+SaleContract,Branch,Null,North France,Null
+SaleContract,Branch,Null,East Russia,Null
+SaleContract,Branch,Null,South Russia,Null
+SaleContract,Branch,Null,West Russia,Null
+SaleContract,Branch,Null,North Russia,Null
+Credit,checking_balance,Null,< 0 DM,Null
+Credit,checking_balance,Null,1 - 200 DM,Null
+Credit,checking_balance,Null,unknown,Null
+Credit,checking_balance,Null,> 200 DM,Null
+Credit,months_loan_duration,Null,6~240,Null
+Credit,credit_history,Null,critical,Null
+Credit,credit_history,Null,good,Null
+Credit,credit_history,Null,poor,Null
+Credit,credit_history,Null,perfect,Null
+Credit,credit_history,Null,very good,Null
+Credit,purpose,Null,furniture/appliances,Null
+Credit,purpose,Null,education,Null
+Credit,purpose,Null,car,Null
+Credit,purpose,Null,business,Null
+Credit,purpose,Null,renovations,Null
+Credit,purpose,Null,car0,Null
+Credit,savings_balance,Null,unknown,Null
+Credit,savings_balance,Null,< 100 DM,Null
+Credit,savings_balance,Null,500 - 1000 DM,Null
+Credit,savings_balance,Null,> 1000 DM,Null
+Credit,savings_balance,Null,100 - 500 DM,Null
+Credit,employment_duration,Null,> 7 years,Null
+Credit,employment_duration,Null,1 - 4 years,Null
+Credit,employment_duration,Null,4 - 7 years,Null
+Credit,employment_duration,Null,unemployed,Null
+Credit,employment_duration,Null,< 1 year,Null
+Credit,years_at_residence,Null,1~4,Null
+Credit,age,Null,20~88,Null
+Credit,other_credit,Null,none,Null
+Credit,other_credit,Null,bank,Null
+Credit,other_credit,Null,store,Null
+Credit,housing,Null,own,Null
+Credit,housing,Null,other,Null
+Credit,housing,Null,rent,Null
+Credit,existing_loans_count,Null,1~10,Null
+Credit,job,Null,skilled,Null
+Credit,job,Null,unskilled,Null
+Credit,job,Null,management,Null
+Credit,job,Null,unemployed,Null
+Credit,dependents,Null,1~5,Null
+Credit,phone,Null,yes,Null
+Credit,phone,Null,no,Null
+Credit,default,Null,no,Null
+Credit,default,Null,yes,Null
+Employee,ID,Null,1~100000,Null
+Employee,Gender,Null,m,Null
+Employee,Gender,Null,f,Null
+Employee,Birth Date,Null,40000~50000,Null
+Employee,Jobcat,Null,1,Null
+Employee,Jobcat,Null,2,Null
+Employee,Jobcat,Null,3,Null
+Employee,Job Time,Null,60~100,Null
+Employee,Prev Exp,Null,0,Null
+Employee,Prev Exp,Null,1~476,Null
+Employee,Minority,Null,0,Null
+Employee,Minority,Null,1,Null
+Catering,Product,Category=Beverages,Chai,Null
+Catering,Product,Category=Beverages,Chang,Null
+Catering,Product,Category=Beverages,Chartreuse verte,Null
+Catering,Product,Category=Beverages,Cote de Blaye,Null
+Catering,Product,Category=Beverages,Guarana Fantastica,Null
+Catering,Product,Category=Beverages,Ipoh Coffee,Null
+Catering,Product,Category=Beverages,Lakkalikoori,Null
+Catering,Product,Category=Beverages,Laughing Lumberjack Lager,Null
+Catering,Product,Category=Beverages,Outback Lager,Null
+Catering,Product,Category=Beverages,Rhonbrau Klosterbier,Null
+Catering,Product,Category=Beverages,Sasquatch Ale,Null
+Catering,Product,Category=Beverages,Steeleye Stout,Null
+Catering,Product,Category=Condiments,Aniseed Syrup,Null
+Catering,Product,Category=Condiments,Chef Anton's Cajun Seasoning,Null
+Catering,Product,Category=Condiments,Chef Anton's Gumbo Mix,Null
+Catering,Product,Category=Condiments,Genen Shouyu,Null
+Catering,Product,Category=Condiments,Grandma's Boysenberry Spread,Null
+Catering,Product,Category=Condiments,Gula Malacca,Null
+Catering,Product,Category=Condiments,Louisiana Fiery Hot Pepper Sauce,Null
+Catering,Product,Category=Condiments,Louisiana Hot Spiced Okra,Null
+Catering,Product,Category=Condiments,Northwoods Cranberry Sauce,Null
+Catering,Product,Category=Condiments,Vegie-spread,Null
+Catering,Product,Category=Confections,Chocolade,Null
+Catering,Product,Category=Confections,Gumbar Gummibarchen,Null
+Catering,Product,Category=Confections,Maxilaku,Null
+Catering,Product,Category=Confections,NuNuCa Nub-Nougat-Creme,Null
+Catering,Product,Category=Confections,Pavlova,Null
+Catering,Product,Category=Confections,Schoggi Schokolade,Null
+Catering,Product,Category=Confections,Scottish Longbreads,Null
+Catering,Product,Category=Confections,Sir Rodney's Marmalade,Null
+Catering,Product,Category=Confections,Sir Rodney's Scones,Null
+Catering,Product,Category=Confections,Tarte au sucre,Null
+Catering,Product,Category=Confections,Teatime Chocolate Biscuits,Null
+Catering,Product,Category=Confections,Valkoinen suklaa,Null
+Catering,Product,Category=Confections,Zaanse koeken,Null
+Catering,Product,Category=Dairy Products,Camembert Pierrot,Null
+Catering,Product,Category=Dairy Products,Geitost,Null
+Catering,Product,Category=Dairy Products,Gorgonzola Telino,Null
+Catering,Product,Category=Dairy Products,Gudbrandsdalsost,Null
+Catering,Product,Category=Dairy Products,Mascarpone Fabioli,Null
+Catering,Product,Category=Dairy Products,Mozzarella di Giovanni,Null
+Catering,Product,Category=Dairy Products,Queso Cabrales,Null
+Catering,Product,Category=Dairy Products,Queso Manchego La Pastora,Null
+Catering,Product,Category=Dairy Products,Raclette Courdavault,Null
+Catering,Product,Category=Grains/Cereals,Filo Mix,Null
+Catering,Product,Category=Grains/Cereals,Gnocchi di nonna Alice,Null
+Catering,Product,Category=Grains/Cereals,Ravioli Angelo,Null
+Catering,Product,Category=Grains/Cereals,Singaporean Hokkien Fried Mee,Null
+Catering,Product,Category=Meat/Poultry,Alice Mutton,Null
+Catering,Product,Category=Meat/Poultry,Mishi Kobe Niku,Null
+Catering,Product,Category=Meat/Poultry,Perth Pasties,Null
+Catering,Product,Category=Produce,Longlife Tofu,Null
+Catering,Product,Category=Produce,Manjimup Dried Apples,Null
+Catering,Product,Category=Produce,Rossle Sauerkraut,Null
+Catering,Product,Category=Produce,Tofu,Null
+Catering,Product,Category=Produce,Uncle Bob's Organic Dried Pears,Null
+Catering,Product,Category=Seafood,Boston Crab Meat,Null
+Catering,Product,Category=Seafood,Carnarvon Tigers,Null
+Catering,Product,Category=Seafood,Escargots de Bourgogne,Null
+Catering,Product,Category=Seafood,Gravad lax,Null
+Catering,Product,Category=Seafood,Ikura,Null
+Catering,Product,Category=Seafood,Inlagd Sill,Null
+Catering,Product,Category=Seafood,Jack's New England Clam Chowder,Null
+Catering,Product,Category=Seafood,Konbu,Null
+Catering,Product,Category=Seafood,Nord-Ost Matjeshering,Null
+Catering,Product,Category=Seafood,Rod Kaviar,Null
+Catering,Product,Category=Seafood,Rogede sild,Null
+Catering,Product,Category=Seafood,Spegesild,Null
+Catering,Salesman,Null,30~26000,Null
+Catering,Quarter,Null,Qtr 1,Null
+Catering,Quarter,Null,Qtr 2,Null
+Catering,Quarter,Null,Qtr 3,Null
+Catering,Quarter,Null,Qtr 4,Null
+Car,Car,Model=M73,AMC Ambassador Brougham,Null
+Car,Car,Model=M70,AMC Ambassador DPL,Null
+Car,Car,Model=M72,AMC Ambassador SST,Null
+Car,Car,Model=M78,AMC Concord,Null
+Car,Car,Model=M80,AMC Concord,Null
+Car,Car,Model=M78,AMC Concord d/l,Null
+Car,Car,Model=M82,AMC Concord DL,Null
+Car,Car,Model=M79,AMC Concord DL 6,Null
+Car,Car,Model=M70,AMC Gremlin,Null
+Car,Car,Model=M71,AMC Gremlin,Null
+Car,Car,Model=M73,AMC Gremlin,Null
+Car,Car,Model=M75,AMC Gremlin,Null
+Car,Car,Model=M70,AMC Hornet,Null
+Car,Car,Model=M73,AMC Hornet,Null
+Car,Car,Model=M74,AMC Hornet,Null
+Car,Car,Model=M76,AMC Hornet,Null
+Car,Car,Model=M71,AMC Hornet Sportabout (sw),Null
+Car,Car,Model=M71,AMC Matador,Null
+Car,Car,Model=M73,AMC Matador,Null
+Car,Car,Model=M74,AMC Matador,Null
+Car,Car,Model=M75,AMC Matador,Null
+Car,Car,Model=M76,AMC Matador,Null
+Car,Car,Model=M72,AMC Matador (sw),Null
+Car,Car,Model=M74,AMC Matador (sw),Null
+Car,Car,Model=M75,AMC Pacer,Null
+Car,Car,Model=M76,AMC Pacer d/l,Null
+Car,Car,Model=M70,AMC Rebel SST,Null
+Car,Car,Model=M70,AMC Rebel SST (sw),Null
+Car,Car,Model=M79,AMC Spirit DL,Null
+Car,Car,Model=M70,Audi 100 LS,Null
+Car,Car,Model=M73,Audi 100LS,Null
+Car,Car,Model=M75,Audi 100LS,Null
+Car,Car,Model=M80,Audi 4000,Null
+Car,Car,Model=M78,Audi 5000,Null
+Car,Car,Model=M80,Audi 5000s (diesel),Null
+Car,Car,Model=M74,Audi Fox,Null
+Car,Car,Model=M70,BMW 2002,Null
+Car,Car,Model=M77,BMW 320i,Null
+Car,Car,Model=M75,Buick Century,Null
+Car,Car,Model=M81,Buick Century,Null
+Car,Car,Model=M73,Buick Century 350,Null
+Car,Car,Model=M82,Buick Century Limited,Null
+Car,Car,Model=M74,Buick Century Luxus (sw),Null
+Car,Car,Model=M78,Buick Century Special,Null
+Car,Car,Model=M73,Buick Electra 225 Custom,Null
+Car,Car,Model=M70,Buick Estate Wagon (sw),Null
+Car,Car,Model=M79,Buick Estate Wagon (sw),Null
+Car,Car,Model=M72,Buick LeSabre Custom,Null
+Car,Car,Model=M77,Buick Opel Isuzu Deluxe,Null
+Car,Car,Model=M78,Buick Regal Sport Coupe (turbo),Null
+Car,Car,Model=M75,Buick Skyhawk,Null
+Car,Car,Model=M77,Buick Skylark,Null
+Car,Car,Model=M81,Buick Skylark,Null
+Car,Car,Model=M70,Buick Skylark 320,Null
+Car,Car,Model=M79,Buick Skylark Limited,Null
+Car,Car,Model=M79,Cadillac Eldorado,Null
+Car,Car,Model=M76,Cadillac Seville,Null
+Car,Car,Model=M76,Capri ii,Null
+Car,Car,Model=M75,Chevrolet Bel Air,Null
+Car,Car,Model=M76,Chevrolet C10,Null
+Car,Car,Model=M82,Chevrolet Camaro,Null
+Car,Car,Model=M73,Chevrolet Caprice Classic,Null
+Car,Car,Model=M77,Chevrolet Caprice Classic,Null
+Car,Car,Model=M79,Chevrolet Caprice Classic,Null
+Car,Car,Model=M82,Chevrolet Cavalier,Null
+Car,Car,Model=M82,Chevrolet Cavalier 2-door,Null
+Car,Car,Model=M82,Chevrolet Cavalier Wagon,Null
+Car,Car,Model=M70,Chevrolet Chevelle Concours (sw),Null
+Car,Car,Model=M72,Chevrolet Chevelle Concours (sw),Null
+Car,Car,Model=M70,Chevrolet Chevelle Malibu,Null
+Car,Car,Model=M71,Chevrolet Chevelle Malibu,Null
+Car,Car,Model=M74,Chevrolet Chevelle Malibu Classic,Null
+Car,Car,Model=M76,Chevrolet Chevelle Malibu Classic,Null
+Car,Car,Model=M76,Chevrolet Chevette,Null
+Car,Car,Model=M77,Chevrolet Chevette,Null
+Car,Car,Model=M78,Chevrolet Chevette,Null
+Car,Car,Model=M80,Chevrolet Chevette,Null
+Car,Car,Model=M79,Chevrolet Citation,Null
+Car,Car,Model=M80,Chevrolet Citation,Null
+Car,Car,Model=M81,Chevrolet Citation,Null
+Car,Car,Model=M77,Chevrolet Concours,Null
+Car,Car,Model=M70,Chevrolet Impala,Null
+Car,Car,Model=M71,Chevrolet Impala,Null
+Car,Car,Model=M72,Chevrolet Impala,Null
+Car,Car,Model=M73,Chevrolet Impala,Null
+Car,Car,Model=M73,Chevrolet Malibu,Null
+Car,Car,Model=M78,Chevrolet Malibu,Null
+Car,Car,Model=M79,Chevrolet Malibu Classic (sw),Null
+Car,Car,Model=M70,Chevrolet Monte Carlo,Null
+Car,Car,Model=M77,Chevrolet Monte Carlo Landau,Null
+Car,Car,Model=M78,Chevrolet Monte Carlo Landau,Null
+Car,Car,Model=M73,Chevrolet Monte Carlo S,Null
+Car,Car,Model=M75,Chevrolet Monza 2+2,Null
+Car,Car,Model=M74,Chevrolet Nova,Null
+Car,Car,Model=M75,Chevrolet Nova,Null
+Car,Car,Model=M76,Chevrolet Nova,Null
+Car,Car,Model=M73,Chevrolet Nova Custom,Null
+Car,Car,Model=M72,Chevrolet Vega,Null
+Car,Car,Model=M73,Chevrolet Vega,Null
+Car,Car,Model=M74,Chevrolet Vega,Null
+Car,Car,Model=M71,Chevrolet Vega (sw),Null
+Car,Car,Model=M71,Chevrolet Vega 2300,Null
+Car,Car,Model=M76,Chevrolet Woody,Null
+Car,Car,Model=M75,Chevrolete Chevelle Malibu,Null
+Car,Car,Model=M70,Chevy C20,Null
+Car,Car,Model=M82,Chevy S-10,Null
+Car,Car,Model=M77,Chrysler Cordoba,Null
+Car,Car,Model=M82,Chrysler Lebaron Medallion,Null
+Car,Car,Model=M81,Chrysler Lebaron Salon,Null
+Car,Car,Model=M79,Chrysler Lebaron Town @ Country (sw),Null
+Car,Car,Model=M73,Chrysler New Yorker Brougham,Null
+Car,Car,Model=M72,Chrysler Newport Royal,Null
+Car,Car,Model=M70,Citroen DS-21 Pallas,Null
+Car,Car,Model=M71,Datsun 1200,Null
+Car,Car,Model=M81,Datsun 200SX,Null
+Car,Car,Model=M78,Datsun 200-SX,Null
+Car,Car,Model=M79,Datsun 210,Null
+Car,Car,Model=M80,Datsun 210,Null
+Car,Car,Model=M81,Datsun 210 MPG,Null
+Car,Car,Model=M80,Datsun 280-ZX,Null
+Car,Car,Model=M80,Datsun 310,Null
+Car,Car,Model=M82,Datsun 310 GX,Null
+Car,Car,Model=M78,Datsun 510,Null
+Car,Car,Model=M72,Datsun 510 (sw),Null
+Car,Car,Model=M80,Datsun 510 Hatchback,Null
+Car,Car,Model=M73,Datsun 610,Null
+Car,Car,Model=M74,Datsun 710,Null
+Car,Car,Model=M75,Datsun 710,Null
+Car,Car,Model=M77,Datsun 810,Null
+Car,Car,Model=M81,Datsun 810 Maxima,Null
+Car,Car,Model=M74,Datsun B210,Null
+Car,Car,Model=M76,Datsun B-210,Null
+Car,Car,Model=M78,Datsun B210 GX,Null
+Car,Car,Model=M77,Datsun F-10 Hatchback,Null
+Car,Car,Model=M70,Datsun PL510,Null
+Car,Car,Model=M71,Datsun PL510,Null
+Car,Car,Model=M82,Dodge Aries SE,Null
+Car,Car,Model=M81,Dodge Aries Wagon (sw),Null
+Car,Car,Model=M78,Dodge Aspen,Null
+Car,Car,Model=M80,Dodge Aspen,Null
+Car,Car,Model=M79,Dodge Aspen 6,Null
+Car,Car,Model=M76,Dodge Aspen SE,Null
+Car,Car,Model=M70,Dodge Challenger SE,Null
+Car,Car,Model=M82,Dodge Charger 2.2,Null
+Car,Car,Model=M74,Dodge Colt,Null
+Car,Car,Model=M76,Dodge Colt,Null
+Car,Car,Model=M80,Dodge Colt,Null
+Car,Car,Model=M72,Dodge Colt (sw),Null
+Car,Car,Model=M72,Dodge Colt Hardtop,Null
+Car,Car,Model=M79,Dodge Colt Hatchback Custom,Null
+Car,Car,Model=M77,Dodge Colt m/m,Null
+Car,Car,Model=M76,Dodge Coronet Brougham,Null
+Car,Car,Model=M73,Dodge Coronet Custom,Null
+Car,Car,Model=M74,Dodge Coronet Custom (sw),Null
+Car,Car,Model=M76,Dodge D100,Null
+Car,Car,Model=M70,Dodge D200,Null
+Car,Car,Model=M73,Dodge Dart Custom,Null
+Car,Car,Model=M78,Dodge Diplomat,Null
+Car,Car,Model=M78,Dodge Magnum XE,Null
+Car,Car,Model=M71,Dodge Monaco (sw),Null
+Car,Car,Model=M77,Dodge Monaco Brougham,Null
+Car,Car,Model=M78,Dodge Omni,Null
+Car,Car,Model=M82,Dodge Rampage,Null
+Car,Car,Model=M79,Dodge St. Regis,Null
+Car,Car,Model=M73,Fiat 124 Sport Coupe,Null
+Car,Car,Model=M74,Fiat 124 TC,Null
+Car,Car,Model=M71,Fiat 124B,Null
+Car,Car,Model=M73,Fiat 128,Null
+Car,Car,Model=M74,Fiat 128,Null
+Car,Car,Model=M76,Fiat 131,Null
+Car,Car,Model=M79,Fiat Strada Custom,Null
+Car,Car,Model=M74,Fiat x1.9,Null
+Car,Car,Model=M73,Ford Country,Null
+Car,Car,Model=M71,Ford Country Squire (sw),Null
+Car,Car,Model=M79,Ford Country Squire (sw),Null
+Car,Car,Model=M81,Ford Escort 2H,Null
+Car,Car,Model=M81,Ford Escort 4W,Null
+Car,Car,Model=M76,Ford F108,Null
+Car,Car,Model=M70,Ford F250,Null
+Car,Car,Model=M80,Ford Fairmont,Null
+Car,Car,Model=M78,Ford Fairmont (auto),Null
+Car,Car,Model=M78,Ford Fairmont (man),Null
+Car,Car,Model=M79,Ford Fairmont 4,Null
+Car,Car,Model=M82,Ford Fairmont Futura,Null
+Car,Car,Model=M78,Ford Fiesta,Null
+Car,Car,Model=M78,Ford Futura,Null
+Car,Car,Model=M70,Ford Galaxie 500,Null
+Car,Car,Model=M71,Ford Galaxie 500,Null
+Car,Car,Model=M72,Ford Galaxie 500,Null
+Car,Car,Model=M73,Ford Gran Torino,Null
+Car,Car,Model=M74,Ford Gran Torino,Null
+Car,Car,Model=M76,Ford Gran Torino,Null
+Car,Car,Model=M72,Ford Gran Torino (sw),Null
+Car,Car,Model=M74,Ford Gran Torino (sw),Null
+Car,Car,Model=M77,Ford Grenada,Null
+Car,Car,Model=M76,Ford Grenada ghia,Null
+Car,Car,Model=M81,Ford Grenada gl,Null
+Car,Car,Model=M82,Ford Grenada l,Null
+Car,Car,Model=M73,Ford LTD,Null
+Car,Car,Model=M75,Ford LTD,Null
+Car,Car,Model=M79,Ford LTD Landau,Null
+Car,Car,Model=M70,Ford Maverick,Null
+Car,Car,Model=M73,Ford Maverick,Null
+Car,Car,Model=M74,Ford Maverick,Null
+Car,Car,Model=M75,Ford Maverick,Null
+Car,Car,Model=M76,Ford Maverick,Null
+Car,Car,Model=M71,Ford Mustang,Null
+Car,Car,Model=M70,Ford Mustang Boss 302,Null
+Car,Car,Model=M80,Ford Mustang Cobra,Null
+Car,Car,Model=M82,Ford Mustang GL,Null
+Car,Car,Model=M75,Ford Mustang II,Null
+Car,Car,Model=M77,Ford Mustang II 2+2,Null
+Car,Car,Model=M71,Ford Pinto,Null
+Car,Car,Model=M73,Ford Pinto,Null
+Car,Car,Model=M74,Ford Pinto,Null
+Car,Car,Model=M75,Ford Pinto,Null
+Car,Car,Model=M75,Ford Pinto,Null
+Car,Car,Model=M76,Ford Pinto,Null
+Car,Car,Model=M72,Ford Pinto (sw),Null
+Car,Car,Model=M72,Ford Pinto Runabout,Null
+Car,Car,Model=M82,Ford Ranger,Null
+Car,Car,Model=M77,Ford Thunderbird,Null
+Car,Car,Model=M70,Ford Torino,Null
+Car,Car,Model=M70,Ford Torino (sw),Null
+Car,Car,Model=M71,Ford Torino 500,Null
+Car,Car,Model=M70,Hi 1200D,Null
+Car,Car,Model=M80,Honda Accord,Null
+Car,Car,Model=M82,Honda Accord,Null
+Car,Car,Model=M77,Honda Accord CVCC,Null
+Car,Car,Model=M78,Honda Accord LX,Null
+Car,Car,Model=M74,Honda Civic,Null
+Car,Car,Model=M76,Honda Civic,Null
+Car,Car,Model=M82,Honda Civic,Null
+Car,Car,Model=M82,Honda Civic (auto),Null
+Car,Car,Model=M81,Honda Civic 1300,Null
+Car,Car,Model=M80,Honda Civic 1500 gl,Null
+Car,Car,Model=M75,Honda Civic CVCC,Null
+Car,Car,Model=M78,Honda Civic CVCC,Null
+Car,Car,Model=M81,Honda Prelude,Null
+Car,Car,Model=M80,Mazda 626,Null
+Car,Car,Model=M81,Mazda 626,Null
+Car,Car,Model=M80,Mazda GLC,Null
+Car,Car,Model=M81,Mazda GLC 4,Null
+Car,Car,Model=M82,Mazda GLC Custom,Null
+Car,Car,Model=M82,Mazda GLC Custom l,Null
+Car,Car,Model=M78,Mazda GLC Deluxe,Null
+Car,Car,Model=M79,Mazda GLC Deluxe,Null
+Car,Car,Model=M72,Mazda RX2 Coupe,Null
+Car,Car,Model=M73,Mazda RX3,Null
+Car,Car,Model=M77,Mazda RX-4,Null
+Car,Car,Model=M80,Mazda RX-7 GS,Null
+Car,Car,Model=M79,Mercedes Benz 300d,Null
+Car,Car,Model=M80,Mercedes-Benz 240d,Null
+Car,Car,Model=M76,Mercedes-Benz 280s,Null
+Car,Car,Model=M71,Mercury Capri 2000,Null
+Car,Car,Model=M73,Mercury Capri v6,Null
+Car,Car,Model=M77,Mercury Cougar Brougham,Null
+Car,Car,Model=M79,Mercury Grand Marquis,Null
+Car,Car,Model=M82,Mercury Lynx l,Null
+Car,Car,Model=M72,Mercury Marquis,Null
+Car,Car,Model=M73,Mercury Marquis Brougham,Null
+Car,Car,Model=M75,Mercury Monarch,Null
+Car,Car,Model=M78,Mercury Monarch ghia,Null
+Car,Car,Model=M78,Mercury Zephyr,Null
+Car,Car,Model=M79,Mercury Zephyr 6,Null
+Car,Car,Model=M82,Nissan Stanza XE,Null
+Car,Car,Model=M82,Oldsmobile Cutlass Ciera (diesel),Null
+Car,Car,Model=M81,Oldsmobile Cutlass LS,Null
+Car,Car,Model=M78,Oldsmobile Cutlass Salon Brougham,Null
+Car,Car,Model=M79,Oldsmobile Cutlass Salon Brougham,Null
+Car,Car,Model=M77,Oldsmobile Cutlass Supreme,Null
+Car,Car,Model=M72,Oldsmobile Delta 88 Royale,Null
+Car,Car,Model=M73,Oldsmobile Omega,Null
+Car,Car,Model=M79,Oldsmobile Omega Brougham,Null
+Car,Car,Model=M78,Oldsmobile Starfire SX,Null
+Car,Car,Model=M73,Oldsmobile Vista Cruiser,Null
+Car,Car,Model=M71,Opel 1900,Null
+Car,Car,Model=M76,Opel 1900,Null
+Car,Car,Model=M73,Opel Manta,Null
+Car,Car,Model=M74,Opel Manta,Null
+Car,Car,Model=M71,Peugeot 304,Null
+Car,Car,Model=M70,Peugeot 504,Null
+Car,Car,Model=M75,Peugeot 504,Null
+Car,Car,Model=M76,Peugeot 504,Null
+Car,Car,Model=M79,Peugeot 504,Null
+Car,Car,Model=M72,Peugeot 504 (sw),Null
+Car,Car,Model=M81,Peugeot 505s Turbo Diesel,Null
+Car,Car,Model=M78,Peugeot 604sl,Null
+Car,Car,Model=M77,Plymouth Arrow GS,Null
+Car,Car,Model=M81,Plymouth Champ,Null
+Car,Car,Model=M71,Plymouth Cricket,Null
+Car,Car,Model=M70,Plymouth 'Cuda 340,Null
+Car,Car,Model=M73,Plymouth Custom Suburb,Null
+Car,Car,Model=M70,Plymouth Duster,Null
+Car,Car,Model=M73,Plymouth Duster,Null
+Car,Car,Model=M74,Plymouth Duster,Null
+Car,Car,Model=M75,Plymouth Fury,Null
+Car,Car,Model=M73,Plymouth Fury Gran Sedan,Null
+Car,Car,Model=M70,Plymouth Fury iii,Null
+Car,Car,Model=M71,Plymouth Fury iii,Null
+Car,Car,Model=M72,Plymouth Fury III,Null
+Car,Car,Model=M75,Plymouth Grand Fury,Null
+Car,Car,Model=M79,Plymouth Horizon,Null
+Car,Car,Model=M81,Plymouth Horizon 4,Null
+Car,Car,Model=M82,Plymouth Horizon Miser,Null
+Car,Car,Model=M79,Plymouth Horizon TC3,Null
+Car,Car,Model=M81,Plymouth Reliant,Null
+Car,Car,Model=M81,Plymouth Reliant,Null
+Car,Car,Model=M78,Plymouth Sapporo,Null
+Car,Car,Model=M70,Plymouth Satellite,Null
+Car,Car,Model=M70,Plymouth Satellite (sw),Null
+Car,Car,Model=M71,Plymouth Satellite Custom,Null
+Car,Car,Model=M72,Plymouth Satellite Custom (sw),Null
+Car,Car,Model=M74,Plymouth Satellite Sebring,Null
+Car,Car,Model=M73,Plymouth Valiant,Null
+Car,Car,Model=M76,Plymouth Valiant,Null
+Car,Car,Model=M75,Plymouth Valiant Custom,Null
+Car,Car,Model=M78,Plymouth Volare,Null
+Car,Car,Model=M77,Plymouth Volare Custom,Null
+Car,Car,Model=M76,Plymouth Volare Premier v8,Null
+Car,Car,Model=M75,Pontiac Astro,Null
+Car,Car,Model=M70,Pontiac Catalina,Null
+Car,Car,Model=M72,Pontiac Catalina,Null
+Car,Car,Model=M75,Pontiac Catalina,Null
+Car,Car,Model=M71,Pontiac Catalina Brougham,Null
+Car,Car,Model=M71,Pontiac Firebird,Null
+Car,Car,Model=M73,Pontiac Grand Prix,Null
+Car,Car,Model=M77,Pontiac Grand Prix LJ,Null
+Car,Car,Model=M82,Pontiac J2000 SE Hatchback,Null
+Car,Car,Model=M79,Pontiac Lemans V6,Null
+Car,Car,Model=M79,Pontiac Phoenix,Null
+Car,Car,Model=M82,Pontiac Phoenix,Null
+Car,Car,Model=M78,Pontiac Phoenix LJ,Null
+Car,Car,Model=M71,Pontiac Safari (sw),Null
+Car,Car,Model=M77,Pontiac Sunbird Coupe,Null
+Car,Car,Model=M76,Pontiac Ventura SJ,Null
+Car,Car,Model=M72,Renault 12 (sw),Null
+Car,Car,Model=M76,Renault 12tl,Null
+Car,Car,Model=M81,Renault 18i,Null
+Car,Car,Model=M77,Renault 5 GTL,Null
+Car,Car,Model=M80,Renault Lecar Deluxe,Null
+Car,Car,Model=M81,Saab 900s,Null
+Car,Car,Model=M70,Saab 99e,Null
+Car,Car,Model=M78,Saab 99gle,Null
+Car,Car,Model=M73,Saab 99le,Null
+Car,Car,Model=M75,Saab 99LE,Null
+Car,Car,Model=M74,Subaru,Null
+Car,Car,Model=M81,Subaru,Null
+Car,Car,Model=M77,Subaru DL,Null
+Car,Car,Model=M80,Subaru DL,Null
+Car,Car,Model=M73,Toyota Camry,Null
+Car,Car,Model=M82,Toyota Celica GT,Null
+Car,Car,Model=M78,Toyota Celica GT Liftback,Null
+Car,Car,Model=M71,Toyota Corolla,Null
+Car,Car,Model=M74,Toyota Corolla,Null
+Car,Car,Model=M75,Toyota Corolla,Null
+Car,Car,Model=M75,Toyota Corolla,Null
+Car,Car,Model=M76,Toyota Corolla,Null
+Car,Car,Model=M78,Toyota Corolla,Null
+Car,Car,Model=M80,Toyota Corolla,Null
+Car,Car,Model=M81,Toyota Corolla,Null
+Car,Car,Model=M82,Toyota Corolla,Null
+Car,Car,Model=M71,Toyota Corolla 1200,Null
+Car,Car,Model=M74,Toyota Corolla 1200,Null
+Car,Car,Model=M72,Toyota Corolla 1600 (sw),Null
+Car,Car,Model=M72,Toyota Corolla Hardtop,Null
+Car,Car,Model=M77,Toyota Corolla Liftback,Null
+Car,Car,Model=M80,Toyota Corolla Liftback,Null
+Car,Car,Model=M70,Toyota Corolla Mark ii,Null
+Car,Car,Model=M72,Toyota Corolla Mark II (sw),Null
+Car,Car,Model=M80,Toyota Corolla Tercel,Null
+Car,Car,Model=M81,Toyota Cressida,Null
+Car,Car,Model=M73,Toyota Mark II,Null
+Car,Car,Model=M76,Toyota Mark II,Null
+Car,Car,Model=M81,Toyota Starlet,Null
+Car,Car,Model=M81,Toyota Tercel,Null
+Car,Car,Model=M80,Triumph TR7 Coupe,Null
+Car,Car,Model=M70,Volkswagen 1131 Deluxe Sedan,Null
+Car,Car,Model=M72,Volkswagen 411 (sw),Null
+Car,Car,Model=M74,Volkswagen Dasher,Null
+Car,Car,Model=M75,Volkswagen Dasher,Null
+Car,Car,Model=M77,Volkswagen Dasher,Null
+Car,Car,Model=M80,Volkswagen Dasher (diesel),Null
+Car,Car,Model=M81,Volkswagen Jetta,Null
+Car,Car,Model=M71,Volkswagen Model 111,Null
+Car,Car,Model=M82,Volkswagen Pickup,Null
+Car,Car,Model=M75,Volkswagen Rabbit,Null
+Car,Car,Model=M76,Volkswagen Rabbit,Null
+Car,Car,Model=M76,Volkswagen Rabbit,Null
+Car,Car,Model=M80,Volkswagen Rabbit,Null
+Car,Car,Model=M80,Volkswagen Rabbit,Null
+Car,Car,Model=M80,Volkswagen Rabbit C (Diesel),Null
+Car,Car,Model=M77,Volkswagen Rabbit Custom,Null
+Car,Car,Model=M79,Volkswagen Rabbit Custom,Null
+Car,Car,Model=M78,Volkswagen Rabbit Custom Diesel,Null
+Car,Car,Model=M82,Volkswagen Rabbit l,Null
+Car,Car,Model=M78,Volkswagen Scirocco,Null
+Car,Car,Model=M73,Volkswagen Super Beetle,Null
+Car,Car,Model=M71,Volkswagen Super Beetle 117,Null
+Car,Car,Model=M72,Volkswagen Type 3,Null
+Car,Car,Model=M73,Volvo 144ea,Null
+Car,Car,Model=M72,Volvo 145e (sw),Null
+Car,Car,Model=M75,Volvo 244DL,Null
+Car,Car,Model=M76,Volvo 245,Null
+Car,Car,Model=M78,Volvo 264gl,Null
+Car,Car,Model=M81,Volvo Diesel,Null
+Car,MPG,Null,0,Null
+Car,MPG,Null,9~46.6,Null
+Car,Cylinders,Null,3~6,Null
+Car,Cylinders,Null,8,Null
+Car,Displacement,Null,68~455,Null
+Car,Horsepower,Null,0,Null
+Car,Horsepower,Null,46~230,Null
+Car,Weight,Null,1613~5140,Null
+Car,Acceleration,Null,8~24.8,Null
+Car,Origin,Null,Europe,Null
+Car,Origin,Null,Japan,Null
+Car,Origin,Null,USA,Null
+FoodProduction,Area,Area Code=A1,Armenia,Null
+FoodProduction,Area,Area Code=A10,Australia,Null
+FoodProduction,Area,Area Code=A100,India,Null
+FoodProduction,Area,Area Code=A101,Indonesia,Null
+FoodProduction,Area,Area Code=A102,Iran (Islamic Republic of),Null
+FoodProduction,Area,Area Code=A103,Iraq,Null
+FoodProduction,Area,Area Code=A104,Ireland,Null
+FoodProduction,Area,Area Code=A105,Israel,Null
+FoodProduction,Area,Area Code=A106,Italy,Null
+FoodProduction,Area,Area Code=A108,Kazakhstan,Null
+FoodProduction,Area,Area Code=A109,Jamaica,Null
+FoodProduction,Area,Area Code=A11,Austria,Null
+FoodProduction,Area,Area Code=A110,Japan,Null
+FoodProduction,Area,Area Code=A112,Jordan,Null
+FoodProduction,Area,Area Code=A113,Kyrgyzstan,Null
+FoodProduction,Area,Area Code=A114,Kenya,Null
+FoodProduction,Area,Area Code=A115,Cambodia,Null
+FoodProduction,Area,Area Code=A116,Democratic People's Republic of Korea,Null
+FoodProduction,Area,Area Code=A117,Republic of Korea,Null
+FoodProduction,Area,Area Code=A118,Kuwait,Null
+FoodProduction,Area,Area Code=A119,Latvia,Null
+FoodProduction,Area,Area Code=A12,Bahamas,Null
+FoodProduction,Area,Area Code=A120,Lao People's Democratic Republic,Null
+FoodProduction,Area,Area Code=A121,Lebanon,Null
+FoodProduction,Area,Area Code=A122,Lesotho,Null
+FoodProduction,Area,Area Code=A123,Liberia,Null
+FoodProduction,Area,Area Code=A124,Libya,Null
+FoodProduction,Area,Area Code=A125,Liechtenstein,Null
+FoodProduction,Area,Area Code=A126,Lithuania,Null
+FoodProduction,Area,Area Code=A127,Marshall Islands,Null
+FoodProduction,Area,Area Code=A128,China% Macao SAR,Null
+FoodProduction,Area,Area Code=A129,Madagascar,Null
+FoodProduction,Area,Area Code=A13,Bahrain,Null
+FoodProduction,Area,Area Code=A130,Malawi,Null
+FoodProduction,Area,Area Code=A131,Malaysia,Null
+FoodProduction,Area,Area Code=A132,Maldives,Null
+FoodProduction,Area,Area Code=A133,Mali,Null
+FoodProduction,Area,Area Code=A134,Malta,Null
+FoodProduction,Area,Area Code=A135,Martinique,Null
+FoodProduction,Area,Area Code=A136,Mauritania,Null
+FoodProduction,Area,Area Code=A137,Mauritius,Null
+FoodProduction,Area,Area Code=A138,Mexico,Null
+FoodProduction,Area,Area Code=A14,Barbados,Null
+FoodProduction,Area,Area Code=A141,Mongolia,Null
+FoodProduction,Area,Area Code=A142,Montserrat,Null
+FoodProduction,Area,Area Code=A143,Morocco,Null
+FoodProduction,Area,Area Code=A144,Mozambique,Null
+FoodProduction,Area,Area Code=A145,Micronesia (Federated States of),Null
+FoodProduction,Area,Area Code=A146,Republic of Moldova,Null
+FoodProduction,Area,Area Code=A147,Namibia,Null
+FoodProduction,Area,Area Code=A148,Nauru,Null
+FoodProduction,Area,Area Code=A149,Nepal,Null
+FoodProduction,Area,Area Code=A15,Belgium-Luxembourg,Null
+FoodProduction,Area,Area Code=A150,Netherlands,Null
+FoodProduction,Area,Area Code=A151,Netherlands Antilles (former),Null
+FoodProduction,Area,Area Code=A153,New Caledonia,Null
+FoodProduction,Area,Area Code=A154,The former Yugoslav Republic of Macedonia,Null
+FoodProduction,Area,Area Code=A155,Vanuatu,Null
+FoodProduction,Area,Area Code=A156,New Zealand,Null
+FoodProduction,Area,Area Code=A157,Nicaragua,Null
+FoodProduction,Area,Area Code=A158,Niger,Null
+FoodProduction,Area,Area Code=A159,Nigeria,Null
+FoodProduction,Area,Area Code=A16,Bangladesh,Null
+FoodProduction,Area,Area Code=A160,Niue,Null
+FoodProduction,Area,Area Code=A162,Norway,Null
+FoodProduction,Area,Area Code=A164,Pacific Islands Trust Territory,Null
+FoodProduction,Area,Area Code=A165,Pakistan,Null
+FoodProduction,Area,Area Code=A166,Panama,Null
+FoodProduction,Area,Area Code=A167,Czechia,Null
+FoodProduction,Area,Area Code=A168,Papua New Guinea,Null
+FoodProduction,Area,Area Code=A169,Paraguay,Null
+FoodProduction,Area,Area Code=A17,Bermuda,Null
+FoodProduction,Area,Area Code=A170,Peru,Null
+FoodProduction,Area,Area Code=A171,Philippines,Null
+FoodProduction,Area,Area Code=A173,Poland,Null
+FoodProduction,Area,Area Code=A174,Portugal,Null
+FoodProduction,Area,Area Code=A175,Guinea-Bissau,Null
+FoodProduction,Area,Area Code=A176,Timor-Leste,Null
+FoodProduction,Area,Area Code=A177,Puerto Rico,Null
+FoodProduction,Area,Area Code=A178,Eritrea,Null
+FoodProduction,Area,Area Code=A179,Qatar,Null
+FoodProduction,Area,Area Code=A18,Bhutan,Null
+FoodProduction,Area,Area Code=A181,Zimbabwe,Null
+FoodProduction,Area,Area Code=A183,Romania,Null
+FoodProduction,Area,Area Code=A184,Rwanda,Null
+FoodProduction,Area,Area Code=A185,Russian Federation,Null
+FoodProduction,Area,Area Code=A186,Serbia and Montenegro,Null
+FoodProduction,Area,Area Code=A187,Saint Helena% Ascension and Tristan da Cunha,Null
+FoodProduction,Area,Area Code=A188,Saint Kitts and Nevis,Null
+FoodProduction,Area,Area Code=A189,Saint Lucia,Null
+FoodProduction,Area,Area Code=A19,Bolivia (Plurinational State of),Null
+FoodProduction,Area,Area Code=A190,Saint Pierre and Miquelon,Null
+FoodProduction,Area,Area Code=A191,Saint Vincent and the Grenadines,Null
+FoodProduction,Area,Area Code=A193,Sao Tome and Principe,Null
+FoodProduction,Area,Area Code=A194,Saudi Arabia,Null
+FoodProduction,Area,Area Code=A195,Senegal,Null
+FoodProduction,Area,Area Code=A196,Seychelles,Null
+FoodProduction,Area,Area Code=A197,Sierra Leone,Null
+FoodProduction,Area,Area Code=A198,Slovenia,Null
+FoodProduction,Area,Area Code=A199,Slovakia,Null
+FoodProduction,Area,Area Code=A2,Afghanistan,Null
+FoodProduction,Area,Area Code=A20,Botswana,Null
+FoodProduction,Area,Area Code=A200,Singapore,Null
+FoodProduction,Area,Area Code=A201,Somalia,Null
+FoodProduction,Area,Area Code=A202,South Africa,Null
+FoodProduction,Area,Area Code=A203,Spain,Null
+FoodProduction,Area,Area Code=A205,Western Sahara,Null
+FoodProduction,Area,Area Code=A206,Sudan (former),Null
+FoodProduction,Area,Area Code=A207,Suriname,Null
+FoodProduction,Area,Area Code=A208,Tajikistan,Null
+FoodProduction,Area,Area Code=A209,Swaziland,Null
+FoodProduction,Area,Area Code=A21,Brazil,Null
+FoodProduction,Area,Area Code=A210,Sweden,Null
+FoodProduction,Area,Area Code=A211,Switzerland,Null
+FoodProduction,Area,Area Code=A212,Syrian Arab Republic,Null
+FoodProduction,Area,Area Code=A213,Turkmenistan,Null
+FoodProduction,Area,Area Code=A214,China% Taiwan Province of,Null
+FoodProduction,Area,Area Code=A215,United Republic of Tanzania,Null
+FoodProduction,Area,Area Code=A216,Thailand,Null
+FoodProduction,Area,Area Code=A217,Togo,Null
+FoodProduction,Area,Area Code=A218,Tokelau,Null
+FoodProduction,Area,Area Code=A219,Tonga,Null
+FoodProduction,Area,Area Code=A220,Trinidad and Tobago,Null
+FoodProduction,Area,Area Code=A221,Oman,Null
+FoodProduction,Area,Area Code=A222,Tunisia,Null
+FoodProduction,Area,Area Code=A223,Turkey,Null
+FoodProduction,Area,Area Code=A225,United Arab Emirates,Null
+FoodProduction,Area,Area Code=A226,Uganda,Null
+FoodProduction,Area,Area Code=A227,Tuvalu,Null
+FoodProduction,Area,Area Code=A228,USSR,Null
+FoodProduction,Area,Area Code=A229,United Kingdom,Null
+FoodProduction,Area,Area Code=A23,Belize,Null
+FoodProduction,Area,Area Code=A230,Ukraine,Null
+FoodProduction,Area,Area Code=A231,United States of America,Null
+FoodProduction,Area,Area Code=A233,Burkina Faso,Null
+FoodProduction,Area,Area Code=A234,Uruguay,Null
+FoodProduction,Area,Area Code=A235,Uzbekistan,Null
+FoodProduction,Area,Area Code=A236,Venezuela (Bolivarian Republic of),Null
+FoodProduction,Area,Area Code=A237,Viet Nam,Null
+FoodProduction,Area,Area Code=A238,Ethiopia,Null
+FoodProduction,Area,Area Code=A239,British Virgin Islands,Null
+FoodProduction,Area,Area Code=A240,United States Virgin Islands,Null
+FoodProduction,Area,Area Code=A243,Wallis and Futuna Islands,Null
+FoodProduction,Area,Area Code=A244,Samoa,Null
+FoodProduction,Area,Area Code=A248,Yugoslav SFR,Null
+FoodProduction,Area,Area Code=A249,Yemen,Null
+FoodProduction,Area,Area Code=A25,Solomon Islands,Null
+FoodProduction,Area,Area Code=A250,Democratic Republic of the Congo,Null
+FoodProduction,Area,Area Code=A251,Zambia,Null
+FoodProduction,Area,Area Code=A255,Belgium,Null
+FoodProduction,Area,Area Code=A256,Luxembourg,Null
+FoodProduction,Area,Area Code=A26,Brunei Darussalam,Null
+FoodProduction,Area,Area Code=A27,Bulgaria,Null
+FoodProduction,Area,Area Code=A272,Serbia,Null
+FoodProduction,Area,Area Code=A273,Montenegro,Null
+FoodProduction,Area,Area Code=A276,Sudan,Null
+FoodProduction,Area,Area Code=A277,South Sudan,Null
+FoodProduction,Area,Area Code=A28,Myanmar,Null
+FoodProduction,Area,Area Code=A29,Burundi,Null
+FoodProduction,Area,Area Code=A299,Occupied Palestinian Territory,Null
+FoodProduction,Area,Area Code=A3,Albania,Null
+FoodProduction,Area,Area Code=A32,Cameroon,Null
+FoodProduction,Area,Area Code=A33,Canada,Null
+FoodProduction,Area,Area Code=A35,Cabo Verde,Null
+FoodProduction,Area,Area Code=A351,China,Null
+FoodProduction,Area,Area Code=A36,Cayman Islands,Null
+FoodProduction,Area,Area Code=A37,Central African Republic,Null
+FoodProduction,Area,Area Code=A38,Sri Lanka,Null
+FoodProduction,Area,Area Code=A39,Chad,Null
+FoodProduction,Area,Area Code=A4,Algeria,Null
+FoodProduction,Area,Area Code=A40,Chile,Null
+FoodProduction,Area,Area Code=A41,China% mainland,Null
+FoodProduction,Area,Area Code=A44,Colombia,Null
+FoodProduction,Area,Area Code=A45,Comoros,Null
+FoodProduction,Area,Area Code=A46,Congo,Null
+FoodProduction,Area,Area Code=A47,Cook Islands,Null
+FoodProduction,Area,Area Code=A48,Costa Rica,Null
+FoodProduction,Area,Area Code=A49,Cuba,Null
+FoodProduction,Area,Area Code=A5,American Samoa,Null
+FoodProduction,Area,Area Code=A50,Cyprus,Null
+FoodProduction,Area,Area Code=A5000,World,Null
+FoodProduction,Area,Area Code=A51,Czechoslovakia,Null
+FoodProduction,Area,Area Code=A5100,Africa,Null
+FoodProduction,Area,Area Code=A5101,Eastern Africa,Null
+FoodProduction,Area,Area Code=A5102,Middle Africa,Null
+FoodProduction,Area,Area Code=A5103,Northern Africa,Null
+FoodProduction,Area,Area Code=A5104,Southern Africa,Null
+FoodProduction,Area,Area Code=A5105,Western Africa,Null
+FoodProduction,Area,Area Code=A52,Azerbaijan,Null
+FoodProduction,Area,Area Code=A5200,Americas,Null
+FoodProduction,Area,Area Code=A5203,Northern America,Null
+FoodProduction,Area,Area Code=A5204,Central America,Null
+FoodProduction,Area,Area Code=A5206,Caribbean,Null
+FoodProduction,Area,Area Code=A5207,South America,Null
+FoodProduction,Area,Area Code=A53,Benin,Null
+FoodProduction,Area,Area Code=A5300,Asia,Null
+FoodProduction,Area,Area Code=A5301,Central Asia,Null
+FoodProduction,Area,Area Code=A5302,Eastern Asia,Null
+FoodProduction,Area,Area Code=A5303,Southern Asia,Null
+FoodProduction,Area,Area Code=A5304,South-Eastern Asia,Null
+FoodProduction,Area,Area Code=A5305,Western Asia,Null
+FoodProduction,Area,Area Code=A54,Denmark,Null
+FoodProduction,Area,Area Code=A5400,Europe,Null
+FoodProduction,Area,Area Code=A5401,Eastern Europe,Null
+FoodProduction,Area,Area Code=A5402,Northern Europe,Null
+FoodProduction,Area,Area Code=A5403,Southern Europe,Null
+FoodProduction,Area,Area Code=A5404,Western Europe,Null
+FoodProduction,Area,Area Code=A55,Dominica,Null
+FoodProduction,Area,Area Code=A5500,Oceania,Null
+FoodProduction,Area,Area Code=A5501,Australia & New Zealand,Null
+FoodProduction,Area,Area Code=A5502,Melanesia,Null
+FoodProduction,Area,Area Code=A5503,Micronesia,Null
+FoodProduction,Area,Area Code=A5504,Polynesia,Null
+FoodProduction,Area,Area Code=A56,Dominican Republic,Null
+FoodProduction,Area,Area Code=A57,Belarus,Null
+FoodProduction,Area,Area Code=A5706,European Union,Null
+FoodProduction,Area,Area Code=A58,Ecuador,Null
+FoodProduction,Area,Area Code=A5801,Least Developed Countries,Null
+FoodProduction,Area,Area Code=A5802,Land Locked Developing Countries,Null
+FoodProduction,Area,Area Code=A5803,Small Island Developing States,Null
+FoodProduction,Area,Area Code=A5815,Low Income Food Deficit Countries,Null
+FoodProduction,Area,Area Code=A5817,Net Food Importing Developing Countries,Null
+FoodProduction,Area,Area Code=A59,Egypt,Null
+FoodProduction,Area,Area Code=A60,El Salvador,Null
+FoodProduction,Area,Area Code=A61,Equatorial Guinea,Null
+FoodProduction,Area,Area Code=A62,Ethiopia PDR,Null
+FoodProduction,Area,Area Code=A63,Estonia,Null
+FoodProduction,Area,Area Code=A64,Faroe Islands,Null
+FoodProduction,Area,Area Code=A66,Fiji,Null
+FoodProduction,Area,Area Code=A67,Finland,Null
+FoodProduction,Area,Area Code=A68,France,Null
+FoodProduction,Area,Area Code=A69,French Guiana,Null
+FoodProduction,Area,Area Code=A7,Angola,Null
+FoodProduction,Area,Area Code=A70,French Polynesia,Null
+FoodProduction,Area,Area Code=A72,Djibouti,Null
+FoodProduction,Area,Area Code=A73,Georgia,Null
+FoodProduction,Area,Area Code=A74,Gabon,Null
+FoodProduction,Area,Area Code=A75,Gambia,Null
+FoodProduction,Area,Area Code=A79,Germany,Null
+FoodProduction,Area,Area Code=A8,Antigua and Barbuda,Null
+FoodProduction,Area,Area Code=A80,Bosnia and Herzegovina,Null
+FoodProduction,Area,Area Code=A81,Ghana,Null
+FoodProduction,Area,Area Code=A83,Kiribati,Null
+FoodProduction,Area,Area Code=A84,Greece,Null
+FoodProduction,Area,Area Code=A86,Grenada,Null
+FoodProduction,Area,Area Code=A87,Guadeloupe,Null
+FoodProduction,Area,Area Code=A88,Guam,Null
+FoodProduction,Area,Area Code=A89,Guatemala,Null
+FoodProduction,Area,Area Code=A9,Argentina,Null
+FoodProduction,Area,Area Code=A90,Guinea,Null
+FoodProduction,Area,Area Code=A91,Guyana,Null
+FoodProduction,Area,Area Code=A93,Haiti,Null
+FoodProduction,Area,Area Code=A95,Honduras,Null
+FoodProduction,Area,Area Code=A96,China% Hong Kong SAR,Null
+FoodProduction,Area,Area Code=A97,Hungary,Null
+FoodProduction,Area,Area Code=A98,Croatia,Null
+FoodProduction,Area,Area Code=A99,Iceland,Null
+FoodProduction,Item,Item Code=I15,Wheat,Null
+FoodProduction,Item,Item Code=I27,Rice% paddy,Null
+FoodProduction,Item,Item Code=I44,Barley,Null
+FoodProduction,Item,Item Code=I51,Beer of barley,Null
+FoodProduction,Item,Item Code=I56,Maize,Null
+FoodProduction,Item,Item Code=I60,Oil% maize,Null
+FoodProduction,Item,Item Code=I71,Rye,Null
+FoodProduction,Item,Item Code=I75,Oats,Null
+FoodProduction,Item,Item Code=I79,Millet,Null
+FoodProduction,Item,Item Code=I83,Sorghum,Null
+FoodProduction,Item,Item Code=I89,Buckwheat,Null
+FoodProduction,Item,Item Code=I92,Quinoa,Null
+FoodProduction,Item,Item Code=I94,Fonio,Null
+FoodProduction,Item,Item Code=I97,Triticale,Null
+FoodProduction,Item,Item Code=I101,Canary seed,Null
+FoodProduction,Item,Item Code=I103,Grain% mixed,Null
+FoodProduction,Item,Item Code=I108,Cereals% nes,Null
+FoodProduction,Item,Item Code=I116,Potatoes,Null
+FoodProduction,Item,Item Code=I122,Sweet potatoes,Null
+FoodProduction,Item,Item Code=I125,Cassava,Null
+FoodProduction,Item,Item Code=I135,Yautia (cocoyam),Null
+FoodProduction,Item,Item Code=I136,Taro (cocoyam),Null
+FoodProduction,Item,Item Code=I137,Yams,Null
+FoodProduction,Item,Item Code=I149,Roots and tubers% nes,Null
+FoodProduction,Item,Item Code=I156,Sugar cane,Null
+FoodProduction,Item,Item Code=I157,Sugar beet,Null
+FoodProduction,Item,Item Code=I161,Sugar crops% nes,Null
+FoodProduction,Item,Item Code=I162,Sugar Raw Centrifugal,Null
+FoodProduction,Item,Item Code=I165,Molasses,Null
+FoodProduction,Item,Item Code=I176,Beans% dry,Null
+FoodProduction,Item,Item Code=I181,Broad beans% horse beans% dry,Null
+FoodProduction,Item,Item Code=I187,Peas% dry,Null
+FoodProduction,Item,Item Code=I191,Chick peas,Null
+FoodProduction,Item,Item Code=I195,Cow peas% dry,Null
+FoodProduction,Item,Item Code=I197,Pigeon peas,Null
+FoodProduction,Item,Item Code=I201,Lentils,Null
+FoodProduction,Item,Item Code=I203,Bambara beans,Null
+FoodProduction,Item,Item Code=I205,Vetches,Null
+FoodProduction,Item,Item Code=I210,Lupins,Null
+FoodProduction,Item,Item Code=I211,Pulses% nes,Null
+FoodProduction,Item,Item Code=I216,Brazil nuts% with shell,Null
+FoodProduction,Item,Item Code=I217,Cashew nuts% with shell,Null
+FoodProduction,Item,Item Code=I220,Chestnut,Null
+FoodProduction,Item,Item Code=I221,Almonds% with shell,Null
+FoodProduction,Item,Item Code=I222,Walnuts% with shell,Null
+FoodProduction,Item,Item Code=I223,Pistachios,Null
+FoodProduction,Item,Item Code=I224,Kola nuts,Null
+FoodProduction,Item,Item Code=I225,Hazelnuts% with shell,Null
+FoodProduction,Item,Item Code=I226,Areca nuts,Null
+FoodProduction,Item,Item Code=I234,Nuts% nes,Null
+FoodProduction,Item,Item Code=I236,Soybeans,Null
+FoodProduction,Item,Item Code=I237,Oil% soybean,Null
+FoodProduction,Item,Item Code=I242,Groundnuts% with shell,Null
+FoodProduction,Item,Item Code=I244,Oil% groundnut,Null
+FoodProduction,Item,Item Code=I249,Coconuts,Null
+FoodProduction,Item,Item Code=I252,Oil% coconut (copra),Null
+FoodProduction,Item,Item Code=I254,Oil% palm fruit,Null
+FoodProduction,Item,Item Code=I256,Palm kernels,Null
+FoodProduction,Item,Item Code=I257,Oil% palm,Null
+FoodProduction,Item,Item Code=I258,Oil% palm kernel,Null
+FoodProduction,Item,Item Code=I260,Olives,Null
+FoodProduction,Item,Item Code=I261,Oil% olive% virgin,Null
+FoodProduction,Item,Item Code=I263,Karite nuts (sheanuts),Null
+FoodProduction,Item,Item Code=I265,Castor oil seed,Null
+FoodProduction,Item,Item Code=I267,Sunflower seed,Null
+FoodProduction,Item,Item Code=I268,Oil% sunflower,Null
+FoodProduction,Item,Item Code=I270,Rapeseed,Null
+FoodProduction,Item,Item Code=I271,Oil% rapeseed,Null
+FoodProduction,Item,Item Code=I275,Tung nuts,Null
+FoodProduction,Item,Item Code=I277,Jojoba seed,Null
+FoodProduction,Item,Item Code=I280,Safflower seed,Null
+FoodProduction,Item,Item Code=I281,Oil% safflower,Null
+FoodProduction,Item,Item Code=I289,Sesame seed,Null
+FoodProduction,Item,Item Code=I290,Oil% sesame,Null
+FoodProduction,Item,Item Code=I292,Mustard seed,Null
+FoodProduction,Item,Item Code=I296,Poppy seed,Null
+FoodProduction,Item,Item Code=I299,Melonseed,Null
+FoodProduction,Item,Item Code=I305,Tallowtree seed,Null
+FoodProduction,Item,Item Code=I310,Kapok fruit,Null
+FoodProduction,Item,Item Code=I311,Kapokseed in shell,Null
+FoodProduction,Item,Item Code=I328,Seed cotton,Null
+FoodProduction,Item,Item Code=I329,Cottonseed,Null
+FoodProduction,Item,Item Code=I331,Oil% cottonseed,Null
+FoodProduction,Item,Item Code=I333,Linseed,Null
+FoodProduction,Item,Item Code=I334,Oil% linseed,Null
+FoodProduction,Item,Item Code=I336,Hempseed,Null
+FoodProduction,Item,Item Code=I339,Oilseeds nes,Null
+FoodProduction,Item,Item Code=I358,Cabbages and other brassicas,Null
+FoodProduction,Item,Item Code=I366,Artichokes,Null
+FoodProduction,Item,Item Code=I367,Asparagus,Null
+FoodProduction,Item,Item Code=I372,Lettuce and chicory,Null
+FoodProduction,Item,Item Code=I373,Spinach,Null
+FoodProduction,Item,Item Code=I378,Cassava leaves,Null
+FoodProduction,Item,Item Code=I388,Tomatoes,Null
+FoodProduction,Item,Item Code=I393,Cauliflowers and broccoli,Null
+FoodProduction,Item,Item Code=I394,Pumpkins% squash and gourds,Null
+FoodProduction,Item,Item Code=I397,Cucumbers and gherkins,Null
+FoodProduction,Item,Item Code=I399,Eggplants (aubergines),Null
+FoodProduction,Item,Item Code=I401,Chillies and peppers% green,Null
+FoodProduction,Item,Item Code=I402,Onions% shallots% green,Null
+FoodProduction,Item,Item Code=I403,Onions% dry,Null
+FoodProduction,Item,Item Code=I406,Garlic,Null
+FoodProduction,Item,Item Code=I407,Leeks% other alliaceous vegetables,Null
+FoodProduction,Item,Item Code=I414,Beans% green,Null
+FoodProduction,Item,Item Code=I417,Peas% green,Null
+FoodProduction,Item,Item Code=I420,Vegetables% leguminous nes,Null
+FoodProduction,Item,Item Code=I423,String beans,Null
+FoodProduction,Item,Item Code=I426,Carrots and turnips,Null
+FoodProduction,Item,Item Code=I430,Okra,Null
+FoodProduction,Item,Item Code=I446,Maize% green,Null
+FoodProduction,Item,Item Code=I449,Mushrooms and truffles,Null
+FoodProduction,Item,Item Code=I459,Chicory roots,Null
+FoodProduction,Item,Item Code=I461,Carobs,Null
+FoodProduction,Item,Item Code=I463,Vegetables% fresh nes,Null
+FoodProduction,Item,Item Code=I486,Bananas,Null
+FoodProduction,Item,Item Code=I489,Plantains,Null
+FoodProduction,Item,Item Code=I490,Oranges,Null
+FoodProduction,Item,Item Code=I495,Tangerines% mandarins% clementines% satsumas,Null
+FoodProduction,Item,Item Code=I497,Lemons and limes,Null
+FoodProduction,Item,Item Code=I507,Grapefruit (inc. pomelos),Null
+FoodProduction,Item,Item Code=I512,Fruit% citrus nes,Null
+FoodProduction,Item,Item Code=I515,Apples,Null
+FoodProduction,Item,Item Code=I521,Pears,Null
+FoodProduction,Item,Item Code=I523,Quinces,Null
+FoodProduction,Item,Item Code=I526,Apricots,Null
+FoodProduction,Item,Item Code=I530,Cherries% sour,Null
+FoodProduction,Item,Item Code=I531,Cherries,Null
+FoodProduction,Item,Item Code=I534,Peaches and nectarines,Null
+FoodProduction,Item,Item Code=I536,Plums and sloes,Null
+FoodProduction,Item,Item Code=I541,Fruit% stone nes,Null
+FoodProduction,Item,Item Code=I542,Fruit% pome nes,Null
+FoodProduction,Item,Item Code=I544,Strawberries,Null
+FoodProduction,Item,Item Code=I547,Raspberries,Null
+FoodProduction,Item,Item Code=I549,Gooseberries,Null
+FoodProduction,Item,Item Code=I550,Currants,Null
+FoodProduction,Item,Item Code=I552,Blueberries,Null
+FoodProduction,Item,Item Code=I554,Cranberries,Null
+FoodProduction,Item,Item Code=I558,Berries nes,Null
+FoodProduction,Item,Item Code=I560,Grapes,Null
+FoodProduction,Item,Item Code=I564,Wine,Null
+FoodProduction,Item,Item Code=I567,Watermelons,Null
+FoodProduction,Item,Item Code=I568,Melons% other (inc.cantaloupes),Null
+FoodProduction,Item,Item Code=I569,Figs,Null
+FoodProduction,Item,Item Code=I571,Mangoes% mangosteens% guavas,Null
+FoodProduction,Item,Item Code=I572,Avocados,Null
+FoodProduction,Item,Item Code=I574,Pineapples,Null
+FoodProduction,Item,Item Code=I577,Dates,Null
+FoodProduction,Item,Item Code=I587,Persimmons,Null
+FoodProduction,Item,Item Code=I591,Cashewapple,Null
+FoodProduction,Item,Item Code=I592,Kiwi fruit,Null
+FoodProduction,Item,Item Code=I600,Papayas,Null
+FoodProduction,Item,Item Code=I603,Fruit% tropical fresh nes,Null
+FoodProduction,Item,Item Code=I619,Fruit% fresh nes,Null
+FoodProduction,Item,Item Code=I656,Coffee% green,Null
+FoodProduction,Item,Item Code=I661,Cocoa% beans,Null
+FoodProduction,Item,Item Code=I667,Tea,Null
+FoodProduction,Item,Item Code=I677,Hops,Null
+FoodProduction,Item,Item Code=I687,Pepper (piper spp.),Null
+FoodProduction,Item,Item Code=I689,Chillies and peppers% dry,Null
+FoodProduction,Item,Item Code=I692,Vanilla,Null
+FoodProduction,Item,Item Code=I693,Cinnamon (canella),Null
+FoodProduction,Item,Item Code=I698,Cloves,Null
+FoodProduction,Item,Item Code=I702,Nutmeg% mace and cardamoms,Null
+FoodProduction,Item,Item Code=I711,Anise% badian% fennel% coriander,Null
+FoodProduction,Item,Item Code=I720,Ginger,Null
+FoodProduction,Item,Item Code=I723,Spices% nes,Null
+FoodProduction,Item,Item Code=I748,Peppermint,Null
+FoodProduction,Item,Item Code=I754,Pyrethrum% dried,Null
+FoodProduction,Item,Item Code=I767,Cotton lint,Null
+FoodProduction,Item,Item Code=I773,Flax fibre and tow,Null
+FoodProduction,Item,Item Code=I777,Hemp tow waste,Null
+FoodProduction,Item,Item Code=I778,Kapok fibre,Null
+FoodProduction,Item,Item Code=I780,Jute,Null
+FoodProduction,Item,Item Code=I782,Bastfibres% other,Null
+FoodProduction,Item,Item Code=I788,Ramie,Null
+FoodProduction,Item,Item Code=I789,Sisal,Null
+FoodProduction,Item,Item Code=I800,Agave fibres nes,Null
+FoodProduction,Item,Item Code=I809,Manila fibre (abaca),Null
+FoodProduction,Item,Item Code=I813,Coir,Null
+FoodProduction,Item,Item Code=I821,Fibre crops nes,Null
+FoodProduction,Item,Item Code=I826,Tobacco% unmanufactured,Null
+FoodProduction,Item,Item Code=I836,Rubber% natural,Null
+FoodProduction,Item,Item Code=I839,Gums% natural,Null
+FoodProduction,Item,Item Code=I1242,Margarine% short,Null
+FoodProduction,Item,Item Code=I1717,Cereals%Total,Null
+FoodProduction,Item,Item Code=I1720,Roots and Tubers%Total,Null
+FoodProduction,Item,Item Code=I1726,Pulses%Total,Null
+FoodProduction,Item,Item Code=I1729,Treenuts%Total,Null
+FoodProduction,Item,Item Code=I1732,Oilcrops Primary,Null
+FoodProduction,Item,Item Code=I1735,Vegetables Primary,Null
+FoodProduction,Item,Item Code=I1751,Jute & Jute-like Fibres,Null
+FoodProduction,Item,Item Code=I1753,Fibre Crops Primary,Null
+FoodProduction,Item,Item Code=I1800,Vegetables&Melons% Total,Null
+FoodProduction,Item,Item Code=I1801,Fruit excl Melons%Total,Null
+FoodProduction,Item,Item Code=I1804,Citrus Fruit%Total,Null
+FoodProduction,Item,Item Code=I1814,Coarse Grain% Total,Null
+FoodProduction,Item,Item Code=I1817,Cereals (Rice Milled Eqv),Null
+FoodProduction,Item,Item Code=I1841,Oilcakes Equivalent,Null
+FoodProduction,Element,Element Code=E5312,Area harvested,Null
+FoodProduction,Element,Element Code=E5419,Yield,Null
+FoodProduction,Element,Element Code=E5510,Production,Null
+FoodProduction,Element,Element Code=E5525,Seed,Null
+FoodProduction,Unit,Null,ha,Null
+FoodProduction,Unit,Null,hg/ha,Null
+FoodProduction,Unit,Null,tonnes,Null
+FoodProduction,Quantity,Null,184~1000000,Null
+SocialNetwork,Activity,Click=1,Create Post,Null
+SocialNetwork,Activity,Click=0,Like Post,Null
+SocialNetwork,Activity,Click=1,Like Post,Null
+SocialNetwork,Activity,Click=0,Command Post,Null
+SocialNetwork,Activity,Click=1,Command Post,Null
+SocialNetwork,Activity,Click=0,Share Post,Null
+SocialNetwork,Activity,Click=1,Share Post,Null
+SocialNetwork,Date,Null,42057~43086,Null
+SocialNetwork,Post,Null,42057S1,Null
+SocialNetwork,Post,Null,42057S2,Null
+SocialNetwork,Post,Null,42057S3,Null
+SocialNetwork,Post,Null,42057S4,Null
+SocialNetwork,Post,Null,42057S5,Null
+SocialNetwork,Post,Null,42057S6,Null
+SocialNetwork,Post,Null,42057S7,Null
+SocialNetwork,Post,Null,42057S8,Null
+SocialNetwork,Post,Null,42057S9,Null
+SocialNetwork,Type,Null,Status,Null
+SocialNetwork,Weekday,Null,Sun,Null
+SocialNetwork,Weekday,Null,Mon,Null
+SocialNetwork,Weekday,Null,Tue,Null
+SocialNetwork,Weekday,Null,Wed,Null
+SocialNetwork,Weekday,Null,Thu,Null
+SocialNetwork,Weekday,Null,Fri,Null
+SocialNetwork,Weekday,Null,Sat,Null
+SocialNetwork,Duration-Day,Null,0 min,Null
+SocialNetwork,Duration-Day,Null,1 min,Null
+SocialNetwork,Duration-Day,Null,2 min,Null
+SocialNetwork,Duration-Day,Null,3 min,Null
+SocialNetwork,Duration-Day,Null,4 min,Null
+SocialNetwork,Duration-Day,Null,5 min,Null
+SocialNetwork,Duration-Day,Null,6 min,Null
+SocialNetwork,Duration-Day,Null,7 min,Null
+SocialNetwork,Duration-Day,Null,8 min,Null
+SocialNetwork,Duration-Day,Null,9 min,Null
+SocialNetwork,Duration-Day,Null,10 min,Null
+SocialNetwork,Duration-Day,Null,11 min,Null
+SocialNetwork,Duration-Day,Null,12 min,Null
+SocialNetwork,Duration-Day,Null,13 min,Null
+SocialNetwork,Duration-Day,Null,14 min,Null
+SocialNetwork,Duration-Day,Null,15 min,Null
+SocialNetwork,Duration-Day,Null,16 min,Null
+SocialNetwork,Duration-Day,Null,17 min,Null
+SocialNetwork,Duration-Day,Null,18 min,Null
+SocialNetwork,Duration-Day,Null,19 min,Null
+SocialNetwork,Duration-Day,Null,20 min,Null
+SocialNetwork,Duration-Day,Null,21 min,Null
+SocialNetwork,Duration-Day,Null,22 min,Null
+SocialNetwork,Duration-Day,Null,23 min,Null
+SocialNetwork,Duration-Day,Null,24 min,Null
+SocialNetwork,Duration-Day,Null,25 min,Null
+SocialNetwork,Duration-Day,Null,26 min,Null
+SocialNetwork,Duration-Day,Null,27 min,Null
+SocialNetwork,Duration-Day,Null,28 min,Null
+SocialNetwork,Duration-Day,Null,29 min,Null
+SocialNetwork,Duration-Day,Null,30 min,Null
+SocialNetwork,Duration-Day,Null,31 min,Null
+SocialNetwork,Duration-Day,Null,32 min,Null
+SocialNetwork,Duration-Day,Null,33 min,Null
+SocialNetwork,Duration-Day,Null,34 min,Null
+SocialNetwork,Duration-Day,Null,35 min,Null
+SocialNetwork,Duration-Day,Null,36 min,Null
+SocialNetwork,Duration-Day,Null,37 min,Null
+SocialNetwork,Duration-Day,Null,38 min,Null
+SocialNetwork,Duration-Day,Null,39 min,Null
+SocialNetwork,Duration-Day,Null,40 min,Null
+SocialNetwork,Duration-Day,Null,41 min,Null
+SocialNetwork,Duration-Day,Null,42 min,Null
+SocialNetwork,Duration-Day,Null,43 min,Null
+SocialNetwork,Duration-Day,Null,44 min,Null
+SocialNetwork,Duration-Day,Null,45 min,Null
+SocialNetwork,Duration-Day,Null,46 min,Null
+SocialNetwork,Duration-Day,Null,47 min,Null
+SocialNetwork,Duration-Day,Null,48 min,Null
+SocialNetwork,Duration-Day,Null,49 min,Null
+SocialNetwork,Duration-Day,Null,50 min,Null
+SocialNetwork,Duration-Hour,Null,1:00 AM,Null
+SocialNetwork,Duration-Hour,Null,2:00 AM,Null
+SocialNetwork,Duration-Hour,Null,3:00 AM,Null
+SocialNetwork,Duration-Hour,Null,4:00 AM,Null
+SocialNetwork,Duration-Hour,Null,5:00 AM,Null
+SocialNetwork,Duration-Hour,Null,6:00 AM,Null
+SocialNetwork,Duration-Hour,Null,7:00 AM,Null
+SocialNetwork,Duration-Hour,Null,8:00 AM,Null
+SocialNetwork,Duration-Hour,Null,9:00 AM,Null
+SocialNetwork,Duration-Hour,Null,10:00 AM,Null
+SocialNetwork,Duration-Hour,Null,11:00 AM,Null
+SocialNetwork,Duration-Hour,Null,12:00 AM,Null
+SocialNetwork,Duration-Hour,Null,1:00 PM,Null
+SocialNetwork,Duration-Hour,Null,2:00 PM,Null
+SocialNetwork,Duration-Hour,Null,3:00 PM,Null
+SocialNetwork,Duration-Hour,Null,4:00 PM,Null
+SocialNetwork,Duration-Hour,Null,5:00 PM,Null
+SocialNetwork,Duration-Hour,Null,6:00 PM,Null
+SocialNetwork,Duration-Hour,Null,7:00 PM,Null
+SocialNetwork,Duration-Hour,Null,8:00 PM,Null
+SocialNetwork,Duration-Hour,Null,9:00 PM,Null
+SocialNetwork,Duration-Hour,Null,10:00 PM,Null
+SocialNetwork,Duration-Hour,Null,11:00 PM,Null
+SocialNetwork,Duration-Hour,Null,12:00 PM,Null
+SocialNetwork,ID,Null,1000~9000,Null
+SocialNetwork,Age Group,Null,13-17,Null
+SocialNetwork,Age Group,Null,18-34,Null
+SocialNetwork,Age Group,Null,35-54,Null
+SocialNetwork,Age Group,Null,55-74,Null
+SocialNetwork,Age Group,Null,75,Null
+SocialNetwork,Gender,Null,Female,Null
+SocialNetwork,Gender,Null,Male,Null
+SocialNetwork,Region,Null,Hong Kong,Null
+SocialNetwork,Region,Null,Macau,Null
+SocialNetwork,Region,Null,PRC,Null
+SocialNetwork,Region,Null,Taiwan,Null
+SocialNetwork,Region,Null,Singapore,Null
