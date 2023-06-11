@@ -8,7 +8,7 @@ https://github.com/hkpeaks/peaks-consolidation/blob/main/FunctionList20230611.pn
 - Combine files and filter data from a folder which contains many files
 - Supports streaming for many files get from a folder
 - Split a file by distinct value of particular column
-- Auto-detect to combine query "Filter" and "GroupBy"
+- Auto-detect to combine query filter and group by
 - Billion-row sorting (1st pre-release supports billion-row distinct, group by, filter and join table)
 - And more
 
