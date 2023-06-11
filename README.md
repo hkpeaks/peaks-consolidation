@@ -3,7 +3,16 @@ Peaks Consolidation is currently developing and testing a set of algorithms and 
 
 ### Before you build runtime for the above source code written in Golang, please read the file main.go and view this demo video https://youtu.be/wL1fbY3JZ1Y.
 
-https://github.com/hkpeaks/peaks-consolidation/blob/main/FunctionList20230611.png is the current structure of the project. It is planned to update the source code and publish 2nd pre-release runtime in around July 2023.
+https://github.com/hkpeaks/peaks-consolidation/blob/main/FunctionList20230611.png is the current structure of the project. It is planned to update the source code and publish 2nd pre-release runtime in around July 2023. New functions will be added:-
+
+- Combine files and filter data from a folder which contains many files
+- Supports streaming for many files get from a folder
+- Split files by distinct value of particular column
+- Auto-detected to combine query "Filter" and "GroupBy"
+- Billion-row sorting
+- And more
+
+This version can prove that it is significantly faster than the fastest dataframe software #DuckDB 0.8.0 in some measures, where DuckDB 0.8.0 has been significantly faster than Polars 0.18.0 in some measures particularly in large datasets and parquet file format. So now my focus of benchmarking has shifted to DuckDB.
 
 ## Ultra Speed for Query Billion Rows
 
