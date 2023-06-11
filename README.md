@@ -12,7 +12,7 @@ https://github.com/hkpeaks/peaks-consolidation/blob/main/FunctionList20230611.pn
 - Billion-row sorting
 - And more
 
-This version can prove that it is significantly faster than the fastest dataframe software #DuckDB 0.8.0 in some measures, where DuckDB 0.8.0 has been significantly faster than Polars 0.18.0 in some measures particularly in large datasets and parquet file format. So now my focus of benchmarking has shifted to DuckDB.
+Based on some measures, coming pre-release is likely to be significantly faster than the fastest dataframe software DuckDB 0.8.0.  In some measures, DuckDB 0.8.0 has been significantly faster than Polars 0.18.0 particularly in large datasets and parquet file format. As a result, my focus of benchmarking has shifted to DuckDB.
 
 ## Ultra Speed for Query Billion Rows
 
