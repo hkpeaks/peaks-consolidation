@@ -3,6 +3,8 @@ Peaks Consolidation is currently developing and testing a set of algorithms and 
 
 ### Before you build runtime for the above source code written in Golang, please read the file main.go and view this demo video https://youtu.be/wL1fbY3JZ1Y.
 
+https://github.com/hkpeaks/peaks-consolidation/blob/main/FunctionList20230611.png is the current structure of the project. It is planned to update the source code and publish 2nd pre-release runtime in around July 2023.
+
 ## Ultra Speed for Query Billion Rows
 
 In comparison to other consolidation solutions, such as Oracle HFM, SAP BPC, IBM Cognos Controller, and TM1, Peaks Consolidation's rule creation is extraordinarily straightforward for any user. Furthermore, CurrentSetting enables you to use your computing device to deal with billions of rows of queries, whether it's a single file or a folder comprising numerous files. It can also serve as an interface to your database. Here's an example of rule creation:-
