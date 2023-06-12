@@ -1,7 +1,7 @@
 ## Introduction
 Peaks Consolidation is currently developing and testing a set of algorithms and data structures to provide significant memory-constrained dataframe acceleration. Solving the data explosion that resulted from data gathering from IoT devices, ERP, the internet, and data lakes is one of the project's intended goals. It supports auto switching between streaming and in-memory models.
 
-### Before you build runtime for the above source code written in Golang, please read the file main.go and view this demo video https://youtu.be/wL1fbY3JZ1Y.
+Before you build runtime for the above source code written in Golang, please read the file main.go and view this demo video https://youtu.be/wL1fbY3JZ1Y.
 
 https://github.com/hkpeaks/peaks-consolidation/blob/main/FunctionList20230611.png is the current structure of the project. It is planned to update the source code and publish 2nd pre-release runtime in around July 2023. New functions will be added:-
 
