@@ -12,7 +12,7 @@ https://github.com/hkpeaks/peaks-consolidation/blob/main/FunctionList20230611.pn
 - Billion-row sorting (1st pre-release supports billion-row distinct, group by, filter and join table)
 - And more
 
-Based on some use cases, coming pre-release is likely to be significantly faster than the fastest dataframe software DuckDB 0.8.0.  In some use cases, DuckDB 0.8.0 has been significantly faster than Polars 0.18.0 particularly in large datasets and parquet file format. As a result, my focus of benchmarking has shifted to DuckDB.
+Based on some use cases, coming pre-release is likely to be significantly faster than the fastest dataframe software DuckDB 0.8.0.  In some use cases, DuckDB 0.8.0 has been significantly faster than Polars 0.18.0 particularly in large datasets and parquet file format. As a result, my focus of benchmarking has shifted to DuckDB. This is a most recent benchmark of the Peaks https://youtu.be/ctxX1O1-OKk
 
 ## Ultra Speed for Query Billion Rows
 
