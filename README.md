@@ -14,6 +14,8 @@ https://github.com/hkpeaks/peaks-consolidation/blob/main/FunctionList20230611.pn
 
 Based on some use cases, coming pre-release is likely to be significantly faster than the top 2 fastest dataframe software DuckDB 0.8.0 and Polars 0.18.0. This is a most recent benchmark of the Peaks https://youtu.be/ctxX1O1-OKk
 
+https://github.com/hkpeaks/peaks-consolidation/tree/main/BillionRowsTestingLog is a set of processing logs included in the 1st pre-release delivery. These these are foucs on billion-row databending exercises.
+
 ## Ultra Speed for Query Billion Rows
 
 In comparison to other consolidation solutions, such as Oracle HFM, SAP BPC, IBM Cognos Controller, and TM1, Peaks Consolidation's rule creation is extraordinarily straightforward for any user. Furthermore, CurrentSetting enables you to use your computing device to deal with billions of rows of queries, whether it's a single file or a folder comprising numerous files. It can also serve as an interface to your database. Here's an example of rule creation:-
