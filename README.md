@@ -1,5 +1,5 @@
 ## Introduction
-Peaks Consolidation is currently developing and testing a set of algorithms and data structures to provide significant memory-constrained dataframe acceleration. Solving the data explosion that resulted from data gathering from IoT devices, ERP, the internet, and data lakes is one of the project's intended goals. It supports auto switching between streaming and in-memory models.
+Peaks Consolidation has successfully innovated a set of algorithms that leverage the power of desktop computing. One of the project’s intended goals is to solve the data explosion that resulted from data gathering from IoT devices, ERP, the internet, and data lakes. It supports auto-switching between streaming and in-memory models.
 
 Before you build runtime for the above source code written in Golang, please read the file main.go and view this demo video https://youtu.be/wL1fbY3JZ1Y.
 
