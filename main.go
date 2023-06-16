@@ -20,18 +20,16 @@ Fully function script of the Peaks Framework (Open Source):
 - SplitFile.txt
 - ExpandFile.txt
 - Please unzip 1MillionRows.zip you can find in the Input folder before you run the above scripts
-- 29-May 2023: New function of ReadFile which supports to read many csv files (same data schema) within same folder 
+- 29-May-2023: New function of ReadFile which supports to read many csv files (same data schema) within same folder 
      ReadFile{Drive:\FolerName\*.csv ~ Table}
+- 16-Jun-2023: Restructing and refactoring of the whole project
 
-The following functions in data_bending.go are empty and are reserved for Peaks Databending (Proprietary).
-- JoinKeyValue() => Support JoinTable
-- BuildKeyValue() => Support JoinTable
-- CurrentSelect() => Support Filter
-- CurrentDistinctGroupByFloat64() => Support Distinct and GroupBy
-- CurrentDistinctGroupByInteger() => Support Distinct and GroupBy
-
-Original number of line is 1882  which covers about proprietary sections
-For open source purpose, it is reducted to 707 line of code
+The following functions in query_data.go are not open source.
+- BuildKeyValue() => Supports Build Keys for Table B
+- JoinKeyValue() => Supports Table A Join Table B By Keys
+- Select() => Supports Filter Data by Conditions
+- Filter2GroupBy() => Support Combine Filter and GroupBy
+- DistinctGroupBy() => Support Distinct or GroupBy
 
 In the same file directory of this main.go, please type "go build", the binary file "do.exe" will be generated. For linux, 
 "do" will be generated instead and you may need to type chmod +x do to authorize the use of this runtime in your Linux O/S.
