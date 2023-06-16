@@ -3,7 +3,7 @@ Peaks Consolidation has been successfully innovated a set of algorithms that lev
 
 Before you build runtime for the above source code written in Golang, please read the file main.go and view this demo video https://youtu.be/wL1fbY3JZ1Y.
 
-https://github.com/hkpeaks/peaks-consolidation/blob/main/FunctionList20230611.png is the current structure of the project. It is planned to update the  above source code files and publish 2nd pre-release runtime in around July 2023. New functions will be added:-
+It is planned to update the  above source code files and publish 2nd pre-release runtime in around July 2023. New functions will be added:-
 
 - Combine files and filter data from a folder which contains many files
 - Supports streaming for many files get from a folder
