@@ -1,6 +1,6 @@
 package peaks
 
-import (	
+import (
 	"fmt"
 	"log"
 	"math"
@@ -9,6 +9,7 @@ import (
 	"strconv"
 	"strings"
 	"sync"
+	"time"
 )
 
 var partition sync.RWMutex
@@ -233,7 +234,7 @@ func ReadCurrentFile(current_file int, file_list []string, task Task, rule Rule,
 				mutex.Unlock()
 			}(current_partition)
 		}
-		parallel.Wait()		
+		parallel.Wait()
 
 	} else {
 		result_table = *CellAddress(ds, false, 0, rule, source, file)
@@ -507,10 +508,162 @@ func CellAddress(ds DataStructure, is_column_name_exist bool, current_partition 
 	return &result_table
 }
 
+// Parallel Streaming File
+
+func CurrentExtraction(extraction_batch map[int]int, query_batch map[int]int, bytestream_partition map[int][]byte, streaming_count int, rule Rule, file *os.File, partition_address map[int]int64) {
+
+	ReadByte := func(current_partition int, partition_address map[int]int64, file *os.File) *[]byte {
+
+		var buffer = partition_address[current_partition+1] - partition_address[current_partition]
+
+		bytestream := make([]byte, buffer)
+		file.ReadAt(bytestream, partition_address[current_partition]+1)
+
+		return &bytestream
+	}
+
+	for batch := 1; batch <= streaming_count; batch++ {
+
+		for len(bytestream_partition)/rule.thread > 2 {
+			time.Sleep(100 * time.Millisecond)
+		}
+
+		for current_partition := (batch - 1) * rule.thread; current_partition < rule.thread*batch; current_partition++ {
+			partition.Lock()
+			bytestream_partition[current_partition] = *ReadByte(current_partition, partition_address, file)
+			partition.Unlock()
+		}
+
+		extraction_batch[batch] = 1
+	}
+}
+
+func CellAddress2(ds DataStructure, is_column_name_exist bool, current_partition int, rule Rule, source string, bytestream_partition map[int][]byte) *Cache {
+
+	CurrentPartitionBytestream := func(bytestream_partition map[int][]byte, current_partition int) *[]byte {
+		partition.Lock()
+		bytestream := bytestream_partition[current_partition]
+		partition.Unlock()
+		return &bytestream
+	}
+
+	bytestream := *CurrentPartitionBytestream(bytestream_partition, current_partition)
+	partition_address := *PartitionAddress(ds)
+	var buffer = partition_address[current_partition+1] - partition_address[current_partition]
+	read_csv_delimiter := rule.read_csv_delimiter
+
+	current_partition_address := make(map[int]int64)
+	current_partition_address[0] = -1
+	current_partition_address[1] = buffer
+
+	var _double_quote_count int = 0
+
+	cell_address := make([]uint32, 0, ds.estimated_cell)
+
+	cell_address = append(cell_address, uint32(current_partition_address[0])+1)
+
+	var start_byte int = int(current_partition_address[0]) + 1
+
+	var end_byte int = int(current_partition_address[1])
+
+	var row int32
+
+	for x := start_byte; x < end_byte; x++ {
+		if bytestream[x] == read_csv_delimiter {
+			if _double_quote_count != 1 {
+				cell_address = append(cell_address, uint32(x+1))
+				_double_quote_count = 0
+			}
+		} else if bytestream[x] == 10 {
+			cell_address = append(cell_address, uint32(x+1))
+			row++
+		} else if bytestream[x] == 13 {
+			cell_address = append(cell_address, uint32(x+1))
+		} else if bytestream[x] == 34 {
+			_double_quote_count += 1
+		}
+	}
+
+	var result_table Cache
+
+	result_table.total_column = ds.total_column
+	result_table.extra_line_br_char = ds.extra_line_br_char
+	result_table.column_name = ds.column_name
+	result_table.upper_column_name2id = ds.upper_column_name2id
+	result_table.data_type = ds.data_type
+	result_table.bytestream = bytestream
+	result_table.partition_row = row
+	result_table.cell_address = cell_address
+
+	return &result_table
+}
+
+// Parallel Streaming Folder
+func CurrentExtraction2(batch_size int, file_list []string, current_batch_stream map[int]map[int]Cache, task Task, rule Rule, current_folder string) {
+
+	// CombinePartition is nested inside ReadFile
+	CombinePartition := func(current_batch_files map[int]map[int]Cache) *map[int]Cache {
+
+		var total_file int
+		result_table := make(map[int]Cache)
+
+		for _, table := range current_batch_files {
+			for _, partition := range table {
+				result_table[total_file] = partition
+				total_file++
+			}
+		}
+
+		return &result_table
+	}
+
+	temp_table_partition := make(map[int]Cache)
+	current_batch_files := make(map[int]map[int]Cache)
+
+	var current_batch, current_batch_max_file, total_file int
+
+	for total_file < len(file_list) {
+
+		for len(current_batch_stream) > 3 {
+			time.Sleep(100 * time.Millisecond)
+		}
+
+		if (current_batch+1)*batch_size <= len(file_list) {
+			current_batch_max_file = (current_batch + 1) * batch_size
+		} else {
+			current_batch_max_file = len(file_list)
+		}
+
+		start_batch := current_batch * batch_size
+
+		if current_batch_max_file-(current_batch*batch_size) < batch_size {
+			batch_size = current_batch_max_file - (current_batch * batch_size)
+		}
+
+		current_batch_files = *ParallelReadFile(task, rule, file_list, batch_size, start_batch, current_batch_max_file, current_folder)
+
+		temp_table_partition = *CombinePartition(current_batch_files)
+
+		current_batch++
+
+		current_batch_stream[current_batch] = temp_table_partition
+
+		total_file += len(temp_table_partition)
+
+		temp_table_partition = nil
+
+		fmt.Print(total_file, " ")
+	}
+
+	if total_file != current_batch_max_file {
+		fmt.Print(current_batch_max_file, " ")
+	}
+}
+
 // SpliteFile
 
 func SplitFile(task Task, rule Rule) string {
-	
+
 	var parameter, setting, source, return_table_name string
 
 	for i := 0; i < len(rule.command2parameter_sequence[task.command]); i++ {
