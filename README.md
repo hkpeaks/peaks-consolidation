@@ -5,12 +5,13 @@ Before you build runtime for the above source code written in Golang, please rea
 
 It is planned to update the  above source code files and publish 2nd pre-release runtime in around July 2023. New functions will be added:-
 
-- Combine files and filter data from a folder which contains many files
-- Supports streaming for many files get from a folder
-- Split a file by distinct value of particular column
-- Auto-detect to combine different queries such as filter and group by
-- Billion-row sorting (1st pre-release supports billion-row distinct, group by, filter and join table)
-- And more
+New Commands:
+- SplitFile2Folder: allows to filter a big CSV file or a folder which contains many CSV file to a folder/sub-folder which results many table partitions
+- OrderBy: supports to sort billions of rows using 16GB+ memory (1st pre-release supports billion-row distinct, group by, filter and join table)
+
+New Features of Current Commands:
+- Supports to read all csv files from a folders which support in-memory or streaming model
+- Auto-detect to combine different queries such as filter + group by, filter + join table + filter for join column
 
 Based on some use cases, coming pre-release is likely to be significantly faster than the top 2 fastest dataframe software DuckDB 0.8.0 and Polars 0.18.0. This is a most recent benchmark of the Peaks https://youtu.be/ctxX1O1-OKk
 
