@@ -10,8 +10,8 @@ New Commands:
 - OrderBy: supports to sort billions of rows using 16GB+ memory (1st pre-release supports billion-row distinct, group by, filter and join table)
 
 New Features of Current Commands:
-- Supports to read all csv files from a folders which support in-memory or streaming model
-- Auto-detect to combine different queries such as filter + group by, filter + join table + filter for join column
+- Supports to read all CSV files from a folders which support in-memory or streaming model
+- Auto-detect to combine different queries such as filter + group by, filter current columns + join table + filter for join columns
 
 Based on some use cases, coming pre-release is likely to be significantly faster than the top 2 fastest dataframe software DuckDB 0.8.0 and Polars 0.18.0. This is a most recent benchmark of the Peaks https://youtu.be/ctxX1O1-OKk
 
