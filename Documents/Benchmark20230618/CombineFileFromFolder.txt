@@ -1,0 +1,2 @@
+ReadFile{D:/Benchmark/Output/PeaksFolder/*.csv ~ Table}
+WriteFile{Table ~ PeaksCombineFile.csv}
