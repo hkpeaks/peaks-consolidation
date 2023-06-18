@@ -1,0 +1,14 @@
+ReadFile{Master.csv ~ Master}
+BuildKeyValue{Master | Ledger,Account,Project ~ KeyValue} 
+
+## Current version support full join only
+## For full streaming version, please use JoinTableFullStreaming.txt
+
+JoinKeyValue{1MillionRows.csv | Ledger,Account,Project => AllMatch(KeyValue) ~ Table} 
+WriteFile{Table ~ PeaksJoinTable.csv}
+
+
+
+
+
+
