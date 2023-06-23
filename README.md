@@ -95,7 +95,7 @@ From time to time use cases will be published in the Github source code section,
 
 ## Next Pre-release
 
-It is planned to update the  above source code files and publish 2nd pre-release runtime in around July 2023. New functions will be added:-
+It is planned to update the  above source code files and publish 2nd pre-release runtime during July ~ Aug 2023. New functions will be added:-
 
 New Commands:
 - SplitFile2Folder: allows to filter a big CSV file or a folder which contains many CSV file to a folder/sub-folder which results many table partitions
