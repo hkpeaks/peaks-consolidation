@@ -1,5 +1,0 @@
-ReadFile{10-MillionRows.csv ~ Table}
-FilterUnmatch{Shop(S30..S98)}
-OrderBy{Date(D) ~ Table2}
-Filter{Shop(=S99) ~ Result3-OrderByFilterS99.csv}
-WriteFile{Table2 ~ Result3-OrderBy.csv}
