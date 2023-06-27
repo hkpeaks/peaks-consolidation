@@ -1,7 +1,6 @@
 ## Success in Billion-Row Sorting Using My Desktop PC after Pervious Success in JoinTable
 
-
-It is incredible my desktop PC can support to sort one billion rows (by shop and by date) in less than 9 minutes.
+It is incredible my desktop PC can support to sort one billion rows (by shop and by date) in less than 10 minutes.
 
 Let’s explain this setting OrderBy{1000-MillionRows.csv | Date(D)=> SplitFileByFolder(Shop)~ SortedByShop&Date.csv}
 
@@ -11,7 +10,7 @@ Date(D) is to sort data in descending order
 SplitFileByFolder(Shop) is splitting the data source into many files, each file contain one shop
 SortedByShop&Date.csv is the output file with size 58.5GB
 
-I will record a series of demo videos to compare this sorting app with Polars, DuckDB and Pandas.
+The billion-row sorting video https://youtu.be/OsJcYpgeNko
 
 This is a first query function I use temp file and folder to support data source larger than memory. For other functions such as JoinTable, Filter, Select, Distinct, GroupBy, I do not use temp file to handle data source larger than memory as it is certainly no need using temp files.
 
