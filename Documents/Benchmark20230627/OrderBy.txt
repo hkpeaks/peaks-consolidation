@@ -1,0 +1,4 @@
+OrderBy{1000-MillionRows.csv | Date(D) => SplitFileByFolder(Shop) ~ SortedByShop&Date.csv}
+
+
+
