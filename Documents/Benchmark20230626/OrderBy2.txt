@@ -1,0 +1,3 @@
+ReadFile{10-MillionRows.csv ~ Table}
+OrderBy{Date(D)}
+WriteFile{Table ~ Result2-OrderBy.csv}
