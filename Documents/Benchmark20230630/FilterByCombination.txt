@@ -6,6 +6,8 @@ GroupBy{Shop,Product,Style => SUM(Quantity) SUM(Unit_Price) SUM(Amount) Max(Quan
 OrderBy{Shop(A) Product(A) Style(A)}
 WriteFile{Table ~ Result-FilterByCombination.csv}
 
+## Video: https://youtu.be/1NV0wkGjwoQ
+
 
 
 
