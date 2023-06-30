@@ -1,0 +1,14 @@
+CurrentSetting{StreamMB(1000)Thread(100)}
+ReadFile{Combination.csv ~ Combination}
+BuildKeyValue{Combination | Shop,Product,Style ~ KeyValue}
+JoinKeyValue{7-BillionRows.csv |  Shop,Product,Style => Filter(KeyValue) ~ Table} 
+GroupBy{Shop,Product,Style => SUM(Quantity) SUM(Unit_Price) SUM(Amount) Max(Quantity) Max(Unit_Price) Max(Amount)}
+OrderBy{Shop(A) Product(A) Style(A)}
+WriteFile{Table ~ Result-FilterByCombination.csv}
+
+
+
+
+
+
+
