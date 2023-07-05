@@ -67,22 +67,22 @@ Included in the framework, it cover a workflow management system that helps you 
 
 Currently, the framework offers the following open source ETL commands:-
 
-- CurrentSetting
-- ReadFile
-- WriteFile
-- SplitFile
-- ExpandFile
-- CombineFile (This command is developed after the publishing of the pre-release version 23.05.18)
+- CurrentSetting{}
+- ReadFile{}
+- WriteFile{}
+- SplitFile{}
+- ExpandFile{}
+- CombineFile{} (This command is developed after the publishing of the pre-release version 23.05.18)
 
 ### Peaks Databending
 Databending is an add-on module that supports the manipulation of your data using different calculation rules. Currently, this module offers the following commands:- 
 
-- Distinct
-- GroupBy
-- BuildKeyValue
-- JoinKeyValue
-- Select
-- SelectUnmatch
+- Distinct{}
+- GroupBy{}
+- BuildKeyValue{}
+- JoinKeyValue{}
+- Select{}
+- SelectUnmatch{}
 
 ### Peaks Releases
 It provided an all-in-one executable runtime for both Windows and Linux. https://github.com/hkpeaks/peaks-consolidation/releases
