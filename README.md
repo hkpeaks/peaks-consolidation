@@ -106,7 +106,7 @@ It is planned to update the  above source code files and publish 2nd pre-release
 
 ### Amend Commands:
 - ReadFile{} and WriteFile{} will be changed to Read{} and Write{}
-- Select{} and SelectUnmatch{] will be split into Select{}/Filter{} and SelectUnmatch{}/FilterUnmatch{}.
+- Select{} and SelectUnmatch{} will be split into Select{}/Filter{} and SelectUnmatch{}/FilterUnmatch{}.
   Select{} is used to select columns while filter{} is used to select rows.
   If you need to select columns and filter rows at the same time, 2 commands are interchange.
   But SelectUnmatch{} and FilterUnmatch{} are not interchange.
