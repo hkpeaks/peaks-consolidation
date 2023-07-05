@@ -98,17 +98,18 @@ From time to time use cases will be published in the Github source code section,
 It is planned to update the  above source code files and publish 2nd pre-release runtime during Aug ~ Sep 2023. New functions will be added:-
 
 New Commands:
-- SplitFile2Folder{}: allows to filter a big CSV file or a folder which contains many CSV file to a folder/sub-folder which results many table partitions
-- OrderBy{}: supports to sort billions of rows using 16GB+ memory (1st pre-release supports billion-row distinct, group by, filter and join table)
-- ReadSample{}: supports to get fix or random sample of rows from csv file instantly, it is very useful for very large file e.g. >100GB.
-- Print{}: it is used to print few rows to screen with grid line formating.
 - AddColumn{}: Add new column by math function e.g. Add, Subtract, Multiply and Divide.
+- OrderBy{}: supports to sort billions of rows using 16GB+ memory (1st pre-release supports billion-row distinct, group by, filter and join table)
+- Print{}: it is used to print few rows to screen with grid line formatting.
+- ReadSample{}: supports to get fix or random sample of rows from csv file instantly, it is very useful for very large file e.g. >100GB.
+- SplitFile2Folder{}: allows to filter a big CSV file or a folder which contains many CSV file to a folder/sub-folder which results many table partitions
 
 Amend Commands:
 - ReadFile{} and WriteFile{} will be changed to Read{} and Write{}
 - Select{} and SelectUnmatch{] will be split into Select{}/Filter{} and SelectUnmatch{}/FilterUnmatch{}.
   Select{} is used to select columns while filter{} is used to select rows.
-  
+  If you need to select columns and filter rows at the same time, 2 commands are interchange.
+  But SelectUnmatch{} and FilterUnmatch{} are not interchange.
 
 New Features of Current Commands:
 - Supports to read all CSV files from a folders which support in-memory or streaming model
