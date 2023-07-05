@@ -123,6 +123,7 @@ It is planned to update the  above source code files and publish 2nd pre-release
 
 Based on some use cases, coming pre-release is likely to be significantly faster than the top 2 fastest dataframe software DuckDB 0.8.0 and Polars 0.18.0. These 2 are most recent benchmark of the Peaks https://youtu.be/ctxX1O1-OKk & https://youtu.be/bzess7_pKoc
 
-[BillionRowsTestingLog](https://github.com/hkpeaks/peaks-consolidation/tree/main/Documents/Peaks230518Pre-Release/BillionRowsTestingLog) is a set of processing logs included in the 1st pre-release delivery. These are foucs on billion-row databending exercises.
+[BillionRowsTestingLog](https://github.com/hkpeaks/peaks-consolidation/tree/main/Documents/Peaks230518Pre-Release/BillionRowsTestingLog) is a set of 
+processing logs included in the 1st pre-release delivery. These are foucs on billion-row databending exercises.
 
-Based on a test case, it able to handle 7 billion-rows achieving processing speed 1 billion-row / minutes. https://youtu.be/1NV0wkGjwoQ
+Based on a recent test case, it able to handle 7 billion-rows achieving processing speed 1 billion-row / minute. https://youtu.be/1NV0wkGjwoQ
