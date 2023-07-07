@@ -97,9 +97,9 @@ From time to time use cases will be published in the Github source code section,
 
 It is planned to update the above source code files and publish 2nd pre-release runtime during Aug ~ Sep 2023. New functions have been built:-
 
-### CLI command: Do 
-- Previously do can support do + script file name 
-- Now support do + filename.csv to display meta data and sample rows of your file
+### The CLI Command: Do 
+- Previously "DO" can support DO + script file name 
+- Now support DO + filename.csv to display meta data and sample rows of your file
 
 ### New Commands:
 - AddColumn{}: Add new column by math function e.g. Add, Subtract, Multiply and Divide.
