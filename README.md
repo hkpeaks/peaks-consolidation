@@ -93,7 +93,7 @@ Both framework and dataframe are written in Golang. Currently, the development a
 ### Peaks Use Cases
 From time to time use cases will be published in the Github source code section, Pre-release and YouTube channel https://www.youtube.com/@hkpeaks/videos
 
-## Next Pre-release
+## Completed Development for Next Pre-release
 
 It is planned to update the above source code files and publish 2nd pre-release runtime during Aug ~ Sep 2023. New functions have been built:-
 
@@ -132,7 +132,7 @@ processing logs included in the 1st pre-release delivery. These are foucs on bil
 
 Based on a recent test case, it able to handle 7 billion-rows achieving processing speed 1 billion-row / minute. https://youtu.be/1NV0wkGjwoQ
 
-## New Features Under Research Stage
+## Under Research Stage
 
 - Develop a data simulator that uses probability distribution.
 - Use Go native tcp/ip for localhost. This will allow Peaks to keep tables in memory. There will be two runtimes: do.exe and ram.exe where ram is the local client for the do.exe.   
