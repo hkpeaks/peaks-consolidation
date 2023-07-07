@@ -150,6 +150,11 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
   - Conditional Action By Cell Value 
   - Build Balance - enables crosstab results which can have monthly year-to-date balance
   - Crosstab and reverse crosstab
+  - Supports compisit query in single statement which can be executed in an inner loop for speed
+    e.g. TableName = Filter{}.JoinKey2Value{}.AddColumn{}.Filter{}.GroupBy{}
+    First filter you may used to filter transactions for JoinKey2Value{}
+    Second filter you may used to filter new column e.g. JoinKey2Value{} and AddColumn{}
+    
 
 
 
