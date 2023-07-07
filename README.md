@@ -135,21 +135,13 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
 ## New Features Under Research Stage
 
 - Develop a data simulator that uses probability distribution.
-
-- Use Go native tcp/ip for localhost. This will allow Peaks to keep tables in memory. There will be two runtimes: do.exe and ram.exe where ram is the local client for the do.exe.
-   
-- Write an HTML5 table and send it through websocket. This will be a Bigtable instant csv table viewer using bootstrap 5 (deploy the ReadSample{} for Web).
-   
-- Pyeaks: Python for Peaks. Pyeaks covers some of the current Peaks functions and new functions. It will support “pip install Pyeaks”. If the user downloads the Peaks runtime "do" subsequently, Pyeaks can call all functions of the Peaks runtime.
-   
-- Native data store which partitioning your table by foldertree abd support data amendment by distinct values
-   
-- Implement gRPC to support connection over the internet or different local machines
-   
-- Support read/write Parquet, JSON table and XLSX file formats.
-   
-- Parallel query with SQL server
-    
+- Use Go native tcp/ip for localhost. This will allow Peaks to keep tables in memory. There will be two runtimes: do.exe and ram.exe where ram is the local client for the do.exe.   
+- Write an HTML5 table and send it through websocket. This will be a Bigtable instant csv table viewer using bootstrap 5 (deploy the ReadSample{} for Web).   
+- Pyeaks: Python for Peaks. Pyeaks covers some of the current Peaks functions and new functions. It will support “pip install Pyeaks”. If the user downloads the Peaks runtime "do" subsequently, Pyeaks can call all functions of the Peaks runtime.   
+- Native data store which partitioning your table by foldertree abd support data amendment by distinct values   
+- Implement gRPC to support connection over the internet or different local machines   
+- Support read/write Parquet, JSON table and XLSX file formats.   
+- Parallel query with SQL server    
 - New Peaks query functions (Reconciliation, BuildBalance, GroupBy Virtual Columns, Parsing Date Format, Conditional Action, Table2Cell, Crosstab … these were done in C# WebNameSQL except GroupBy virtual column).
 
 
