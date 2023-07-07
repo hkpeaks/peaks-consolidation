@@ -138,7 +138,7 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
 - Use Go native tcp/ip for localhost. This will allow Peaks to keep tables in memory. There are runtimes: DO and RAM where RAM is the local client for the DO.   
 - Write HTML5 table with bootstrap 5 and send it through websocket to local browser. This apply to view your local giant files instantly e.g. > 100GB.
 - Pyeaks: Peaks for Python. Pyeaks covers some of the current Peaks functions and new functions. It will support “pip install Pyeaks”. If user downloads the Peaks runtime "DO" subsequently, Pyeaks can call most of the DO functions in your Python scripts.   
-- Native data store which partitioning your table by a foldertree and support data amendment by distinct values.   
+- Native data store which partitioning your table by a foldertree and support data amendment by selecting distinct column names.
 - Implement gRPC with websocket to support connection over the internet or different local machines.
 - Support read/write Parquet, JSON table and XLSX file formats.   
 - Parallel query with SQL server.
