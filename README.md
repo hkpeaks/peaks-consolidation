@@ -131,3 +131,27 @@ Based on some use cases, coming pre-release is likely to be significantly faster
 processing logs included in the 1st pre-release delivery. These are foucs on billion-row databending exercises.
 
 Based on a recent test case, it able to handle 7 billion-rows achieving processing speed 1 billion-row / minute. https://youtu.be/1NV0wkGjwoQ
+
+## New Features Under Research Stage
+
+1. Develop a data simulator that uses probability distribution.
+   
+2. Use Go native tcp/ip for localhost. This will allow Peaks to keep tables in memory. There will be two runtimes: do.exe and ram.exe where ram is the local client for the do.exe.
+   
+3. Write an HTML5 table and send it through websocket. This will be a Bigtable instant csv table viewer using bootstrap 5 (deploy the ReadSample{} for Web).
+   
+4. Pyeaks: Python for Peaks. Pyeaks covers some of the current Peaks functions and new functions. It will support “pip install Pyeaks”. If the user downloads the Peaks runtime "do" subsequently, Pyeaks can call all functions of the Peaks runtime.
+   
+5. Native data store which partitioning your table by foldertree abd support data amendment by distinct values
+   
+6. Implement gRPC to support connection over the internet or different local machines
+   
+7. Support read/write Parquet, JSON table and XLSX file formats.
+   
+8. Parallel query with SQL server.
+    
+9. New Peaks query functions (Reconciliation, BuildBalance, GroupBy Virtual Columns, Parsing Date Format, Conditional Action, Table2Cell, Crosstab … these were done in C# WebNameSQL except GroupBy virtual column).
+
+
+
+
