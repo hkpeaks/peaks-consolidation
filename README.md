@@ -143,7 +143,7 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
 - Support read/write Parquet, JSON table and XLSX file formats.   
 - Parallel query with SQL server.
 - New Peaks query functions (these were done in C# WebNameSQL except GroupBy virtual column):-
-  - Reconciliation - compares differences of 2 tables by distinct columns
+  - Reconciliation - compares differences of 2 tables by selecting distinct column names
   - Group By virtual columns - supports time series data table
   - Converting different date formats
   - Conditional Action
