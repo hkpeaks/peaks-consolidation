@@ -142,6 +142,10 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
 - Implement gRPC with websocket to support connection over the internet or different local machines.
 - Support read/write Parquet, JSON table and XLSX file formats.   
 - Parallel query with SQL server.
+- Supports composite queries in a single statement that can be executed within an inner loop to minimize hardware resource consumption.
+    e.g. TableName = Filter{}.JoinKey2Value{}.AddColumn{}.Filter{}.GroupBy{}
+    First filter you may used to filter transactions for JoinKey2Value{}
+    Second filter you may used to filter new column e.g. JoinKey2Value{} and AddColumn{}  
 - New Peaks query functions (these were done in C# WebNameSQL except GroupBy virtual column):-
   - Converting different date formats
   - Group By virtual columns - supports time series data table
@@ -150,10 +154,7 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
   - Conditional Action By Cell Value 
   - Build Balance - enables crosstab results which can have monthly year-to-date balance
   - Crosstab and reverse crosstab
-  - Supports compisit query in single statement which can be executed in an inner loop to minimize hardware resource consumption
-    e.g. TableName = Filter{}.JoinKey2Value{}.AddColumn{}.Filter{}.GroupBy{}
-    First filter you may used to filter transactions for JoinKey2Value{}
-    Second filter you may used to filter new column e.g. JoinKey2Value{} and AddColumn{}
+  
     
 
 
