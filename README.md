@@ -145,8 +145,11 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
 - Supports composite queries in a single statement that can be executed within an inner loop to minimize hardware resource consumption.
 
     TableName = Filter{}.JoinKey2Value{}.AddColumn{}.Filter{}.GroupBy{}
+
     First filter you may used to filter transactions for JoinKey2Value{}
-    Second filter you may used to filter new column e.g. JoinKey2Value{} and AddColumn{}  
+
+    Second filter you may used to filter new column e.g. JoinKey2Value{} and AddColumn{}
+  
 - New Peaks query functions (these were done in C# WebNameSQL except GroupBy virtual column):-
   - Converting different date formats
   - Group By virtual columns - supports time series data table
