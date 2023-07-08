@@ -7,7 +7,7 @@ Demo 1. Previewing a 250GB CSV file within a few milliseconds.
 
 Demo 2. Previewing CSV files with many columns.
 
-Demo 3. Previewing CSV files with text, integer and floating alignment.
+Demo 3. Previewing CSV files with text, integer and floating alignments.
 
 Demo 4. Previewing the 250GB CSV file using a script and getting batch of random samples for 1,000 times less than half second.
 
