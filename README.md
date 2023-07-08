@@ -3,13 +3,13 @@ Peaks Consolidation has been successfully innovated a set of algorithms that lev
 
 On July 8, 2023, the Peaks project achieved a new milestone in processing giant files. The below video demonstrated four different scenarios:-
 
-Demo 1. Opening and previewing a 250GB CSV file within a few milliseconds.
+Demo 1. Previewing a 250GB CSV file within a few milliseconds.
 
 Demo 2. Previewing CSV files with many columns.
 
 Demo 3. Previewing CSV files with text, integer and floating alignment.
 
-Demo 4. Previewing CSV files using a script and getting random samples for 1,000 times less than half second.
+Demo 4. Previewing a 250GB CSV file using a script and getting random samples for 1,000 times less than half second.
 
 The 2nd pre-release will include the new functions. The video URL: https://youtu.be/lX2HKLDOfwk
 
