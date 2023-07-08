@@ -144,7 +144,11 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
 - Parallel query with SQL server.
 - Supports composite queries in a single statement that can be executed within an inner loop to minimize hardware resource consumption.
 
-    ReturnTable = SourceTable.Filter{}.JoinKey2Value{}.AddColumn{}.Filter{}.GroupBy{}
+    ReturnTable = SourceTable;Filter{};JoinKey2Value{};AddColumn{};Filter{};GroupBy{}
+    ReturnTable = SourceTable.csv;Filter{};JoinKey2Value{};AddColumn{};Filter{};GroupBy{}
+    ReturnValue = SourceTable.csv;Filter{};JoinKey2Value{};AddColumn{};Filter{};GroupBy{}.Write{Result.csv}
+
+    Where ReturnTable is an in-memory table and ReturnValue is processing staus of writing csv file to disk.
 
     First filter you may use to filter transactions for JoinKey2Value{}
 
