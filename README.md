@@ -1,7 +1,14 @@
 ## Introduction
 Peaks Consolidation has been successfully innovated a set of algorithms that leverage the power of desktop computing. One of the project’s intended goals is to solve the data explosion that resulted from data gathering from IoT devices, ERP, the internet, and data lakes. It supports auto-switching between streaming and in-memory models.
 
-Before you build runtime for the above source code written in Golang, please read the file main.go and view this demo video https://youtu.be/wL1fbY3JZ1Y.
+On July 8, 2023, the Peaks project achieved a new milestone in processing giant files. The below video demonstrated four different scenarios:
+
+Demo 1. Opening and previewing a 250GB CSV file within a few milliseconds.
+Demo 2. Previewing CSV files with many columns.
+Demo 3. Previewing CSV files with text, integer and floating alignment.
+Demo 4. Previewing CSV files using a script and getting random samples for 1000 times within half a second.
+
+The video URL: https://youtu.be/lX2HKLDOfwk
 
 [![ReadSample](https://github.com/hkpeaks/peaks-framework/blob/main/Documents/Benchmark20230708/ReadSample.png)]([http://www.youtube.com/watch?v=yfJnYQBJ5ZY](https://youtu.be/lX2HKLDOfwk) "ReadSample")
 
