@@ -13,7 +13,7 @@ Demo 4. Previewing the 250GB CSV file using a script and getting batch of random
 
 The 2nd pre-release will include the new functions. The video URL: https://youtu.be/lX2HKLDOfwk
 
-[![ReadSample](https://github.com/hkpeaks/peaks-framework/blob/main/Documents/Benchmark20230708/ReadSample.png)]([http://www.youtube.com/watch?v=yfJnYQBJ5ZY](https://youtu.be/lX2HKLDOfwk) "ReadSample")
+[![ReadSample](https://github.com/hkpeaks/peaks-framework/blob/main/Documents/Benchmark20230708/ReadSample.png)]((https://youtu.be/lX2HKLDOfwk) "ReadSample")
 
 ## Ultra Speed for Query Billion Rows
 
