@@ -9,7 +9,7 @@ Demo 2. Previewing CSV files with many columns.
 
 Demo 3. Previewing CSV files with text, integer and floating alignment.
 
-Demo 4. Previewing CSV files using a script and getting random samples for 1000 times within half a second.
+Demo 4. Previewing CSV files using a script and getting random samples for 1,000 times less than half second.
 
 The 2nd pre-release will include the new functions. The video URL: https://youtu.be/lX2HKLDOfwk
 
