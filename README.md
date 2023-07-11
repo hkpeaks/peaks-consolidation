@@ -176,7 +176,42 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
   - Conditional Action By Cell Value 
   - Build Balance - enables crosstab results which can have monthly year-to-date balance
   - Crosstab and reverse crosstab
+
+
+### CLI Interactive Mode:
+
+  In CLI to type do, it will enter into interactive mode allows you to chat with the Peaks.
+  You can type "help" to get a usage for each simplified SQL statement. Currently the development has 16 SQL commands for you to deal with data manipulation.
   
+  do>>help
+
+  @ AddColumn{Column, Column => Math(NewColName)}
+      where Math includes Add, Subtract, Multiply & Divide
+  @ BuildKeyValue{Column, Column ~ KeyValueTableName}
+    CurrentSetting{StreamMB(Number) Thread(Number)}
+  @ Distinct{Column, Column}
+ #@ Filter{Column(CompareOperator Value) Column(CompareOperator Value)}
+ #@ FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
+  @ GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
+  @ JoinKeyValue{Column, Column => JoinType(KeyValueTableName)}
+     where JoinType includes AllMatch, Filter & FilterUnmatch
+  @ OrderBy{PrimaryCol(A or D) SecondaryCol(A or D)}
+  @ OrderBy{SecondaryCol => SplitFileByFolder(PrimaryCol) ~ FolderName or FileName.csv}
+    Read{FileName.csv ~ TableName}
+  @ ReadSample{StartPosition%(Number) ByteLength(Number)}
+  @ ReadSample{Repeat(Number) ByteLength(Number)}
+  @ Select{Column, Column}
+  @ SelectUnmatch{Column, Column}
+    SplitFile{FileName.csv ~ NumberOfSplit}
+  @ SplitFileByFolder{Column, Column ~ SplitFolderName}
+    View{TableName}
+    Write{TableName ~ FileName.csv or %ExpandBy100Time.csv}
+
+    Additional Query Command Setting:
+  @ QueryCommand{SourceTable Or FileName.csv Or FilePath/*.csv| QuerySetting}
+  @ QueryCommand{QuerySetting ~ ReturnTable Or FileName.csv} except OrderBy & SplitFileByFolder
+  # Compare operator includes >,<,>=,<=,=,!= & Range e.g. 100..200
+  # Compare integer or float e.g. Float > Number, Float100..200
     
 
 
