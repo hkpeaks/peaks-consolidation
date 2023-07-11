@@ -221,6 +221,8 @@ This new function will be inclued in the 2nd pre-release distribution. To enter 
   View{TableName}
     
   Write{TableName ~ FileName.csv or %ExpandBy100Time.csv}
+
+While interacting with the interactive mode, the system not only runs your command on demand but also records it in a script file automatically. This allows you to amend and run the script subsequently.
     
 ### Additional Query Command Setting 
     
@@ -231,7 +233,6 @@ This new function will be inclued in the 2nd pre-release distribution. To enter 
   Compare operator includes >, <, >=, <=, =, != & Range e.g. 100..200
   
   Compare integer or float e.g. Float > Number, Float100..200
-    
 
 
 
