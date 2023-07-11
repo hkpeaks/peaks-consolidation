@@ -178,7 +178,7 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
   - Crosstab and reverse crosstab
 
 
-### CLI Interactive Mode:
+## CLI Interactive Mode:
 
   In CLI to type do, it will enter into interactive mode allows you to chat with the Peaks.
   You can type "help" to get a usage for each simplified SQL statement. 
@@ -223,8 +223,7 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
     
   Write{TableName ~ FileName.csv or %ExpandBy100Time.csv}
     
-  Additional Query Command Setting:
-  ---------------------------------
+### Additional Query Command Setting: 
     
   QueryCommand{SourceTable Or FileName.csv Or FilePath/*.csv| QuerySetting}
   
