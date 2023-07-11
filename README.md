@@ -185,9 +185,7 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
   
   do>>help
 
-  @ AddColumn{Column, Column => Math(NewColName)}
-  
-      where Math includes Add, Subtract, Multiply & Divide
+  @ AddColumn{Column, Column => Math(NewColName)} where Math includes Add, Subtract, Multiply & Divide
       
   @ BuildKeyValue{Column, Column ~ KeyValueTableName}
   
@@ -201,13 +199,12 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
  
   @ GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
   
-  @ JoinKeyValue{Column, Column => JoinType(KeyValueTableName)}
-  
-     where JoinType includes AllMatch, Filter & FilterUnmatch
+  @ JoinKeyValue{Column, Column => JoinType(KeyValueTableName)} where JoinType includes AllMatch, Filter & FilterUnmatch
      
   @ OrderBy{PrimaryCol(A or D) SecondaryCol(A or D)}
   
   @ OrderBy{SecondaryCol => SplitFileByFolder(PrimaryCol) ~ FolderName or FileName.csv}  
+  
     Read{FileName.csv ~ TableName}
     
   @ ReadSample{StartPosition%(Number) ByteLength(Number)}
