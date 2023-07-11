@@ -185,55 +185,54 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
   
   do>>help
 
-  @ AddColumn{Column, Column => Math(NewColName)} where Math includes Add, Subtract, Multiply & Divide
+  AddColumn{Column, Column => Math(NewColName)} where Math includes Add, Subtract, Multiply & Divide
       
-  @ BuildKeyValue{Column, Column ~ KeyValueTableName}
+  BuildKeyValue{Column, Column ~ KeyValueTableName} 
   
   CurrentSetting{StreamMB(Number) Thread(Number)}
     
-  @ Distinct{Column, Column}
+  Distinct{Column, Column}
   
- !@ Filter{Column(CompareOperator Value) Column(CompareOperator Value)}
+  Filter{Column(CompareOperator Value) Column(CompareOperator Value)}
  
- !@ FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
+  FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
  
-  @ GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
+  GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
   
-  @ JoinKeyValue{Column, Column => JoinType(KeyValueTableName)} where JoinType includes AllMatch, Filter & FilterUnmatch
+  JoinKeyValue{Column, Column => JoinType(KeyValueTableName)} where JoinType includes AllMatch, Filter & FilterUnmatch
      
-  @ OrderBy{PrimaryCol(A or D) SecondaryCol(A or D)}
+  OrderBy{PrimaryCol(A or D) SecondaryCol(A or D)}
   
-  @ OrderBy{SecondaryCol => SplitFileByFolder(PrimaryCol) ~ FolderName or FileName.csv}  
+  OrderBy{SecondaryCol => SplitFileByFolder(PrimaryCol) ~ FolderName or FileName.csv}  
   
-    Read{FileName.csv ~ TableName}
+  Read{FileName.csv ~ TableName}
     
-  @ ReadSample{StartPosition%(Number) ByteLength(Number)}
+  ReadSample{StartPosition%(Number) ByteLength(Number)}
   
-  @ ReadSample{Repeat(Number) ByteLength(Number)}
+  ReadSample{Repeat(Number) ByteLength(Number)}
   
-  @ Select{Column, Column}
+  Select{Column, Column}
   
-  @ SelectUnmatch{Column, Column}  
+  SelectUnmatch{Column, Column}  
   
-    SplitFile{FileName.csv ~ NumberOfSplit}
+  SplitFile{FileName.csv ~ NumberOfSplit}
     
-  @ SplitFileByFolder{Column, Column ~ SplitFolderName}
+  SplitFileByFolder{Column, Column ~ SplitFolderName}
   
-    View{TableName}
+  View{TableName}
     
-    Write{TableName ~ FileName.csv or %ExpandBy100Time.csv}
-
+  Write{TableName ~ FileName.csv or %ExpandBy100Time.csv}
     
-    Additional Query Command Setting:
-    ---------------------------------
+  Additional Query Command Setting:
+  ---------------------------------
     
-  @ QueryCommand{SourceTable Or FileName.csv Or FilePath/*.csv| QuerySetting}
+  QueryCommand{SourceTable Or FileName.csv Or FilePath/*.csv| QuerySetting}
   
-  @ QueryCommand{QuerySetting ~ ReturnTable Or FileName.csv} except OrderBy & SplitFileByFolder
+  QueryCommand{QuerySetting ~ ReturnTable Or FileName.csv} except OrderBy & SplitFileByFolder
   
-  ! Compare operator includes >,<,>=,<=,=,!= & Range e.g. 100..200
+  Compare operator includes >,<,>=,<=,=,!= & Range e.g. 100..200
   
-  ! Compare integer or float e.g. Float > Number, Float100..200
+  Compare integer or float e.g. Float > Number, Float100..200
     
 
 
