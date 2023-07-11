@@ -224,11 +224,11 @@ To enter interactive mode in CLI and chat with the Peaks for the purpose of oper
     
 ### Additional Query Command Setting: 
     
-  QueryCommand{SourceTable Or FileName.csv Or FilePath/*.csv| QuerySetting}
+  QueryCommand{SourceTable Or FileName.csv Or FilePath/*.csv | QuerySetting}
   
   QueryCommand{QuerySetting ~ ReturnTable Or FileName.csv} except OrderBy & SplitFileByFolder
   
-  Compare operator includes >,<,>=,<=,=,!= & Range e.g. 100..200
+  Compare operator includes >, <, >=, <=, =, != & Range e.g. 100..200
   
   Compare integer or float e.g. Float > Number, Float100..200
     
