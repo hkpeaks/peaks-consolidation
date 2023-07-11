@@ -222,7 +222,7 @@ This new function will be inclued in the 2nd pre-release distribution. To enter 
     
   Write{TableName ~ FileName.csv or %ExpandBy100Time.csv}
     
-### Additional Query Command Setting: 
+### Additional Query Command Setting 
     
   QueryCommand{SourceTable Or FileName.csv Or FilePath/*.csv | QuerySetting}
   
