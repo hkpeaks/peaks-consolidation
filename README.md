@@ -1,5 +1,5 @@
 ## Introduction
-Peaks Consolidation has been successfully innovated a set of algorithms that leverage the power of desktop computing. One of the project’s intended goals is to solve the data explosion that resulted from data gathering from IoT devices, ERP, the internet, and data lakes. It supports auto-switching between streaming and in-memory models.
+Peaks Consolidation has been successfully innovated a set of algorithms that leverage the power of desktop computing. One of the project’s intended goals is to solve the data explosion that resulted from data gathering from IoT devices, ERP, the internet, and data lakes. It supports auto-switching between streaming and in-memory models. 
 
 On July 8, 2023, the Peaks project achieved a new milestone in processing giant files. The below video demonstrated four different scenarios:-
 
@@ -180,8 +180,7 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
 
 ## CLI Interactive Mode:
 
-  In CLI to type do, it will enter into interactive mode allows you to chat with the Peaks.
-  You can type "help" to get a usage for each simplified SQL statement. 
+To enter interactive mode in CLI and chat with the Peaks for the purpose of operating disk files and in-memory tables, type “do”. In interactive mode, you can use commands such as “help”, “memory”, and “disk”. Other commands can be run by a script file. The “memory” command lists which table is currently resident in in-memory while the “disk” command lists data files in your input and output folder. You can type “help” to get a usage for each simplified SQL statement1.
   
   do>>help
 
