@@ -189,7 +189,7 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
       
   @ BuildKeyValue{Column, Column ~ KeyValueTableName}
   
-    CurrentSetting{StreamMB(Number) Thread(Number)}
+  CurrentSetting{StreamMB(Number) Thread(Number)}
     
   @ Distinct{Column, Column}
   
@@ -223,7 +223,9 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
     
     Write{TableName ~ FileName.csv or %ExpandBy100Time.csv}
 
+    
     Additional Query Command Setting:
+    ---------------------------------
     
   @ QueryCommand{SourceTable Or FileName.csv Or FilePath/*.csv| QuerySetting}
   
