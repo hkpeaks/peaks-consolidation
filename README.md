@@ -182,6 +182,6 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
 
 This new function will be inclued in the 2nd pre-release distribution. To enter interactive mode in CLI and chat with the Peaks for the purpose of operating disk files and in-memory tables, type “do”. In interactive mode, you can use commands such as “help”, “memory”, and “disk”. Other commands can be also run by a script file. The “memory” command lists which table is currently resident in in-memory while the “disk” command lists data files in your input and output folder. You can type “help” to get a usage for each simplified SQL statement. Below simplifed SQL statement is not compatiable with the standard SQL statement. However, the simplified SQL statement will be used to operate PostgreSQL server when Peaks is proceeded to integrate with PostgreSQL server, this mean Peaks will generate standard SQL statement to PostgreSQL server by the simplified SQL statement.
   
- [![Chat DataFrame](https://github.com/hkpeaks/peaks-framework/blob/main/Documents/Benchmark20230708/ReadSample.png)](https://youtu.be/Qo25RWuugjA "Chat DataFrame")
+ [![Chat DataFrame](https://github.com/hkpeaks/peaks-consolidation/blob/main/Documents/ChatDataframe.jpg)](https://youtu.be/Qo25RWuugjA "Chat DataFrame")
 
  https://youtu.be/Qo25RWuugjA
