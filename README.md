@@ -182,58 +182,6 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
 
 This new function will be inclued in the 2nd pre-release distribution. To enter interactive mode in CLI and chat with the Peaks for the purpose of operating disk files and in-memory tables, type “do”. In interactive mode, you can use commands such as “help”, “memory”, and “disk”. Other commands can be also run by a script file. The “memory” command lists which table is currently resident in in-memory while the “disk” command lists data files in your input and output folder. You can type “help” to get a usage for each simplified SQL statement. Below simplifed SQL statement is not compatiable with the standard SQL statement. However, the simplified SQL statement will be used to operate PostgreSQL server when Peaks is proceeded to integrate with PostgreSQL server, this mean Peaks will generate standard SQL statement to PostgreSQL server by the simplified SQL statement.
   
-  do>>help
+ [![Chat DataFrame](https://github.com/hkpeaks/peaks-framework/blob/main/Documents/Benchmark20230708/ReadSample.png)](https://youtu.be/Qo25RWuugjA "Chat DataFrame")
 
-  AddColumn{Column, Column => Math(NewColName)} where Math includes Add, Subtract, Multiply & Divide
-      
-  BuildKeyValue{Column, Column ~ KeyValueTableName} 
-  
-  CurrentSetting{StreamMB(Number) Thread(Number)}
-    
-  Distinct{Column, Column}
-  
-  Filter{Column(CompareOperator Value) Column(CompareOperator Value)}
- 
-  FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
- 
-  GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
-  
-  JoinKeyValue{Column, Column => JoinType(KeyValueTableName)} where JoinType includes AllMatch, Filter & FilterUnmatch
-     
-  OrderBy{PrimaryCol(A or D) SecondaryCol(A or D)}
-  
-  OrderBy{SecondaryCol => SplitFileByFolder(PrimaryCol) ~ FolderName or FileName.csv}  
-  
-  Read{FileName.csv ~ TableName}
-    
-  ReadSample{StartPosition%(Number) ByteLength(Number)}
-  
-  ReadSample{Repeat(Number) ByteLength(Number)}
-  
-  Select{Column, Column}
-  
-  SelectUnmatch{Column, Column}  
-  
-  SplitFile{FileName.csv ~ NumberOfSplit}
-    
-  SplitFileByFolder{Column, Column ~ SplitFolderName}
-  
-  View{TableName}
-    
-  Write{TableName ~ FileName.csv or %ExpandBy100Time.csv}
-
-While interacting with the interactive mode, the system not only runs your command on demand but also records it in a script file automatically. This allows you to amend and run the script subsequently.
-    
-### Additional Query Command Setting 
-    
-  QueryCommand{SourceTable Or FileName.csv Or FilePath/*.csv | QuerySetting}
-  
-  QueryCommand{QuerySetting ~ ReturnTable Or FileName.csv} except OrderBy & SplitFileByFolder
-  
-  Compare operator includes >, <, >=, <=, =, != & Range e.g. 100..200
-  
-  Compare integer or float e.g. Float > Number, Float100..200
-
-
-
-
+ https://youtu.be/Qo25RWuugjA
