@@ -112,6 +112,7 @@ It is planned to update the above source code files and publish 2nd pre-release 
 ### The CLI Command: Do 
 - Previously "DO" can support DO + script file name 
 - Now support DO + filename.csv to display meta data and sample rows of your file
+- Supports CLI interactive mode, so you can maintain the in-memory table for subsequent queries  
 
 ### New Commands:
 - AddColumn{}: Add new column by math function e.g. Add, Subtract, Multiply and Divide.
@@ -147,7 +148,6 @@ Based on a recent test case, it able to handle 7 billion-rows achieving processi
 ## Under Research Stage
 
 - Develop a data simulator that uses probability distribution.
-- Supports CLI interactive mode, so you can maintain the in-memory table for subsequent queries  
 - Write HTML5 table with bootstrap 5 and send it through websocket to local browser. This apply to view your local giant files instantly e.g. > 100GB.
 - Pyeaks: Peaks for Python. Pyeaks covers some of the current Peaks functions and new functions. It will support “pip install Pyeaks”. If user downloads the Peaks runtime "DO" subsequently, Pyeaks can call most of the DO functions in your Python scripts.   
 - Native data store which partitioning your table by a foldertree and support data amendment by selecting distinct column names.
