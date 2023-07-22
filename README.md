@@ -69,8 +69,8 @@ Currently, the framework offers the following open source ETL commands:-
 - ExpandFile{}
 - CombineFile{} (This command is developed after the publishing of the pre-release version 23.05.18)
 
-### Peaks Databending
-Databending is an add-on module that supports the manipulation of your data using different calculation rules. Currently, this module offers the following commands:- 
+### Peaks Query
+Query is an add-on module that supports the manipulation of your data using different calculation rules. Currently, this module offers the following commands:- 
 
 - Distinct{}
 - GroupBy{}
