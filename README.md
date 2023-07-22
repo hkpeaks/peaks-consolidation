@@ -8,7 +8,7 @@ Peaks Query is fast and flexible. Here's an example of rule creation:-
         => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
 4. WriteFile{Table ~ FilterResults.csv}
 
-The complete processing time takes only 85 seconds on a desktop PC with 8 cores and 32GB of memory with a file size of 67.2GB. We are constantly working to enhance the algorithm, which results in higher performance while using fewer resources.
+The complete processing time takes only 85 seconds (11.7 Million Rows / Second) on a desktop PC with 8 cores and 32GB of memory with a file size of 67.2GB. We are constantly working to enhance the algorithm, which results in higher performance while using fewer resources.
 
 ## Download Pre-release of Peaks v23.05.18
 
