@@ -10,31 +10,6 @@ Peaks Query is fast and flexible. Here's an example of rule creation:-
 
 The complete processing time takes only 85 seconds on a desktop PC with 8 cores and 32GB of memory with a file size of 67.2GB. We are constantly working to enhance the algorithm, which results in higher performance while using fewer resources.
 
-```
-## If your file is small e.g. less than 10 million rows, normally it is no need to configure below CurrentSetting.
-
-CurrentSetting{StreamMB(1000)Thread(100)} 
-
-## StreamMB(1000) allows you to adjust the partition size of data streaming to fit your hardware configuration. The author found that 1000 (e.g., 1GB) is suitable for their computer with 32GB of memory.
-## Thread(100) allows you to maximize the usage of multi-core CPU. The author found that 100 threads is suitable for their computer with 8 cores.
-
-## Scenario A: if configure file name as data source, Peaks will auto-detect to use streaming/in-memory model automatically
-
-1. Filter{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
-
-## Scenario B: if user want to ensure the use in-memory model when their machine has sufficient memory
-
-## 1b1. ReadFile{1000MillionRows.csv ~ Table}
-## 1b2. Filter{Ledger(L10..L20)Account(15000..16000) ~ Table}
-
-## Scenario C: if user want to output a large proportion of data from source files
-
-1c. Filter{1000MillionRows.csv | Ledger(L10..L98) ~ LargeFile.csv}
-
-## Streaming will be implemented throughout the read file, filter and write file in parallel.
-
-```
-
 ## Download Pre-release of Peaks v23.05.18
 
 You can download a free and trial versions of runtime for Windows/Linux with use cases from https://github.com/hkpeaks/peaks-consolidation/releases. If you have any problem during your testing of the software, please report us in the issues section.
