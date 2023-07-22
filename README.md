@@ -1,20 +1,6 @@
 ## Introduction
 Peaks Consolidation has been successfully innovated a set of algorithms that leverage the power of desktop computing. One of the project’s intended goals is to solve the data explosion that resulted from data gathering from IoT devices, ERP, the internet, and data lakes. It supports auto-switching between streaming and in-memory models. 
 
-On July 8, 2023, the Peaks project achieved a new milestone in processing giant files. The below video demonstrated four different scenarios:-
-
-Demo 1. Previewing a 250GB CSV file within a few milliseconds.
-
-Demo 2. Previewing CSV files with many columns.
-
-Demo 3. Previewing CSV files with proper alignment fit for text, integer, negative and decimal.
-
-Demo 4. Previewing the 250GB CSV file using a script and getting batch of random samples for 1,000 times less than half second.
-
-The 2nd pre-release will include the new functions. The video URL: https://youtu.be/lX2HKLDOfwk
-
-[![ReadSample](https://github.com/hkpeaks/peaks-framework/blob/main/Documents/Benchmark20230708/ReadSample.png)](https://youtu.be/lX2HKLDOfwk "ReadSample")
-
 ## Ultra Speed for Query Billion Rows
 
 In comparison to other consolidation solutions, such as Oracle HFM, SAP BPC, IBM Cognos Controller, and TM1, Peaks Consolidation's rule creation is extraordinarily straightforward for any user. Furthermore, CurrentSetting enables you to use your computing device to deal with billions of rows of queries, whether it's a single file or a folder comprising numerous files. It can also serve as an interface to your database. Here's an example of rule creation:-
@@ -144,14 +130,6 @@ Based on some use cases, coming pre-release is likely to be significantly faster
 processing logs included in the 1st pre-release delivery. These are foucs on billion-row databending exercises.
 
 Based on a recent test case, it able to handle 7 billion-rows achieving processing speed 1 billion-row / minute. https://youtu.be/1NV0wkGjwoQ
-
-## CLI Interactive Mode
-
-This new function will be inclued in the 2nd pre-release distribution. To enter interactive mode in CLI and chat with the Peaks for the purpose of operating disk files and in-memory tables, type “do”. In interactive mode, you can use commands such as “help”, “memory”, and “disk”. Other commands can be also run by a script file. The “memory” command lists which table is currently resident in in-memory while the “disk” command lists data files in your input and output folder. You can type “help” to get a usage for each simplified SQL statement. Below simplifed SQL statement is not compatiable with the standard SQL statement. However, the simplified SQL statement will be used to operate PostgreSQL server when Peaks is proceeded to integrate with PostgreSQL server, this mean Peaks will generate standard SQL statement to PostgreSQL server by the simplified SQL statement.
-  
- [![Chat DataFrame](https://github.com/hkpeaks/peaks-consolidation/blob/main/Documents/In-memory.jpg)](https://youtu.be/Qo25RWuugjA "Chat DataFrame")
-
- https://youtu.be/Qo25RWuugjA
 
  ## Under Research Stage
 
