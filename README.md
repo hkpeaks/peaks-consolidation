@@ -2,9 +2,7 @@
 
 Peaks Query is fast and flexible. Here's an example of a script file:-
 
-Filter{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
-
-Filter{Project(>B25,<B23)}
+Filter{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000)Project(>B25,<B23)}
 
 GroupBy{Ledger, Account, Project, D/C, Currency => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
 
