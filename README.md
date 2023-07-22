@@ -2,13 +2,13 @@
 
 Peaks Query is fast and flexible. Here's an example of a script file:-
 
-Filter{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000)Project(>B25,<B23)}
+Select{1000MillionRows.csv | Ledger(L30..L70)}
 
-GroupBy{Ledger, Account, Project, D/C, Currency => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
+GroupBy{Ledger, Account, DC, Currency => SUM(Base_Amount) ~ Table}
 
-WriteFile{Table ~ FilterResults.csv}
+WriteFile{Table ~ Result-CombineQueries.csv}
 
-The complete processing time takes only 85 seconds (11.7 Million Rows / Second) on a desktop PC with 8 cores and 32GB of memory with a file size of 67.2GB (0.79 GB / Second). 
+The complete processing time takes only 75 seconds (13.3 Million Rows / Second) on a desktop PC with 8 cores and 32GB of memory with a file size of 67.2GB (0.9 GB / Second). 
 
 ## Download Pre-release of Peaks v23.05.18
 
