@@ -53,7 +53,7 @@ The first version publised on May 19, 2023 which cover the following command gro
 | IO             | ReadFile, WriteFile, SplitFile   |                                                        | 
 | Unique         | Distinct, GroupBy                |                                                        |
 | JoinTable      | BuildKeyValue, JoinKeyValue      | two commands must be configured together               |
-| Filter         | Select, SelectUnmatch            |                                                        |
+| Filter         | Filter, FilterUnmatch            |                                                        |
 
 ## Peaks Consolidation
 It comprises the following elements:-
@@ -79,8 +79,8 @@ Databending is an add-on module that supports the manipulation of your data usin
 - GroupBy{}
 - BuildKeyValue{}
 - JoinKeyValue{}
-- Select{}
-- SelectUnmatch{}
+- Filter{}
+- FilterUnmatch{}
 
 ### Peaks Releases
 It provided an all-in-one executable runtime for both Windows and Linux. https://github.com/hkpeaks/peaks-consolidation/releases
