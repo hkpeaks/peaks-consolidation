@@ -1,6 +1,6 @@
 ## Peaks Query (Filter, GroupBy, JoinTable, OrderBy) for Giant Table 
 
-Peaks Query is extraordinarily straightforward for any user. Furthermore, CurrentSetting enables you to use your computing device to deal with billions of rows of queries, whether it's a single file or a folder comprising numerous files. It can also serve as an interface to your database. Here's an example of rule creation:-
+Peaks Query is fast and flexible. Here's an example of rule creation:-
 
 1. Filter{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
 2. Filter{Project(>B25,<B23)}
