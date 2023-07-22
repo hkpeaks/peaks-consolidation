@@ -3,10 +3,10 @@ Peaks Consolidation has been successfully innovated a set of algorithms that lev
 
 ## Ultra Speed for Query Billion Rows
 
-In comparison to other consolidation solutions, such as Oracle HFM, SAP BPC, IBM Cognos Controller, and TM1, Peaks Consolidation's rule creation is extraordinarily straightforward for any user. Furthermore, CurrentSetting enables you to use your computing device to deal with billions of rows of queries, whether it's a single file or a folder comprising numerous files. It can also serve as an interface to your database. Here's an example of rule creation:-
+Peaks Consolidation's rule creation is extraordinarily straightforward for any user. Furthermore, CurrentSetting enables you to use your computing device to deal with billions of rows of queries, whether it's a single file or a folder comprising numerous files. It can also serve as an interface to your database. Here's an example of rule creation:-
 
-1. Select{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
-2. Select{Project(>B25,<B23)}
+1. Filter{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
+2. Filter{Project(>B25,<B23)}
 3. GroupBy{Ledger, Account, Project, D/C, Currency 
         => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
 4. WriteFile{Table ~ FilterResults.csv}
@@ -23,16 +23,16 @@ CurrentSetting{StreamMB(1000)Thread(100)}
 
 ## Scenario A: if configure file name as data source, Peaks will auto-detect to use streaming/in-memory model automatically
 
-1. Select{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
+1. Filter{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
 
 ## Scenario B: if user want to ensure the use in-memory model when their machine has sufficient memory
 
 ## 1b1. ReadFile{1000MillionRows.csv ~ Table}
-## 1b2. Select{Ledger(L10..L20)Account(15000..16000) ~ Table}
+## 1b2. Filter{Ledger(L10..L20)Account(15000..16000) ~ Table}
 
 ## Scenario C: if user want to output a large proportion of data from source files
 
-1c. Select{1000MillionRows.csv | Ledger(L10..L98) ~ LargeFile.csv}
+1c. Filter{1000MillionRows.csv | Ledger(L10..L98) ~ LargeFile.csv}
 
 ## Streaming will be implemented throughout the read file, filter and write file in parallel.
 
