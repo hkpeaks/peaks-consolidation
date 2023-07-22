@@ -2,11 +2,10 @@
 
 Peaks Query is fast and flexible. Here's an example of rule creation:-
 
-1. Filter{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
-2. Filter{Project(>B25,<B23)}
-3. GroupBy{Ledger, Account, Project, D/C, Currency 
-        => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
-4. WriteFile{Table ~ FilterResults.csv}
+Filter{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
+Filter{Project(>B25,<B23)}
+GroupBy{Ledger, Account, Project, D/C, Currency => Sum(Quantity) Sum(Original Amount) Sum(Base Amount)}
+WriteFile{Table ~ FilterResults.csv}
 
 The complete processing time takes only 85 seconds (11.7 Million Rows / Second) on a desktop PC with 8 cores and 32GB of memory with a file size of 67.2GB (0.79 GB / Second). 
 
