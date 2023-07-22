@@ -8,7 +8,7 @@ GroupBy{Ledger, Account, DC, Currency => SUM(Base_Amount) ~ Table}
 
 WriteFile{Table ~ Result-CombineQueries.csv}
 
-The complete processing time takes only 75 seconds (13.3 Million Rows / Second) on a desktop PC with 8 cores and 32GB of memory with a file size of 67.2GB (0.9 GB / Second). After you have compare this script with other software such as Pandas, Spark, DuckDB and Polars, you will understand the capabilities of the Peaks.
+The complete processing time takes only 75 seconds (13.3 Million Rows / Second) on a desktop PC with 8 cores and 32GB of memory with a file size of 67.2GB (0.9 GB / Second). After you have compared this result with other software such as Pandas, Spark, DuckDB and Polars, you will understand the capabilities of the Peaks.
 
 ## Download Pre-release of Peaks v23.05.18
 
