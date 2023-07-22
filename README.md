@@ -1,6 +1,6 @@
 ## Peaks Query (Filter, GroupBy, JoinTable, OrderBy) for Giant Table 
 
-Peaks Query is fast and flexible. Here's an example of rule creation:-
+Peaks Query is fast and flexible. Here's an example of a script file:-
 
 Filter{1000MillionRows.csv | Ledger(L10..L20)Account(15000..16000) ~ Table}
 Filter{Project(>B25,<B23)}
