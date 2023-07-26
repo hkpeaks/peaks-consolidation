@@ -82,6 +82,7 @@ It is planned to update the above source code files and publish 2nd pre-release 
 - Display{}: it is used to print few rows to screen with auto-alignment for text and real number
 - ReadSample{}: supports to get fix or random sample of rows from csv file instantly, it is very useful for very large file e.g. >100GB.
 - SplitFile2Folder{}: allows to filter a big CSV file or a folder which contains many CSV file to a folder/sub-folder which results many table partitions
+- JoinTable{}: allows to join fact table with a master table and to add new column by refer columns from the fact and master table.
 
 ### Amend Commands:
 - ReadFile{} and WriteFile{} will be changed to Read{} and Write{}
