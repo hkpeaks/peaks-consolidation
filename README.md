@@ -3,7 +3,8 @@
 Peaks Query is fast and flexible. Here's an example of a script file:-
 
 Filter{Master.csv | Product(500..599) ~ Master}
-JoinTable{10000M-Fact.csv | Quantity, Unit_Price => InnerJoin(Master)Multiply(Amount) ~ Result-JoinTable-10000M.csv}
+JoinTable{10000M-Fact.csv | Quantity, Unit_Price 
+  => InnerJoin(Master) Multiply(Amount) ~ Result-JoinTable-10000M.csv}
 
 Where 1M = 1 Million Rows
 
