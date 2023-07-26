@@ -2,7 +2,7 @@
 
 Peaks Query is fast and flexible. Here's an example of a script file:-
 
-``
+
 Filter{Master.csv | Product(500..599) ~ Master}
 
 JoinTable{10000M-Fact.csv | Quantity, Unit_Price 
@@ -10,7 +10,7 @@ JoinTable{10000M-Fact.csv | Quantity, Unit_Price
   => InnerJoin(Master) Multiply(Amount) ~ Result-JoinTable-10000M.csv}
 
 Where 1M = 1 Million Rows
-``
+
 
 The complete processing time takes only 404 seconds (24.7 Million Rows / Second) on a desktop PC with 8 cores and 32GB of memory with a file size of 231GB (0.57 GB / Second). After you have compared this result with other software such as Pandas, Spark, DuckDB and Polars, you will understand the capabilities of the Peaks.
 
