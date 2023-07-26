@@ -1,14 +1,13 @@
-## Peaks Query (Filter, GroupBy, JoinTable, OrderBy) for Giant Table 
+## Peaks Query for Denormization Superhighway UpTo 10 Billion Rows
 
 Peaks Query is fast and flexible. Here's an example of a script file:-
 
-Select{1000MillionRows.csv | Ledger(L30..L70)}
+Filter{Master.csv | Product(500..599) ~ Master}
+JoinTable{10000M-Fact.csv | Quantity, Unit_Price => InnerJoin(Master)Multiply(Amount) ~ Result-JoinTable-10000M.csv}
 
-GroupBy{Ledger, Account, DC, Currency => SUM(Base_Amount) ~ Table}
+Where 1M = 1 Million Rows
 
-WriteFile{Table ~ Result-CombineQueries.csv}
-
-The complete processing time takes only 75 seconds (13.3 Million Rows / Second) on a desktop PC with 8 cores and 32GB of memory with a file size of 67.2GB (0.9 GB / Second). After you have compared this result with other software such as Pandas, Spark, DuckDB and Polars, you will understand the capabilities of the Peaks.
+The complete processing time takes only 404 seconds (24.7 Million Rows / Second) on a desktop PC with 8 cores and 32GB of memory with a file size of 231GB (0.57 GB / Second). After you have compared this result with other software such as Pandas, Spark, DuckDB and Polars, you will understand the capabilities of the Peaks.
 
 ## Download Pre-release of Peaks v23.05.18
 
