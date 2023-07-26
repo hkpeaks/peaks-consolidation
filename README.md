@@ -1,4 +1,4 @@
-## Peaks Query for Denormization Superhighway Upto 10 Billion Rows
+## Peaks Query for Denormization Upto 10 Billion Rows
 
 Peaks Query is fast and flexible. Here's an example of a script file:-
 
