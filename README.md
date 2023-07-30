@@ -83,9 +83,9 @@ The first version publised on May 19, 2023 which cover the following command gro
 | Filter         | Filter, FilterUnmatch            |                                                        |
 
 
-## Command List
-   AddColumn{Column, Column => Math(NewColName)}    
-      where Math includes Add, Subtract, Multiply & Divide
+## Data Transformation Setting
+
+   AddColumn{Column, Column => Math(NewColName)} where Math includes Add, Subtract, Multiply & Divide
     
    BuildKeyValue{Column, Column ~ KeyValueTableName}
    
@@ -96,18 +96,20 @@ The first version publised on May 19, 2023 which cover the following command gro
    Filter{Column(CompareOperator Value) Column(CompareOperator Value)}
  
    FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
+
+        where Compare operator includes >,<,>=,<=,=,!= & Range e.g. 100..200
    
    GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
    
-   JoinKeyValue{Column, Column => JoinType(KeyValueTableName)}
-   
-     where JoinType includes AllMatch, Filter & FilterUnmatch
+   JoinKeyValue{Column, Column => JoinType(KeyValueTableName)} where JoinType includes AllMatch, Filter & FilterUnmatch
    
    JoinTable{Column, Column => JoinType(KeyValueTableName) Math(NewColName)}
    
-   OrderBy{PrimaryCol(Sorting Order) SecondaryCol(Sorting Order)}
+   OrderBy{PrimaryCol(Sorting Order) SecondaryCol(Sorting Order)}       
   
    OrderBy{SecondaryCol(Sorting Order) => CreateFolderLake(PrimaryCol) ~ FolderName or FileName.csv}
+
+        where sorting order represents by A or D, to sort real numbers, use either FloatA or FloatD
  
    Read{FileName.csv ~ TableName}
    
