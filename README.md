@@ -62,6 +62,8 @@ Write{Result-GroupBy-Match ~ Result-GroupBy-Match.csv}
 
 Write{Result-GroupBy-Unmatch ~ Result-GroupBy-Unmatch.csv}
 
+Note: Command{Extraction | Transformation ~ Load}    
+
 Demo Video: https://youtu.be/5Jhd1WwgfYg
 
 ## Download Pre-release of Peaks v23.05.18
