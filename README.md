@@ -70,52 +70,52 @@ How to configure streaming for large dataset e.g. 1 Billion Rows, see https://gi
 
 ## Command List
 
-   1. AddColumn{Column, Column => Math(NewColName)} 
+   AddColumn{Column, Column => Math(NewColName)} 
    
         where Math includes Add, Subtract, Multiply & Divide
     
-   2. BuildKeyValue{Column, Column ~ KeyValueTableName}
+   BuildKeyValue{Column, Column ~ KeyValueTableName}
    
-   3. CurrentSetting{StreamMB(Number) Thread(Number)}
+   CurrentSetting{StreamMB(Number) Thread(Number)}
   
-   4. Distinct{Column, Column}
+   Distinct{Column, Column}
  
-   5. Filter{Column(CompareOperator Value) Column(CompareOperator Value)}
+   Filter{Column(CompareOperator Value) Column(CompareOperator Value)}
  
-   6. FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
+   FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
 
         where Compare operator includes >,<,>=,<=,=,!= & Range e.g. 100..200
    
-   7. GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
+   GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
    
-   8. JoinKeyValue{Column, Column => JoinType(KeyValueTableName)} 
+   JoinKeyValue{Column, Column => JoinType(KeyValueTableName)} 
         
         where JoinType includes AllMatch, Filter & FilterUnmatch
    
-   9. JoinTable{Column, Column => JoinType(KeyValueTableName) Math(NewColName)}
+   JoinTable{Column, Column => JoinType(KeyValueTableName) Math(NewColName)}
 
         where JoinType includes AllMatch & InnerJoin
    
-   10. OrderBy{PrimaryCol(Sorting Order) SecondaryCol(Sorting Order)}       
+   OrderBy{PrimaryCol(Sorting Order) SecondaryCol(Sorting Order)}       
   
-   10. OrderBy{SecondaryCol(Sorting Order) => CreateFolderLake(PrimaryCol) ~ FolderName or FileName.csv}
+   OrderBy{SecondaryCol(Sorting Order) => CreateFolderLake(PrimaryCol) ~ FolderName or FileName.csv}
 
         where sorting order represents by A or D, to sort real numbers, use either FloatA or FloatD
  
-   11. Read{FileName.csv ~ TableName}
+   Read{FileName.csv ~ TableName}
    
-   12. ReadSample{StartPosition%(Number) ByteLength(Number)}
+   ReadSample{StartPosition%(Number) ByteLength(Number)}
    
-   12. ReadSample{Repeat(Number) ByteLength(Number)}   
+   ReadSample{Repeat(Number) ByteLength(Number)}   
    
-   13. Select{Column, Column}
+   Select{Column, Column}
    
-   14. SelectUnmatch{Column, Column}
+   SelectUnmatch{Column, Column}
    
-   15. SplitFile{FileName.csv ~ NumberOfSplit}
+   SplitFile{FileName.csv ~ NumberOfSplit}
    
-   16. CreateFolderLake{Column, Column ~ SplitFolderName}
+   CreateFolderLake{Column, Column ~ SplitFolderName}
    
-   17. View{TableName}
+   View{TableName}
 
-   18. Write{TableName ~ FileName.csv or %ExpandBy100Time.csv} 
+   Write{TableName ~ FileName.csv or %ExpandBy100Time.csv} 
