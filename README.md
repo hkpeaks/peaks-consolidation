@@ -86,9 +86,13 @@ Demo Video: https://youtu.be/5Jhd1WwgfYg
    
    GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
    
-   JoinKeyValue{Column, Column => JoinType(KeyValueTableName)} where JoinType includes AllMatch, Filter & FilterUnmatch
+   JoinKeyValue{Column, Column => JoinType(KeyValueTableName)} 
+        
+        where JoinType includes AllMatch, Filter & FilterUnmatch
    
    JoinTable{Column, Column => JoinType(KeyValueTableName) Math(NewColName)}
+
+        where JoinType includes AllMatch & InnerJoin
    
    OrderBy{PrimaryCol(Sorting Order) SecondaryCol(Sorting Order)}       
   
