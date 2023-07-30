@@ -84,35 +84,46 @@ The first version publised on May 19, 2023 which cover the following command gro
 
 
 ## Command List
-  * AddColumn{Column, Column => Math(NewColName)}
+   AddColumn{Column, Column => Math(NewColName)}    
       where Math includes Add, Subtract, Multiply & Divide
-  * BuildKeyValue{Column, Column ~ KeyValueTableName}
-    CurrentSetting{StreamMB(Number) Thread(Number)}
-  * Distinct{Column, Column}
- 1* Filter{Column(CompareOperator Value) Column(CompareOperator Value)}
- 1* FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
-  * GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
- 2* JoinKeyValue{Column, Column => JoinType(KeyValueTableName)}
+    
+   BuildKeyValue{Column, Column ~ KeyValueTableName}
+   
+   CurrentSetting{StreamMB(Number) Thread(Number)}
+  
+   Distinct{Column, Column}
+ 
+   Filter{Column(CompareOperator Value) Column(CompareOperator Value)}
+ 
+   FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
+   
+   GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
+   
+   JoinKeyValue{Column, Column => JoinType(KeyValueTableName)}
+   
      where JoinType includes AllMatch, Filter & FilterUnmatch
-    JoinTable{Column, Column => JoinType(KeyValueTableName) Math(NewColName)}
- 3* OrderBy{PrimaryCol(Sorting Order) SecondaryCol(Sorting Order)}
-  * OrderBy{SecondaryCol(Sorting Order) => CreateFolderLake(PrimaryCol) ~ FolderName or FileName.csv}
-    Read{FileName.csv ~ TableName}
-  * ReadSample{StartPosition%(Number) ByteLength(Number)}
-  * ReadSample{Repeat(Number) ByteLength(Number)}
-    Resume{FileName}
-  * Select{Column, Column}
-  * SelectUnmatch{Column, Column}
-    SplitFile{FileName.csv ~ NumberOfSplit}
-  * CreateFolderLake{Column, Column ~ SplitFolderName}
-    View{TableName}
-    Write{TableName ~ FileName.csv or %ExpandBy100Time.csv}
+   
+   JoinTable{Column, Column => JoinType(KeyValueTableName) Math(NewColName)}
+   
+   OrderBy{PrimaryCol(Sorting Order) SecondaryCol(Sorting Order)}
+  
+   OrderBy{SecondaryCol(Sorting Order) => CreateFolderLake(PrimaryCol) ~ FolderName or FileName.csv}
+ 
+   Read{FileName.csv ~ TableName}
+   
+   ReadSample{StartPosition%(Number) ByteLength(Number)}
+   
+   ReadSample{Repeat(Number) ByteLength(Number)}
+   Resume{FileName}
+   
+   Select{Column, Column}
+   
+   SelectUnmatch{Column, Column}
+   
+   SplitFile{FileName.csv ~ NumberOfSplit}
+   
+   CreateFolderLake{Column, Column ~ SplitFolderName}
+   
+   View{TableName}
 
-    Additional Query Command Setting:
-  * QueryCommand{SourceTable Or FileName.csv Or FilePath/*.csv| QuerySetting}
-  * QueryCommand{QuerySetting ~ ReturnTable Or FileName.csv} except OrderBy & CreateFolderLake
-  1 Compare operator includes >,<,>=,<=,=,!= & Range e.g. 100..200
-  1 Compare integer or float e.g. Float > Number, Float100..200
-  2 Use BuildKeyValue & JoinKeyValue supports JoinTable result
-  2 Use JoinTable supports JoinTable & AddColumn result
-  3 To sort text, use either A or D, to sort real numbers, use either FloatA or FloatD
+   Write{TableName ~ FileName.csv or %ExpandBy100Time.csv} 
