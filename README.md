@@ -65,23 +65,6 @@ Write{Result-GroupBy-Unmatch ~ Result-GroupBy-Unmatch.csv}
 
 Demo Video: https://youtu.be/5Jhd1WwgfYg
 
-## Download Pre-release of Peaks v23.05.18
-
-You can download a free and trial versions of runtime for Windows/Linux with use cases from https://github.com/hkpeaks/peaks-consolidation/releases. If you have any problem during your testing of the software, please report us in the issues section.
-
-About monthly or bi-monthly, new commands, enhancements and bug fixs will be added to subsequent trial versions. However, it will not include commands which involve complex implementation. Ready-to-use command scripts with sample data will be included in the distribution. For any reported critical bugs, it will be fixed and published as soon as practical.
-
-The first version publised on May 19, 2023 which cover the following command groups and commands:-
-
-| Command Group  | Command                          | Remark                                                 |                  
-|----------------|--------------------------------- |------------------------------------------------------- |
-| CurrentSetting | CurrentSetting                   | adjust the size of the partition of your large file    |
-|                |                                  | and the number threads to match your data and machine  |
-| IO             | ReadFile, WriteFile, SplitFile   |                                                        | 
-| Unique         | Distinct, GroupBy                |                                                        |
-| JoinTable      | BuildKeyValue, JoinKeyValue      | two commands must be configured together               |
-| Filter         | Filter, FilterUnmatch            |                                                        |
-
 
 ## Data Transformation Setting
 
