@@ -1,4 +1,5 @@
-## In-memory Data Transformation Command{Extraction | Transformation ~ Load}    
+## In-memory ETL 
+## Command{Extraction | Transformation ~ Load}    
 
 Peaks Query is fast, simple and flexible. Here's an example of a script file:-
 
