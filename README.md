@@ -3,7 +3,9 @@
 Peaks Query is fast, simple and flexible. Here's an example of a script file:-
 
 Read{Master.csv ~ Master} 
+
 Read{Fact.csv ~ Table}
+
 Write{Table ~ %ExpandBy10Time.csv}
 
 #### Test 1: JoinTable to Add 2 Column and Select Column
