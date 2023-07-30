@@ -65,6 +65,8 @@ Write{Result-GroupBy-Unmatch ~ Result-GroupBy-Unmatch.csv}
 
 Demo Video: https://youtu.be/5Jhd1WwgfYg
 
+How to configure streaming for large dataset e.g. 1 Billion Rows, see https://github.com/hkpeaks/peaks-consolidation/issues/5
+
 
 ## Command List
 
