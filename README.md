@@ -82,40 +82,40 @@ How to configure streaming for large dataset e.g. 1 Billion Rows, see https://gi
  
    5. Filter{Column(CompareOperator Value) Column(CompareOperator Value)}
  
-   FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
+   6. FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
 
         where Compare operator includes >,<,>=,<=,=,!= & Range e.g. 100..200
    
-   GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
+   7. GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
    
-   JoinKeyValue{Column, Column => JoinType(KeyValueTableName)} 
+   8. JoinKeyValue{Column, Column => JoinType(KeyValueTableName)} 
         
         where JoinType includes AllMatch, Filter & FilterUnmatch
    
-   JoinTable{Column, Column => JoinType(KeyValueTableName) Math(NewColName)}
+   9. JoinTable{Column, Column => JoinType(KeyValueTableName) Math(NewColName)}
 
         where JoinType includes AllMatch & InnerJoin
    
-   OrderBy{PrimaryCol(Sorting Order) SecondaryCol(Sorting Order)}       
+   10. OrderBy{PrimaryCol(Sorting Order) SecondaryCol(Sorting Order)}       
   
-   OrderBy{SecondaryCol(Sorting Order) => CreateFolderLake(PrimaryCol) ~ FolderName or FileName.csv}
+   10. OrderBy{SecondaryCol(Sorting Order) => CreateFolderLake(PrimaryCol) ~ FolderName or FileName.csv}
 
         where sorting order represents by A or D, to sort real numbers, use either FloatA or FloatD
  
-   Read{FileName.csv ~ TableName}
+   11. Read{FileName.csv ~ TableName}
    
-   ReadSample{StartPosition%(Number) ByteLength(Number)}
+   12. ReadSample{StartPosition%(Number) ByteLength(Number)}
    
-   ReadSample{Repeat(Number) ByteLength(Number)}   
+   12. ReadSample{Repeat(Number) ByteLength(Number)}   
    
-   Select{Column, Column}
+   13. Select{Column, Column}
    
-   SelectUnmatch{Column, Column}
+   14. SelectUnmatch{Column, Column}
    
-   SplitFile{FileName.csv ~ NumberOfSplit}
+   15. SplitFile{FileName.csv ~ NumberOfSplit}
    
-   CreateFolderLake{Column, Column ~ SplitFolderName}
+   16. CreateFolderLake{Column, Column ~ SplitFolderName}
    
-   View{TableName}
+   17. View{TableName}
 
-   Write{TableName ~ FileName.csv or %ExpandBy100Time.csv} 
+   18. Write{TableName ~ FileName.csv or %ExpandBy100Time.csv} 
