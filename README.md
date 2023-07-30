@@ -1,4 +1,4 @@
-## In-memory Data Transformation
+## In-memory Data Transformation Command{Extraction | Transformation ~ Load}    
 
 Peaks Query is fast, simple and flexible. Here's an example of a script file:-
 
@@ -61,8 +61,6 @@ Write{Result-Distinct-Unmatch-OrderAAD ~ Result-Distinct-Unmatch-OrderAAD.csv}
 Write{Result-GroupBy-Match ~ Result-GroupBy-Match.csv}
 
 Write{Result-GroupBy-Unmatch ~ Result-GroupBy-Unmatch.csv}
-
-Note: Command{Extraction | Transformation ~ Load}    
 
 Demo Video: https://youtu.be/5Jhd1WwgfYg
 
