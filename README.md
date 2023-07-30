@@ -1,18 +1,47 @@
-## Peaks Query for Denormization Upto 10 Billion Rows
+## In-memory Data Transformation
 
-Peaks Query is fast and flexible. Here's an example of a script file:-
+Peaks Query is fast, simple and flexible. Here's an example of a script file:-
 
+Read{Master.csv ~ Master} 
+Read{Fact.csv ~ Table}
+Write{Table ~ %ExpandBy10Time.csv}
 
-Filter{Master.csv | Product(500..599) ~ Master}
+### Test 1: JoinTable to Add 2 Column and Select Column
+JoinTable{Outbox/%ExpandBy10Time.csv | Quantity, Unit_Price => InnerJoin(Master)Multiply(Amount) ~ Result-JoinTable}
+Select{Result-JoinTable | Date,Shop,Product,Quantity,Amount ~ Result-SelectColumn}
 
-JoinTable{10000M-Fact.csv | Quantity, Unit_Price 
-  
-  => InnerJoin(Master) Multiply(Amount) ~ Result-JoinTable-10000M.csv}
+### Test 2: BuildKeyKeyValue + JoinKeyValue + AddColumn = JoinTable of Test 1
+BuildKeyValue{Master | Product, Style ~ MasterTableKeyValue}
+JoinKeyValue{Outbox/%ExpandBy10Time.csv | Product, Style => AllMatch(MasterTableKeyValue) ~ Result-BuildKeyValue}
+AddColumn{Result-BuildKeyValue | Quantity, Unit_Price => Multiply(Amount) ~ Result-AddColumn}
 
-Where 1M = 1 Million Rows
+### Test 3: Filter and FilterUnmatch
+Filter{Result-AddColumn | Amount(Float > 50000) ~ Result-Filter}
+FilterUnmatch{Result-AddColumn | Amount(Float > 50000) ~ Result-FilterUnmatch}
 
+### Test 4: Distinct and OrderBy
+Distinct{Result-Filter | Date, Shop, Product, Style ~ Result-Distinct-Match}
+Distinct{Result-FilterUnmatch |  Date, Shop, Product, Style ~ Result-Distinct-Unmatch}
+OrderBy{Result-Distinct-Unmatch | Shop(A)Product(A)Date(D) ~ Result-Distinct-Unmatch-OrderAAD}
 
-The complete processing time takes only 404 seconds (24.7 Million Rows / Second) on a desktop PC with 8 cores and 32GB of memory with a file size of 231GB (0.57 GB / Second). After you have compared this result with other software such as Pandas, Spark, DuckDB and Polars, you will understand the capabilities of the Peaks.
+### Test 5: GroupBy 
+GroupBy{Result-Filter | Product, Style => Count() Sum(Quantity) Sum(Amount) ~ Result-GroupBy-Match}
+GroupBy{Result-FilterUnmatch | Product, Style => Count() Sum(Quantity) Sum(Amount) ~ Result-GroupBy-Unmatch}
+
+### Test 6: Write to Disk
+Write{Result-JoinTable ~ Result-JoinTable.csv}
+Write{Result-SelectColumn ~ Result-SelectColumn.csv}
+Write{MasterTableKeyValue ~ MasterTableKeyValue.csv}
+Write{Result-AddColumn ~ Result-AddColumn.csv}
+Write{Result-Filter ~ Result-Filter.csv}
+Write{Result-FilterUnmatch ~ Result-FilterUnmatch.csv}
+Write{Result-Distinct-Match ~ Result-Distinct-Match.csv}
+Write{Result-Distinct-Unmatch ~ Result-Distinct-Unmatch.csv}
+Write{Result-Distinct-Unmatch-OrderAAD ~ Result-Distinct-Unmatch-OrderAAD.csv}
+Write{Result-GroupBy-Match ~ Result-GroupBy-Match.csv}
+Write{Result-GroupBy-Unmatch ~ Result-GroupBy-Unmatch.csv}
+
+Demo Video: https://youtu.be/5Jhd1WwgfYg
 
 ## Download Pre-release of Peaks v23.05.18
 
