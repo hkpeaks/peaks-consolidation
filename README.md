@@ -70,17 +70,17 @@ How to configure streaming for large dataset e.g. 1 Billion Rows, see https://gi
 
 ## Command List
 
-   AddColumn{Column, Column => Math(NewColName)} 
+   1. AddColumn{Column, Column => Math(NewColName)} 
    
         where Math includes Add, Subtract, Multiply & Divide
     
-   BuildKeyValue{Column, Column ~ KeyValueTableName}
+   2. BuildKeyValue{Column, Column ~ KeyValueTableName}
    
-   CurrentSetting{StreamMB(Number) Thread(Number)}
+   3. CurrentSetting{StreamMB(Number) Thread(Number)}
   
-   Distinct{Column, Column}
+   4. Distinct{Column, Column}
  
-   Filter{Column(CompareOperator Value) Column(CompareOperator Value)}
+   5. Filter{Column(CompareOperator Value) Column(CompareOperator Value)}
  
    FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
 
