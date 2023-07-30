@@ -6,29 +6,29 @@ Read{Master.csv ~ Master}
 Read{Fact.csv ~ Table}
 Write{Table ~ %ExpandBy10Time.csv}
 
-### Test 1: JoinTable to Add 2 Column and Select Column
+#### Test 1: JoinTable to Add 2 Column and Select Column
 JoinTable{Outbox/%ExpandBy10Time.csv | Quantity, Unit_Price => InnerJoin(Master)Multiply(Amount) ~ Result-JoinTable}
 Select{Result-JoinTable | Date,Shop,Product,Quantity,Amount ~ Result-SelectColumn}
 
-### Test 2: BuildKeyKeyValue + JoinKeyValue + AddColumn = JoinTable of Test 1
+#### Test 2: BuildKeyKeyValue + JoinKeyValue + AddColumn = JoinTable of Test 1
 BuildKeyValue{Master | Product, Style ~ MasterTableKeyValue}
 JoinKeyValue{Outbox/%ExpandBy10Time.csv | Product, Style => AllMatch(MasterTableKeyValue) ~ Result-BuildKeyValue}
 AddColumn{Result-BuildKeyValue | Quantity, Unit_Price => Multiply(Amount) ~ Result-AddColumn}
 
-### Test 3: Filter and FilterUnmatch
+#### Test 3: Filter and FilterUnmatch
 Filter{Result-AddColumn | Amount(Float > 50000) ~ Result-Filter}
 FilterUnmatch{Result-AddColumn | Amount(Float > 50000) ~ Result-FilterUnmatch}
 
-### Test 4: Distinct and OrderBy
+#### Test 4: Distinct and OrderBy
 Distinct{Result-Filter | Date, Shop, Product, Style ~ Result-Distinct-Match}
 Distinct{Result-FilterUnmatch |  Date, Shop, Product, Style ~ Result-Distinct-Unmatch}
 OrderBy{Result-Distinct-Unmatch | Shop(A)Product(A)Date(D) ~ Result-Distinct-Unmatch-OrderAAD}
 
-### Test 5: GroupBy 
+#### Test 5: GroupBy 
 GroupBy{Result-Filter | Product, Style => Count() Sum(Quantity) Sum(Amount) ~ Result-GroupBy-Match}
 GroupBy{Result-FilterUnmatch | Product, Style => Count() Sum(Quantity) Sum(Amount) ~ Result-GroupBy-Unmatch}
 
-### Test 6: Write to Disk
+#### Test 6: Write to Disk
 Write{Result-JoinTable ~ Result-JoinTable.csv}
 Write{Result-SelectColumn ~ Result-SelectColumn.csv}
 Write{MasterTableKeyValue ~ MasterTableKeyValue.csv}
