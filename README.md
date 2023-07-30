@@ -68,7 +68,9 @@ Demo Video: https://youtu.be/5Jhd1WwgfYg
 
 ## Data Transformation Setting
 
-   AddColumn{Column, Column => Math(NewColName)} where Math includes Add, Subtract, Multiply & Divide
+   AddColumn{Column, Column => Math(NewColName)} 
+   
+        where Math includes Add, Subtract, Multiply & Divide
     
    BuildKeyValue{Column, Column ~ KeyValueTableName}
    
