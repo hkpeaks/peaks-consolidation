@@ -85,6 +85,7 @@ How to configure streaming for large dataset e.g. 1 Billion Rows, see https://gi
    FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
 
         where Compare operator includes >,<,>=,<=,=,!= & Range e.g. 100..200
+              Compare integer or float e.g. Float > Number, Float100..200
    
    GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
    
@@ -100,7 +101,7 @@ How to configure streaming for large dataset e.g. 1 Billion Rows, see https://gi
   
    OrderBy{SecondaryCol(Sorting Order) => CreateFolderLake(PrimaryCol) ~ FolderName or FileName.csv}
 
-        where sorting order represents by A or D, to sort real numbers, use either FloatA or FloatD
+        where Sorting Order represents by A or D, to sort real numbers, use either FloatA or FloatD
  
    Read{FileName.csv ~ TableName}
    
