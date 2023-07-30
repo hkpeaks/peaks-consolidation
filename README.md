@@ -82,112 +82,37 @@ The first version publised on May 19, 2023 which cover the following command gro
 | JoinTable      | BuildKeyValue, JoinKeyValue      | two commands must be configured together               |
 | Filter         | Filter, FilterUnmatch            |                                                        |
 
-## Peaks Consolidation
-It comprises the following elements:-
 
-### Peaks Framework
-It is an open-source project that aims to promote an alternative standard of ETL expression. It provides a user-friendly command flow that enables working with dataFrame and third-party softwares. When it comes to data structures, bytearray is one of the most useful and memory-efficient. 
+## Command List
+  * AddColumn{Column, Column => Math(NewColName)}
+      where Math includes Add, Subtract, Multiply & Divide
+  * BuildKeyValue{Column, Column ~ KeyValueTableName}
+    CurrentSetting{StreamMB(Number) Thread(Number)}
+  * Distinct{Column, Column}
+ 1* Filter{Column(CompareOperator Value) Column(CompareOperator Value)}
+ 1* FilterUnmatch{Column(CompareOperator Value) Column(CompareOperator Value)}
+  * GroupBy{Column, Column => Count() Sum(Column) Max(Column) Min(Column)}
+ 2* JoinKeyValue{Column, Column => JoinType(KeyValueTableName)}
+     where JoinType includes AllMatch, Filter & FilterUnmatch
+    JoinTable{Column, Column => JoinType(KeyValueTableName) Math(NewColName)}
+ 3* OrderBy{PrimaryCol(Sorting Order) SecondaryCol(Sorting Order)}
+  * OrderBy{SecondaryCol(Sorting Order) => CreateFolderLake(PrimaryCol) ~ FolderName or FileName.csv}
+    Read{FileName.csv ~ TableName}
+  * ReadSample{StartPosition%(Number) ByteLength(Number)}
+  * ReadSample{Repeat(Number) ByteLength(Number)}
+    Resume{FileName}
+  * Select{Column, Column}
+  * SelectUnmatch{Column, Column}
+    SplitFile{FileName.csv ~ NumberOfSplit}
+  * CreateFolderLake{Column, Column ~ SplitFolderName}
+    View{TableName}
+    Write{TableName ~ FileName.csv or %ExpandBy100Time.csv}
 
-Included in the framework, it cover a workflow management system that helps you manage your table partitions. Parallel streaming is a powerful technique for reading/writing files and querying algorithms. It can handle billions of rows on a desktop PC with only 8 cores and 32GB RAM. Instead of using arrow as an intermediate of in-memory dataset, parallel streaming performs byte-to-byte conversion of input bytearray directly throughout ETL processes to output bytearray. 
-
-Currently, the framework offers the following open source ETL commands:-
-
-- CurrentSetting{}
-- ReadFile{}
-- WriteFile{}
-- SplitFile{}
-- ExpandFile{}
-- CombineFile{} (This command is developed after the publishing of the pre-release version 23.05.18)
-
-### Peaks Query
-Query is an add-on module that supports the manipulation of your data using different calculation rules. Currently, this module offers the following commands:- 
-
-- Distinct{}
-- GroupBy{}
-- BuildKeyValue{}
-- JoinKeyValue{}
-- Filter{}
-- FilterUnmatch{}
-
-### Peaks Releases
-It provided an all-in-one executable runtime for both Windows and Linux. https://github.com/hkpeaks/peaks-consolidation/releases
-The gRPC version of Peaks Framework which supports Python/Node.js/Java/Rust/.Net will be available in the next stage.
-
-Both framework and dataframe are written in Golang. Currently, the development and testing environment is using Windows 11 and AMD x86, and will support Linux. Apart from AMD x86, it will also support ARM CPU. For fast-growing RISC V in IoT applications, which is one of considerations.
-
-### Peaks Use Cases
-From time to time use cases will be published in the Github source code section, Pre-release and YouTube channel https://www.youtube.com/@hkpeaks/videos
-
-## Completed Development for Next Pre-release
-
-It is planned to update the above source code files and publish 2nd pre-release runtime during Aug ~ Sep 2023. New functions have been built:-
-
-### The CLI Command: Do 
-- Previously "DO" can support DO + script file name 
-- Now support DO + filename.csv to display meta data and sample rows of your file
-- Supports CLI interactive mode, so you can maintain the in-memory table for subsequent queries  
-
-### New Commands:
-- AddColumn{}: Add new column by math function e.g. Add, Subtract, Multiply and Divide.
-- OrderBy{}: supports to sort billions of rows using 16GB+ memory (1st pre-release supports billion-row distinct, group by, filter and join table)
-- Display{}: it is used to print few rows to screen with auto-alignment for text and real number
-- ReadSample{}: supports to get fix or random sample of rows from csv file instantly, it is very useful for very large file e.g. >100GB.
-- SplitFile2Folder{}: allows to filter a big CSV file or a folder which contains many CSV file to a folder/sub-folder which results many table partitions
-- JoinTable{}: allows to join fact table with a master table and to add new column by refer columns from the fact and master table.
-
-### Amend Commands:
-- ReadFile{} and WriteFile{} will be changed to Read{} and Write{}
-- Select{} and SelectUnmatch{} will be split into Select{}/Filter{} and SelectUnmatch{}/FilterUnmatch{}.
-  Select{} is used to select columns while filter{} is used to select rows.
-  If you need to select columns and filter rows at the same time, 2 commands are interchange.
-  But SelectUnmatch{} and FilterUnmatch{} are not interchange.
-
-### New Features of Current Commands:
-- Supports to read all CSV files from a folders which support in-memory or streaming model
-- Auto-detect to combine different queries such as filter + group by, filter current columns + join table + filter for join columns
-- Filter function supports to read data from particular folders generated by the command "SplitFile2Folder" which can speed-up filter time significantly
-- JoinKeyValue{} supports Filter() and FilterUnmatch() in addition to AllMatch().
-  Not only it supports join new columns, but also it supports to filter rows by a table which contain multi-dimensional distinct values.
-
-### Bug Fix:
-- Polars created csv is a little bit smaller size than Peaks of same dataset. Peaks has adapted to it to read propertly.  
-
-Based on some use cases, coming pre-release is likely to be significantly faster than the top 2 fastest dataframe software DuckDB 0.8.0 and Polars 0.18.0. These 2 are most recent benchmark of the Peaks https://youtu.be/ctxX1O1-OKk & https://youtu.be/bzess7_pKoc
-
-[BillionRowsTestingLog](https://github.com/hkpeaks/peaks-consolidation/tree/main/Documents/Peaks230518Pre-Release/BillionRowsTestingLog) is a set of 
-processing logs included in the 1st pre-release delivery. These are foucs on billion-row databending exercises.
-
-Based on a recent test case, it able to handle 7 billion-rows achieving processing speed 1 billion-row / minute. https://youtu.be/1NV0wkGjwoQ
-
- ## Under Research Stage
-
-- Develop a data simulator that uses probability distribution.
-- Write HTML5 table with bootstrap 5 and send it through websocket to local browser. This apply to view your local giant files instantly e.g. > 100GB.
-- Pyeaks: Peaks for Python. Pyeaks covers some of the current Peaks functions and new functions. It will support “pip install Pyeaks”. If user downloads the Peaks runtime "DO" subsequently, Pyeaks can call most of the DO functions in your Python scripts.   
-- Native data store which partitioning your table by a foldertree and support data amendment by selecting distinct column names.
-- Implement gRPC with websocket to support connection over the internet or different local machines.
-- Support read/write Parquet, JSON table and XLSX file formats.   
-- Parallel query with SQL server.
-- Supports composite queries in a single statement that can be executed within an inner loop to minimize hardware resource consumption.
-
-    ReturnTable = SourceTable;Filter{};JoinKey2Value{};AddColumn{};Filter{};GroupBy{}
-
-    ReturnTable = SourceTable.csv;Filter{};JoinKey2Value{};AddColumn{};Filter{};GroupBy{}
-
-    ReturnValue = SourceTable.csv;Filter{};JoinKey2Value{};AddColumn{};Filter{};GroupBy{}.Write{Result.csv}
-
-    Where ReturnTable is an in-memory table and ReturnValue is processing staus of writing csv file to disk.
-
-    First filter you may use to filter transactions for JoinKey2Value{}
-
-    Second filter you may use to filter new column after JoinKey2Value{} and AddColumn{}
-  
-- New Peaks query functions (these were done in C# WebNameSQL except GroupBy virtual column):-
-  - Converting different date formats
-  - Group By virtual columns - supports time series data table
-  - Reconciliation - compares differences of 2 tables by selecting distinct column names
-  - Table2Cell - summarizes cells of a table to a number or text by maths/statistics
-  - Conditional Action By Cell Value 
-  - Build Balance - enables crosstab results which can have monthly year-to-date balance
-  - Crosstab and reverse crosstab
-
+    Additional Query Command Setting:
+  * QueryCommand{SourceTable Or FileName.csv Or FilePath/*.csv| QuerySetting}
+  * QueryCommand{QuerySetting ~ ReturnTable Or FileName.csv} except OrderBy & CreateFolderLake
+  1 Compare operator includes >,<,>=,<=,=,!= & Range e.g. 100..200
+  1 Compare integer or float e.g. Float > Number, Float100..200
+  2 Use BuildKeyValue & JoinKeyValue supports JoinTable result
+  2 Use JoinTable supports JoinTable & AddColumn result
+  3 To sort text, use either A or D, to sort real numbers, use either FloatA or FloatD
