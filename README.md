@@ -66,7 +66,7 @@ Write{Result-GroupBy-Unmatch ~ Result-GroupBy-Unmatch.csv}
 Demo Video: https://youtu.be/5Jhd1WwgfYg
 
 
-## Data Transformation Setting
+## Command List
 
    AddColumn{Column, Column => Math(NewColName)} 
    
@@ -104,8 +104,7 @@ Demo Video: https://youtu.be/5Jhd1WwgfYg
    
    ReadSample{StartPosition%(Number) ByteLength(Number)}
    
-   ReadSample{Repeat(Number) ByteLength(Number)}
-   Resume{FileName}
+   ReadSample{Repeat(Number) ByteLength(Number)}   
    
    Select{Column, Column}
    
