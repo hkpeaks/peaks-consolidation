@@ -124,30 +124,29 @@ How to configure streaming for large dataset e.g. 1 Billion Rows, see https://gi
 
 ## Development of New Sytax
 
-####UserDefineFunctionName: Extraction ~ Load
+#### UserDefineFunctionName: Extraction ~ Load
 
 | Transformation
 
-####UserDefineFunctionName: SourceFile/Table ~ ResultFile/Table
+#### UserDefineFunctionName: SourceFile/Table ~ ResultFile/Table
 
 | Command: Setting
 
-####ExpandFile: Fact.csv ~ 1BillionRows.csv
+#### ExpandFile: Fact.csv ~ 1BillionRows.csv
 
 | ExpandFactor: 123
 
-####JoinScenario1: 1BillionRows.csv ~ Test1Results.csv
+#### JoinScenario1: 1BillionRows.csv ~ Test1Results.csv
 
 | JoinTable: Quantity, Unit_Price => InnerJoin(Master)Multiply(Amount)
 | OrderBy: Date(D) => CreateFolderLake(Shop)
-
 | Select: Date,Shop,Style,Product,Quantity,Amount
 
-####BuildKeyValueTable: Master.csv ~ KeyValueTable
+#### BuildKeyValueTable: Master.csv ~ KeyValueTable
 
 | BuildKeyValue: Product, Style
 
-####JoinScenario2: 1BillionRows.csv ~ Test2AResults.csv
+#### JoinScenario2: 1BillionRows.csv ~ Test2AResults.csv
 
 | JoinKeyValue: Product, Style => AllMatch(KeyValueTable)
 
@@ -159,7 +158,7 @@ How to configure streaming for large dataset e.g. 1 Billion Rows, see https://gi
 
 | OrderBy: Shop(A)Product(A)Date(D)
 
-####SplitFile: Test1Results.csv ~ FolderLake
+#### SplitFile: Test1Results.csv ~ FolderLake
 
 | CreateFolderLake: Shop
 
