@@ -162,11 +162,11 @@ How to configure streaming for large dataset e.g. 1 Billion Rows, see https://gi
 
 | CreateFolderLake: Shop
 
-FilterFolder: Outbox/FolderLake/S15/*.csv ~ Result-FilterFolderLake.csv
+#### FilterFolder: Outbox/FolderLake/S15/*.csv ~ Result-FilterFolderLake.csv
 
 | Filter: Product(222..888) Style(=F)
 
-ReadSample2View: Outbox/Result-FilterFolderLake.csv ~ SampleTable
+#### ReadSample2View: Outbox/Result-FilterFolderLake.csv ~ SampleTable
 
 | ReadSample: StartPosition%(0) ByteLength(100000)
 
