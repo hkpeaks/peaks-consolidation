@@ -1,6 +1,7 @@
 ## In-memory ETL 
 ## Command{Extraction | Transformation ~ Load}    
 
+#### Preparation of Sample Data for Tests
 Peaks Query is fast, simple and flexible. Here's an example of a script file:-
 
 Read{Master.csv ~ Master} 
