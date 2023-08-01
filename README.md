@@ -139,7 +139,9 @@ How to configure streaming for large dataset e.g. 1 Billion Rows, see https://gi
 #### JoinScenario1: 1BillionRows.csv ~ Test1Results.csv
 
 | JoinTable: Quantity, Unit_Price => InnerJoin(Master)Multiply(Amount)
+
 | OrderBy: Date(D) => CreateFolderLake(Shop)
+
 | Select: Date,Shop,Style,Product,Quantity,Amount
 
 #### BuildKeyValueTable: Master.csv ~ KeyValueTable
