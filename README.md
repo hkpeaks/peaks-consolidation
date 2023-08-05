@@ -122,54 +122,59 @@ How to configure streaming for large dataset e.g. 1 Billion Rows, see https://gi
 
    Write{TableName ~ FileName.csv or %ExpandBy100Time.csv} 
 
-## Development of New Sytax
+## New SQL Statement for File, In-memory Table and Network Stream
 
-#### UserDefineFunctionName: Extraction ~ Load
+Note: Use of "." to indicate it is member of your defined function is optional. 
+However use of  "~" is mandatory to identify first line is "UserDefineFunctionName = Extraction ~ Load".
+If you are using Python, you can get return value from the "UserDefineFunctionName".
 
-| Transformation
+#### UserDefineFunctionName = Extraction ~ Load
 
-#### UserDefineFunctionName: SourceFile/Table ~ ResultFile/Table
+. Transformation
 
-| Command: Setting
+#### UserDefineFunctionName = SourceFile/Table ~ ResultFile/Table
 
-#### ExpandFile: Fact.csv ~ 1BillionRows.csv
+. Command: Setting
 
-| ExpandFactor: 123
+#### ExpandFile = Fact.csv ~ 1BillionRows.csv
 
-#### JoinScenario1: 1BillionRows.csv ~ Test1Results.csv
+.ExpandFactor: 123
 
-| JoinTable: Quantity, Unit_Price => InnerJoin(Master)Multiply(Amount)
+#### JoinScenario1 = 1BillionRows.csv ~ Test1Results.csv
 
-| OrderBy: Date(D) => CreateFolderLake(Shop)
+.JoinTable: Quantity, Unit_Price => InnerJoin(Master)Multiply(Amount)
 
-| Select: Date,Shop,Style,Product,Quantity,Amount
+.OrderBy: Date(D) => CreateFolderLake(Shop)
 
-#### BuildKeyValueTable: Master.csv ~ KeyValueTable
+.Select: Date,Shop,Style,Product,Quantity,Amount
 
-| BuildKeyValue: Product, Style
+#### BuildKeyValueTable = Master.csv ~ KeyValueTable
 
-#### JoinScenario2: 1BillionRows.csv ~ Test2AResults.csv
+.BuildKeyValue: Product, Style
 
-| JoinKeyValue: Product, Style => AllMatch(KeyValueTable)
+#### JoinScenario2 = 1BillionRows.csv ~ Test2AResults.csv
 
-| AddColumn: Quantity, Unit_Price => Multiply(Amount)
+.JoinKeyValue: Product, Style => AllMatch(KeyValueTable)
 
-| Filter: Amount(Float > 50000)
+.AddColumn: Quantity, Unit_Price => Multiply(Amount)
 
-| GroupBy: Product, Style => Count() Sum(Quantity) Sum(Amount)
+.Filter: Amount(Float > 50000)
 
-| OrderBy: Shop(A)Product(A)Date(D)
+.GroupBy: Product, Style => Count() Sum(Quantity) Sum(Amount)
 
-#### SplitFile: Test1Results.csv ~ FolderLake
+.OrderBy: Shop(A)Product(A)Date(D)
 
-| CreateFolderLake: Shop
+#### SplitFile = Test1Results.csv ~ FolderLake
 
-#### FilterFolder: Outbox/FolderLake/S15/*.csv ~ Result-FilterFolderLake.csv
+.CreateFolderLake: Shop
 
-| Filter: Product(222..888) Style(=F)
+#### FilterFolder = Outbox/FolderLake/S15/*.csv ~ Result-FilterFolderLake.csv
 
-#### ReadSample2View: Outbox/Result-FilterFolderLake.csv ~ SampleTable
+.Filter: Product(222..888) Style(=F)
 
-| ReadSample: StartPosition%(0) ByteLength(100000)
+#### ReadSample2View = Outbox/Result-FilterFolderLake.csv ~ SampleTable
 
-| View
+.ReadSample: StartPosition%(0) ByteLength(100000)
+
+.View
+
