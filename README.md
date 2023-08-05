@@ -1,72 +1,59 @@
-## In-memory ETL 
-## Command{Extraction | Transformation ~ Load}    
+## New SQL Statement for File, In-memory Table and Network Stream
 
-#### Preparation of Sample Data for Tests
-Peaks Query is fast, simple and flexible. Here's an example of a script file:-
+Note: Use of "." to indicate it is member of your defined function is optional. 
+However use of  "~" is mandatory to identify first line is "UserDefineFunctionName = Extraction ~ Load".
 
-Read{Master.csv ~ Master} 
+#### UserDefineFunctionName = Extraction ~ Load
 
-Read{Fact.csv ~ Table}
+. Transformation
 
-Write{Table ~ %ExpandBy10Time.csv}
+#### UserDefineFunctionName = SourceFile/Table ~ ResultFile/Table
 
-#### Test 1: JoinTable to Add 2 Column and Select Column
-JoinTable{Outbox/%ExpandBy10Time.csv | Quantity, Unit_Price => InnerJoin(Master)Multiply(Amount) ~ Result-JoinTable}
+. Command: Setting
 
-Select{Result-JoinTable | Date,Shop,Product,Quantity,Amount ~ Result-SelectColumn}
+#### ExpandFile = Fact.csv ~ 1BillionRows.csv
 
-#### Test 2: BuildKeyKeyValue + JoinKeyValue + AddColumn = JoinTable of Test 1
-BuildKeyValue{Master | Product, Style ~ MasterTableKeyValue}
+.ExpandFactor: 123
 
-JoinKeyValue{Outbox/%ExpandBy10Time.csv | Product, Style => AllMatch(MasterTableKeyValue) ~ Result-BuildKeyValue}
+#### JoinScenario1 = 1BillionRows.csv ~ Test1Results.csv
 
-AddColumn{Result-BuildKeyValue | Quantity, Unit_Price => Multiply(Amount) ~ Result-AddColumn}
+.JoinTable: Quantity, Unit_Price => InnerJoin(Master)Multiply(Amount)
 
-#### Test 3: Filter and FilterUnmatch
-Filter{Result-AddColumn | Amount(Float > 50000) ~ Result-Filter}
+.OrderBy: Date(D) => CreateFolderLake(Shop)
 
-FilterUnmatch{Result-AddColumn | Amount(Float > 50000) ~ Result-FilterUnmatch}
+.Select: Date,Shop,Style,Product,Quantity,Amount
+
+#### BuildKeyValueTable = Master.csv ~ KeyValueTable
+
+.BuildKeyValue: Product, Style
+
+#### JoinScenario2 = 1BillionRows.csv ~ Test2AResults.csv
+
+.JoinKeyValue: Product, Style => AllMatch(KeyValueTable)
+
+.AddColumn: Quantity, Unit_Price => Multiply(Amount)
+
+.Filter: Amount(Float > 50000)
+
+.GroupBy: Product, Style => Count() Sum(Quantity) Sum(Amount)
+
+.OrderBy: Shop(A)Product(A)Date(D)
+
+#### SplitFile = Test1Results.csv ~ FolderLake
+
+.CreateFolderLake: Shop
+
+#### FilterFolder = Outbox/FolderLake/S15/*.csv ~ Result-FilterFolderLake.csv
+
+.Filter: Product(222..888) Style(=F)
+
+#### ReadSample2View = Outbox/Result-FilterFolderLake.csv ~ SampleTable
+
+.ReadSample: StartPosition%(0) ByteLength(100000)
+
+.View
 
 
-#### Test 4: Distinct and OrderBy
-Distinct{Result-Filter | Date, Shop, Product, Style ~ Result-Distinct-Match}
-
-Distinct{Result-FilterUnmatch |  Date, Shop, Product, Style ~ Result-Distinct-Unmatch}
-
-OrderBy{Result-Distinct-Unmatch | Shop(A)Product(A)Date(D) ~ Result-Distinct-Unmatch-OrderAAD}
-
-
-#### Test 5: GroupBy 
-GroupBy{Result-Filter | Product, Style => Count() Sum(Quantity) Sum(Amount) ~ Result-GroupBy-Match}
-
-GroupBy{Result-FilterUnmatch | Product, Style => Count() Sum(Quantity) Sum(Amount) ~ Result-GroupBy-Unmatch}
-
-#### Test 6: Write to Disk
-Write{Result-JoinTable ~ Result-JoinTable.csv}
-
-Write{Result-SelectColumn ~ Result-SelectColumn.csv}
-
-Write{MasterTableKeyValue ~ MasterTableKeyValue.csv}
-
-Write{Result-AddColumn ~ Result-AddColumn.csv}
-
-Write{Result-Filter ~ Result-Filter.csv}
-
-Write{Result-FilterUnmatch ~ Result-FilterUnmatch.csv}
-
-Write{Result-Distinct-Match ~ Result-Distinct-Match.csv}
-
-Write{Result-Distinct-Unmatch ~ Result-Distinct-Unmatch.csv}
-
-Write{Result-Distinct-Unmatch-OrderAAD ~ Result-Distinct-Unmatch-OrderAAD.csv}
-
-Write{Result-GroupBy-Match ~ Result-GroupBy-Match.csv}
-
-Write{Result-GroupBy-Unmatch ~ Result-GroupBy-Unmatch.csv}
-
-Demo Video: https://youtu.be/5Jhd1WwgfYg
-
-How to configure streaming for large dataset e.g. 1 Billion Rows, see https://github.com/hkpeaks/peaks-consolidation/issues/5
 
 
 ## Command List
@@ -121,60 +108,4 @@ How to configure streaming for large dataset e.g. 1 Billion Rows, see https://gi
    View{TableName}
 
    Write{TableName ~ FileName.csv or %ExpandBy100Time.csv} 
-
-## New SQL Statement for File, In-memory Table and Network Stream
-
-Note: Use of "." to indicate it is member of your defined function is optional. 
-However use of  "~" is mandatory to identify first line is "UserDefineFunctionName = Extraction ~ Load".
-If you are using Python, you can get return value from the "UserDefineFunctionName".
-
-#### UserDefineFunctionName = Extraction ~ Load
-
-. Transformation
-
-#### UserDefineFunctionName = SourceFile/Table ~ ResultFile/Table
-
-. Command: Setting
-
-#### ExpandFile = Fact.csv ~ 1BillionRows.csv
-
-.ExpandFactor: 123
-
-#### JoinScenario1 = 1BillionRows.csv ~ Test1Results.csv
-
-.JoinTable: Quantity, Unit_Price => InnerJoin(Master)Multiply(Amount)
-
-.OrderBy: Date(D) => CreateFolderLake(Shop)
-
-.Select: Date,Shop,Style,Product,Quantity,Amount
-
-#### BuildKeyValueTable = Master.csv ~ KeyValueTable
-
-.BuildKeyValue: Product, Style
-
-#### JoinScenario2 = 1BillionRows.csv ~ Test2AResults.csv
-
-.JoinKeyValue: Product, Style => AllMatch(KeyValueTable)
-
-.AddColumn: Quantity, Unit_Price => Multiply(Amount)
-
-.Filter: Amount(Float > 50000)
-
-.GroupBy: Product, Style => Count() Sum(Quantity) Sum(Amount)
-
-.OrderBy: Shop(A)Product(A)Date(D)
-
-#### SplitFile = Test1Results.csv ~ FolderLake
-
-.CreateFolderLake: Shop
-
-#### FilterFolder = Outbox/FolderLake/S15/*.csv ~ Result-FilterFolderLake.csv
-
-.Filter: Product(222..888) Style(=F)
-
-#### ReadSample2View = Outbox/Result-FilterFolderLake.csv ~ SampleTable
-
-.ReadSample: StartPosition%(0) ByteLength(100000)
-
-.View
 
