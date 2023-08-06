@@ -18,15 +18,13 @@ Or
 
 .Query/Transformation
 
-#### UserDefineFunctionName = SourceFile/Table to ResultFile/Table
+Examples:
 
-.Command: Setting
-
-#### ExpandFile = Fact.csv to 1BillionRows.csv
+#### ExpandFile = from Fact.csv to 1BillionRows.csv
 
 .ExpandFactor: 123
 
-#### JoinScenario1 = 1BillionRows.csv to Test1Results.csv
+#### JoinScenario1 = from 1BillionRows.csv to Test1Results.csv
 
 .JoinTable: Quantity, Unit_Price => InnerJoin(Master)Multiply(Amount)
 
@@ -34,11 +32,11 @@ Or
 
 .Select: Date,Shop,Style,Product,Quantity,Amount
 
-#### BuildKeyValueTable = Master.csv to KeyValueTable
+#### BuildKeyValueTable = from Master.csv to KeyValueTable
 
 .BuildKeyValue: Product, Style
 
-#### JoinScenario2 = 1BillionRows.csv to Test2AResults.csv
+#### JoinScenario2 = from 1BillionRows.csv to Test2AResults.csv
 
 .JoinKeyValue: Product, Style => AllMatch(KeyValueTable)
 
@@ -50,15 +48,15 @@ Or
 
 .OrderBy: Shop(A)Product(A)Date(D)
 
-#### SplitFile = Test1Results.csv to FolderLake
+#### SplitFile = from Test1Results.csv to FolderLake
 
 .CreateFolderLake: Shop
 
-#### FilterFolder = Outbox/FolderLake/S15/*.csv to Result-FilterFolderLake.csv
+#### FilterFolder = from Outbox/FolderLake/S15/*.csv to Result-FilterFolderLake.csv
 
 .Filter: Product(222..888) Style(=F)
 
-#### ReadSample2View = Outbox/Result-FilterFolderLake.csv to SampleTable
+#### ReadSample2View = from Outbox/Result-FilterFolderLake.csv to SampleTable
 
 .ReadSample: StartPosition%(0) ByteLength(100000)
 
