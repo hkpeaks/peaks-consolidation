@@ -1,3 +1,30 @@
+/*
+How to use this app:
+
+    If you set the Cargo.toml where name = "run"
+
+    e.g. run data.csv
+
+         run "d:\your folder\data.csv"
+
+    I have tested this app and found that the minimum number of
+    data rows it can handle is 1 (excluding the column name).
+    I also tested its ability to process a large file with
+    10 billion rows and a size of 41GB. However, I cannot confirm
+    the upper limit of rows it can handle.
+
+    How to change number of output sample rows to disk file:
+
+    At the bottom of this code, you can change the default number
+    from 100. However, it is not recommended to increase this
+    value too much, as the app is designed to retrieve sample rows
+    for validation rather than a large population of your dataset.
+
+    let (csv_info, _validate_byte, err) = get_csv_info(&file_path, 100);
+
+	To see demo please refer to this python version: https://youtu.be/71GHzDnEYno
+*/
+
 use std::collections::HashMap;
 use std::io::{Read, Seek, SeekFrom};
 use std::fs::{File, metadata};
