@@ -25,7 +25,7 @@ Examples:
 
 .Filter: Saleman(Mary,Peter,John)
 
-.JoinTable: Product, Category => InnerJoin(Master)
+.JoinTable: Product, Category => InnerJoin(Master.csv)
 
 .AddColumn: Quantity, Unit_Price => Multiply(Amount)
 
