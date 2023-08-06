@@ -25,13 +25,9 @@ Examples:
 
 .Select: Date,Shop,Style,Product,Quantity,Amount
 
-#### BuildKeyValueTable = from Master.csv to KeyValueTable
-
-.BuildKeyValue: Product, Style
-
 #### JoinScenario2 = from 1BillionRows.csv to Test2AResults.csv
 
-.JoinKeyValue: Product, Style => AllMatch(KeyValueTable)
+.JoinTable: Product, Style => AllMatch(Master.csv)
 
 .AddColumn: Quantity, Unit_Price => Multiply(Amount)
 
