@@ -1,3 +1,11 @@
+## New Crossplatform App Publihsed
+
+### Instant File Preview and Validation for Giant CSV File 
+
+Since comma is not necessary be a delimiter of CSV file, this app can detect other delimiter automatically with the assumption number of delimiter for every row must be the same. The app validates first row for each partition of a file as it divide file into 100 partitions, so you can get 100 sample rows to disk (display first 20 rows to screen). Inside the source code, an instruction is helping you how to change the number from 100 to 1000.
+
+Download URL: https://github.com/hkpeaks/peaks-consolidation/tree/main/Documents/PreviewFile
+
 ## New Query Statement for File, In-memory Table and Network Stream
 
 Note: Use of "." to indicate it is member of your defined function is optional. 
