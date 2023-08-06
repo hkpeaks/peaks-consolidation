@@ -7,12 +7,15 @@ You can define query/ data transformation function from second line and after.
 #### UserDefineFunctionName = from Extraction to Load
 Or 
 #### UserDefineFunctionName = from Extraction, Extraction, Extraction to Load
-or
+Or
 #### UserDefineFunctionName = from Extraction to Load, Load, Load
 
 .Query/Transformation
+
 .Query/Transformation
+
 .Query/Transformation
+
 .Query/Transformation
 
 #### UserDefineFunctionName = SourceFile/Table to ResultFile/Table
