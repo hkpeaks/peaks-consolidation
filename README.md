@@ -6,7 +6,8 @@ Since comma is not necessary be a delimiter of CSV file, this app can detect oth
 
 Download URL: https://github.com/hkpeaks/peaks-consolidation/tree/main/Documents/PreviewFile
 - main.go is a Golang version
-- Peaks.py is a Python version
+- main.rs is a Rust version
+- Peaks.py is a Python version  
 
 Demo video: https://lnkd.in/gCTFR9rh
 
