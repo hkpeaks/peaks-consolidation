@@ -2,11 +2,18 @@
 
 Note: Use of "." to indicate it is member of your defined function is optional. 
 First line is "UserDefineFunctionName = Extraction to Load".
-You can define query function from second line and after.
+You can define query/ data transformation function from second line and after.
 
-#### UserDefineFunctionName = Extraction to Load
+#### UserDefineFunctionName = from Extraction to Load
+Or 
+#### UserDefineFunctionName = from Extraction, Extraction, Extraction to Load
+or
+#### UserDefineFunctionName = from Extraction to Load, Load, Load
 
-.Transformation
+.Query/Transformation
+.Query/Transformation
+.Query/Transformation
+.Query/Transformation
 
 #### UserDefineFunctionName = SourceFile/Table to ResultFile/Table
 
