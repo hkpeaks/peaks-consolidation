@@ -31,7 +31,7 @@ Examples:
 
 .Filter: Amount(Float20000..29999)
 
-.GroupBy: Saleman, Shop, Product => Sum(Quantity) Sum(Amount)
+.GroupBy: Saleman, Shop, Product => Count() Sum(Quantity) Sum(Amount)
 
 .OrderBy: Saleman(A) Product(A) Date(D)
 
