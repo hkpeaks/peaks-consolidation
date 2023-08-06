@@ -1,22 +1,15 @@
 ## New Query Statement for File, In-memory Table and Network Stream
 
 Note: Use of "." to indicate it is member of your defined function is optional. 
-First line is "UserDefineFunctionName = Extraction to Load".
-You can define query/ data transformation function from second line and after.
+First line is to define data extraction and data load. Below are 3 possible scenarios:-
 
-#### UserDefineFunctionName = from Extraction to Load
+UserDefineFunctionName = from Extraction to Load
 Or 
-#### UserDefineFunctionName = from Extraction, Extraction, Extraction to Load
+UserDefineFunctionName = from Extraction, Extraction, Extraction to Load
 Or
-#### UserDefineFunctionName = from Extraction to Load, Load, Load
+UserDefineFunctionName = from Extraction to Load, Load, Load
 
-.Query/Transformation
-
-.Query/Transformation
-
-.Query/Transformation
-
-.Query/Transformation
+You can define query/data transformation function from second line and after.
 
 Examples:
 
