@@ -1,4 +1,4 @@
-## New Crossplatform App Publihsed
+## New Crossplatform App 
 
 ### Instant File Preview and Validation for Giant CSV File 
 
