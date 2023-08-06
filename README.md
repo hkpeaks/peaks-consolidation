@@ -21,25 +21,19 @@ Examples:
 
 .ExpandFactor: 123
 
-#### JoinScenario1 = from 1BillionRows.csv to Test1Results.csv
+#### JoinTable = from 1BillionRows.csv to Test1Results.csv
 
-.JoinTable: Quantity, Unit_Price => InnerJoin(Master)Multiply(Amount)
+.Filter: Saleman(Mary,Peter,John)
 
-.OrderBy: Date(D) => CreateFolderLake(Shop)
-
-.Select: Date,Shop,Style,Product,Quantity,Amount
-
-#### JoinScenario2 = from 1BillionRows.csv to Test2AResults.csv
-
-.JoinTable: Product, Style => AllMatch(Master.csv)
+.JoinTable: Product, Category => InnerJoin(Master)
 
 .AddColumn: Quantity, Unit_Price => Multiply(Amount)
 
-.Filter: Amount(Float > 50000)
+.Filter: Amount(Float20000..29999)
 
-.GroupBy: Product, Style => Count() Sum(Quantity) Sum(Amount)
+.GroupBy: Saleman, Shop, Product => Sum(Quantity) Sum(Amount)
 
-.OrderBy: Shop(A)Product(A)Date(D)
+.OrderBy: Saleman(A) Product(A) Date(D)
 
 #### SplitFile = from Test1Results.csv to FolderLake
 
