@@ -23,7 +23,7 @@ func main() {
 
 	gopeaks.Create_Log(df)
 
-	source_file_path := gopeaks.Get_CLI_file_path("10M-Fact.csv")
+	source_file_path := gopeaks.Get_CLI_file_path("1000M-Fact.csv")
 
 	gopeaks.View_Sample(source_file_path)
 	df.Partition_Size_MB = 10
