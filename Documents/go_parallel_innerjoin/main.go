@@ -40,7 +40,7 @@ func main() {
 	elapsed := end_time.Sub(start_time)
 
 	fmt.Println()
-	fmt.Printf("Group_By Duration: %.3f (in second)\n", elapsed.Seconds())
+	fmt.Printf("Inner Join Duration: %.3f (in second)\n", elapsed.Seconds())
 
 }
 
