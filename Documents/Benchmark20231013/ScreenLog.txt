@@ -1,0 +1,1315 @@
+
+D:\Benchmarking>python benchmark.py 3
+
+*** Current Data File: 1M_Fact ***
+
+*** Start Process: python duckdb-table-form-csv.py Test Run: 1 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S21    P579      8         564.0   537828.81
+1  S21    P941      9         425.0   452084.35
+2  S21    P561      8         223.0   232864.54
+3  S21    P503      9         484.0   273938.08
+4  S21    P779      8         591.0   342164.33
+5  S21    P881     12         658.0   327123.37
+6  S21    P113      6         337.0   117694.39
+7  S21    P370     14         776.0   230985.69
+8  S21    P901      6         404.0   366290.54
+9  S21    P202      6         288.0    97809.69
+
+
+DuckDB CSV Duration (In Second): 0.98
+
+*** python duckdb-table-form-csv.py Duration (in second): 1.13 ***
+
+*** Current Data File: 1M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-csv.py Test Run: 2 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S21', 'P579', 8, 564.0, 537828.81)
+('S21', 'P941', 9, 425.0, 452084.35000000003)
+('S21', 'P561', 8, 223.0, 232864.53999999998)
+('S21', 'P503', 9, 484.0, 273938.08)
+('S21', 'P779', 8, 591.0, 342164.33)
+('S21', 'P881', 12, 658.0, 327123.37)
+('S21', 'P113', 6, 337.0, 117694.38999999998)
+('S21', 'P370', 14, 776.0, 230985.69)
+('S21', 'P901', 6, 404.0, 366290.54)
+('S21', 'P202', 6, 288.0, 97809.69)
+
+DuckDB CSV Duration (In Second): 0.408
+
+*** python duckdb-tuple-form-csv.py Duration (in second): 0.49 ***
+
+*** Current Data File: 1M_Fact ***
+
+*** Start Process: python duckdb-table-form-parquet.py Test Run: 3 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01        34   1035.64
+1    P951  S21     F 2023-01-01        36  11119.68
+2    P280  S21     B 2023-01-01        91  26218.01
+3    P448  S21     C 2023-01-01        71  24075.39
+4    P692  S21     B 2023-01-01        28   7338.24
+5    P722  S21     B 2023-01-01        95  10509.85
+6    P469  S21     F 2023-01-01        87  96179.37
+7    P325  S21     B 2023-01-02        97   8368.19
+8    P765  S21     C 2023-01-02        63  11283.30
+9    P182  S21     F 2023-01-02        66  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S21    P579      8         564.0   537828.81
+1  S21    P941      9         425.0   452084.35
+2  S21    P561      8         223.0   232864.54
+3  S21    P503      9         484.0   273938.08
+4  S21    P779      8         591.0   342164.33
+5  S21    P881     12         658.0   327123.37
+6  S21    P113      6         337.0   117694.39
+7  S21    P370     14         776.0   230985.69
+8  S21    P901      6         404.0   366290.54
+9  S21    P202      6         288.0    97809.69
+
+
+DuckDB Parquet Duration (In Second): 0.847
+
+*** python duckdb-table-form-parquet.py Duration (in second): 1.0 ***
+
+*** Current Data File: 1M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-parquet.py Test Run: 4 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66, 38303.1)
+
+Summary Result (First 10 Rows):
+('S21', 'P579', 8, 564, 537828.81)
+('S21', 'P941', 9, 425, 452084.35000000003)
+('S21', 'P561', 8, 223, 232864.53999999998)
+('S21', 'P503', 9, 484, 273938.08)
+('S21', 'P779', 8, 591, 342164.33)
+('S21', 'P881', 12, 658, 327123.37)
+('S21', 'P113', 6, 337, 117694.38999999998)
+('S21', 'P370', 14, 776, 230985.69)
+('S21', 'P901', 6, 404, 366290.54)
+('S21', 'P202', 6, 288, 97809.69)
+
+DuckDB Parquet Duration (In Second): 0.204
+
+*** python duckdb-tuple-form-parquet.py Duration (in second): 0.28 ***
+
+
+
+
+*** See Benchmark Result: 1M_Fact ***
+
+Test Case                            Run 1  Average  Rank
+python duckdb-tuple-form-parquet.py  0.28   0.28     1
+-------------->
+python duckdb-tuple-form-csv.py      0.49   0.49     2
+------------------------>
+python duckdb-table-form-parquet.py  1.0    1.0      3
+-------------------------------------------------->
+python duckdb-table-form-csv.py      1.13   1.13     4
+--------------------------------------------------------->
+
+
+*** Current Data File: 1M_Fact ***
+
+*** Start Process: python duckdb-table-form-csv.py Test Run: 5 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S21    P579      8         564.0   537828.81
+1  S21    P941      9         425.0   452084.35
+2  S21    P561      8         223.0   232864.54
+3  S21    P503      9         484.0   273938.08
+4  S21    P779      8         591.0   342164.33
+5  S21    P881     12         658.0   327123.37
+6  S21    P113      6         337.0   117694.39
+7  S21    P370     14         776.0   230985.69
+8  S21    P901      6         404.0   366290.54
+9  S21    P202      6         288.0    97809.69
+
+
+DuckDB CSV Duration (In Second): 0.968
+
+*** python duckdb-table-form-csv.py Duration (in second): 1.13 ***
+
+*** Current Data File: 1M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-csv.py Test Run: 6 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S21', 'P579', 8, 564.0, 537828.81)
+('S21', 'P941', 9, 425.0, 452084.35000000003)
+('S21', 'P561', 8, 223.0, 232864.53999999998)
+('S21', 'P503', 9, 484.0, 273938.08)
+('S21', 'P779', 8, 591.0, 342164.33)
+('S21', 'P881', 12, 658.0, 327123.37)
+('S21', 'P113', 6, 337.0, 117694.38999999998)
+('S21', 'P370', 14, 776.0, 230985.69)
+('S21', 'P901', 6, 404.0, 366290.54)
+('S21', 'P202', 6, 288.0, 97809.69)
+
+DuckDB CSV Duration (In Second): 0.392
+
+*** python duckdb-tuple-form-csv.py Duration (in second): 0.47 ***
+
+*** Current Data File: 1M_Fact ***
+
+*** Start Process: python duckdb-table-form-parquet.py Test Run: 7 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01        34   1035.64
+1    P951  S21     F 2023-01-01        36  11119.68
+2    P280  S21     B 2023-01-01        91  26218.01
+3    P448  S21     C 2023-01-01        71  24075.39
+4    P692  S21     B 2023-01-01        28   7338.24
+5    P722  S21     B 2023-01-01        95  10509.85
+6    P469  S21     F 2023-01-01        87  96179.37
+7    P325  S21     B 2023-01-02        97   8368.19
+8    P765  S21     C 2023-01-02        63  11283.30
+9    P182  S21     F 2023-01-02        66  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S21    P579      8         564.0   537828.81
+1  S21    P941      9         425.0   452084.35
+2  S21    P561      8         223.0   232864.54
+3  S21    P503      9         484.0   273938.08
+4  S21    P779      8         591.0   342164.33
+5  S21    P881     12         658.0   327123.37
+6  S21    P113      6         337.0   117694.39
+7  S21    P370     14         776.0   230985.69
+8  S21    P901      6         404.0   366290.54
+9  S21    P202      6         288.0    97809.69
+
+
+DuckDB Parquet Duration (In Second): 0.784
+
+*** python duckdb-table-form-parquet.py Duration (in second): 0.96 ***
+
+*** Current Data File: 1M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-parquet.py Test Run: 8 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66, 38303.1)
+
+Summary Result (First 10 Rows):
+('S21', 'P579', 8, 564, 537828.81)
+('S21', 'P941', 9, 425, 452084.35000000003)
+('S21', 'P561', 8, 223, 232864.53999999998)
+('S21', 'P503', 9, 484, 273938.08)
+('S21', 'P779', 8, 591, 342164.33)
+('S21', 'P881', 12, 658, 327123.37)
+('S21', 'P113', 6, 337, 117694.38999999998)
+('S21', 'P370', 14, 776, 230985.69)
+('S21', 'P901', 6, 404, 366290.54)
+('S21', 'P202', 6, 288, 97809.69)
+
+DuckDB Parquet Duration (In Second): 0.188
+
+*** python duckdb-tuple-form-parquet.py Duration (in second): 0.27 ***
+
+
+
+
+*** See Benchmark Result: 1M_Fact ***
+
+Test Case                            Run 1  Run 2  Average  Rank
+python duckdb-tuple-form-parquet.py  0.28   0.27   0.28     1
+--------------->
+python duckdb-tuple-form-csv.py      0.49   0.47   0.48     2
+--------------------------->
+python duckdb-table-form-parquet.py  1.0    0.96   0.98     3
+------------------------------------------------------->
+python duckdb-table-form-csv.py      1.13   1.13   1.13     4
+---------------------------------------------------------------->
+
+
+*** Current Data File: 1M_Fact ***
+
+*** Start Process: python duckdb-table-form-csv.py Test Run: 9 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S21    P579      8         564.0   537828.81
+1  S21    P941      9         425.0   452084.35
+2  S21    P561      8         223.0   232864.54
+3  S21    P503      9         484.0   273938.08
+4  S21    P779      8         591.0   342164.33
+5  S21    P881     12         658.0   327123.37
+6  S21    P113      6         337.0   117694.39
+7  S21    P370     14         776.0   230985.69
+8  S21    P901      6         404.0   366290.54
+9  S21    P202      6         288.0    97809.69
+
+
+DuckDB CSV Duration (In Second): 1.004
+
+*** python duckdb-table-form-csv.py Duration (in second): 1.16 ***
+
+*** Current Data File: 1M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-csv.py Test Run: 10 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S21', 'P579', 8, 564.0, 537828.81)
+('S21', 'P941', 9, 425.0, 452084.35000000003)
+('S21', 'P561', 8, 223.0, 232864.53999999998)
+('S21', 'P503', 9, 484.0, 273938.08)
+('S21', 'P779', 8, 591.0, 342164.33)
+('S21', 'P881', 12, 658.0, 327123.37)
+('S21', 'P113', 6, 337.0, 117694.38999999998)
+('S21', 'P370', 14, 776.0, 230985.69)
+('S21', 'P901', 6, 404.0, 366290.54)
+('S21', 'P202', 6, 288.0, 97809.69)
+
+DuckDB CSV Duration (In Second): 0.393
+
+*** python duckdb-tuple-form-csv.py Duration (in second): 0.47 ***
+
+*** Current Data File: 1M_Fact ***
+
+*** Start Process: python duckdb-table-form-parquet.py Test Run: 11 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01        34   1035.64
+1    P951  S21     F 2023-01-01        36  11119.68
+2    P280  S21     B 2023-01-01        91  26218.01
+3    P448  S21     C 2023-01-01        71  24075.39
+4    P692  S21     B 2023-01-01        28   7338.24
+5    P722  S21     B 2023-01-01        95  10509.85
+6    P469  S21     F 2023-01-01        87  96179.37
+7    P325  S21     B 2023-01-02        97   8368.19
+8    P765  S21     C 2023-01-02        63  11283.30
+9    P182  S21     F 2023-01-02        66  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S21    P579      8         564.0   537828.81
+1  S21    P941      9         425.0   452084.35
+2  S21    P561      8         223.0   232864.54
+3  S21    P503      9         484.0   273938.08
+4  S21    P779      8         591.0   342164.33
+5  S21    P881     12         658.0   327123.37
+6  S21    P113      6         337.0   117694.39
+7  S21    P370     14         776.0   230985.69
+8  S21    P901      6         404.0   366290.54
+9  S21    P202      6         288.0    97809.69
+
+
+DuckDB Parquet Duration (In Second): 0.785
+
+*** python duckdb-table-form-parquet.py Duration (in second): 0.96 ***
+
+*** Current Data File: 1M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-parquet.py Test Run: 12 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66, 38303.1)
+
+Summary Result (First 10 Rows):
+('S21', 'P579', 8, 564, 537828.81)
+('S21', 'P941', 9, 425, 452084.35000000003)
+('S21', 'P561', 8, 223, 232864.53999999998)
+('S21', 'P503', 9, 484, 273938.08)
+('S21', 'P779', 8, 591, 342164.33)
+('S21', 'P881', 12, 658, 327123.37)
+('S21', 'P113', 6, 337, 117694.38999999998)
+('S21', 'P370', 14, 776, 230985.69)
+('S21', 'P901', 6, 404, 366290.54)
+('S21', 'P202', 6, 288, 97809.69)
+
+DuckDB Parquet Duration (In Second): 0.188
+
+*** python duckdb-tuple-form-parquet.py Duration (in second): 0.27 ***
+
+
+
+
+*** See Benchmark Result: 1M_Fact ***
+
+Test Case                            Run 1  Run 2  Run 3  Average  Rank
+python duckdb-tuple-form-parquet.py  0.28   0.27   0.27   0.27     1
+---------------->
+python duckdb-tuple-form-csv.py      0.49   0.47   0.47   0.48     2
+----------------------------->
+python duckdb-table-form-parquet.py  1.0    0.96   0.96   0.97     3
+------------------------------------------------------------>
+python duckdb-table-form-csv.py      1.13   1.13   1.16   1.14     4
+----------------------------------------------------------------------->
+
+
+*** Current Data File: 10M_Fact ***
+
+*** Start Process: python duckdb-table-form-csv.py Test Run: 1 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S31    P201     40        2830.0    467308.3
+1  S31    P188     40        3240.0    643635.6
+2  S31    P642     80        4450.0   1167893.9
+3  S31    P330     70        4070.0    462481.0
+4  S31    P714     60        3170.0   1647920.5
+5  S31    P706     70        3090.0   3259315.3
+6  S31    P406     60        3170.0   2560692.0
+7  S31    P298     90        3600.0   3413019.7
+8  S31    P107     30        2120.0   2240148.2
+9  S31    P460     50        2740.0    584902.0
+
+
+DuckDB CSV Duration (In Second): 3.985
+
+*** python duckdb-table-form-csv.py Duration (in second): 4.32 ***
+
+*** Current Data File: 10M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-csv.py Test Run: 2 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S53', 'P191', 60, 3820.0, 344468.3000000001)
+('S53', 'P470', 80, 3600.0, 619262.2)
+('S53', 'P933', 110, 5670.0, 902108.7999999999)
+('S53', 'P224', 100, 6370.0, 2816313.3000000003)
+('S53', 'P350', 90, 2870.0, 924631.1)
+('S53', 'P381', 90, 4780.0, 3231472.1999999993)
+('S53', 'P937', 60, 4300.0, 1535171.0)
+('S53', 'P398', 120, 6230.0, 5838546.1)
+('S53', 'P894', 80, 4720.0, 3743917.2000000007)
+('S53', 'P586', 80, 2900.0, 2985374.9000000004)
+
+DuckDB CSV Duration (In Second): 1.898
+
+*** python duckdb-tuple-form-csv.py Duration (in second): 2.04 ***
+
+*** Current Data File: 10M_Fact ***
+
+*** Start Process: python duckdb-table-form-parquet.py Test Run: 3 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S98    P229    120        5970.0   5095637.7
+1  S98    P376     90        3170.0    665815.2
+2  S98    P210     40        2100.0    325243.1
+3  S98    P159     40        2850.0   1437741.8
+4  S98    P243    120        5670.0   5417926.0
+5  S98    P400     50        1650.0   1744768.9
+6  S98    P483    120        7070.0   3088097.7
+7  S98    P352     40        1690.0   1458212.1
+8  S98    P185     90        2810.0   2172449.1
+9  S98    P324    100        6510.0   5967479.3
+
+
+DuckDB Parquet Duration (In Second): 2.997
+
+*** python duckdb-table-form-parquet.py Duration (in second): 3.39 ***
+
+*** Current Data File: 10M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-parquet.py Test Run: 4 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S76', 'P441', 70, 2940.0, 387796.5)
+('S76', 'P258', 80, 5330.0, 2737759.4)
+('S76', 'P142', 50, 2310.0, 2253785.4)
+('S76', 'P471', 100, 3280.0, 1978278.3000000003)
+('S76', 'P596', 70, 3640.0, 1508527.9)
+('S76', 'P981', 80, 1930.0, 1453219.5)
+('S76', 'P321', 80, 2980.0, 2084717.4000000001)
+('S76', 'P523', 110, 4360.0, 2037673.3000000003)
+('S76', 'P943', 100, 4850.0, 4214690.0)
+('S76', 'P525', 110, 6350.0, 1801270.3000000003)
+
+DuckDB Parquet Duration (In Second): 0.982
+
+*** python duckdb-tuple-form-parquet.py Duration (in second): 1.15 ***
+
+
+
+
+*** See Benchmark Result: 10M_Fact ***
+
+Test Case                            Run 1  Average  Rank
+python duckdb-tuple-form-parquet.py  1.15   1.15     1
+--------------->
+python duckdb-tuple-form-csv.py      2.04   2.04     2
+-------------------------->
+python duckdb-table-form-parquet.py  3.39   3.39     3
+-------------------------------------------->
+python duckdb-table-form-csv.py      4.32   4.32     4
+--------------------------------------------------------->
+
+
+*** Current Data File: 10M_Fact ***
+
+*** Start Process: python duckdb-table-form-csv.py Test Run: 5 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S21    P579     80        5640.0   5378288.1
+1  S21    P941     90        4250.0   4520843.5
+2  S21    P561     80        2230.0   2328645.4
+3  S21    P503     90        4840.0   2739380.8
+4  S21    P779     80        5910.0   3421643.3
+5  S21    P881    120        6580.0   3271233.7
+6  S21    P113     60        3370.0   1176943.9
+7  S21    P370    140        7760.0   2309856.9
+8  S21    P901     60        4040.0   3662905.4
+9  S21    P202     60        2880.0    978096.9
+
+
+DuckDB CSV Duration (In Second): 3.892
+
+*** python duckdb-table-form-csv.py Duration (in second): 4.25 ***
+
+*** Current Data File: 10M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-csv.py Test Run: 6 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S31', 'P201', 40, 2830.0, 467308.3000000001)
+('S31', 'P188', 40, 3240.0, 643635.6)
+('S31', 'P642', 80, 4450.0, 1167893.9000000001)
+('S31', 'P330', 70, 4070.0, 462481.0)
+('S31', 'P714', 60, 3170.0, 1647920.5)
+('S31', 'P706', 70, 3090.0, 3259315.2999999993)
+('S31', 'P406', 60, 3170.0, 2560691.9999999995)
+('S31', 'P298', 90, 3600.0, 3413019.6999999993)
+('S31', 'P107', 30, 2120.0, 2240148.2)
+('S31', 'P460', 50, 2740.0, 584902.0)
+
+DuckDB CSV Duration (In Second): 1.866
+
+*** python duckdb-tuple-form-csv.py Duration (in second): 2.01 ***
+
+*** Current Data File: 10M_Fact ***
+
+*** Start Process: python duckdb-table-form-parquet.py Test Run: 7 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S43    P261     90        4580.0    526228.9
+1  S43    P291     90        4450.0   3084420.7
+2  S43    P455     80        2050.0    916776.1
+3  S43    P346    130        8220.0   2370814.0
+4  S43    P483     50        1560.0    691207.6
+5  S43    P229     70        3000.0   2523976.8
+6  S43    P279    110        4450.0    554411.8
+7  S43    P709     60        3330.0   1969512.5
+8  S43    P912     70        3740.0   2882661.3
+9  S43    P424     40        1990.0    924693.3
+
+
+DuckDB Parquet Duration (In Second): 2.982
+
+*** python duckdb-table-form-parquet.py Duration (in second): 3.33 ***
+
+*** Current Data File: 10M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-parquet.py Test Run: 8 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S65', 'P243', 120, 3660.0, 3482832.0000000005)
+('S65', 'P535', 50, 2290.0, 2471900.0999999996)
+('S65', 'P352', 100, 5490.0, 4892969.8)
+('S65', 'P291', 80, 3360.0, 2359692.2)
+('S65', 'P346', 100, 4730.0, 1364970.4000000001)
+('S65', 'P933', 100, 4220.0, 656148.2000000001)
+('S65', 'P284', 70, 3500.0, 279070.4)
+('S65', 'P364', 70, 3260.0, 3402416.099999999)
+('S65', 'P229', 70, 3920.0, 3341924.1000000006)
+('S65', 'P650', 100, 5340.0, 605620.8000000002)
+
+DuckDB Parquet Duration (In Second): 0.988
+
+*** python duckdb-tuple-form-parquet.py Duration (in second): 1.14 ***
+
+
+
+
+*** See Benchmark Result: 10M_Fact ***
+
+Test Case                            Run 1  Run 2  Average  Rank
+python duckdb-tuple-form-parquet.py  1.15   1.14   1.15     1
+----------------->
+python duckdb-tuple-form-csv.py      2.04   2.01   2.02     2
+------------------------------>
+python duckdb-table-form-parquet.py  3.39   3.33   3.36     3
+-------------------------------------------------->
+python duckdb-table-form-csv.py      4.32   4.25   4.29     4
+---------------------------------------------------------------->
+
+
+*** Current Data File: 10M_Fact ***
+
+*** Start Process: python duckdb-table-form-csv.py Test Run: 9 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S42    P972     70        3620.0   1361621.2
+1  S42    P115     50        1230.0    650524.1
+2  S42    P598    100        5350.0   2751077.2
+3  S42    P503     90        4400.0   2482418.8
+4  S42    P108     70        3540.0   1558833.0
+5  S42    P649     90        6230.0   1250276.7
+6  S42    P445    110        5650.0   2745523.0
+7  S42    P514     70        2750.0   1833545.3
+8  S42    P803     60        4280.0   3617727.0
+9  S42    P881     80        2460.0   1224010.8
+
+
+DuckDB CSV Duration (In Second): 3.845
+
+*** python duckdb-table-form-csv.py Duration (in second): 4.23 ***
+
+*** Current Data File: 10M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-csv.py Test Run: 10 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S31', 'P201', 40, 2830.0, 467308.3000000001)
+('S31', 'P188', 40, 3240.0, 643635.6000000001)
+('S31', 'P642', 80, 4450.0, 1167893.9)
+('S31', 'P330', 70, 4070.0, 462481.0)
+('S31', 'P714', 60, 3170.0, 1647920.5000000002)
+('S31', 'P706', 70, 3090.0, 3259315.2999999993)
+('S31', 'P406', 60, 3170.0, 2560692.0)
+('S31', 'P298', 90, 3600.0, 3413019.6999999993)
+('S31', 'P107', 30, 2120.0, 2240148.2)
+('S31', 'P460', 50, 2740.0, 584901.9999999999)
+
+DuckDB CSV Duration (In Second): 1.93
+
+*** python duckdb-tuple-form-csv.py Duration (in second): 2.09 ***
+
+*** Current Data File: 10M_Fact ***
+
+*** Start Process: python duckdb-table-form-parquet.py Test Run: 11 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S65    P243    120        3660.0   3482832.0
+1  S65    P535     50        2290.0   2471900.1
+2  S65    P352    100        5490.0   4892969.8
+3  S65    P291     80        3360.0   2359692.2
+4  S65    P346    100        4730.0   1364970.4
+5  S65    P933    100        4220.0    656148.2
+6  S65    P284     70        3500.0    279070.4
+7  S65    P364     70        3260.0   3402416.1
+8  S65    P229     70        3920.0   3341924.1
+9  S65    P650    100        5340.0    605620.8
+
+
+DuckDB Parquet Duration (In Second): 3.014
+
+*** python duckdb-table-form-parquet.py Duration (in second): 3.33 ***
+
+*** Current Data File: 10M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-parquet.py Test Run: 12 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S42', 'P972', 70, 3620.0, 1361621.2000000002)
+('S42', 'P115', 50, 1230.0, 650524.1000000001)
+('S42', 'P598', 100, 5350.0, 2751077.2000000007)
+('S42', 'P503', 90, 4400.0, 2482418.7999999993)
+('S42', 'P108', 70, 3540.0, 1558833.0000000002)
+('S42', 'P649', 90, 6230.0, 1250276.7)
+('S42', 'P445', 110, 5650.0, 2745522.9999999995)
+('S42', 'P514', 70, 2750.0, 1833545.3000000005)
+('S42', 'P803', 60, 4280.0, 3617727.0000000005)
+('S42', 'P881', 80, 2460.0, 1224010.8)
+
+DuckDB Parquet Duration (In Second): 0.973
+
+*** python duckdb-tuple-form-parquet.py Duration (in second): 1.11 ***
+
+
+
+
+*** See Benchmark Result: 10M_Fact ***
+
+Test Case                            Run 1  Run 2  Run 3  Average  Rank
+python duckdb-tuple-form-parquet.py  1.15   1.14   1.11   1.13     1
+------------------>
+python duckdb-tuple-form-csv.py      2.04   2.01   2.09   2.05     2
+---------------------------------->
+python duckdb-table-form-parquet.py  3.39   3.33   3.33   3.35     3
+------------------------------------------------------->
+python duckdb-table-form-csv.py      4.32   4.25   4.23   4.27     4
+----------------------------------------------------------------------->
+
+
+*** Current Data File: 100M_Fact ***
+
+*** Start Process: python duckdb-table-form-csv.py Test Run: 1 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S21    P579    800       56400.0  53782881.0
+1  S21    P941    900       42500.0  45208435.0
+2  S21    P561    800       22300.0  23286454.0
+3  S21    P503    900       48400.0  27393808.0
+4  S21    P779    800       59100.0  34216433.0
+5  S21    P881   1200       65800.0  32712337.0
+6  S21    P113    600       33700.0  11769439.0
+7  S21    P370   1400       77600.0  23098569.0
+8  S21    P901    600       40400.0  36629054.0
+9  S21    P202    600       28800.0   9780969.0
+
+
+DuckDB CSV Duration (In Second): 40.841
+
+*** python duckdb-table-form-csv.py Duration (in second): 43.65 ***
+
+*** Current Data File: 100M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-csv.py Test Run: 2 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S31', 'P201', 400, 28300.0, 4673083.000000001)
+('S31', 'P188', 400, 32400.0, 6436356.000000002)
+('S31', 'P642', 800, 44500.0, 11678939.0)
+('S31', 'P330', 700, 40700.0, 4624809.999999998)
+('S31', 'P714', 600, 31700.0, 16479204.999999998)
+('S31', 'P706', 700, 30900.0, 32593152.999999985)
+('S31', 'P406', 600, 31700.0, 25606920.000000007)
+('S31', 'P298', 900, 36000.0, 34130197.00000001)
+('S31', 'P107', 300, 21200.0, 22401481.999999996)
+('S31', 'P460', 500, 27400.0, 5849019.999999998)
+
+DuckDB CSV Duration (In Second): 16.411
+
+*** python duckdb-tuple-form-csv.py Duration (in second): 17.48 ***
+
+*** Current Data File: 100M_Fact ***
+
+*** Start Process: python duckdb-table-form-parquet.py Test Run: 3 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S43    P938    900       37800.0  16225505.0
+1  S43    P824    900       41600.0  33169055.0
+2  S43    P443    700       27100.0  20267520.0
+3  S43    P712   1000       63900.0  65038981.0
+4  S43    P622   1100       45400.0  23164679.0
+5  S43    P764    500       18600.0  14177024.0
+6  S43    P866    600       39900.0  39361120.0
+7  S43    P448   1000       56800.0  19519994.0
+8  S43    P878    500       13900.0  12101502.0
+9  S43    P376    600       34600.0   7120658.0
+
+
+DuckDB Parquet Duration (In Second): 29.737
+
+*** python duckdb-table-form-parquet.py Duration (in second): 33.38 ***
+
+*** Current Data File: 100M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-parquet.py Test Run: 4 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S87', 'P221', 900, 59700.0, 42163103.000000015)
+('S87', 'P125', 600, 33200.0, 34143002.99999999)
+('S87', 'P656', 600, 30900.0, 17905308.999999996)
+('S87', 'P115', 700, 43900.0, 23133935.000000007)
+('S87', 'P534', 300, 18200.0, 17062605.0)
+('S87', 'P704', 500, 19200.0, 19585439.999999996)
+('S87', 'P881', 900, 33000.0, 15985926.000000002)
+('S87', 'P561', 900, 29800.0, 29913754.0)
+('S87', 'P737', 1100, 48100.0, 41559755.99999999)
+('S87', 'P721', 800, 43800.0, 41686505.0)
+
+DuckDB Parquet Duration (In Second): 10.544
+
+*** python duckdb-tuple-form-parquet.py Duration (in second): 12.32 ***
+
+
+
+
+*** See Benchmark Result: 100M_Fact ***
+
+Test Case                            Run 1  Average  Rank
+python duckdb-tuple-form-parquet.py  12.32  12.32    1
+---------------->
+python duckdb-tuple-form-csv.py      17.48  17.48    2
+---------------------->
+python duckdb-table-form-parquet.py  33.38  33.38    3
+------------------------------------------->
+python duckdb-table-form-csv.py      43.65  43.65    4
+--------------------------------------------------------->
+
+
+*** Current Data File: 100M_Fact ***
+
+*** Start Process: python duckdb-table-form-csv.py Test Run: 5 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S37    P466   1000       42700.0  43364956.0
+1  S37    P925    600       40100.0  12929349.0
+2  S37    P149    900       62300.0  30206479.0
+3  S37    P552    700       39500.0  24366391.0
+4  S37    P437    500       28800.0  13646802.0
+5  S37    P914   1000       50500.0   8265732.0
+6  S37    P978    500       15800.0  15212950.0
+7  S37    P167    700       27100.0  29146171.0
+8  S37    P333    800       34200.0  15829658.0
+9  S37    P116   1200       62300.0  60264458.0
+
+
+DuckDB CSV Duration (In Second): 32.029
+
+*** python duckdb-table-form-csv.py Duration (in second): 35.66 ***
+
+*** Current Data File: 100M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-csv.py Test Run: 6 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S42', 'P972', 700, 36200.0, 13616212.000000002)
+('S42', 'P115', 500, 12300.0, 6505241.0)
+('S42', 'P598', 1000, 53500.0, 27510772.0)
+('S42', 'P503', 900, 44000.0, 24824187.99999999)
+('S42', 'P108', 700, 35400.0, 15588330.0)
+('S42', 'P649', 900, 62300.0, 12502766.999999998)
+('S42', 'P445', 1100, 56500.0, 27455230.00000001)
+('S42', 'P514', 700, 27500.0, 18335453.0)
+('S42', 'P803', 600, 42800.0, 36177270.0)
+('S42', 'P881', 800, 24600.0, 12240108.000000002)
+
+DuckDB CSV Duration (In Second): 17.004
+
+*** python duckdb-tuple-form-csv.py Duration (in second): 18.04 ***
+
+*** Current Data File: 100M_Fact ***
+
+*** Start Process: python duckdb-table-form-parquet.py Test Run: 7 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S76    P868    700       34800.0  10097964.0
+1  S76    P659   1500       87500.0  58749339.0
+2  S76    P592    700       28600.0  22658211.0
+3  S76    P831    700       30400.0  16323173.0
+4  S76    P684    600       50100.0  51397007.0
+5  S76    P845    500       18700.0  18385221.0
+6  S76    P904    600       30500.0  21112904.0
+7  S76    P118   1100       46400.0  30581114.0
+8  S76    P662    500       24500.0  20813915.0
+9  S76    P420    400       23800.0  17034694.0
+
+
+DuckDB Parquet Duration (In Second): 29.919
+
+*** python duckdb-table-form-parquet.py Duration (in second): 33.37 ***
+
+*** Current Data File: 100M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-parquet.py Test Run: 8 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S32', 'P529', 900, 57600.0, 11722481.999999994)
+('S32', 'P921', 700, 32600.0, 29967117.000000007)
+('S32', 'P698', 600, 31300.0, 22932575.000000007)
+('S32', 'P292', 1100, 67200.0, 69218878.00000001)
+('S32', 'P729', 500, 23100.0, 12694853.000000002)
+('S32', 'P547', 600, 27500.0, 24613625.999999993)
+('S32', 'P862', 600, 34100.0, 26412625.0)
+('S32', 'P908', 600, 19200.0, 13296430.000000004)
+('S32', 'P583', 600, 26700.0, 28440883.999999996)
+('S32', 'P639', 700, 35700.0, 24483322.0)
+
+DuckDB Parquet Duration (In Second): 10.15
+
+*** python duckdb-tuple-form-parquet.py Duration (in second): 11.95 ***
+
+
+
+
+*** See Benchmark Result: 100M_Fact ***
+
+Test Case                            Run 1  Run 2  Average  Rank
+python duckdb-tuple-form-parquet.py  12.32  11.95  12.13    1
+------------------->
+python duckdb-tuple-form-csv.py      17.48  18.04  17.76    2
+---------------------------->
+python duckdb-table-form-parquet.py  33.38  33.37  33.38    3
+----------------------------------------------------->
+python duckdb-table-form-csv.py      43.65  35.66  39.66    4
+---------------------------------------------------------------->
+
+
+*** Current Data File: 100M_Fact ***
+
+*** Start Process: python duckdb-table-form-csv.py Test Run: 9 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S59    P147    600       42700.0  12130812.0
+1  S59    P106    500       24300.0   4270674.0
+2  S59    P598    700       36500.0  19557682.0
+3  S59    P842    500       21800.0  14431194.0
+4  S59    P247    500       22600.0   4189581.0
+5  S59    P672    800       60700.0   4961362.0
+6  S59    P463   1300       64700.0  21718744.0
+7  S59    P202    800       37600.0  11879809.0
+8  S59    P417    400       28500.0   3524286.0
+9  S59    P242    500       31300.0  23809664.0
+
+
+DuckDB CSV Duration (In Second): 34.411
+
+*** python duckdb-table-form-csv.py Duration (in second): 37.22 ***
+
+*** Current Data File: 100M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-csv.py Test Run: 10 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S93', 'P380', 1200, 81600.0, 26336759.000000004)
+('S93', 'P707', 1100, 54200.0, 42037209.99999999)
+('S93', 'P373', 1100, 47100.0, 26160932.000000004)
+('S93', 'P936', 1100, 57200.0, 20377156.00000001)
+('S93', 'P165', 700, 38800.0, 29658192.000000004)
+('S93', 'P254', 400, 17900.0, 3498967.9999999986)
+('S93', 'P124', 1000, 53800.0, 31171064.0)
+('S93', 'P222', 800, 40200.0, 5063027.999999999)
+('S93', 'P436', 900, 35600.0, 27992022.000000004)
+('S93', 'P548', 1000, 38500.0, 23398590.999999993)
+
+DuckDB CSV Duration (In Second): 16.952
+
+*** python duckdb-tuple-form-csv.py Duration (in second): 17.96 ***
+
+*** Current Data File: 100M_Fact ***
+
+*** Start Process: python duckdb-table-form-parquet.py Test Run: 11 of 12 ***
+  Product Shop Style       Date  Quantity    Amount
+0    P910  S21     F 2023-01-01      34.0   1035.64
+1    P951  S21     F 2023-01-01      36.0  11119.68
+2    P280  S21     B 2023-01-01      91.0  26218.01
+3    P448  S21     C 2023-01-01      71.0  24075.39
+4    P692  S21     B 2023-01-01      28.0   7338.24
+5    P722  S21     B 2023-01-01      95.0  10509.85
+6    P469  S21     F 2023-01-01      87.0  96179.37
+7    P325  S21     B 2023-01-02      97.0   8368.19
+8    P765  S21     C 2023-01-02      63.0  11283.30
+9    P182  S21     F 2023-01-02      66.0  38303.10
+
+
+  Shop Product  Count  Sum_Quantity  Sum_Amount
+0  S54    P197   1100       44700.0  42622590.0
+1  S54    P384    700       28300.0  16411143.0
+2  S54    P495    400       24600.0    963782.0
+3  S54    P240   1000       56300.0   2459281.0
+4  S54    P348    900       35400.0  11044560.0
+5  S54    P653    800       56400.0  29988901.0
+6  S54    P738    900       43600.0   4054178.0
+7  S54    P349    600       29800.0  30232006.0
+8  S54    P601    800       38400.0  10170333.0
+9  S54    P680   1100       51600.0  40601424.0
+
+
+DuckDB Parquet Duration (In Second): 28.152
+
+*** python duckdb-table-form-parquet.py Duration (in second): 31.64 ***
+
+*** Current Data File: 100M_Fact ***
+
+*** Start Process: python duckdb-tuple-form-parquet.py Test Run: 12 of 12 ***
+
+Detail Result (First 10 Rows):
+('P910', 'S21', 'F', datetime.date(2023, 1, 1), 34.0, 1035.64)
+('P951', 'S21', 'F', datetime.date(2023, 1, 1), 36.0, 11119.68)
+('P280', 'S21', 'B', datetime.date(2023, 1, 1), 91.0, 26218.010000000002)
+('P448', 'S21', 'C', datetime.date(2023, 1, 1), 71.0, 24075.39)
+('P692', 'S21', 'B', datetime.date(2023, 1, 1), 28.0, 7338.24)
+('P722', 'S21', 'B', datetime.date(2023, 1, 1), 95.0, 10509.85)
+('P469', 'S21', 'F', datetime.date(2023, 1, 1), 87.0, 96179.37)
+('P325', 'S21', 'B', datetime.date(2023, 1, 2), 97.0, 8368.19)
+('P765', 'S21', 'C', datetime.date(2023, 1, 2), 63.0, 11283.3)
+('P182', 'S21', 'F', datetime.date(2023, 1, 2), 66.0, 38303.1)
+
+Summary Result (First 10 Rows):
+('S42', 'P579', 1000, 33300.0, 31710193.0)
+('S42', 'P656', 900, 43500.0, 25657627.000000007)
+('S42', 'P122', 500, 28500.0, 2997608.0000000005)
+('S42', 'P153', 1000, 62800.0, 41026546.99999999)
+('S42', 'P303', 300, 16700.0, 11267765.0)
+('S42', 'P310', 600, 26900.0, 27876322.00000001)
+('S42', 'P242', 900, 49100.0, 37076220.00000001)
+('S42', 'P803', 600, 42800.0, 36177270.000000015)
+('S42', 'P849', 600, 26300.0, 28500668.999999996)
+('S42', 'P658', 500, 28900.0, 19210398.999999996)
+
+DuckDB Parquet Duration (In Second): 10.454
+
+*** python duckdb-tuple-form-parquet.py Duration (in second): 12.24 ***
+
+
+
+
+*** See Benchmark Result: 100M_Fact ***
+
+Test Case                            Run 1  Run 2  Run 3  Average  Rank
+python duckdb-tuple-form-parquet.py  12.32  11.95  12.24  12.17    1
+---------------------->
+python duckdb-tuple-form-csv.py      17.48  18.04  17.96  17.83    2
+-------------------------------->
+python duckdb-table-form-parquet.py  33.38  33.37  31.64  32.8     3
+----------------------------------------------------------->
+python duckdb-table-form-csv.py      43.65  35.66  37.22  38.84    4
+----------------------------------------------------------------------->
