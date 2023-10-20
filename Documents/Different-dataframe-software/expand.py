@@ -1,3 +1,5 @@
+## Current folder must have folder "Inbox" which contain the zip file 1M_Fact.zip".
+
 import os
 import csv
 import sys
