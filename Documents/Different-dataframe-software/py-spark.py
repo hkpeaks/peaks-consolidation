@@ -41,5 +41,3 @@ print(sample_df1)
 
 end_time = time.time()
 print("PySpark CSV Duration (In Second): {}".format(round(end_time-start_time,3)))
-
-os._exit(0)
