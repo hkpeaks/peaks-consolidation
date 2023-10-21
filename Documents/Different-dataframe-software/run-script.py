@@ -1,3 +1,6 @@
+# How to run it
+# Python run-script.py 1M_Fact.csv
+
 import argparse
 import time
 import subprocess
