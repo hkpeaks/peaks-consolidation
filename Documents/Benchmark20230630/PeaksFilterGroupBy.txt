@@ -1,4 +1,0 @@
-CurrentSetting{StreamMB(1000)Thread(100)}
-Select{7-BillionRows.csv | Product(200..220)}
-GroupBy{Shop, Date, Product, Style => SUM(Amount) ~ Table}
-WriteFile{Table ~ PeaksFilterGroupBy.csv}

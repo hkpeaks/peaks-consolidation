@@ -1,7 +1,0 @@
-ReadFile{1-MillionRows.csv ~ Table}
-WriteFile{Table ~ %ExpandBy100Time.csv}
-
-
-
-
-
